@@ -4,9 +4,9 @@ sdk.data.crash.distribution
 
 # api请求地址
 
-[http://api.bonree.com/sdk/report/data/crash/distribution](http://api.bonree.com/sdk/report/data/crash/distribution)
+[http://api.bonree.com/sdk/data/crash/distribution](http://api.bonree.com/sdk/report/data/crash/distribution)
 
-[https://api.bonree.com/sdk/report/data/crash/distribution](https://api.bonree.com/sdk/report/data/crash/distribution)
+[https://api.bonree.com/sdk/data/crash/distribution](https://api.bonree.com/sdk/report/data/crash/distribution)
 
 # 请求方式
 
