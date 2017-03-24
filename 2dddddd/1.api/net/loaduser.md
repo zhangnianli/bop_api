@@ -1,10 +1,10 @@
 # 业务编号
 
-net.task.loadUser
+net.user.loadUser
 
 # api请求地址
 
-[http://api.bonree.com/net/task/loadUser](http://api.bonree.com/net/user/loadUser)
+[http://api.bonree.com/net/user/loadUser](http://api.bonree.com/net/user/loadUser)
 
 # 请求方式
 
@@ -12,6 +12,8 @@ POST/GET
 
 # 请求参数
 
+| 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
+| :--- | :--- | :--- | :--- | :--- |
 | token | string | 是 | \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* | 令牌 |
 | :--- | :--- | :--- | :--- | :--- |
 | username | string | 是 | bonreetest | 用户名 |
@@ -29,7 +31,7 @@ POST/GET
 ```
  POST:
   HttpClient httpclient = new DefaultHttpClient();
-  String url = "http://api.bonree.com/net/task/loadUser";
+  String url = "http://api.bonree.com/net/user/loadUser";
   HttpPost httppost = new HttpPost(url);
   System.out.println("请求: " + httppost.getRequestLine());
   // 创建参数队列
@@ -51,7 +53,7 @@ POST/GET
   httpclient.getConnectionManager().shutdown();
 
  GET:
-  http://api.bonree.com/net/task/loadUser?token=asdas12312312ddwew5we5we5&username=bonreetest
+  http://api.bonree.com/net/user/loadUser?token=asdas12312312ddwew5we5we5&username=bonreetest
 ```
 
 # 返回结果示例
@@ -61,8 +63,8 @@ POST/GET
     "error_code": 0,
     "reason":"查询成功",
     "result: [
-        ["username","monitorCountSet","monitorCountUsed","startDate","endDate","mobMonitorCountSet","mobMonitorCountUsed","monitorMode","appHuifangTimeSet","appHuifangTimeUsed","appHuifangFlowSet","appHuifangFlowUsed"],
-        ["bonreetest",99999999,23,1420041600000,1514736000000,10000000,0,0,60000,0,1024,0]
+        ["username","monitorCountSet","monitorCountUsed","startDate","endDate","mobMonitorCountSet","mobMonitorCountUsed","monitorMode","appHuifangTimeSet","appHuifangTimeUsed","appHuifangFlowSet","appHuifangFlowUsed","urlnumSet","urlnumUsed"],
+        ["bonreetest",99999999,23,1420041600000,1514736000000,10000000,0,0,60000,0,1024,0,9999,22]
     ]
 }
 ```

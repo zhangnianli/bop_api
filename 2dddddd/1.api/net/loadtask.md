@@ -16,13 +16,15 @@ POST/GET
 | :--- | :--- | :--- | :--- | :--- |
 | token | string | 是 | \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* | 令牌 |
 | username | string | 是 | bonreetest | 用户名 |
-| param | string | 是 | {"monitor\_fun":3} | 请求参数json |
+| params | string | 是 | {"monitor\_fun":3} | 请求参数json |
 
 ## param参数
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| monitor\_fun | Number | 是 | 3 | 任务类型0-网络 2/3-浏览 4-传输 5-流媒体 6-元素组 7-协议 9-事务 96-移动全元素 97-移动网络 98-移动协议 99-移动协议 |
+| monitorFun | Number | 是 | 3 | 任务类型0-网络 3-浏览 4-传输 5-流媒体 6-元素组 7-协议 9-事务 96-移动浏览 97-移动网络 98-移动协议 95-BMTP |
+| taskId | Number | 否 | 170435 | 任务ID |
+| flag | Number | 否 | 1 | 任务状态；0-禁用，1-启用，9-结束 |
 
 # 返回参数说明
 
@@ -30,14 +32,14 @@ POST/GET
 | :--- | :--- | :--- |
 | error\_code | Number | 错误码 |
 | reason | string | 结果说明 |
-| result | string | 创建成功任务ID |
+| result | string | 查询结果 |
 
 # 请求示例
 
 ```
  POST:
   HttpClient httpclient = new DefaultHttpClient();
-  String url = "http://api.bonree.com/apm/backendcall/statdata";
+  String url = "http://api.bonree.com/net/task/loadTask";
   HttpPost httppost = new HttpPost(url);
   System.out.println("请求: " + httppost.getRequestLine());
   // 创建参数队列
@@ -70,9 +72,9 @@ POST/GET
     "error_code": 0,
     "reason":"查询成功",
     "result: [
-        ["role_name","url","role_id","monitor_fun","flag","start_time","end_time","parent_id","role_type"],
-        ["勿删长期测试qq","http://www.qq.com","170435","3","1","2014-03-01 00","2017-2-28 15","340832","9"],
-        ["QQ任务组","http://","340832","3","0","2015-11-26 13","2015-11-26 13","0","0"],
+        ["roleName","url","taskId","monitorFun","flag","startTime","endTime","parentId","roleType","netenvMon"],
+        ["勿删长期测试qq","http://www.qq.com",170435,3,1,1393603200000,1488211200000,340832,9,"111"],
+        ["QQ任务组","http://",340832,3,0,1446307200000,1446307200000,0,0,"000"]
     ]
 }
 ```
