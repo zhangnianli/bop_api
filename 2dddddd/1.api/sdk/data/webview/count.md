@@ -4,9 +4,9 @@ sdk.data.webview.count
 
 # api请求地址
 
-[http://api.bonree.com/sdk/report/data/webview/count](http://api.bonree.com/sdk/report/data/crash/distribution)
+[http://api.bonree.com/sdk/data/webview/count](http://api.bonree.com/sdk/report/data/crash/distribution)
 
-[https://api.bonree.com/sdk/report/data/webview/count](https://api.bonree.com/sdk/report/data/crash/distribution)
+[https://api.bonree.com/sdk/data/webview/count](https://api.bonree.com/sdk/report/data/crash/distribution)
 
 # 请求方式
 
@@ -30,7 +30,7 @@ POST／GET
 | dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围\(时间最长一个月\) |
 | filters | string | 否 |  | 数据筛选条件 |
 | dHeader | string | 是 | sdkAppId,appName,webviewErrorRate | 指标数据项 |
-| groupfield | string | 否 | appId | 数据组合条件 |
+| groupfield | string | 否 | "appId" | 数据组合条件 |
 
 ### filter参数
 

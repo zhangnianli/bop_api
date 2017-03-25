@@ -26,7 +26,7 @@ POST／GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json/csv | 数据类型 |
-| fiter | string | 否 |  | 数据筛选条件 |
+| fiters | string | 否 |  | 数据筛选条件 |
 | dHeader | string | 是 | “userName,appName,appId” | 指标数据项 |
 
 ### filter参数
