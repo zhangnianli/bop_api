@@ -4,9 +4,9 @@ sdk.data.crash.detail
 
 # api请求地址
 
-[http://api.bonree.com/sdk/report/data/crash/detail](http://api.bonree.com/sdk/report/data/crash/detail)
+[http://api.bonree.com/sdk/data/crash/detail](http://api.bonree.com/sdk/report/data/crash/detail)
 
-[https://api.bonree.com/sdk/report/data/crash/detail](https://api.bonree.com/sdk/report/data/crash/detail)
+[https://api.bonree.com/sdk/data/crash/detail](https://api.bonree.com/sdk/report/data/crash/detail)
 
 # 请求方式
 
@@ -19,28 +19,28 @@ POST／GET
 | token | string\(32\) | 是 | xxxxxxxx | 令牌 |
 | dType | string | 是 | json/csv | 数据类型 |
 | userName | string | 是 | bonree | 用户名 |
-| params | string | 是 | {"dType":"json","sdkAppId":\[1111,2222\],"dTime":"20160101000000-20160102000000","pageNum":1,"pageRecorders":50,"dHeader":\["sdkAppId","osId","brandId","minMonitorTime","maxMonitorTime","crashCount","crashRate"\],"filter":{"osId":\["1111"\],"brandId":\["1111"\]},"orderFlag":\["appId"\],"groupfield":\["appId","stackInfoCode"\]}} | 参数json |
+| params | string | 是 |  | 参数json |
 
 ### params参数
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json/csv | 数据类型 |
-| sdkAppId | string | 是 | 1111,2222 | 应用id |
+| sdkAppId | string | 是 | "1111,2222" | 应用id |
 | dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围\(时间最长一个月\) |
 | pageNum | int | 是 | 1 | 页码 |
 | pageRecorders | int | 是 | 50 | 每页条数 |
 | filters | string | 否 | {"osId":\["1111"\],"brandId":\["1111"\]} | 数据筛选条件 |
-| dHeader | string | 是 | sdkAppId,osId,brandId,minMonitorTime,mxaMonitorTime,crashCount,crashRate | 指标数据项 |
+| dHeader | string | 是 | "sdkAppId,osId,brandId,minMonitorTime,mxaMonitorTime,crashCount,crashRate" | 指标数据项 |
 | orderFlag | string | 否 | sdkAppId | 排序依据 |
-| groupfield | string | 是 | sdkAppId,stackInfoCode | 数据组合条件 |
+| groupfield | string | 是 | "sdkAppId,stackInfoCode" | 数据组合条件 |
 
-### filter参数
+### filters参数
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
-| osId | string | "osId":\["1111"\] | 操作系统id |
-| brandId | string | "brandId":\["1111"\] | 设备型号id |
+| osVersion | string | "osId":\["1111"\] | 操作系统 |
+| brandName | string | "brandId":\["1111"\] | 设备型号 |
 | crashTypeCode | string | "crashTypeCode":\["111"\] | 崩溃类型Code |
 
 ### dHeader参数
@@ -65,7 +65,7 @@ POST／GET
 | 参数名称 | 参数说明 |
 | :--- | :--- |
 | sdkAppId | sdk应用id |
-| crashTypeCode | 崩溃类型code |
+| crashType | 崩溃类型 |
 | stackInfoCode | 崩溃堆栈code |
 
 # 返回参数说明
