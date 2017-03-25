@@ -19,7 +19,7 @@ POST／GET
 | token | string\(32\) | 是 | xxxxxxxx | 令牌 |
 | dType | string | 是 | json/csv | 数据类型 |
 | userName | string | 是 | bonree | 用户名 |
-| params | string | 是 | {"dType":"json"} | 参数json |
+| params | string | 是 |  | 参数json |
 
 ### params参数
 
