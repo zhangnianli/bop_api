@@ -4,9 +4,9 @@ sdk.data.crash.find
 
 # api请求地址
 
-[http://api.bonree.com/sdk/report/data/crash/find](http://api.bonree.com/sdk/report/data/crash/distribution)
+[http://api.bonree.com/sdk/data/crash/find](http://api.bonree.com/sdk/report/data/crash/distribution)
 
-[https://api.bonree.com/sdk/report/data/crash/find](https://api.bonree.com/sdk/report/data/crash/distribution)
+[https://api.bonree.com/sdk/data/crash/find](https://api.bonree.com/sdk/report/data/crash/distribution)
 
 # 请求方式
 
@@ -27,7 +27,7 @@ POST／GET
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json/csv | 数据类型 |
 | sdkAppId | string | 是 | 1111,2222 | 应用id |
-| filter | string | 否 | {"crashTypeCode":\[1111,2222\]} | 数据筛选条件 |
+| filters | string | 否 | {"crashTypeCode":\[1111,2222\]} | 数据筛选条件 |
 | dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围\(时间最长一个月\) |
 | dHeader | string | 是 | osId,osVersion,brandName,brandId | 指标数据项 |
 
@@ -42,10 +42,8 @@ POST／GET
 | 参数名称 | 参数类型 | 是否必选 | 返回示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | sdkAppId | string | 否 | 1111 | sdk应用appId |
-| osId | string | 否 | 1111 | 操作系统id |
 | osVersion | string | 否 | ios 9 | 操作系统名称 |
 | brandName | string | 否 | iphone 5s | 设备型号 |
-| brandId | string | 否 | 1111 | 设备型号id |
 
 # 返回参数说明
 
