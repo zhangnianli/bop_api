@@ -32,7 +32,7 @@ POST／GET
 | dHeader | string | 是 | sdkAppId,appName,webviewErrorRate | 指标数据项 |
 | groupfield | string | 否 | "appId" | 数据组合条件 |
 
-### filter参数
+### filters参数
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
