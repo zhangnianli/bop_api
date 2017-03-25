@@ -74,9 +74,6 @@ POST／GET
 | :--- | :--- | :--- |
 | error\_code | int | 错误码 |
 | reason | string | 返回说明 |
-| totalRows | int | 总数据行数 |
-| page | int | 页码 |
-| pageRecorders | int | 每页行数 |
 | result | string | 返回结果集 |
 
 # 请求示例
@@ -113,9 +110,6 @@ httpclient.getConnectionManager().shutdown();
 ```
 {“error_code”: 0,
     “reason”:”查询成功”,
-    "totalRows":1,
-    "page":1,
-    "pageRecorders":50,
      result: [
               ["appId","osId","brandId",“appName”,”minMonitorTime”,”maxMonitorTime”,”crashCount”,”crashRate”,”userCount”],
               ["1111","1111","1111"“app1”,”20161100000100”,”20161101000100”,”100”,”0.01”,“1”]
