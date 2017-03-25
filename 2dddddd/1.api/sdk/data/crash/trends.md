@@ -4,9 +4,9 @@ sdk.data.crash.trends
 
 # api请求地址
 
-[http://api.bonree.com/sdk/report/data/crash/trends](http://api.bonree.com/sdk/report/data/crash/trends)
+[http://api.bonree.com/sdk/data/crash/trends](http://api.bonree.com/sdk/report/data/crash/trends)
 
-[https://api.bonree.com/sdk/report/data/crash/trends](https://api.bonree.com/sdk/report/data/crash/trends)
+[https://api.bonree.com/sdk/data/crash/trends](https://api.bonree.com/sdk/report/data/crash/trends)
 
 # 请求方式
 
