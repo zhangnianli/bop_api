@@ -4,9 +4,9 @@ sdk.task.find
 
 # api请求地址
 
-[http://api.bonree.com/sdk/report/task/find](http://api.bonree.com/sdk/report/task/find)
+[http://api.bonree.com/sdk/task/find](http://api.bonree.com/sdk/report/task/find)
 
-[https://api.bonree.com/sdk/report/task/find](https://api.bonree.com/sdk/report/task/find)
+[https://api.bonree.com/sdk/task/find](https://api.bonree.com/sdk/report/task/find)
 
 # 请求方式
 
