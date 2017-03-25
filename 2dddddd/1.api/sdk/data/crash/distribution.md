@@ -18,7 +18,7 @@ POST／GET
 | :--- | :--- | :--- | :--- | :--- |
 | token | string\(32\) | 是 | xxxxxxxx | 令牌 |
 | userName | string | 是 | bonree | 用户名 |
-| params | string | 是 | {"dType":"json","sdkAppId":\[1111,2222\],"dTime":"20160101000000-20160102000000","dHeader":\["appId","crashTypeCode","crashType","crashCount","userCount"\],"filter":{"crashTypeCode":\["1111"\]},"hCountFilters":10} | 参数json |
+| params | string | 是 |  | 参数json |
 
 ### params参数
 
@@ -31,11 +31,11 @@ POST／GET
 | dHeader | string | 是 | appId,crashTypeCode,crashType,crashCount,userCount | 指标数据项 |
 | hCountFilters | int | 是 | 10 | 指标数量筛选 |
 
-### filter参数
+### filters参数
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
-| crashTypeCode | string | "crashTypeCode":\["1111"\] | 崩溃类型code |
+| crashType | string | "crashType":\["1111"\] | 崩溃类型 |
 
 ### dHeader参数
 
@@ -47,9 +47,7 @@ POST／GET
 | crashType | string | 否 | NullPointerException | 崩溃类型 |
 | crashTypeCode | string | 否 | 1111 | 崩溃类型code |
 | osVersion | string | 否 | ios 9 | 操作系统 |
-| osId | string | 否 | 1111 | 操作系统id |
 | brandName | string | 否 | iphone 5s | 设备型号 |
-| brandId | string | 否 | 1111 | 设备型号id |
 | crashCount | string | 否 | 100 | 崩溃次数 |
 | crashRate | string | 否 | 0.01 | 崩溃率 |
 | startCount | string | 否 | 1000 | sdk启动次数 |
