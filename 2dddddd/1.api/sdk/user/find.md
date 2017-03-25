@@ -4,9 +4,9 @@ sdk.user.find
 
 # api请求地址
 
-[http://api.bonree.com/sdk/report/user/find](http://api.bonree.com/sdk/report/user/find)
+[http://api.bonree.com/sdk/user/find](http://api.bonree.com/sdk/report/user/find)
 
-[https://api.bonree.com/sdk/report/user/find](https://api.bonree.com/sdk/report/user/find)
+[https://api.bonree.com/sdk/user/find](https://api.bonree.com/sdk/report/user/find)
 
 # 请求方式
 
