@@ -19,7 +19,7 @@ POST／GET
 | token | string\(32\) | 是 | xxxxxxxx | 令牌 |
 | dType | string | 是 | json/csv | 数据类型 |
 | userName | string | 是 | bonree | 用户名 |
-| params | string | 是 | {"dType":"json","sdkAppId":\[1111,2222\],"dTime":"20160101000000-20160102000000","dHeader":\[appid,granuleId,monitorTime,crashRate,startCount\],"filter":{"crashTypeCode":\["1111","2222"\]}} | 参数json |
+| params | string | 是 |  | 参数json |
 
 ### params参数
 
@@ -29,7 +29,7 @@ POST／GET
 | sdkAppId | string | 是 | 1111,2222 | 应用id |
 | dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围\(时间最长一个月\) |
 | filters | string | 否 | "filter":{"crashTypeCode":\["1111","2222"\]} | 数据筛选条件 |
-| dHeader | string | 是 | appid,granuleId,monitorTime,crashRate,startCount | 指标数据项 |
+| dHeader | string | 是 | "appid,granuleId,monitorTime,crashRate,startCount" | 指标数据项 |
 
 ### filters参数
 
