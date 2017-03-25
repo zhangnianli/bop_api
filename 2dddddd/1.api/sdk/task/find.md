@@ -42,7 +42,8 @@ POST／GET
 | userName | string | 否 | bonree | 用户名 |
 | sdkAppName | string | 否 | bonreeApp | sdk应用名 |
 | sdkAppId | string | 否 | 1111 | sdk应用id |
-| userId | string | 否 | 1111 | 用户id |
+| userName | string | 否 | 1111 | 用户名 |
+| APPMD5 | string | 否 | ×××× | 应用md5值 |
 
 # 返回参数说明
 
