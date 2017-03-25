@@ -19,7 +19,7 @@ POST／GET
 | token | string\(32\) | 是 | xxxxxxxx | 令牌 |
 | dType | string | 是 | json/csv | 数据类型 |
 | userName | string | 是 | bonree | 用户名 |
-| params | string | 是 | {"dType":"json"} | 参数json |
+| params | string | 是 |  | 参数json |
 
 ### params参数
 
@@ -27,7 +27,7 @@ POST／GET
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json/csv | 数据类型 |
 | filter | string | 否 |  | 数据筛选条件 |
-| dHeader | string | 是 | isValid,validTimeFrom,validTimeTo,remainDeviceCount | 指标数据项 |
+| dHeader | string | 是 | “isValid,validTimeFrom,validTimeTo,remainDeviceCount” | 指标数据项 |
 
 ### filter参数
 
@@ -40,7 +40,6 @@ POST／GET
 | 参数名称 | 参数类型 | 是否必选 | 返回示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | userName | string | 是 | bonree | 用户名 |
-| userId | string | 是 | 1111 | 用户id |
 | validTimeFrom | string | 否 | 20160101000000 | 有效期开始时间 |
 | validTimeTo | string | 否 | 20160102000000 | 有效期结束时间 |
 | remainDeviceCount | string | 否 | 1000 | 剩余活跃设备数 |
