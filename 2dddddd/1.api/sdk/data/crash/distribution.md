@@ -53,6 +53,17 @@ POST／GET
 | startCount | string | 否 | 1000 | sdk启动次数 |
 | userCount | string | 否 | 1000 | 影响用户数 |
 
+### groupfield参数
+
+
+
+### orderFlag参数
+
+| 参数名称 | 是否必选 | 参数说明 |
+| :--- | :--- | :--- |
+| crashRate | 否 | 崩溃率 |
+| crashCount | 否 | 崩溃次数 |
+
 # 返回参数说明
 
 | 名称 | 类型 | 描述 |
