@@ -19,7 +19,8 @@ apm.data.app.config
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
 | dtype | string | json | \*数据类型\(csv、json\) |
-| dHeader | string | startTime,endTime,agentNum | \*指标数据项 |
+| beAppId | string |  | 应用ID |
+| dHeader | string | beAppId,btThrshld,btThrshldSlowTimes,btThrshldVerySlowTimes,btThrshldStallTimes,sqlExeTimeThreshold,noSqlExeTimeThreshold,remoteCallExeTimeThreshold,updateTime | \*指标数据项 |
 
 # dHeader字段说明：
 
