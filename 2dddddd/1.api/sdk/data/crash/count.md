@@ -46,7 +46,6 @@ POST／GET
 | 参数名称 | 参数类型 | 是否必选 | 返回示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | sdkAppId | string | 否 | 1111 | sdk应用id |
-| sdkAppName | string | 否 | bonreeApp | sdk应用名 |
 | minMonitorTime | string | 否 | 201601010000 | 首次发生时间 |
 | maxMonitorTime | string | 否 | 201601020000 | 末次发生时间 |
 | crashCount | string | 否 | 200 | 崩溃次数 |
