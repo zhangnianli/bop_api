@@ -54,8 +54,6 @@ POST／GET
 | userCount | string | 否 | 100 | 崩溃影响用户数 |
 | crashTypeCode | string | 否 | 100 | 崩溃类型code |
 | crashType | string | 否 | NullPoinerException | 崩溃类型 |
-| keyFunction | string | 否 |  | 关键方法 |
-| causeBy | string | 否 |  | causeby |
 
 ### groupField参数
 
