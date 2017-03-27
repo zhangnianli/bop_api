@@ -37,6 +37,7 @@ apm.data.backendcall.statdata
 | errorCalls | 错误调用数 |
 | sumRespTime | 总耗时 |
 | sampleCount | 样本数 |
+| health | 健康度：1-健康，2-慢； |
 
 # 返回参数说明：
 
