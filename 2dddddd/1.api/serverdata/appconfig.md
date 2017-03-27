@@ -19,16 +19,22 @@ apm.data.app.config
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
 | dtype | string | json | \*数据类型\(csv、json\) |
-| beAppId | string |  | 应用ID |
+| beAppId | string | 1035,1036,1037 | 后端应用ID |
 | dHeader | string | beAppId,btThrshld,btThrshldSlowTimes,btThrshldVerySlowTimes,btThrshldStallTimes,sqlExeTimeThreshold,noSqlExeTimeThreshold,remoteCallExeTimeThreshold,updateTime | \*指标数据项 |
 
 # dHeader字段说明：
 
 | 字段 | 名称 |
 | :--- | :--- |
-| startTime | 套餐开始时间 |
-| endTime | 套餐结束时间 |
-| agentNum | 探针数量 |
+| beAppId | 后端应用ID |
+| btThrshld | 套餐结束时间 |
+| btThrshldSlowTimes | 探针数量 |
+| btThrshldVerySlowTimes | 调用时间阀值 |
+| btThrshldStallTimes | 调用时间阀值 |
+| sqlExeTimeThreshold | sql调用健康度阀值 |
+| noSqlExeTimeThreshold | nosql调用健康度阀值 |
+| remoteCallExeTimeThreshold | rpc调用健康度阀值 |
+| updateTime | 更新时间 |
 
 # 返回参数说明：
 
