@@ -35,7 +35,7 @@ POST／GET
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
-| crashTypeCode | string | "crashTypeCode":\["1111","1231"\] | 崩溃类型code |
+| crashType | string | "crashTypeCode":\["1111","1231"\] | 崩溃类型code |
 
 ### dHeader指标
 
