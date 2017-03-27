@@ -27,7 +27,7 @@ POST／GET
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json/csv | 数据类型 |
 | sdkAppId | string | 是 | 1111,2222 | 应用id |
-| dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围\(时间最长一个月\) |
+| dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围 |
 | filters | string | 否 | "filter":{"crashTypeCode":\["1111","2222"\]} | 数据筛选条件 |
 | dHeader | string | 是 | "appid,granuleId,monitorTime,crashRate,startCount" | 指标数据项 |
 
