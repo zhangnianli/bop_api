@@ -54,7 +54,6 @@ POST／GET
 | crashRate | string | 否 | 0.01 | 崩溃率 |
 | startCount | string | 否 | 100 | sdk应用启动次数 |
 | userCount | string | 否 | 100 | 崩溃影响用户数 |
-| crashTypeCode | string | 否 | 100 | 崩溃类型code |
 | crashType | string | 否 | NullPoinerException | 崩溃类型 |
 | keyFunction | string | 否 |  | 关键方法 |
 | causeBy | string | 否 |  | causeby |
