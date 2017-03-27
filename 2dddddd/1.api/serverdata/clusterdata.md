@@ -34,6 +34,7 @@ apm.data.cluster.bebtdata
 | errorCalls | 错误请求数 |
 | sumRespTime | 总耗时 |
 | sampleCount | 样本数 |
+| health | 健康度：1-健康，2-较慢，3-很慢，4-停滞； |
 
 # 返回参数说明：
 
