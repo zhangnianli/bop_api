@@ -55,7 +55,7 @@ apm.data.app.config
     List<NameValuePair> formparams = new ArrayList<NameValuePair>();
     formparams.add(new BasicNameValuePair("username", "bonreetest"));
     formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-    formparams.add(new BasicNameValuePair("params", "{\"dtype\":\"json\",\"dHeader\":\"startTime,endTime,agentNum\"}"));
+    formparams.add(new BasicNameValuePair("params", "{\"dtype\":\"json\",\"beAppId\":\"1035,1036,1037\",\"dHeader\":\"beAppId,btThrshld,btThrshldSlowTimes,btThrshldVerySlowTimes,btThrshldStallTimes,sqlExeTimeThreshold,noSqlExeTimeThreshold,remoteCallExeTimeThreshold,updateTime\"}"));
     UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
     httppost.setEntity(uefEntity);
     // 执行
@@ -78,8 +78,10 @@ apm.data.app.config
     "error_code": 0,
     "reason": "查询成功",
     "result": [
-        ["startTime","endTime","agentNum"],
-        ["2016-12-12", "2017-12-12", "100"]
+        ["beAppId","btThrshld","btThrshldSlowTimes","btThrshldVerySlowTimes","btThrshldStallTimes","sqlExeTimeThreshold","noSqlExeTimeThreshold","remoteCallExeTimeThreshold","updateTime"],
+        ["1035","10","20","30","40","50","50","50","20170327120000"],
+        ["1036","10","20","30","40","50","50","50","20170327120000"],
+        ["1037","10","20","30","40","50","50","50","20170327120000"]
     ]
 }
 ```
