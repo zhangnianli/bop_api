@@ -12,7 +12,7 @@ apm.data.app.config
 | :--- | :--- | :--- | :--- |
 | username | string | bonreetest | \*用户名 |
 | token | string | xxxxxxxxxxxxx | \*令牌 |
-| params | string | {"dtype":"json","appId":"1035","dtime":"20170201000000-20170301000000"} | \*参数json |
+| params | string | {"dtype":"json","beAppId":"1035"} | \*参数json |
 
 **params说明：**
 
