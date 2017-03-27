@@ -41,7 +41,7 @@ POST／GET
 | :--- | :--- | :--- | :--- |
 | osVersion | string |  | 操作系统 |
 | brandName | string |  | 设备型号 |
-| crashType | string |  | 崩溃类型Code |
+| crashType | string |  | 崩溃类型 |
 
 ### dHeader参数
 
