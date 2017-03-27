@@ -30,8 +30,8 @@ POST／GET
 | dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围\(时间最长一个月\) |
 | pageNum | int | 是 | 1 | 页码 |
 | pageRecorders | int | 是 | 50 | 每页条数 |
-| filters | string | 否 | {"osId":\["1111"\],"brandId":\["1111"\]} | 数据筛选条件 |
-| dHeader | string | 是 | "sdkAppId,osId,brandId,minMonitorTime,mxaMonitorTime,crashCount,crashRate" | 指标数据项 |
+| filters | string | 否 |  | 数据筛选条件 |
+| dHeader | string | 是 |  | 指标数据项 |
 | orderFlag | string | 否 | sdkAppId | 排序依据 |
 | groupfield | string | 是 | "sdkAppId,stackInfoCode" | 数据组合条件 |
 
@@ -41,7 +41,7 @@ POST／GET
 | :--- | :--- | :--- | :--- |
 | osVersion | string | "osId":\["1111"\] | 操作系统 |
 | brandName | string | "brandId":\["1111"\] | 设备型号 |
-| crashTypeCode | string | "crashTypeCode":\["111"\] | 崩溃类型Code |
+| crashType | string | "crashType":\["111"\] | 崩溃类型Code |
 
 ### dHeader参数
 

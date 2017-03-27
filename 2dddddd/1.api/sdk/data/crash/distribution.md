@@ -55,20 +55,20 @@ POST／GET
 
 ### groupfield参数
 
-| 参数名称 | 是否必选 | 参数说明 |
-| :--- | :--- | :--- |
-| sdkAppId | 否 | sdk应用id |
-| sdkAppVs | 否 | sdk应用版本id |
-| crashType | 否 | 崩溃类型 |
-| osVersion | 否 | 操作系统 |
-| brandName | 否 | 设备型号 |
+| 参数名称 | 参数说明 |
+| :--- | :--- |
+| sdkAppId | sdk应用id |
+| sdkAppVs | sdk应用版本id |
+| crashType | 崩溃类型 |
+| osVersion | 操作系统 |
+| brandName | 设备型号 |
 
 ### orderFlag参数
 
-| 参数名称 | 是否必选 | 参数说明 |
-| :--- | :--- | :--- |
-| crashRate | 否 | 崩溃率 |
-| crashCount | 否 | 崩溃次数 |
+| 参数名称 | 参数说明 |
+| :--- | :--- |
+| crashRate | 崩溃率 |
+| crashCount | 崩溃次数 |
 
 # 返回参数说明
 
