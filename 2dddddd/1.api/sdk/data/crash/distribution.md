@@ -44,7 +44,6 @@ POST／GET
 | sdkAppId | string | 否 | 1111 | sdk应用id |
 | sdkAppVs | string | 否 | 1.0.1 | sdk应用版本 |
 | crashType | string | 否 | NullPointerException | 崩溃类型 |
-| crashTypeCode | string | 否 | 1111 | 崩溃类型code |
 | osVersion | string | 否 | ios 9 | 操作系统 |
 | brandName | string | 否 | iphone 5s | 设备型号 |
 | crashCount | string | 否 | 100 | 崩溃次数 |
