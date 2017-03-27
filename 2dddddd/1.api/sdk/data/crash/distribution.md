@@ -42,7 +42,6 @@ POST／GET
 | 参数名称 | 参数类型 | 是否必选 | 返回示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | sdkAppId | string | 否 | 1111 | sdk应用id |
-| sdkAppName | string | 否 | bonree | sdk应用名 |
 | sdkAppVs | string | 否 | 1.0.1 | sdk应用版本 |
 | crashType | string | 否 | NullPointerException | 崩溃类型 |
 | crashTypeCode | string | 否 | 1111 | 崩溃类型code |
