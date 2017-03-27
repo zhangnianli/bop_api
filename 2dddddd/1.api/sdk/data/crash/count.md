@@ -60,7 +60,7 @@ POST／GET
 | 参数名称 | 参数说明 |
 | :--- | :--- |
 | sdkAppId | sdk应用id |
-| crashTypeCode | 崩溃类型code |
+| crashType | 崩溃类型 |
 
 # 返回参数说明
 
