@@ -27,7 +27,7 @@ POST／GET
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json/csv | 数据类型 |
 | sdkAppId | string | 是 | 1111,2222 | 应用id |
-| dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围\(时间最长一个月\) |
+| dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围 |
 | filters | string | 否 | {"osId":\["1111"\],"brandId":\["1111"\]} | 数据筛选条件 |
 | dHeader | string | 是 | osId,osVersion,brandName,brandId | 指标数据项 |
 | orderFlag | string | 否 | appId | 排序依据 |
