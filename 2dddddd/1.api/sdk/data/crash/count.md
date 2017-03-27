@@ -37,9 +37,9 @@ POST／GET
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
-| osVersion | string | "osId":\["1111"\] | 操作系统id |
-| brandName | string | "brandId":\["1111"\] | 设备型号id |
-| crashType | string | "crashTypeCode":\["111"\] | 崩溃类型Code |
+| osVersion | string | "osVersion":\["1111"\] | 操作系统id |
+| brandName | string | "brandName":\["1111"\] | 设备型号id |
+| crashType | string | "crashType":\["111"\] | 崩溃类型Code |
 
 ### dHeader参数
 
