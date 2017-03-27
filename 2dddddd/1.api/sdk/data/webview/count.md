@@ -43,7 +43,6 @@ POST／GET
 | 参数名称 | 参数类型 | 是否必选 | 返回示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | sdkAppId | string | 否 | 1111 | sdk应用id |
-| sdkAppName | string | 否 | bonreeApp | sdk应用名称 |
 | webViewErrorRate | string | 否 | 0.01 | 错误率 |
 | webViewErrorCount | string | 否 | 1 | 发生错误的访问数 |
 | webviewCount | string | 否 | 100 | 访问数 |
