@@ -4,7 +4,7 @@ apm.data.app.config
 
 # api请求地址
 
-[http://api.bonree.com/apm/data/user/package](http://api.bonree.com/apm/user/package)
+[http://api.bonree.com/apm/data/app/config](http://api.bonree.com/apm/data/app/config)
 
 # 请求参数：
 
