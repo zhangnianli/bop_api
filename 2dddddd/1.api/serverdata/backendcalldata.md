@@ -21,7 +21,7 @@ apm.data.backendcall.statdata
 | dtype | string | json | \*数据类型\(csv、json\) |
 | beAppId | string | 1035,1023,2023 | \*后端应用ID |
 | dtime | string | 20170201000000-20170301000000 | \*查询时间范围 |
-| betype | string | sql | \*查询后端类型\(sql,rpc,nosql\) |
+| betype | string | sql | 查询后端类型\(sql,rpc,nosql\) |
 | dHeader | string | beAppId,backendId,backendName,clusterId,totalCalls,errorCalls,sumRespTime,sampleCount | \*指标数据项 |
 
 # dHeader字段说明：
@@ -31,6 +31,7 @@ apm.data.backendcall.statdata
 | beAppId | 应用ID |
 | backendId | 后端ID |
 | backendName | 后端名称 |
+| backendType | 后端类型（sql/rpc/nosql） |
 | clusterId | 集群ID |
 | totalCalls | 总调用数 |
 | errorCalls | 错误调用数 |
