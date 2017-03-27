@@ -55,7 +55,13 @@ POST／GET
 
 ### groupfield参数
 
-
+| 参数名称 | 是否必选 | 参数说明 |
+| :--- | :--- | :--- |
+| sdkAppId | 否 | sdk应用id |
+| sdkAppVs | 否 | sdk应用版本id |
+| crashType | 否 | 崩溃类型 |
+| osVersion | 否 | 操作系统 |
+| brandName | 否 | 设备型号 |
 
 ### orderFlag参数
 
