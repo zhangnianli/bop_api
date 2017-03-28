@@ -8,7 +8,7 @@ platform.data.element.detaildata
 
 # 请求参数：
 
-| 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
+| 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | username | string |  | bonreetest | \*用户名 |
 | token | string |  | xxxxxxxxxxxxx | \*令牌 |
