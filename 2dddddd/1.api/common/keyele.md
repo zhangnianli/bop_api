@@ -36,7 +36,11 @@ POST/GET
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-|  |  |  |  |
+| keyId | Number | 1 | 关键元素ID |
+| appId | Number | 1 | 应用ID |
+| keyFlag | Number | 1 | 匹配规则1-完全匹配 2-通配符 |
+| url | string | http://www.baidu.com |  |
+| status | Number | 2 | 关键元素状态 1-正常 2-禁用，3-删除 |
 
 # 请求示例
 
