@@ -1,10 +1,10 @@
 # 业务编号
 
-base.data.city
+base.data.netservice
 
 # api请求地址
 
-[http://api.bonree.com/base/data/city](http://api.bonree.com/base/city)
+[http://api.bonree.com/base/data/netservice](http://api.bonree.com/base/netservice)
 
 # 请求参数：
 
@@ -12,7 +12,7 @@ base.data.city
 | :--- | :--- | :--- | :--- | :--- |
 | username | string | 是 | bonreetest | 用户名 |
 | token | string | 是 | xxxxxxxxxxxxx | 令牌 |
-| params | string | 是 | {"lastModif":"20170201000000"} | 参数json |
+| params | string | 否 | {"lastModif":"20170201000000"} | 参数json |
 
 # **params说明：**
 
@@ -32,13 +32,16 @@ base.data.city
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-|  |  |  |  |
+| id | Number | 1 | 城市Code |
+| name | string | 中国移动 | 城市名称 |
+| nameEn | string | China_CMCC | 城市英文名称 |
+| lastModif | Number | 1446307200000 | 最后修改时间 |
 
 # 请求示例
 
 ```
     HttpClient httpclient = new DefaultHttpClient();
-    String url = "http://api.bonree.com/base/data/city";
+    String url = "http://api.bonree.com/base/data/netservice";
     HttpPost httppost = new HttpPost(url);
     System.out.println("请求: " + httppost.getRequestLine());
     // 创建参数队列
@@ -68,9 +71,9 @@ base.data.city
     "error_code": 0,
     "reason": "查询成功",
     "result": [
-        ["citycode","cont","country","district","city","cityEn","lastModif"],
-        ["308","1100101","亚洲","中国","北京","北京市","Beijing","20170201000000"],
-        ["1322","1100705","亚洲","中国","广西","北海市","Beihai","20170201000000"]
+        ["id","name","nameEn","lastModif"],
+        ["1", "中国移动", "China_CMCC", "20170201000000"],
+        [ "2", "中国教育网", "China_CERNET", "20170201000000"]
     ]
 }
 ```

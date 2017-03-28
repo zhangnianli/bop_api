@@ -32,7 +32,10 @@ base.data.netservice
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-|  |  |  |  |
+| id | Number | 1 | 运营商ID |
+| name | string | 中国移动 | 运营商名称 |
+| nameEn | string | China_CMCC | 运营商英文名称 |
+| lastModif | Number | 1446307200000 | 最后修改时间 |
 
 # 请求示例
 
