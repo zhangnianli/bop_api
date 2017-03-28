@@ -18,11 +18,11 @@ apm.data.backendcall.statdata
 
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| dtype | string | 是 | json | \*数据类型\(csv、json\) |
-| beAppId | string | 是 | 1035,1023,2023 | \*后端应用ID |
-| dtime | string | 是 | 20170201000000-20170301000000 | \*查询时间范围 |
+| dtype | string | 是 | json | 数据类型\(csv、json\) |
+| beAppId | string | 是 | 1035,1023,2023 | 后端应用ID |
+| dtime | string | 是 | 20170201000000-20170301000000 | 查询时间范围 |
 | betype | string | 否 | sql | 查询后端类型\(sql,rpc,nosql\) |
-| dHeader | string | 是 | beAppId,backendId,backendName,clusterId,totalCalls,errorCalls,sumRespTime,sampleCount | \*指标数据项 |
+| dHeader | string | 是 | beAppId,backendId,backendName,clusterId,totalCalls,errorCalls,sumRespTime,sampleCount | 指标数据项 |
 
 # dHeader字段说明：
 
