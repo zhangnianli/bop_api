@@ -45,9 +45,9 @@ POST/GET
 | b2 | Number | 90 | 健康阈值：请求错误率 |
 | b3 | Number | 100 | 健康阈值：任务可用性 |
 | b4 | Number | 58 | 健康阈值：崩溃率 |
-| b5 | Number | 2 |  |
-| b6 | Number | 2 |  |
-| status | Number | 2 |  |
+| b5 | Number | 67 | 健康阈值：JS错误率 |
+| b6 | Number | 40 | 健康阈值 慢速比 |
+| status | Number | 2 | 1:正常 2：删除 3：禁用 |
 
 # 请求示例
 
