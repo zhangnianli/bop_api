@@ -8,11 +8,11 @@ base.data.netservice
 
 # 请求参数：
 
-| 参数名称 | 参数类型 | 示例值 | 参数说明 |
-| :--- | :--- | :--- | :--- |
-| username | string | bonreetest | \*用户名 |
-| token | string | xxxxxxxxxxxxx | \*令牌 |
-| params | string | {"lastModif":"20170201000000"} | \*参数json |
+| 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
+| :--- | :--- | :--- | :--- | :--- |
+| username | string | 是 | bonreetest | 用户名 |
+| token | string | 是 | xxxxxxxxxxxxx | 令牌 |
+| params | string | 否 | {"lastModif":"20170201000000"} | 参数json |
 
 **params说明：**
 
@@ -27,6 +27,12 @@ base.data.netservice
 | error\_code | int | 错误码 |
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
+
+# result说明
+
+| 名称 | 类型 | 示例值 | 描述 |
+| :--- | :--- | :--- | :--- |
+|  |  |  |  |
 
 # 请求示例
 
