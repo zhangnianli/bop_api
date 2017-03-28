@@ -29,10 +29,7 @@ POST/GET
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| osId | Number | 1 | 操作系统ID |
-| osName | string | Windows | 操作系统名称 |
-| osVerId | Number | 101 | 版本ID |
-| osVerName | string | Win7 | 版本名称 |
+|  |  |  |  |
 
 # 请求示例
 
