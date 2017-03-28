@@ -14,7 +14,7 @@ base.data.city
 | token | string | 是 | xxxxxxxxxxxxx | 令牌 |
 | params | string | 是 | {"lastModif":"20170201000000"} | 参数json |
 
-**params说明：**
+# **params说明：**
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
@@ -27,6 +27,12 @@ base.data.city
 | error\_code | int | 错误码 |
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
+
+# result说明
+
+| 名称 | 类型 | 示例值 | 描述 |
+| :--- | :--- | :--- | :--- |
+|  |  |  |  |
 
 # 请求示例
 
