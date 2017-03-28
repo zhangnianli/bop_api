@@ -8,25 +8,25 @@ platform.data.element.detaildata
 
 # 请求参数：
 
-| 参数名称 | 参数类型 | 示例值 | 参数说明 |
-| :--- | :--- | :--- | :--- |
-| username | string | bonreetest | \*用户名 |
-| token | string | xxxxxxxxxxxxx | \*令牌 |
-| params | string | {"dtype":"json","appId":"1035","dtime":"20170201000000-20170301000000"} | \*参数json |
+| 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
+| :--- | :--- | :--- | :--- | :--- |
+| username | string | 是 | bonreetest | 用户名 |
+| token | string | 是 | xxxxxxxxxxxxx | 令牌 |
+| params | string | 是 | {"dtype":"json","appId":"1035","dtime":"20170201000000-20170301000000"} | 参数json |
 
 **params说明：**
 
-| 参数名称 | 参数类型 | 示例值 | 参数说明 |
-| :--- | :--- | :--- | :--- |
-| dtype | string | json | \*数据类型\(csv、json\) |
-| appId | string | 1035,1023,2023 | \*应用ID |
-| partUrlCode | string | 13575031,15465778 | 截取后的URL CODE |
-| dtime | string | 20170201000000-20170301000000 | \*查询时间范围 |
-| pageNum | string | 1 | \*页码 |
-| pageRecorders | string | 50 | \*每页行数 |
-| orderByFlag | string | DTIME DESC | \*排序字段 |
-| filters | string | {<br/>"netserviceAndNetStandard":\[{"netserviseId":"1","netStandard":"1"},{"netserviseId":"1","netStandard":"2"}\],<br/>"cityCode":\[1100000,1200000\],<br/>"browsr":\[0,1,2,3,4\],<br/>"onlyError":"1"<br/>} | 过滤条件：<br/>netserviceAndNetStandard:运营商&网络接入方式；<br/>cityCode:地域；<br/>browsr:浏览器；<br/>onlyError:0-只查正确数据;1-只查错误数据; |
-| dHeader | string | APPID,URLCODE,DTIME,DNSTIME,<br/>TCPTIME,SSLTIME | \*指标数据项 |
+| 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
+| :--- | :--- | :--- | :--- | :--- |
+| dtype | string | 是 | json | 数据类型\(csv、json\) |
+| appId | string | 是 | 1035,1023,2023 | 应用ID |
+| partUrlCode | string | 否 | 13575031,15465778 | 截取后的URL CODE |
+| dtime | string | 是 | 20170201000000-20170301000000 | 查询时间范围 |
+| pageNum | string | 否 | 1 | 页码 |
+| pageRecorders | string | 否 | 50 | 每页行数 |
+| orderByFlag | string | 否 | DTIME DESC | 排序字段 |
+| filters | string | 否 | {"netserviceAndNetStandard":\[{"netserviseId":"1","netStandard":"1"},{"netserviseId":"1","netStandard":"2"}\],"cityCode":\[1100000,1200000\],"browsr":\[0,1,2,3,4\],"onlyError":"1"} | 过滤条件：netserviceAndNetStandard:运营商&网络接入方式；cityCode:地域；browsr:浏览器；onlyError:0-只查正确数据;1-只查错误数据; |
+| dHeader | string | 是 | APPID,URLCODE,DTIME,DNSTIME,TCPTIME,SSLTIME | \*指标数据项 |
 
 # dHeader字段说明：
 
@@ -55,6 +55,7 @@ platform.data.element.detaildata
 | DOWNSIZE | 下载大小 |
 | DOWNSPEED | 下载速度 |
 | ERRORID | 错误码 |
+| GUID | GUID |
 
 # 返回参数说明：
 

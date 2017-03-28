@@ -1,10 +1,10 @@
 # 业务编号
 
-apm.data.backendcall.statdata
+apm.data.app.config
 
 # api请求地址
 
-[http://api.bonree.com/apm/data/backendcall/statdata](http://api.bonree.com/apm/backendcall/statdata)
+[http://api.bonree.com/apm/data/app/config](http://api.bonree.com/apm/data/app/config)
 
 # 请求参数：
 
@@ -12,31 +12,29 @@ apm.data.backendcall.statdata
 | :--- | :--- | :--- | :--- | :--- |
 | username | string | 是 | bonreetest | 用户名 |
 | token | string | 是 | xxxxxxxxxxxxx | 令牌 |
-| params | string | 是 | {"dtype":"json","appId":"1035","dtime":"20170201000000-20170301000000"} | 参数json |
+| params | string | 是 | {"dtype":"json","beAppId":"1035"} | 参数json |
 
 **params说明：**
 
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | dtype | string | 是 | json | 数据类型\(csv、json\) |
-| beAppId | string | 是 | 1035,1023,2023 | 后端应用ID |
-| dtime | string | 是 | 20170201000000-20170301000000 | 查询时间范围 |
-| betype | string | 否 | sql | 查询后端类型\(sql,rpc,nosql\) |
-| dHeader | string | 是 | beAppId,backendId,backendName,clusterId,totalCalls,errorCalls,sumRespTime,sampleCount | 指标数据项 |
+| beAppId | string | 否 | 1035,1036,1037 | 后端应用ID |
+| dHeader | string | 是 | beAppId,btThrshld,btThrshldSlowTimes,btThrshldVerySlowTimes,btThrshldStallTimes,sqlExeTimeThreshold,noSqlExeTimeThreshold,remoteCallExeTimeThreshold,updateTime | 指标数据项 |
 
 # dHeader字段说明：
 
 | 字段 | 名称 |
 | :--- | :--- |
-| beAppId | 应用ID |
-| backendId | 后端ID |
-| backendName | 后端名称 |
-| backendType | 后端类型（sql/rpc/nosql） |
-| clusterId | 集群ID |
-| totalCalls | 总调用数 |
-| errorCalls | 错误调用数 |
-| sumRespTime | 总耗时 |
-| sampleCount | 样本数 |
+| beAppId | 后端应用ID |
+| btThrshld | 业务健康度阀值-健康 |
+| btThrshldSlowTimes | 业务健康度阀值-较慢 |
+| btThrshldVerySlowTimes | 业务健康度阀值-很慢 |
+| btThrshldStallTimes | 业务健康度阀值-停滞 |
+| sqlExeTimeThreshold | sql调用健康度阀值 |
+| noSqlExeTimeThreshold | nosql调用健康度阀值 |
+| remoteCallExeTimeThreshold | rpc调用健康度阀值 |
+| updateTime | 更新时间 |
 
 # 返回参数说明：
 
@@ -50,14 +48,14 @@ apm.data.backendcall.statdata
 
 ```
     HttpClient httpclient = new DefaultHttpClient();
-    String url = "http://api.bonree.com/apm/backendcall/statdata";
+    String url = "http://api.bonree.com/apm/app/infodata";
     HttpPost httppost = new HttpPost(url);
     System.out.println("请求: " + httppost.getRequestLine());
     // 创建参数队列
     List<NameValuePair> formparams = new ArrayList<NameValuePair>();
     formparams.add(new BasicNameValuePair("username", "bonreetest"));
     formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-    formparams.add(new BasicNameValuePair("params", "{\"dtype\":\"json\",\"beAppId\":\"1035,1023,2023\",\"dtime\":\"20170201000000-20170301000000\",\"dHeader\":\"beAppId,backendId,backendName,clusterId,totalCalls,errorCalls,sumRespTime,sampleCount\"}"));
+    formparams.add(new BasicNameValuePair("params", "{\"dtype\":\"json\",\"beAppId\":\"1035,1036,1037\",\"dHeader\":\"beAppId,btThrshld,btThrshldSlowTimes,btThrshldVerySlowTimes,btThrshldStallTimes,sqlExeTimeThreshold,noSqlExeTimeThreshold,remoteCallExeTimeThreshold,updateTime\"}"));
     UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
     httppost.setEntity(uefEntity);
     // 执行
@@ -80,10 +78,10 @@ apm.data.backendcall.statdata
     "error_code": 0,
     "reason": "查询成功",
     "result": [
-        ["beAppId","backendId","backendName","clusterId","totalCalls","errorCalls","sumRespTime","sampleCount"],
-        ["1035", "661208", "xxx", "101", "1021", "10","929","7"],
-        ["1023", "661208", "xxx", "102", "2021", "20","930","7"],
-        ["2023", "661208", "xxx", "103", "2021", "30","940","8"]
+        ["beAppId","btThrshld","btThrshldSlowTimes","btThrshldVerySlowTimes","btThrshldStallTimes","sqlExeTimeThreshold","noSqlExeTimeThreshold","remoteCallExeTimeThreshold","updateTime"],
+        ["1035","10","20","30","40","50","50","50","20170327120000"],
+        ["1036","10","20","30","40","50","50","50","20170327120000"],
+        ["1037","10","20","30","40","50","50","50","20170327120000"]
     ]
 }
 ```
