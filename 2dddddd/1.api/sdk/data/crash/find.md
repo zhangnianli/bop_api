@@ -19,7 +19,7 @@ POST／GET
 | token | string\(32\) | 是 | xxxxxxxx | 令牌 |
 | dType | string | 是 | json/csv | 数据类型 |
 | userName | string | 是 | bonree | 用户名 |
-| params | string | 是 | {"dType":"json","sdkAppId":\[1111,2222\],"dTime":"20160101000000-20160102000000","dHeader":\[osId,osVersion,brandName,brandId\],"filter":{"crashTypeCode":\["1111","2222"\]}} | 参数json |
+| params | string | 是 |  | 参数json |
 
 ### params参数
 
@@ -27,15 +27,15 @@ POST／GET
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json/csv | 数据类型 |
 | sdkAppId | string | 是 | 1111,2222 | 应用id |
-| filters | string | 否 | {"crashTypeCode":\[1111,2222\]} | 数据筛选条件 |
-| dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围\(时间最长一个月\) |
-| dHeader | string | 是 | osId,osVersion,brandName,brandId | 指标数据项 |
+| filters | string | 否 |  | 数据筛选条件 |
+| dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围 |
+| dHeader | string | 是 |  | 指标数据项 |
 
 ### filter参数
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
-| crashTypeCode | string | "crashTypeCode":\["1111","2222"\] | 崩溃类型code |
+| crashType | string |  | 崩溃类型 |
 
 ### dHeader参数
 

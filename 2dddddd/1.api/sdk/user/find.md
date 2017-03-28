@@ -27,7 +27,7 @@ POST／GET
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json/csv | 数据类型 |
 | filters | string | 否 |  | 数据筛选条件 |
-| dHeader | string | 是 | “isValid,validTimeFrom,validTimeTo,remainDeviceCount” | 指标数据项 |
+| dHeader | string | 是 |  | 指标数据项 |
 
 ### filter参数
 
@@ -44,7 +44,7 @@ POST／GET
 | validTimeTo | string | 否 | 20160102000000 | 有效期结束时间 |
 | remainDeviceCount | string | 否 | 1000 | 剩余活跃设备数 |
 | activeDeviceCount | string | 否 | 10000 | 活跃设备数 |
-| isValid | string | 否 | false | 业务是否可用 |
+| isValid | string | 否 | false | 用户状态信息 |
 
 # 返回参数说明
 

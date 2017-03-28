@@ -39,8 +39,6 @@
     * [base](2dddddd/1.api/common.md)
       * [运营商](2dddddd/1.api/common/dictionary.md)
       * [城市](2dddddd/1.api/common/city.md)
-      * [column](2dddddd/1.api/common/column.md)
-      * [package](2dddddd/1.api/common/package.md)
       * [操作系统版本](2dddddd/1.api/common/os.md)
       * [接入方式](2dddddd/1.api/common/accessmodel.md)
       * [App](2dddddd/1.api/common/app.md)

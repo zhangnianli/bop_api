@@ -30,8 +30,8 @@ POST／GET
 | dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围\(时间最长一个月\) |
 | pageNum | int | 是 | 1 | 页码 |
 | pageRecorders | int | 是 | 50 | 每页条数 |
-| filters | string | 否 | {"osId":\["1111"\],"brandId":\["1111"\]} | 数据筛选条件 |
-| dHeader | string | 是 | "sdkAppId,osId,brandId,minMonitorTime,mxaMonitorTime,crashCount,crashRate" | 指标数据项 |
+| filters | string | 否 |  | 数据筛选条件 |
+| dHeader | string | 是 |  | 指标数据项 |
 | orderFlag | string | 否 | sdkAppId | 排序依据 |
 | groupfield | string | 是 | "sdkAppId,stackInfoCode" | 数据组合条件 |
 
@@ -39,23 +39,21 @@ POST／GET
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
-| osVersion | string | "osId":\["1111"\] | 操作系统 |
-| brandName | string | "brandId":\["1111"\] | 设备型号 |
-| crashTypeCode | string | "crashTypeCode":\["111"\] | 崩溃类型Code |
+| osVersion | string |  | 操作系统 |
+| brandName | string |  | 设备型号 |
+| crashType | string |  | 崩溃类型 |
 
 ### dHeader参数
 
 | 参数名称 | 参数类型 | 是否必选 | 返回示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | sdkAppId | string | 否 | 1111 | sdk应用id |
-| sdkAppName | string | 否 | bonreeApp | sdk应用名 |
 | minMonitorTime | string | 否 | 201601010000 | 首次发生时间 |
 | maxMonitorTime | string | 否 | 201601020000 | 末次发生时间 |
 | crashCount | string | 否 | 200 | 崩溃次数 |
 | crashRate | string | 否 | 0.01 | 崩溃率 |
 | startCount | string | 否 | 100 | sdk应用启动次数 |
 | userCount | string | 否 | 100 | 崩溃影响用户数 |
-| crashTypeCode | string | 否 | 100 | 崩溃类型code |
 | crashType | string | 否 | NullPoinerException | 崩溃类型 |
 | keyFunction | string | 否 |  | 关键方法 |
 | causeBy | string | 否 |  | causeby |

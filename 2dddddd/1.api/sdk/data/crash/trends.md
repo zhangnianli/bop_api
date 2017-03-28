@@ -27,26 +27,24 @@ POST／GET
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json/csv | 数据类型 |
 | sdkAppId | string | 是 | 1111,2222 | 应用id |
-| dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围\(时间最长一个月\) |
-| filters | string | 否 | "filter":{"crashTypeCode":\["1111","2222"\]} | 数据筛选条件 |
-| dHeader | string | 是 | "appid,granuleId,monitorTime,crashRate,startCount" | 指标数据项 |
+| dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围 |
+| filters | string | 否 |  | 数据筛选条件 |
+| dHeader | string | 是 |  | 指标数据项 |
 
 ### filters参数
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
-| crashTypeCode | string | "crashTypeCode":\["1111","1231"\] | 崩溃类型code |
+| crashType | string |  | 崩溃类型 |
 
 ### dHeader指标
 
 | 参数名称 | 参数类型 | 是否必选 | 返回值示例 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | sdkAppId | string | 否 | 1111 | sdk应用appId |
-| granuledId | string | 是 | 1 | 时间刻度 |
 | monitorTime | string | 是 | 201601010000 | 监测时间 |
 | crashRate | string | 否 | 0.001 | 崩溃率 |
 | crashType | string | 否 | NullPointerException | 崩溃类型 |
-| crashTypeCode | string | 否 | "1111" | 崩溃类型code |
 | crashCount | string | 否 | 200 | 崩溃次数 |
 | startCount | string | 否 | 200 | sdk app启动次数 |
 | userCount | string | 否 | 200 | 崩溃影响用户数 |
