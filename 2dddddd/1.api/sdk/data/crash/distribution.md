@@ -29,7 +29,7 @@ POST／GET
 | dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围\(时间最长一个月\) |
 | filters | string | 否 | {"crashType":\["1111"\]} | 数据筛选条件 |
 | dHeader | string | 是 | appId,crashType,crashCount,userCount | 指标数据项 |
-| groupfield | string | 是 |  | 分组条件 |
+| groupField | string | 是 |  | 分组条件 |
 | orderFlag | string | 是 |  | 排序条件 |
 | hCountFilters | int | 是 | 10 | 指标数量筛选 |
 
