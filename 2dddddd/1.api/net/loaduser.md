@@ -16,6 +16,13 @@ POST/GET
 | :--- | :--- | :--- | :--- | :--- |
 | token | string | 是 | \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* | 令牌 |
 | username | string | 是 | bonreetest | 用户名 |
+| params | string | 是 | {"username":"bonreetest"} | 请求参数json |
+
+# params参数
+
+| 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
+| :--- | :--- | :--- | :--- | :--- |
+| username | string | 否 | bonreetest | 查询用户名（请求参数中username为系统用户时，该字段必填） |
 
 # 返回参数说明
 
@@ -24,6 +31,12 @@ POST/GET
 | error\_code | Number | 错误码 |
 | reason | string | 结果说明 |
 | result | string | 用户权限信息 |
+
+# result说明
+
+|  |  |  |
+| :--- | :--- | :--- |
+|  |  |  |
 
 # 请求示例
 
