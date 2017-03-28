@@ -38,12 +38,20 @@ POST/GET
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-|  |  |  |  |
-|  |  |  |  |
+| roleName | string | 勿删长期测试qq | 任务名称 |
+| url | string | [http://www.qq.com](http://www.qq.com) | 任务地址 |
+| taskId | Number | 170435 | 任务ID |
+| monitorFun | Number | 3 | 任务类型 |
+| flag | Number | 1 | 任务状态 |
+| startTime | Number | 1393603200000 | 任务起始时间 |
+| endTime | Number | 1488211200000 | 任务结束时间 |
+| parentId | Number | 340832 | 父任务ID |
+| roleType | Number | 9 | 0任务组，1,事务，3元素组，5事务或元素组子任务，9单一任务 |
+| netenvMon | string | 111 | 网络环境监测（111全部监测，（第1位表示DNS，第2位表示ICMP，第3位表示Tracert，1表示测试，0表示不测试）） |
 
 # 请求示例
 
-```
+```      1111
  POST:
   HttpClient httpclient = new DefaultHttpClient();
   String url = "http://api.bonree.com/net/task/loadTask";
