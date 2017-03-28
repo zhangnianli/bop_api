@@ -29,10 +29,7 @@ POST/GET
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| browserId | Number | 1 | 浏览器ID |
-| browserName | string | IE | 浏览器名称 |
-| browserVerId | Number | 106 | 版本ID |
-| browserVerName | string | IE6 | 版本名称 |
+|  |  |  |  |
 
 # 请求示例
 
