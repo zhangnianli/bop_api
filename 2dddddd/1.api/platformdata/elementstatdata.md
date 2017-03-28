@@ -8,25 +8,25 @@ platform.data.element.statdata
 
 # 请求参数：
 
-| 参数名称 | 参数类型 | 示例值 | 参数说明 |
-| :--- | :--- | :--- | :--- |
-| username | string | bonreetest | \*用户名 |
-| token | string | xxxxxxxxxxxxx | \*令牌 |
-| params | string | {"dtype":"json","appId":"1035","dtime":"20170201000000-20170301000000"} | \*参数json |
+| 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
+| :--- | :--- | :--- | :--- | :--- |
+| username | string | 是 | bonreetest | 用户名 |
+| token | string | 是 | xxxxxxxxxxxxx | 令牌 |
+| params | string | 是 | {"dtype":"json","appId":"1035","dtime":"20170201000000-20170301000000"} | 参数json |
 
 **params说明：**
 
-| 参数名称 | 参数类型 | 示例值 | 参数说明 |
-| :--- | :--- | :--- | :--- |
-| dtype | string | json | \*数据类型\(csv、json\) |
-| appId | string | 1035 | \*应用ID |
-| dtime | string | 20170201000000-20170301000000 | \*查询时间范围 |
-| pageNum | string | 1 | \*页码 |
-| pageRecorders | string | 50 | \*每页行数 |
-| orderByFlag | string | DTIME$AVG DESC | \*排序字段 |
-| group | strng | PARTURLCODE | \*分组字段 |
-| filters | string | {"netserviceAndNetStandard":\[{"netserviseId":"1","netStandard":"1"},{"netserviseId":"1","netStandard":"2"}\],"cityCode":\[1100000,1200000\],"browsr":\[0,1,2,3,4\],"onlyError":"1"} | 过滤条件：netserviceAndNetStandard:运营商&网络接入方式；cityCode:地域；browsr:浏览器；onlyError:0-只查正确数据;1-只查错误数据； |
-| dHeader | string | APPID,PARTURLCODE,DTIME$MAX,DTIME$MIN,DTIME$AVG,DTIME$SUM,DNSTIME$AVG,TCPTIME$AVG | \*指标数据项 |
+| 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
+| :--- | :--- | :--- | :--- | :--- |
+| dtype | string | 是 | json | 数据类型\(csv、json\) |
+| appId | string | 是 | 1035 | 应用ID |
+| dtime | string | 是 | 20170201000000-20170301000000 | 查询时间范围 |
+| pageNum | string | 否 | 1 | 页码 |
+| pageRecorders | string | 否 | 50 | 每页行数 |
+| orderByFlag | string | 否 | DTIME$AVG DESC | 排序字段 |
+| group | strng | 是 | PARTURLCODE | 分组字段（APPID,TASKID,TASKTYPE,CITYCODE,NETSERVICEID,ACCESSMODE,OSID,OSVERID,BROWSERID,BROWSERVERID,ERRORID,PARTURLCODE） |
+| filters | string | 否 | {"netserviceAndNetStandard":\[{"netserviseId":"1","netStandard":"1"},{"netserviseId":"1","netStandard":"2"}\],"cityCode":\[1100000,1200000\],"browsr":\[0,1,2,3,4\],"onlyError":"1"} | 过滤条件：netserviceAndNetStandard:运营商&网络接入方式；cityCode:地域；browsr:浏览器；onlyError:0-只查正确数据;1-只查错误数据； |
+| dHeader | string | 是 | APPID,PARTURLCODE,DTIME$MAX,DTIME$MIN,DTIME$AVG,DTIME$SUM,DNSTIME$AVG,TCPTIME$AVG | \*指标数据项 |
 
 # dHeader字段说明：
 
