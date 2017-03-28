@@ -33,7 +33,7 @@ POST／GET
 | filters | string | 否 |  | 数据筛选条件 |
 | dHeader | string | 是 |  | 指标数据项 |
 | orderFlag | string | 否 | sdkAppId | 排序依据 |
-| groupfield | string | 是 | "sdkAppId,stackInfoCode" | 数据组合条件 |
+| groupField | string | 是 | "sdkAppId,stackInfoCode" | 数据组合条件 |
 
 ### filters参数
 
