@@ -33,10 +33,10 @@ base.data.loadCustomHeader
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
 | accountId | Number | 1 |  |
-| columnFields | string | responseTime,dnsTime,tcpTime |  |
-| columnLabels | string | 响应用时,DNS用时,TCP用时 |  |
+| columnFields | string | responseTime,dnsTime,tcpTime | 表头字段 |
+| columnLabels | string | 响应用时,DNS用时,TCP用时 | 表头对应描述 |
 | businessType | Number | 508 |  |
-| lastModif | Number |  |  |
+| lastModif | Number | 1446307200000 | 最后修改时间 |
 
 # 请求示例
 
