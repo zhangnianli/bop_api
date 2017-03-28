@@ -37,14 +37,14 @@ POST/GET
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| appId | Number | 1 |  |
-| appName | string | fdf |  |
-| userId | Number | 1 |  |
-| keyFlag | Number | 1 |  |
-| b1 | Number | 1 |  |
-| b2 | Number | 2 |  |
-| b3 | Number | 3 |  |
-| b4 | Number | 2 |  |
+| appId | Number | 1 | AppID |
+| appName | string | fdf | App名称 |
+| userId | Number | 1 | 用户ID |
+| keyFlag | Number | 1 | 是否为关键业务 0-不是 1-是 |
+| b1 | Number | 1 | 健康阈值：性能体验阈值（s） |
+| b2 | Number | 90 | 健康阈值：请求错误率 |
+| b3 | Number | 100 | 健康阈值：任务可用性 |
+| b4 | Number | 58 | 健康阈值：崩溃率 |
 | b5 | Number | 2 |  |
 | b6 | Number | 2 |  |
 | status | Number | 2 |  |
