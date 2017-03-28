@@ -36,8 +36,20 @@ POST/GET
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-|  |  |  |  |
-|  |  |  |  |
+| username |  |  |  |
+| monitorCountSet |  |  |  |
+| monitorCountUsed |  |  |  |
+| startDate |  |  |  |
+| endDate |  |  |  |
+| mobMonitorCountSet |  |  |  |
+| mobMonitorCountUsed |  |  |  |
+| monitorMode |  |  |  |
+| appHuifangTimeSet |  |  |  |
+| appHuifangTimeUsed |  |  |  |
+| appHuifangFlowSet |  |  |  |
+| appHuifangFlowUsed |  |  |  |
+| urlnumSet |  |  |  |
+| urlnumUsed |  |  |  |
 
 # 请求示例
 
