@@ -45,7 +45,7 @@ POST／GET
 | sdkAppId | string | 否 | 1111 | sdk应用id |
 | webViewErrorRate | string | 否 | 0.01 | 错误率 |
 | webViewErrorCount | string | 否 | 1 | 发生错误的访问数 |
-| webviewCount | string | 否 | 100 | 访问数 |
+| webViewCount | string | 否 | 100 | 访问数 |
 
 ### groupfield参数
 
