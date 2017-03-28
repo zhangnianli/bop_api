@@ -8,19 +8,19 @@ apm.data.app.config
 
 # 请求参数：
 
-| 参数名称 | 参数类型 | 示例值 | 参数说明 |
-| :--- | :--- | :--- | :--- |
-| username | string | bonreetest | \*用户名 |
-| token | string | xxxxxxxxxxxxx | \*令牌 |
-| params | string | {"dtype":"json","beAppId":"1035"} | \*参数json |
+| 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
+| :--- | :--- | :--- | :--- | :--- |
+| username | string | 是 | bonreetest | 用户名 |
+| token | string | 是 | xxxxxxxxxxxxx | 令牌 |
+| params | string | 是 | {"dtype":"json","beAppId":"1035"} | 参数json |
 
 **params说明：**
 
-| 参数名称 | 参数类型 | 示例值 | 参数说明 |
-| :--- | :--- | :--- | :--- |
-| dtype | string | json | \*数据类型\(csv、json\) |
-| beAppId | string | 1035,1036,1037 | 后端应用ID |
-| dHeader | string | beAppId,btThrshld,btThrshldSlowTimes,btThrshldVerySlowTimes,btThrshldStallTimes,sqlExeTimeThreshold,noSqlExeTimeThreshold,remoteCallExeTimeThreshold,updateTime | \*指标数据项 |
+| 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
+| :--- | :--- | :--- | :--- | :--- |
+| dtype | string | 是 | json | 数据类型\(csv、json\) |
+| beAppId | string | 否 | 1035,1036,1037 | 后端应用ID |
+| dHeader | string | 是 | beAppId,btThrshld,btThrshldSlowTimes,btThrshldVerySlowTimes,btThrshldStallTimes,sqlExeTimeThreshold,noSqlExeTimeThreshold,remoteCallExeTimeThreshold,updateTime | 指标数据项 |
 
 # dHeader字段说明：
 
