@@ -28,6 +28,12 @@ base.data.loadCustomHeader
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
 
+# result说明
+
+| 名称 | 类型 | 示例值 | 描述 |
+| :--- | :--- | :--- | :--- |
+|  |  |  |  |
+
 # 请求示例
 
 ```
