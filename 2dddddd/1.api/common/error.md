@@ -29,7 +29,9 @@ POST/GET
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-|  |  |  |  |
+| errorId | Number | 619 | 错误ID |
+| errorName | string | 请求超时 | 错误描述 |
+| errorType | Number | 1 | 错误分类 |
 
 # 请求示例
 
