@@ -31,7 +31,7 @@ POST／GET
 | dHeader | string | 是 | appId,crashType,crashCount,userCount | 指标数据项 |
 | groupField | string | 是 |  | 分组条件 |
 | orderFlag | string | 是 |  | 排序条件 |
-| hCountFilters | int | 是 | 10 | 指标数量筛选 |
+| topFilters | int | 是 | 10 | 指标数量筛选 |
 
 ### filters参数
 
