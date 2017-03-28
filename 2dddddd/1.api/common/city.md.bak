@@ -32,10 +32,7 @@ base.data.city
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| id | Number | 1 | 城市Code |
-| name | string | 中国移动 | 城市名称 |
-| nameEn | string | China_CMCC | 城市英文名称 |
-| lastModif | Number | 1446307200000 | 最后修改时间 |
+|  |  |  |  |
 
 # 请求示例
 
