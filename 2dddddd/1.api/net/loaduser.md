@@ -36,20 +36,22 @@ POST/GET
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| username |  |  |  |
-| monitorCountSet |  |  |  |
-| monitorCountUsed |  |  |  |
-| startDate |  |  |  |
-| endDate |  |  |  |
-| mobMonitorCountSet |  |  |  |
-| mobMonitorCountUsed |  |  |  |
-| monitorMode |  |  |  |
-| appHuifangTimeSet |  |  |  |
-| appHuifangTimeUsed |  |  |  |
-| appHuifangFlowSet |  |  |  |
-| appHuifangFlowUsed |  |  |  |
-| urlnumSet |  |  |  |
-| urlnumUsed |  |  |  |
+| username | string | bonreetest | 用户名 |
+| monitorCountSet | Number | 9999999 | 传统互联网监测量权限 |
+| monitorCountUsed | Number | 238 | 传统互联网已使用监测量 |
+| startDate | Number | 1420041600000 | 套餐开始时间 |
+| endDate | Number | 1514736000000 | 套餐结束时间 |
+| mobMonitorCountSet | Number | 10000000 | 移动互联网监测量权限 |
+| mobMonitorCountUsed | Number | 32 | 移动互联网已使用监测量 |
+| monitorMode | Number | 0 | 计费方式0-按监测量 1-按任务 |
+| appHuifangTimeSet | Number | 60000 | BMTP回放时间权限（单位s） |
+| appHuifangTimeUsed | Number | 56 | BMTP回放时间已使用时长（单位s） |
+| appHuifangFlowSet | Number | 1024 | BMTP回放流量权限（单位KB） |
+| appHuifangFlowUsed | Number | 56 | BMTP已使用回放流量（单位KB） |
+| urlnumSet | Number | 9999 | 传统互联网配置任务权限 |
+| urlnumUsed | Number | 22 | 传统互联网已配置任务数 |
+| appLuzhiTimeSet | Number | 1000 | BMTP录制时长权限 |
+| appMonitorCountUsed | Number | 67 | BMTP已使用监测量 |
 
 # 请求示例
 
