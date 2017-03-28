@@ -25,8 +25,8 @@ platform.data.element.detaildata
 | pageNum | string | 1 | \*页码 |
 | pageRecorders | string | 50 | \*每页行数 |
 | orderByFlag | string | DTIME DESC | \*排序字段 |
-| filters | string | {<br/>"netserviceAndNetStandard":\[{"netserviseId":"1","netStandard":"1"},{"netserviseId":"1","netStandard":"2"}\],<br/>"cityCode":\[1100000,1200000\],<br/>"browsr":\[0,1,2,3,4\],<br/>"onlyError":"1"<br/>} | 过滤条件：<br/>netserviceAndNetStandard:运营商&网络接入方式；<br/>cityCode:地域；<br/>browsr:浏览器；<br/>onlyError:0-只查正确数据;1-只查错误数据; |
-| dHeader | string | APPID,URLCODE,DTIME,DNSTIME,<br/>TCPTIME,SSLTIME | \*指标数据项 |
+| filters | string | {"netserviceAndNetStandard":\[{"netserviseId":"1","netStandard":"1"},{"netserviseId":"1","netStandard":"2"}\],"cityCode":\[1100000,1200000\],"browsr":\[0,1,2,3,4\],"onlyError":"1"} | 过滤条件：netserviceAndNetStandard:运营商&网络接入方式；cityCode:地域；browsr:浏览器；onlyError:0-只查正确数据;1-只查错误数据; |
+| dHeader | string | APPID,URLCODE,DTIME,DNSTIME,TCPTIME,SSLTIME | \*指标数据项 |
 
 # dHeader字段说明：
 
