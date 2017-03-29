@@ -33,7 +33,7 @@ params说明：
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
 | filters | string | 否 | \[{“filed”:”CPU\_RATE”, “condo”:”&gt;=”,”value”:”6”}\] | 字段值筛选条件 |
 | group | string | 否 | city,netservice | 分组条件，字段顺序为分组顺序 |
-| fields | string | 是 | city,netservice | 指定计算哪些指标，并作为查询结果返回 |
+| dHeader | string | 是 | city,netservice | 指定计算哪些指标，并作为查询结果返回 |
 
 field列表：
 
