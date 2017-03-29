@@ -1,10 +1,10 @@
 # 业务编号
 
-platform.performance.statdata
+platform.data.performance.statdata
 
 # api请求地址
 
-https://api.bonree.com/platform/performance/statdata
+[https://api.bonree.com/](https://[api.bonree.com/net/report/taskdata]\(http://api.bonree.com/net/report/taskdata\)[platform/data/performance/statdata](https://[api.bonree.com/net/report/taskdata]\(http://api.bonree.com/net/report/taskdata)
 
 # 请求方式
 
@@ -22,18 +22,27 @@ params说明：
 
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| type | string | 是 | json/csv | 数据类型 |
+| dtype | string | 是 | json/csv | 数据类型 |
 | appId | string | 否 | 123456 | 应用ID |
 | dtime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
 | monitors | string | 是 | ALL/IDC/LM/PP/IDC | 监测点类型 |
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
 | filters | string | 否 | \[{“filed”:”CPU\_RATE”, “condo”:”&gt;=”,”value”:”6”}\] | 字段值筛选条件 |
-| group | string | 否 | city,netservice | 分组条件，字段顺序为分组顺序，当timefram参数有值时，该参数必填，分组条件必须包括MONITOR\_TIME\_CODE。 |
-| timefram | string | 否 | 5 | 时间频度（查询结果的时间聚合频度，比如5分钟频度），单位分钟，当改参数有值时，group参数必填 |
-| dHeader | string | 是 | city,netservice | 指标查询结果，可以指定计算哪些指标 |
-| orderByFlag | string | 否 | city desc/nerservice asc,city desc | 排序条件，字段顺序就是排序顺序 |
+| group | string | 否 | city,netservice | 分组条件，字段顺序为分组顺序 |
+| granule | string | 否 | STR\_MINUTE5 | 时间频度，可用频度值参见下方时间频度字典表 |
+| dHeader | string | 是 | city,netservice | 指标查询结果，可以指定计算哪些指标，详见dHeader字典表 |
+| order | string | 否 | city desc/nerservice asc,city desc | 排序条件，字段顺序就是排序顺序 |
 
-field列表：
+时间频度字典表
+
+| 值 | 含义 |
+| :--- | :--- |
+| STR\_MINUTE5 | 五分钟频度 |
+| STR\_MINUTE30 | 30分钟频度 |
+| STR\_HOUR | 1小时频度 |
+| STR\_DAY | 1天频度 |
+
+dHeader字典表：
 
 | 字段英文名称 | 字段中文名称 | 字段描述 |
 | :--- | :--- | :--- |
@@ -46,31 +55,32 @@ field列表：
 | ERRRATE | 请求错误率 | 请求错误次数/请求次数 |
 | SLOWRATE | 慢速比 | 慢请求次数/请求次数 |
 | REQUESTNUM | 请求次数 | 总请求次数 |
-| BLOCKTIME | block时间 | block时间之和 |
-| BLOCKTIME1 | block时间 | block时间之和，健康请求 |
-| BLOCKTIME2 | block时间 | block时间之和，慢请求 |
-| DNSTIME | dns时间 | dns时间之和，所有请求 |
-| DNSTIME1 | dns时间 | dns时间之和，健康请求 |
-| DNSTIME2 | dns时间 | dns时间之和，慢请求 |
-| TCPTIME | tcp时间 | tcp时间之和 |
-| TCPTIME1 | tcp时间 | tcp时间，健康请求 |
-| TCPTIME2 | tcp时间 | tcp时间，慢请求 |
-| SSLTIME | ssl时间 | ssl时间之和 |
-| SSLTIME1 | ssl时间 | ssl时间，健康请求 |
-| SSLTIME2 | ssl时间 | ssl时间,慢请求 |
-| CLIENTRESPONSETIME | response时间 | response时间之和,所有请求的。 |
-| CLIENTRESPONSETIME1 | response时间 | response时间之和,健康请求的 |
-| CLIENTRESPONSETIME2 | response时间 | response时间之和，不健康请求的,不健康请求指慢请求 |
+| BLOCKTIME | block时间 | block时间均值 |
+| BLOCKTIME1 | block时间 | block时间均值，健康请求 |
+| BLOCKTIME2 | block时间 | block时间均值，慢请求 |
+| DNSTIME | dns时间 | dns时间均值，所有请求 |
+| DNSTIME1 | dns时间 | dns时间均值，健康请求 |
+| DNSTIME2 | dns时间 | dns时间均值，慢请求 |
+| TCPTIME | tcp时间 | tcp时间均值 |
+| TCPTIME1 | tcp时间 | tcp时间均值，健康请求 |
+| TCPTIME2 | tcp时间 | tcp时间均值，慢请求 |
+| SSLTIME | ssl时间 | ssl时间均值 |
+| SSLTIME1 | ssl时间 | ssl时间均值，健康请求 |
+| SSLTIME2 | ssl时间 | ssl时间均值,慢请求 |
+| CLIENTRESPONSETIME | response时间 | response均值,所有请求的。 |
+| CLIENTRESPONSETIME1 | response时间 | response均值,健康请求的 |
+| CLIENTRESPONSETIME2 | response时间 | response均值，不健康请求的,不健康请求指慢请求 |
 | DTIME | 整体性能 | 整体性能时间均值 |
 | SERVERRESPONSETIME | 服务器处理时间 | 服务器处理时间均值 |
+| SERVERRESPONSETIME1 | 服务器处理时间 | 服务器处理时间均值，健康请求的 |
+| SERVERRESPONSETIME2 | 服务处理时间 | 服务器处理时间均值，不健康请求的 |
 | ERRORID | 错误码 | 错误类型码 |
-| MONITOR\_TIME\_CODE | 时间频度码 | 按时间频度划分的时间频度值 |
 
 # 返回参数说明
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | int | 错误码，0表示成功查询 |
+| errorCode | int | 错误码，0表示成功查询 |
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
 

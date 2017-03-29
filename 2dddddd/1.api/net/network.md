@@ -1,10 +1,12 @@
+# 
+
 # 业务编号
 
 net.data.network.statdata
 
 # api请求地址
 
-[https://api.bonree.com/net/network/statdata](https://api.bonree.com/net/network/]%28https://[api.bonree.com/net/report/taskdata]%28http://api.bonree.com/net/report/taskdata%29statdata)
+[https://api.bonree.com/net/data/network/](https://[api.bonree.com/net/report/taskdata]\(http://api.bonree.com/net/report/taskdata)statdata
 
 # 请求方式
 
@@ -24,16 +26,26 @@ params说明：
 
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| type | string | 是 | json/csv | 数据类型 |
+| dtype | string | 是 | json/csv | 数据类型 |
 | taskId | string | 否 | 170435,170436 | 任务ID |
 | dtime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
 | monitors | string | 是 | ALL/IDC/LM/PP/IDC\|PP | 监测点类型 |
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
 | filters | string | 否 | \[{“filed”:”CPU\_RATE”, “condo”:”&gt;=”,”value”:”6”}\] | 字段值筛选条件 |
 | group | string | 否 | city,netservice | 分组条件，字段顺序为分组顺序 |
-| fields | string | 是 | city,netservice | 指定计算哪些指标，并作为查询结果返回 |
+| dHeader | string | 是 | city,netservice | 指定计算哪些指标，并作为查询结果返回,详见dHeader字典表 |
+| granule | string | 否 | STR\_DAY | 时间频度，详见时间频度字典表 |
 
-field列表：
+时间频度字典表
+
+| 值 | 含义 |
+| :--- | :--- |
+| STR\_MINUTE5 | 五分钟频度 |
+| STR\_MINUTE30 | 30分钟频度 |
+| STR\_HOUR | 1小时频度 |
+| STR\_DAY | 1天频度 |
+
+dHeader列表：
 
 | 字段英文名称 | 字段中文名称 |
 | :--- | :--- |
@@ -45,7 +57,7 @@ field列表：
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | int | 错误码，0表示正常查询 |
+| errorCode | int | 错误码，0表示正常查询 |
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
 
