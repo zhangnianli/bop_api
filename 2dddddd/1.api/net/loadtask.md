@@ -88,7 +88,7 @@ POST/GET
     "error_code": 0,
     "reason":"查询成功",
     "result: [
-        ["roleName","url","taskId","monitorFun","flag","startTime","endTime","parentId","roleType","netenvMon"],
+        ["ROLE_NAME","URL","TASK_ID","MONITOR_FUN","FLAG","START_TIME","END_TIME","PARENT_ID","ROLE_TYPE","NETENV_MON"],
         ["勿删长期测试qq","http://www.qq.com",170435,3,1,1393603200000,1488211200000,340832,9,"111"],
         ["QQ任务组","http://",340832,3,0,1446307200000,1446307200000,0,0,"000"]
     ]
