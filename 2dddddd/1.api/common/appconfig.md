@@ -1,16 +1,16 @@
-# 业务编号
+# **业务编号**
 
 base.data.loadAppConfig
 
-# api请求地址
+# **api请求地址**
 
 [http://api.bonree.com/base/data/loadAppConfig](http://api.bonree.com/base/data/loadAppConfig)
 
-# 请求方式
+# **请求方式**
 
 POST/GET
 
-# 请求参数
+# **请求参数**
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -18,7 +18,7 @@ POST/GET
 | username | string | 是 | bonreetest | 用户名 |
 | params | string | 是 | {"appId":1} | 请求参数json |
 
-## param参数
+## **params参数**
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -27,7 +27,7 @@ POST/GET
 | taskType | Number | 否 | 1 | 1:v4   2:SDK 3:BROWSER 4:SERVER |
 | monitorFun | Number | 否 | 1 | 检测任务类型： V4：（监测功能（0网络环境监测、2网页浏览监测、3网页元素监测、4下载监测,5流媒体，6元素组，7端口测试，9事务测试,99-移动单元素，98移动私有协议，97移动网络，96移动全元素、100-MAA）\)，95：BMTP，151：sdk,152：browser,153：server |
 
-# 返回参数说明
+# **返回参数说明**
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
@@ -35,19 +35,19 @@ POST/GET
 | reason | string | 结果说明 |
 | result | string | 查询结果 |
 
-# result说明
+# **result说明**
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
 | appId | Number | 3 | 应用ID |
 | id | Number | 1 |  |
 | taskType | Number | 1 | 1-v4 2-SDK 3-BROWSER 4-SERVER |
-| monitorFun | Number | 6 | 检测任务类型V4：（监测功能（0网络环境监测、2网页浏览监测、3网页元素监测、4下载监测,5流媒体，6元素组，7端口测试，9事务测试,99-移动单元素，98移动私有协议，97移动网络，96移动全元素、100-MAA）)，95：BMTP，151：sdk,152：browser,153：server |
+| monitorFun | Number | 6 | 检测任务类型V4：（监测功能（0网络环境监测、2网页浏览监测、3网页元素监测、4下载监测,5流媒体，6元素组，7端口测试，9事务测试,99-移动单元素，98移动私有协议，97移动网络，96移动全元素、100-MAA）\)，95：BMTP，151：sdk,152：browser,153：server |
 | taskId | Number | 170435 | 任务ID |
-| url | string | http://www.baidu.com | 任务地址 |
-| urlMergeRule | Number | 3 | 请求地址合并（1:完全匹配，2：通配符，3：正则表达式）|
+| url | string | [http://www.baidu.com](http://www.baidu.com) | 任务地址 |
+| urlMergeRule | Number | 3 | 请求地址合并（1:完全匹配，2：通配符，3：正则表达式） |
 
-# 请求示例
+# **请求示例**
 
 ```
  POST:
@@ -78,7 +78,7 @@ POST/GET
   http://api.bonree.com/base/data/loadAppConfig?token=asdas12312312ddwew5we5we5&username=bonreetest&param={"appId":3}
 ```
 
-# 返回结果示例
+# **返回结果示例**
 
 ```
 {
@@ -92,11 +92,11 @@ POST/GET
 }
 ```
 
-# api工具：
+# **api工具**
 
 api测试工具， api响应码查询工具，监测点查询工具，指标查询工具，监测数据错误码查询工具
 
-# FAQ：
+# **FAQ**
 
 
 
