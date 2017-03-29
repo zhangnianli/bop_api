@@ -18,7 +18,7 @@ base.data.city
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| lastModif | string |  | 20170201000000 | 最后修改时间 |
+| lastModif | string | 否 | 20170201000000 | 最后修改时间 |
 | dHeader | String | 是 | CITYCODE,CITY,LASTMODIF | 接口返回字段,配置\*返回全部 |
 
 # result说明
