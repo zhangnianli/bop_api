@@ -37,35 +37,35 @@ POST／GET
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
-| osVersion | string | "osVersion":\["1111"\] | 操作系统id |
-| brandName | string | "brandName":\["1111"\] | 设备型号id |
-| crashType | string |  | 崩溃类型 |
+| OS\_VERSION | string | "osVersion":\["1111"\] | 操作系统id |
+| BRAND\_NAME | string | "brandName":\["1111"\] | 设备型号id |
+| CRASH\_TYPE | string |  | 崩溃类型 |
 
 ### dHeader参数
 
 | 参数名称 | 参数类型 | 是否必选 | 返回示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| sdkAppId | string | 否 | 1111 | sdk应用id |
-| minMonitorTime | string | 否 | 201601010000 | 首次发生时间 |
-| maxMonitorTime | string | 否 | 201601020000 | 末次发生时间 |
-| crashCount | string | 否 | 200 | 崩溃次数 |
-| crashRate | string | 否 | 0.01 | 崩溃率 |
-| startCount | string | 否 | 100 | sdk应用启动次数 |
-| userCount | string | 否 | 100 | 崩溃影响用户数 |
-| crashType | string | 否 | NullPoinerException | 崩溃类型 |
+| TASK\_ID | string | 否 | 1111 | sdk应用id |
+| MIN\_MONITORTIME | string | 否 | 201601010000 | 首次发生时间 |
+| MAX\_MONITORTIME | string | 否 | 201601020000 | 末次发生时间 |
+| CRASH\_COUNT | string | 否 | 200 | 崩溃次数 |
+| CRASH\_RATE | string | 否 | 0.01 | 崩溃率 |
+| START\_COUNT | string | 否 | 100 | sdk应用启动次数 |
+| USER\_COUNT | string | 否 | 100 | 崩溃影响用户数 |
+| CRASH\_TYPE | string | 否 | NullPoinerException | 崩溃类型 |
 
 ### groupField参数
 
 | 参数名称 | 参数说明 |
 | :--- | :--- |
-| sdkAppId | sdk应用id |
-| crashType | 崩溃类型 |
+| TASK\_ID | sdk应用id |
+| CRASH\_TYPE | 崩溃类型 |
 
 # 返回参数说明
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | int | 错误码 |
+| errorCode | int | 错误码 |
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
 
