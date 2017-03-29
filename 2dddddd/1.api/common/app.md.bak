@@ -24,23 +24,24 @@ POST/GET
 | :--- | :--- | :--- | :--- | :--- |
 | userId | Number | 否 | 1 | 用户id |
 | appId | Number | 否 | 1 | appId |
-| dHeader | String | 是 | ACCESS_MODEL_ID,ACCESS_MODEL_NAME | 接口返回字段,配置\*返回全部 |
+| dHeader | String | 是 | APPID,APPNAME | 接口返回字段,配置\*返回全部 |
 
 # **dHeader说明**
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| appId | Number | 1 | AppID |
-| appName | string | fdf | App名称 |
-| userId | Number | 1 | 用户ID |
-| keyFlag | Number | 1 | 是否为关键业务 0-不是 1-是 |
-| b1 | Number | 1 | 健康阈值：性能体验阈值（s） |
-| b2 | Number | 90 | 健康阈值：请求错误率 |
-| b3 | Number | 100 | 健康阈值：任务可用性 |
-| b4 | Number | 58 | 健康阈值：崩溃率 |
-| b5 | Number | 67 | 健康阈值：JS错误率 |
-| b6 | Number | 40 | 健康阈值 慢速比 |
-| status | Number | 2 | 1:正常 2：删除 3：禁用 |
+| APPID | Number | 1 | AppID |
+| APPNAME | string | fdf | App名称 |
+| USER_ID | Number | 1 | 用户ID |
+| KEY_FLAG | Number | 1 | 是否为关键业务 0-不是 1-是 |
+| B1 | Number | 1 | 健康阈值：性能体验阈值（s） |
+| B2 | Number | 90 | 健康阈值：请求错误率 |
+| B3 | Number | 100 | 健康阈值：任务可用性 |
+| B4 | Number | 58 | 健康阈值：崩溃率 |
+| B5 | Number | 67 | 健康阈值：JS错误率 |
+| B6 | Number | 40 | 健康阈值 慢速比 |
+| STATUS | Number | 2 | 1:正常 2：删除 3：禁用 |
+
 # **返回参数说明**
 
 | 名称 | 类型 | 描述 |

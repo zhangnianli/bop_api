@@ -24,7 +24,7 @@ POST/GET
 | :--- | :--- | :--- | :--- | :--- |
 | userId | Number | 否 | 1 | 用户id |
 | appId | Number | 否 | 1 | appId |
-| dHeader | String | 是 | ACCESS_MODEL_ID,ACCESS_MODEL_NAME | 接口返回字段,配置\*返回全部 |
+| dHeader | String | 是 | APPID,APPNAME,KEY_FLAG | 接口返回字段,配置\*返回全部 |
 
 # **dHeader说明**
 
@@ -32,8 +32,8 @@ POST/GET
 | :--- | :--- | :--- | :--- |
 | APPID | Number | 1 | AppID |
 | APPNAME | string | fdf | App名称 |
-| USERID | Number | 1 | 用户ID |
-| KEYFLAG | Number | 1 | 是否为关键业务 0-不是 1-是 |
+| USER_ID | Number | 1 | 用户ID |
+| KEY_FLAG | Number | 1 | 是否为关键业务 0-不是 1-是 |
 | B1 | Number | 1 | 健康阈值：性能体验阈值（s） |
 | B2 | Number | 90 | 健康阈值：请求错误率 |
 | B3 | Number | 100 | 健康阈值：任务可用性 |
