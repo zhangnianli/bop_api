@@ -16,14 +16,14 @@ POST/GET
 | :--- | :--- | :--- | :--- | :--- |
 | token | string | 是 | \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* | 令牌 |
 | username | string | 是 | bonreetest | 用户名 |
-| dHeader | String | 是 | ACCESS_MODEL_ID,ACCESS_MODEL_NAME | 接口返回字段,配置\*返回全部 |
+| dHeader | String | 是 | OS_ID,OS_NAME,OS_VER_NAME | 接口返回字段,配置\*返回全部 |
 
 # **dHeader说明**
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| ACCESS_MODEL_ID | Number | 1 | 接入方式ID |
-| ACCESS_MODEL_NAME | string | 2G | 接入方式名称 |
+| accessModelId | Number | 1 | 接入方式ID |
+| accessModelName | string | 2G | 接入方式名称 |
 
 # **返回参数说明**
 
