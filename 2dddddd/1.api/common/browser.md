@@ -78,7 +78,7 @@ POST/GET
     "error_code": 0,
     "reason":"查询成功",
     "result: [
-        ["browserId","browserName","browserVerId","browserVerName"],
+        ["BROWSER_ID","BROWSER_NAME","BROWSER_VER_ID","BROWSER_VER_NAME"],
         [1,"IE",106,"IE6"],
         [1,"IE",107,"IE7"]
     ]

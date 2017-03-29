@@ -91,8 +91,8 @@ POST/GET
     "error_code": 0,
     "reason":"查询成功",
     "result: [
-        ["username","monitorCountSet","monitorCountUsed","startDate","endDate","mobMonitorCountSet","mobMonitorCountUsed","monitorMode","appHuifangTimeSet","appHuifangTimeUsed","appHuifangFlowSet","appHuifangFlowUsed","urlnumSet","urlnumUsed"],
-        ["bonreetest",99999999,23,1420041600000,1514736000000,10000000,0,0,60000,0,1024,0,9999,22]
+        ["USERNAME","MONITOR_COUNT_SET","MONITOR_COUNT_USED","START_DATE","END_DATE","MOBMONITOR_COUNT_SET","MOBMONITOR_COUNT_USED","MONITOR_MODE","APPHUIFANG_TIME_SET","APPHUIFANG_TIME_USED","APPHUIFANG_FLOW_SET","APPHUIFANG_FLOW_USED","URLNUM_SET","URLNUM_USED","APPLUZHI\_TIME\_SET","APPMONITOR\_COUNT\_USED"],
+        ["bonreetest",99999999,23,1420041600000,1514736000000,10000000,0,0,60000,0,1024,0,9999,22,10000,10264]
     ]
 }
 ```

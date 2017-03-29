@@ -81,7 +81,7 @@ POST/GET
     "error_code": 0,
     "reason":"查询成功",
     "result: [
-        ["keyId","appId","keyFlag","url","status"],
+        ["KEY_ID","APPID","KEY_FLAG","URL","STATUS"],
         [1,1,1,"3",3],
         [2,1,2,"3",3]
     ]

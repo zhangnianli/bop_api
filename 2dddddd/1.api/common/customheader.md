@@ -73,7 +73,7 @@ base.data.loadCustomHeader
     "error_code": 0,
     "reason": "查询成功",
     "result": [
-        ["accountId","columnFields","columnLabels","businessType","lastModif"],
+        ["ACCOUNT_ID","COLUMN_FIELDS","COLUMN_LABELS","BUSINESS_TYPE","LASTMODIF"],
         [1,"responseTime,dnsTime,tcpTime,sslTime,serverResponseTime,serverHandleTime,requestUrl,monitorTime",null,508,"20170321101456"],
         [1,"avgResponseTime,maxResponseTime,minResponseTime,totalResponseTime,avgServerHandleTime,requestCount,perminRequestCount,slowRequestCount,slowSpeedRate,roleSplit,domain",null,507,"20170321101506"]
     ]

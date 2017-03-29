@@ -79,7 +79,7 @@ POST/GET
     "error_code": 0,
     "reason":"查询成功",
     "result: [
-        ["osId","osName","osVerId","osVerName"],
+        ["OS_ID","OS_NAME","OS_VER_ID","OS_VER_NAME"],
         [1,"Windows",101,"Win7"],
         [1,"Windows",102,"Win Vista"]
     ]

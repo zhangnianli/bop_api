@@ -75,7 +75,7 @@ base.data.city
     "error_code": 0,
     "reason": "查询成功",
     "result": [
-        ["citycode","cont","country","district","city","cityEn","lastModif"],
+        ["CITYCODE","CONT","COUNTRY","DISTRICT","CITY","CITYEN","LASTMODIF"],
         ["1100101","亚洲","中国","北京","北京市","Beijing","20170201000000"],
         ["1100705","亚洲","中国","广西","北海市","Beihai","20170201000000"]
     ]

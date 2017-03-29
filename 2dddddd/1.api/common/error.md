@@ -77,7 +77,7 @@ POST/GET
     "error_code": 0,
     "reason":"查询成功",
     "result: [
-        ["errorId","errorName","errorType"],
+        ["ERROR_ID","ERROR_NAME","ERROR_TYPE]",
         [0,"成功",1],
         [1,"Operation not permitted",1]
     ]

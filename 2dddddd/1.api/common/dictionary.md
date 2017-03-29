@@ -72,7 +72,7 @@ base.data.netservice
     "error_code": 0,
     "reason": "查询成功",
     "result": [
-        ["id","name","nameEn","lastModif"],
+        ["ID","NAME","NAMEEN","LASTMODIF"],
         ["1", "中国移动", "China_CMCC", "20170201000000"],
         [ "2", "中国教育网", "China_CERNET", "20170201000000"]
     ]

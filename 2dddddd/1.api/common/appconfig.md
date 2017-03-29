@@ -86,7 +86,7 @@ POST/GET
     "error_code": 0,
     "reason":"查询成功",
     "result: [
-        ["appId","id","taskType","monitorFun","taskId","url","urlMergeRule"],
+        ["APPID","ID","TASK_TYPE","MONITOR_FUN","TASK_ID","URL","URL_MERGE_RULE"],
         [3,50,1,6,8,"0",null],
         [3,51,4,153,11,"0",null]
     ]

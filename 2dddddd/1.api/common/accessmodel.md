@@ -70,7 +70,7 @@ POST/GET
     "error_code": 0,
     "reason":"查询成功",
     "result: [
-       ["accessModelId","accessModelName"],
+       ["ACCESS_MODEL_ID","ACCESS_MODEL_NAME"],
        [1,"2G"],
        [2,"2.5G"]
     ]
