@@ -19,6 +19,16 @@ base.data.netservice
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
 | lastModif | string | 20170201000000 | 最后修改时间 |
+| dHeader | String | 是 | ID,NAME,LASTMODIF | 接口返回字段,配置\*返回全部 |
+
+# dHeader说明
+
+| 名称 | 类型 | 示例值 | 描述 |
+| :--- | :--- | :--- | :--- |
+| ID | Number | 1 | 运营商ID |
+| NAME | string | 中国移动 | 运营商名称 |
+| NAMEEN | string | China\_CMCC | 运营商英文名称 |
+| LASTMODIF | Number | 1446307200000 | 最后修改时间 |
 
 # 返回参数说明：
 
@@ -27,15 +37,6 @@ base.data.netservice
 | error\_code | int | 错误码 |
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
-
-# result说明
-
-| 名称 | 类型 | 示例值 | 描述 |
-| :--- | :--- | :--- | :--- |
-| id | Number | 1 | 运营商ID |
-| name | string | 中国移动 | 运营商名称 |
-| nameEn | string | China\_CMCC | 运营商英文名称 |
-| lastModif | Number | 1446307200000 | 最后修改时间 |
 
 # 请求示例
 

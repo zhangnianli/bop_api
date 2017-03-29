@@ -21,7 +21,7 @@ base.data.city
 | lastModif | string | 否 | 20170201000000 | 最后修改时间 |
 | dHeader | String | 是 | CITYCODE,CITY,LASTMODIF | 接口返回字段,配置\*返回全部 |
 
-# result说明
+# dHeader说明
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
