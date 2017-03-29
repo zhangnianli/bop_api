@@ -30,10 +30,10 @@ base.data.url
 
 # result说明
 
-| 名称 | 类型 | 示例值 | 描述 |
-| :--- | :--- | :--- | :--- |
-| citycode | Number | 1100101 | 城市编码 |
-| cont | string | 亚洲 | 洲 |
+| 名称 | 类型 | 示例值 |
+| :--- | :--- | :--- |
+| urlcode | string | 123456 |
+| url | string | /test/add |
 
 # 请求示例
 
