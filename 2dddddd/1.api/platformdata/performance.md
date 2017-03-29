@@ -63,8 +63,8 @@ field列表：
 | CLIENTRESPONSETIME2 | response时间 | response均值，不健康请求的,不健康请求指慢请求 |
 | DTIME | 整体性能 | 整体性能时间均值 |
 | SERVERRESPONSETIME | 服务器处理时间 | 服务器处理时间均值 |
-|  |  |  |
-|  |  |  |
+| SERVERRESPONSETIME1 | 服务器处理时间 | 服务器处理时间均值 |
+| SERVERRESPONSETIME2 | 服务处理时间 | 服务器处理时间均值 |
 | ERRORID | 错误码 | 错误类型码 |
 | MONITOR\_TIME\_CODE | 时间频度码 | 按时间频度划分的时间频度值 |
 
