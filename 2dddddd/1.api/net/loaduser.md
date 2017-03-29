@@ -23,6 +23,28 @@ POST/GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | username | string | 否 | bonreetest | 查询用户名（请求参数中username为系统用户时，该字段必填） |
+| dHeader | String | 是 | USERNAME,MONITOR_COUNT_SET,MONITOR_COUNT_USED | 接口返回字段,配置*返回全部 |
+
+# result说明
+
+| 名称 | 类型 | 示例值 | 描述 |
+| :--- | :--- | :--- | :--- |
+| USERNAME | string | bonreetest | 用户名 |
+| MONITOR_COUNT_SET | Number | 9999999 | 传统互联网监测量权限 |
+| MONITOR_COUNT_USED | Number | 238 | 传统互联网已使用监测量 |
+| START_DATE | Number | 1420041600000 | 套餐开始时间 |
+| END_DATE | Number | 1514736000000 | 套餐结束时间 |
+| MOBMONITOR_COUNT_SET | Number | 10000000 | 移动互联网监测量权限 |
+| MOBMONITOR_COUNT_USED | Number | 32 | 移动互联网已使用监测量 |
+| MONITOR_MODE | Number | 0 | 计费方式0-按监测量 1-按任务 |
+| APPHUIFANG_TIME_SET | Number | 60000 | BMTP回放时间权限（单位s） |
+| APPHUIFANG_TIME_USED | Number | 56 | BMTP回放时间已使用时长（单位s） |
+| APPHUIFANG_FLOW_SET | Number | 1024 | BMTP回放流量权限（单位KB） |
+| APPHUIFANG_FLOW_USED | Number | 56 | BMTP已使用回放流量（单位KB） |
+| URLNUM_SET | Number | 9999 | 传统互联网配置任务权限 |
+| URLNUM_USED | Number | 22 | 传统互联网已配置任务数 |
+| APPLUZHI_TIME_SET | Number | 1000 | BMTP录制时长权限 |
+| APPMONITOR_COUNT_USED | Number | 67 | BMTP已使用监测量 |
 
 # 返回参数说明
 
@@ -31,27 +53,6 @@ POST/GET
 | error\_code | Number | 错误码 |
 | reason | string | 结果说明 |
 | result | string | 用户权限信息 |
-
-# result说明
-
-| 名称 | 类型 | 示例值 | 描述 |
-| :--- | :--- | :--- | :--- |
-| username | string | bonreetest | 用户名 |
-| monitorCountSet | Number | 9999999 | 传统互联网监测量权限 |
-| monitorCountUsed | Number | 238 | 传统互联网已使用监测量 |
-| startDate | Number | 1420041600000 | 套餐开始时间 |
-| endDate | Number | 1514736000000 | 套餐结束时间 |
-| mobMonitorCountSet | Number | 10000000 | 移动互联网监测量权限 |
-| mobMonitorCountUsed | Number | 32 | 移动互联网已使用监测量 |
-| monitorMode | Number | 0 | 计费方式0-按监测量 1-按任务 |
-| appHuifangTimeSet | Number | 60000 | BMTP回放时间权限（单位s） |
-| appHuifangTimeUsed | Number | 56 | BMTP回放时间已使用时长（单位s） |
-| appHuifangFlowSet | Number | 1024 | BMTP回放流量权限（单位KB） |
-| appHuifangFlowUsed | Number | 56 | BMTP已使用回放流量（单位KB） |
-| urlnumSet | Number | 9999 | 传统互联网配置任务权限 |
-| urlnumUsed | Number | 22 | 传统互联网已配置任务数 |
-| appLuzhiTimeSet | Number | 1000 | BMTP录制时长权限 |
-| appMonitorCountUsed | Number | 67 | BMTP已使用监测量 |
 
 # 请求示例
 
