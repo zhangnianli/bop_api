@@ -22,15 +22,15 @@ POST/GET
 
 | 参数名称 | 参数类型 | 是否必选 |示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| dHeader | String | 是 | ERROR_ID,ERROR_NAME | 接口返回字段,配置\*返回全部 |
+| dHeader | String | 是 | ACCOUNT_ID,COLUMN_FIELDS,COLUMN_LABELS,LASTMODIF | 接口返回字段,配置\*返回全部 |
 
 # **dHeader说明**
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| ERROR_ID | Number | 619 | 错误ID |
-| ERROR_NAME | string | 请求超时 | 错误描述 |
-| ERROR_TYPE | Number | 1 | 错误分类 |
+| errorId | Number | 619 | 错误ID |
+| errorName | string | 请求超时 | 错误描述 |
+| errorType | Number | 1 | 错误分类 |
 
 # **返回参数说明**
 
