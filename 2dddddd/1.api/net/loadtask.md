@@ -25,17 +25,9 @@ POST/GET
 | monitorFun | Number | 否 | 3 | 任务类型0-网络 3-浏览 4-传输 5-流媒体 6-元素组 7-协议 9-事务 96-移动浏览 97-移动网络 98-移动协议 95-BMTP |
 | taskId | Number | 否 | 170435 | 任务ID |
 | flag | Number | 否 | 1 | 任务状态；0-禁用，1-启用，9-结束 |
-| dHeader | String | 是 | ROLE\_NAME,MONITOR\_FUN,TASK\_ID | 接口返回字段 |
+| dHeader | String | 是 | ROLE\_NAME,MONITOR\_FUN,TASK\_ID | 接口返回字段,配置*返回全部 |
 
-# 返回参数说明
-
-| 名称 | 类型 | 描述 |
-| :--- | :--- | :--- |
-| error\_code | Number | 错误码 |
-| reason | string | 结果说明 |
-| result | string | 查询结果 |
-
-# result说明
+# dHeader说明
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
@@ -49,6 +41,14 @@ POST/GET
 | PARENT\_ID | Number | 340832 | 父任务ID |
 | ROLE\_TYPE | Number | 9 | 0任务组，1,事务，3元素组，5事务或元素组子任务，9单一任务 |
 | NETENV\_MON | string | 111 | 网络环境监测（111全部监测，（第1位表示DNS，第2位表示ICMP，第3位表示Tracert，1表示测试，0表示不测试）） |
+
+# 返回参数说明
+
+| 名称 | 类型 | 描述 |
+| :--- | :--- | :--- |
+| error\_code | Number | 错误码 |
+| reason | string | 结果说明 |
+| result | string | 查询结果 |
 
 # 请求示例
 
