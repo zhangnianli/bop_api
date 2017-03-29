@@ -31,7 +31,7 @@ params说明：
 | group | string | 否 | city,netservice | 分组条件，字段顺序为分组顺序，当timefram参数有值时，该参数必填，分组条件必须包括MONITOR\_TIME\_CODE。 |
 | timefram | string | 否 | 5 | 时间频度（查询结果的时间聚合频度，比如5分钟频度），单位分钟，当改参数有值时，group参数必填 |
 | dHeader | string | 是 | city,netservice | 指标查询结果，可以指定计算哪些指标 |
-| orderByFlag | string | 否 | city desc/nerservice asc,city desc | 排序条件，字段顺序就是排序顺序 |
+| order | string | 否 | city desc/nerservice asc,city desc | 排序条件，字段顺序就是排序顺序 |
 
 field列表：
 
