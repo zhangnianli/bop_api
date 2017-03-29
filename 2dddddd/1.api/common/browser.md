@@ -16,15 +16,22 @@ POST/GET
 | :--- | :--- | :--- | :--- | :--- |
 | token | string | 是 | \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* | 令牌 |
 | username | string | 是 | bonreetest | 用户名 |
+| params | string | 是 | {"appId":1} | 请求参数json |
 
-# **result说明**
+# **params参数**
+
+| 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
+| :--- | :--- | :--- | :--- | :--- |
+| dHeader | String | 是 | BROWSER_ID,BROWSER_NAME,BROWSER_VER_NAME | 接口返回字段,配置\*返回全部 |
+
+# **dHeader说明**
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| browserId | Number | 1 | 浏览器ID |
-| browserName | string | IE | 浏览器名称 |
-| browserVerId | Number | 106 | 版本ID |
-| browserVerName | string | IE6 | 版本名称 |
+| BROWSER_ID | Number | 1 | 浏览器ID |
+| BROWSER_NAME | string | IE | 浏览器名称 |
+| BROWSER_VER_ID | Number | 106 | 版本ID |
+| BROWSER_VER_NAME | string | IE6 | 版本名称 |
 
 # **返回参数说明**
 
