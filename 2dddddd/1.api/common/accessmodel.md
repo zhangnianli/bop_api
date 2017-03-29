@@ -1,23 +1,23 @@
-# 业务编号
+# **业务编号**
 
 base.data.loadAccess
 
-# api请求地址
+# **api请求地址**
 
 [http://api.bonree.com/base/data/loadAccess](http://api.bonree.com/basedata/loadOs)
 
-# 请求方式
+# **请求方式**
 
 POST/GET
 
-# 请求参数
+# **请求参数**
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | token | string | 是 | \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* | 令牌 |
 | username | string | 是 | bonreetest | 用户名 |
 
-# 返回参数说明
+# **返回参数说明**
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
@@ -25,14 +25,14 @@ POST/GET
 | reason | string | 结果说明 |
 | result | string | 查询结果 |
 
-# result说明
+# **result说明**
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
 | accessModelId | Number | 1 | 接入方式ID |
 | accessModelName | string | 2G | 接入方式名称 |
 
-# 请求示例
+# **请求示例**
 
 ```
  POST:
@@ -62,7 +62,7 @@ POST/GET
   http://api.bonree.com/base/data/loadAccess?token=asdas12312312ddwew5we5we5&username=bonreetest
 ```
 
-# 返回结果示例
+# **返回结果示例**
 
 ```
 {
@@ -76,11 +76,11 @@ POST/GET
 }
 ```
 
-# api工具：
+# **api工具**
 
 api测试工具， api响应码查询工具，监测点查询工具，指标查询工具，监测数据错误码查询工具
 
-# FAQ：
+# **FAQ**
 
 
 
