@@ -33,6 +33,10 @@ params说明：
 | dHeader | string | 是 | city,netservice | 指标查询结果，可以指定计算哪些指标 |
 | order | string | 否 | city desc/nerservice asc,city desc | 排序条件，字段顺序就是排序顺序 |
 
+时间频度字典表
+
+
+
 field列表：
 
 | 字段英文名称 | 字段中文名称 | 字段描述 |
