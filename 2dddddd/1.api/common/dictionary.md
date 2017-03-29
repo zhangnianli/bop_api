@@ -12,7 +12,7 @@ base.data.netservice
 | :--- | :--- | :--- | :--- | :--- |
 | username | string | 是 | bonreetest | 用户名 |
 | token | string | 是 | xxxxxxxxxxxxx | 令牌 |
-| params | string | 否 | {"lastModif":"20170201000000"} | 参数json |
+| params | string | 是 | {"lastModif":"20170201000000"} | 参数json |
 
 # **params说明：**
 
@@ -34,7 +34,7 @@ base.data.netservice
 | :--- | :--- | :--- | :--- |
 | id | Number | 1 | 运营商ID |
 | name | string | 中国移动 | 运营商名称 |
-| nameEn | string | China_CMCC | 运营商英文名称 |
+| nameEn | string | China\_CMCC | 运营商英文名称 |
 | lastModif | Number | 1446307200000 | 最后修改时间 |
 
 # 请求示例
