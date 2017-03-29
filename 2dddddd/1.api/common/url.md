@@ -39,45 +39,37 @@ base.data.url
 
 ```
                    httpclient = new DefaultHttpClient();
-		    String url = "http://192.168.4.137/url";
-		    HttpPost httppost = new HttpPost(url);
-		    System.out.println("请求: " + httppost.getRequestLine());
-		    // 创建参数队列
-		    List<NameValuePair> formparams = new ArrayList<NameValuePair>();
-		    formparams.add(new BasicNameValuePair("username", "aaa"));
-		    formparams.add(new BasicNameValuePair("token", "2CBFC800431FFCB0"));
-		    JSONObject params = new JSONObject();
-		    params.put("type", "json");
-		    params.put("urlcode", "111111,222222");
-		    System.out.println("params="+params.toString());
-		    formparams.add(new BasicNameValuePair("params", params.toString()));
-		    UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
-		    httppost.setEntity(uefEntity);
-		    // 执行
-		    HttpResponse response = httpclient.execute(httppost);
-		    HttpEntity entity = response.getEntity();
-		    System.out.println("----------------------------------------");
-		    System.out.println("状态:" + response.getStatusLine());
-		    if (entity != null) {
-		        System.out.println("Response content length: " + entity.getContentLength());
-		        System.out.println("Response content :" + EntityUtils.toString(entity, "UTF-8"));
-		    }
-		    // 关闭连接,释放资源
-		    httpclient.getConnectionManager().shutdown();
+            String url = "http://192.168.4.137/url";
+            HttpPost httppost = new HttpPost(url);
+            System.out.println("请求: " + httppost.getRequestLine());
+            // 创建参数队列
+            List<NameValuePair> formparams = new ArrayList<NameValuePair>();
+            formparams.add(new BasicNameValuePair("username", "aaa"));
+            formparams.add(new BasicNameValuePair("token", "2CBFC800431FFCB0"));
+            JSONObject params = new JSONObject();
+            params.put("type", "json");
+            params.put("urlcode", "111111,222222");
+            System.out.println("params="+params.toString());
+            formparams.add(new BasicNameValuePair("params", params.toString()));
+            UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
+            httppost.setEntity(uefEntity);
+            // 执行
+            HttpResponse response = httpclient.execute(httppost);
+            HttpEntity entity = response.getEntity();
+            System.out.println("----------------------------------------");
+            System.out.println("状态:" + response.getStatusLine());
+            if (entity != null) {
+                System.out.println("Response content length: " + entity.getContentLength());
+                System.out.println("Response content :" + EntityUtils.toString(entity, "UTF-8"));
+            }
+            // 关闭连接,释放资源
+            httpclient.getConnectionManager().shutdown();
 ```
 
 # 返回结果示例：
 
 ```
-{
-    "error_code": 0,
-    "reason": "查询成功",
-    "result": [
-        ["citycode","cont","country","district","city","cityEn","lastModif"],
-        ["1100101","亚洲","中国","北京","北京市","Beijing","20170201000000"],
-        ["1100705","亚洲","中国","广西","北海市","Beihai","20170201000000"]
-    ]
-}
+
 ```
 
 
