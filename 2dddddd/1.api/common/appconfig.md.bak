@@ -26,7 +26,7 @@ POST/GET
 | taskId | Number | 否 | 1 | 任务ID |
 | taskType | Number | 否 | 1 | 1:v4   2:SDK 3:BROWSER 4:SERVER |
 | monitorFun | Number | 否 | 1 | 检测任务类型： V4：（监测功能（0网络环境监测、2网页浏览监测、3网页元素监测、4下载监测,5流媒体，6元素组，7端口测试，9事务测试,99-移动单元素，98移动私有协议，97移动网络，96移动全元素、100-MAA）\)，95：BMTP，151：sdk,152：browser,153：server |
-| dHeader | String | 是 | APPID,TASK_TYPE,TASK_ID | 接口返回字段,配置\*返回全部 |
+| dHeader | String | 是 | APPID,APPNAME,KEY_FLAG | 接口返回字段,配置\*返回全部 |
 
 # **dHeader说明**
 
