@@ -48,7 +48,7 @@ field列表：
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | int | 错误码，0表示正常查询 |
+| errorCode | int | 错误码，0表示正常查询 |
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
 
