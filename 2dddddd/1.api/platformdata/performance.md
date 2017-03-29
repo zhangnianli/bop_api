@@ -1,10 +1,10 @@
 # 业务编号
 
-platform.performance.statdata
+platform.data.performance.statdata
 
 # api请求地址
 
-[https://api.bonree.com/](https://[api.bonree.com/net/report/taskdata]\(http://api.bonree.com/net/report/taskdata\)[platform/performance/statdata](https://[api.bonree.com/net/report/taskdata]\(http://api.bonree.com/net/report/taskdata)
+[https://api.bonree.com/](https://[api.bonree.com/net/report/taskdata]\(http://api.bonree.com/net/report/taskdata\)[platform/data/performance/statdata](https://[api.bonree.com/net/report/taskdata]\(http://api.bonree.com/net/report/taskdata)
 
 # 请求方式
 
@@ -119,8 +119,6 @@ field列表：
 api测试工具， api响应码查询工具，监测点查询工具，指标查询工具，监测数据错误码查询工具
 
 # FAQ：
-
-
 
 
 
