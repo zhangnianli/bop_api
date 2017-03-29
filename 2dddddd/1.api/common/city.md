@@ -16,10 +16,10 @@ base.data.city
 
 # **params说明：**
 
-| 参数名称 | 参数类型 | 示例值 | 参数说明 |
-| :--- | :--- | :--- | :--- |
-| lastModif | string | 20170201000000 | 最后修改时间 |
-| dHeader | String | 是 | CITYCODE,CITY,LASTMODIF | 接口返回字段,配置\*返回全部 |
+| 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
+| :--- | :--- | :--- | :--- | :--- |
+| lastModif | string |  | 20170201000000 | 最后修改时间 |
+|  | String |  | CITYCODE,CITY,LASTMODIF | 接口返回字段,配置\*返回全部 |
 
 # result说明
 
