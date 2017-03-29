@@ -18,7 +18,7 @@ POST／GET
 | :--- | :--- | :--- | :--- | :--- |
 | token | string\(32\) | 是 | xxxxxxxx | 令牌 |
 | dType | string | 是 | json/csv | 数据类型 |
-| userName | string | 是 | bonree | 用户名 |
+| username | string | 是 | bonree | 用户名 |
 | params | string | 是 |  | 参数json |
 
 ### params参数
@@ -39,11 +39,10 @@ POST／GET
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| userName | string | 否 | bonree | 用户名 |
-| sdkAppName | string | 否 | bonreeApp | sdk应用名 |
-| sdkAppId | string | 否 | 1111 | sdk应用id |
-| userName | string | 否 | 1111 | 用户名 |
-| APPMD5 | string | 否 | ×××× | 应用md5值 |
+| USERNAME | string | 否 | bonree | 用户名 |
+| TASK\_NAME | string | 否 | bonreeApp | sdk应用名 |
+| TASK\_ID | string | 否 | 1111 | sdk应用id |
+| TASK\_MD5 | string | 否 | ×××× | 应用md5值 |
 
 # 返回参数说明
 
