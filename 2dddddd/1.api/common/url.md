@@ -34,37 +34,36 @@ base.data.url
 | :--- | :--- | :--- | :--- |
 | citycode | Number | 1100101 | 城市编码 |
 | cont | string | 亚洲 | 洲 |
-| country | string | 中国 | 国家 |
-| district | string | 北京 | 地区 |
-| city | string | 北京市 | 城市 |
-| cityEn | string | Beijing | 城市英文 |
-| lastModif | Number | 1446307200000 | 最后修改时间 |
 
 # 请求示例
 
 ```
-    HttpClient httpclient = new DefaultHttpClient();
-    String url = "http://api.bonree.com/base/data/city";
-    HttpPost httppost = new HttpPost(url);
-    System.out.println("请求: " + httppost.getRequestLine());
-    // 创建参数队列
-    List<NameValuePair> formparams = new ArrayList<NameValuePair>();
-    formparams.add(new BasicNameValuePair("username", "bonreetest"));
-    formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-    formparams.add(new BasicNameValuePair("params", "{\"lastModif\":\"20170202000000\"}"));
-    UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
-    httppost.setEntity(uefEntity);
-    // 执行
-    HttpResponse response = httpclient.execute(httppost);
-    HttpEntity entity = response.getEntity();
-    System.out.println("----------------------------------------");
-    System.out.println("状态:" + response.getStatusLine());
-    if (entity != null) {
-        System.out.println("Response content length: " + entity.getContentLength());
-        System.out.println("Response content :" + EntityUtils.toString(entity, "UTF-8"));
-    }
-    // 关闭连接,释放资源
-    httpclient.getConnectionManager().shutdown();
+                   httpclient = new DefaultHttpClient();
+		    String url = "http://192.168.4.137/url";
+		    HttpPost httppost = new HttpPost(url);
+		    System.out.println("请求: " + httppost.getRequestLine());
+		    // 创建参数队列
+		    List<NameValuePair> formparams = new ArrayList<NameValuePair>();
+		    formparams.add(new BasicNameValuePair("username", "aaa"));
+		    formparams.add(new BasicNameValuePair("token", "2CBFC800431FFCB0"));
+		    JSONObject params = new JSONObject();
+		    params.put("type", "json");
+		    params.put("urlcode", "111111,222222");
+		    System.out.println("params="+params.toString());
+		    formparams.add(new BasicNameValuePair("params", params.toString()));
+		    UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
+		    httppost.setEntity(uefEntity);
+		    // 执行
+		    HttpResponse response = httpclient.execute(httppost);
+		    HttpEntity entity = response.getEntity();
+		    System.out.println("----------------------------------------");
+		    System.out.println("状态:" + response.getStatusLine());
+		    if (entity != null) {
+		        System.out.println("Response content length: " + entity.getContentLength());
+		        System.out.println("Response content :" + EntityUtils.toString(entity, "UTF-8"));
+		    }
+		    // 关闭连接,释放资源
+		    httpclient.getConnectionManager().shutdown();
 ```
 
 # 返回结果示例：
