@@ -1,10 +1,12 @@
+# 
+
 # 业务编号
 
 net.data.network.statdata
 
 # api请求地址
 
-[https://api.bonree.com/net/network/statdata](https://api.bonree.com/net/network/]%28https://[api.bonree.com/net/report/taskdata]%28http://api.bonree.com/net/report/taskdata%29statdata)
+[https://api.bonree.com/net/data/network/](https://[api.bonree.com/net/report/taskdata]\(http://api.bonree.com/net/report/taskdata)statdata
 
 # 请求方式
 
