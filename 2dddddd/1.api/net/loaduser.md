@@ -1,16 +1,16 @@
-# 业务编号
+# **业务编号**
 
 net.user.loadUser
 
-# api请求地址
+# **api请求地址**
 
 [http://api.bonree.com/net/user/loadUser](http://api.bonree.com/net/user/loadUser)
 
-# 请求方式
+# **请求方式**
 
 POST/GET
 
-# 请求参数
+# **请求参数**
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -18,14 +18,14 @@ POST/GET
 | username | string | 是 | bonreetest | 用户名 |
 | params | string | 是 | {"username":"bonreetest"} | 请求参数json |
 
-# params参数
+# **params参数**
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | username | string | 否 | bonreetest | 查询用户名（请求参数中username为系统用户时，该字段必填） |
 | dHeader | String | 是 | USERNAME,MONITOR\_COUNT\_SET,MONITOR\_COUNT\_USED | 接口返回字段,配置\*返回全部 |
 
-# dHeader说明
+# **dHeader说明**
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
@@ -46,7 +46,7 @@ POST/GET
 | APPLUZHI\_TIME\_SET | Number | 1000 | BMTP录制时长权限 |
 | APPMONITOR\_COUNT\_USED | Number | 67 | BMTP已使用监测量 |
 
-# 返回参数说明
+# **返回参数说明**
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
@@ -54,7 +54,7 @@ POST/GET
 | reason | string | 结果说明 |
 | result | string | 用户权限信息 |
 
-# 请求示例
+# **请求示例**
 
 ```
  POST:
@@ -84,7 +84,7 @@ POST/GET
   http://api.bonree.com/net/user/loadUser?token=asdas12312312ddwew5we5we5&username=bonreetest
 ```
 
-# 返回结果示例
+# **返回结果示例**
 
 ```
 {
@@ -97,11 +97,11 @@ POST/GET
 }
 ```
 
-# api工具：
+# **api工具**
 
 api测试工具， api响应码查询工具，监测点查询工具，指标查询工具，监测数据错误码查询工具
 
-# FAQ：
+# **FAQ**
 
 
 
