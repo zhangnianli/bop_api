@@ -18,7 +18,7 @@ POST/GET
 | username | string | 是 | bonreetest | 用户名 |
 | params | string | 是 | {"userId":1} | 请求参数json |
 
-## **params参数**
+# **params参数**
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |

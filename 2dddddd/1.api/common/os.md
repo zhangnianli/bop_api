@@ -16,7 +16,14 @@ POST/GET
 | :--- | :--- | :--- | :--- | :--- |
 | token | string | 是 | \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* | 令牌 |
 | username | string | 是 | bonreetest | 用户名 |
+
+# **params说明**
+
+|  参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
+| :--- | :--- | :--- | :--- | :--- |
 | dHeader | String | 是 | OS_ID,OS_NAME,OS_VER_NAME | 接口返回字段,配置\*返回全部 |
+
+# **dHeader说明**
 
 # **dHeader说明**
 | 名称 | 类型 | 示例值 | 描述 |

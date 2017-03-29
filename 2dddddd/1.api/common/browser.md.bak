@@ -1,10 +1,10 @@
 # **业务编号**
 
-base.data.loadOs
+base.data.loadBrowser
 
-# **api请求地址**
+# api请求地址
 
-[http://api.bonree.com/base/data/loadOs](http://api.bonree.com/basedata/loadOs)
+[http://api.bonree.com/base/data/loadBrowser](http://api.bonree.com/basedata/loadOs)
 
 # **请求方式**
 
@@ -17,22 +17,6 @@ POST/GET
 | token | string | 是 | \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* | 令牌 |
 | username | string | 是 | bonreetest | 用户名 |
 
-# **params说明**
-
-|  | 参数名称 | 参数类型 | 示例值 | 参数说明 |
-| :--- | :--- | :--- | :--- | :--- |
-| dHeader | String | 是 | OS_ID,OS_NAME,OS_VER_NAME | 接口返回字段,配置\*返回全部 |
-
-# **dHeader说明**
-
-# **dHeader说明**
-| 名称 | 类型 | 示例值 | 描述 |
-| :--- | :--- | :--- | :--- |
-| OS_ID | Number | 1 | 操作系统ID |
-| OS_NAME | string | Windows | 操作系统名称 |
-| OS_VER_ID | Number | 101 | 版本ID |
-| OS_VER_NAME | string | Win7 | 版本名称 |
-
 # **返回参数说明**
 
 | 名称 | 类型 | 描述 |
@@ -41,12 +25,21 @@ POST/GET
 | reason | string | 结果说明 |
 | result | string | 查询结果 |
 
+# **result说明**
+
+| 名称 | 类型 | 示例值 | 描述 |
+| :--- | :--- | :--- | :--- |
+| browserId | Number | 1 | 浏览器ID |
+| browserName | string | IE | 浏览器名称 |
+| browserVerId | Number | 106 | 版本ID |
+| browserVerName | string | IE6 | 版本名称 |
+
 # **请求示例**
 
 ```
  POST:
   HttpClient httpclient = new DefaultHttpClient();
-  String url = "http://api.bonree.com/base/data/loadOs";
+  String url = "http://api.bonree.com/based/ata/loadBrowser";
   HttpPost httppost = new HttpPost(url);
   System.out.println("请求: " + httppost.getRequestLine());
   // 创建参数队列
@@ -68,7 +61,7 @@ POST/GET
   httpclient.getConnectionManager().shutdown();
 
  GET:
-  http://api.bonree.com/base/data/loadOs?token=asdas12312312ddwew5we5we5&username=bonreetest
+  http://api.bonree.com/base/data/loadBrowser?token=asdas12312312ddwew5we5we5&username=bonreetest
 ```
 
 # **返回结果示例**
@@ -78,9 +71,9 @@ POST/GET
     "error_code": 0,
     "reason":"查询成功",
     "result: [
-        ["osId","osName","osVerId","osVerName"],
-        [1,"Windows",101,"Win7"],
-        [1,"Windows",102,"Win Vista"]
+        ["browserId","browserName","browserVerId","browserVerName"],
+        [1,"IE",106,"IE6"],
+        [1,"IE",107,"IE7"]
     ]
 }
 ```

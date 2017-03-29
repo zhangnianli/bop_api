@@ -24,7 +24,7 @@ POST/GET
 | :--- | :--- | :--- | :--- | :--- |
 | userId | Number | 否 | 1 | 用户id |
 | appId | Number | 否 | 1 | appId |
-| dHeader | String | 是 | APPID,APPNAME | 接口返回字段,配置\*返回全部 |
+| dHeader | String | 是 | APPID,APPNAME,KEY_FLAG | 接口返回字段,配置\*返回全部 |
 
 # **dHeader说明**
 

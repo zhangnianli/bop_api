@@ -17,14 +17,6 @@ POST/GET
 | token | string | 是 | \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* | 令牌 |
 | username | string | 是 | bonreetest | 用户名 |
 
-# **返回参数说明**
-
-| 名称 | 类型 | 描述 |
-| :--- | :--- | :--- |
-| error\_code | Number | 错误码 |
-| reason | string | 结果说明 |
-| result | string | 查询结果 |
-
 # **result说明**
 
 | 名称 | 类型 | 示例值 | 描述 |
@@ -33,6 +25,14 @@ POST/GET
 | browserName | string | IE | 浏览器名称 |
 | browserVerId | Number | 106 | 版本ID |
 | browserVerName | string | IE6 | 版本名称 |
+
+# **返回参数说明**
+
+| 名称 | 类型 | 描述 |
+| :--- | :--- | :--- |
+| error\_code | Number | 错误码 |
+| reason | string | 结果说明 |
+| result | string | 查询结果 |
 
 # **请求示例**
 
