@@ -23,6 +23,17 @@ POST/GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | appId | Number | 否 | 1 | appId |
+| dHeader | String | 是 | ERROR_ID,ERROR_NAME | 接口返回字段,配置\*返回全部 |
+
+# **dHeader说明**
+
+| 名称 | 类型 | 示例值 | 描述 |
+| :--- | :--- | :--- | :--- |
+| KEY_ID | Number | 1 | 关键元素ID |
+| APPID | Number | 1 | 应用ID |
+| KEY_FLAG | Number | 1 | 匹配规则1-完全匹配 2-通配符 |
+| URL | string | [http://www.baidu.com](http://www.baidu.com) |  |
+| STATUS | Number | 2 | 关键元素状态 1-正常 2-禁用，3-删除 |
 
 # **返回参数说明**
 
@@ -31,16 +42,6 @@ POST/GET
 | error\_code | Number | 错误码 |
 | reason | string | 结果说明 |
 | result | string | 查询结果 |
-
-# **result说明**
-
-| 名称 | 类型 | 示例值 | 描述 |
-| :--- | :--- | :--- | :--- |
-| keyId | Number | 1 | 关键元素ID |
-| appId | Number | 1 | 应用ID |
-| keyFlag | Number | 1 | 匹配规则1-完全匹配 2-通配符 |
-| url | string | [http://www.baidu.com](http://www.baidu.com) |  |
-| status | Number | 2 | 关键元素状态 1-正常 2-禁用，3-删除 |
 
 # **请求示例**
 
