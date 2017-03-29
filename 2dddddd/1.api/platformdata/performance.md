@@ -75,7 +75,6 @@ field列表：
 | SERVERRESPONSETIME1 | 服务器处理时间 | 服务器处理时间均值，健康请求的 |
 | SERVERRESPONSETIME2 | 服务处理时间 | 服务器处理时间均值，不健康请求的 |
 | ERRORID | 错误码 | 错误类型码 |
-| MONITOR\_TIME\_CODE | 时间频度码 | 按时间频度划分的时间频度值 |
 
 # 返回参数说明
 
