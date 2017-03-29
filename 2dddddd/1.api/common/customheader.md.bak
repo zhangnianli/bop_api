@@ -19,17 +19,17 @@ base.data.loadCustomHeader
 | 参数名称 | 参数类型 | 是否必选 |示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | lastModif | string | 否 | 20170201000000 | 最后修改时间 |
-| dHeader | String | 是 | ACCOUNT_ID,COLUMN_FIELDS,COLUMN_LABELS,LASTMODIF | 接口返回字段,配置\*返回全部 |
+| dHeader | String | 是 | BROWSER_ID,BROWSER_NAME,BROWSER_VER_NAME | 接口返回字段,配置\*返回全部 |
 
 # **dHeader说明**
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| ACCOUNT_ID | Number | 1 |  |
-| COLUMN_FIELDS | string | responseTime,dnsTime,tcpTime | 表头字段 |
-| COLUMN_LABELS | string | 响应用时,DNS用时,TCP用时 | 表头对应描述 |
-| BUSINESS_TYPE | Number | 508 |  |
-| LASTMODIF | Number | 1446307200000 | 最后修改时间 |
+| accountId | Number | 1 |  |
+| columnFields | string | responseTime,dnsTime,tcpTime | 表头字段 |
+| columnLabels | string | 响应用时,DNS用时,TCP用时 | 表头对应描述 |
+| businessType | Number | 508 |  |
+| lastModif | Number | 1446307200000 | 最后修改时间 |
 
 # **返回参数说明**
 
