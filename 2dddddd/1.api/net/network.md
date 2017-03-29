@@ -45,8 +45,6 @@ params说明：
 | STR\_HOUR | 1小时频度 |
 | STR\_DAY | 1天频度 |
 
-
-
 dHeader列表：
 
 | 字段英文名称 | 字段中文名称 |
