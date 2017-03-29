@@ -37,7 +37,14 @@ params说明：
 | granule | string | 否 | STR\_DAY | 查询数据的时间频度，请查看时间频度字典表 |
 | order | string | 否 | \[\["city","desc"\],\["netservice","asc"\]\] | 排序条件 |
 
+时间频度字典表
 
+| 值 | 含义 |
+| :--- | :--- |
+| STR\_MINUTE5 | 五分钟频度 |
+| STR\_MINUTE30 | 30分钟频度 |
+| STR\_HOUR | 1小时频度 |
+| STR\_DAY | 1天频度 |
 
 
 
