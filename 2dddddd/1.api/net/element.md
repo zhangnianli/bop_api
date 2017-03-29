@@ -56,7 +56,6 @@ dHeader字典表：
 | ALLNUM\_ERR | 总错误次数 |
 | ERRRATE\_ROLE | 任务错误占比 |
 | ERRRATE | 错误率 |
-| MONITOR\_TIME\_CODE | 时间频度码 |
 
 # 返回参数说明
 
