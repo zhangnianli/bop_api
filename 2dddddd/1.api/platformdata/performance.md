@@ -30,7 +30,7 @@ params说明：
 | filters | string | 否 | \[{“filed”:”CPU\_RATE”, “condo”:”&gt;=”,”value”:”6”}\] | 字段值筛选条件 |
 | group | string | 否 | city,netservice | 分组条件，字段顺序为分组顺序 |
 | granule | string | 否 | STR\_MINUTE5 | 时间频度，可用频度值参见下方时间频度字典表 |
-| dHeader | string | 是 | city,netservice | 指标查询结果，可以指定计算哪些指标，详见 |
+| dHeader | string | 是 | city,netservice | 指标查询结果，可以指定计算哪些指标，详见dHeader字典表 |
 | order | string | 否 | city desc/nerservice asc,city desc | 排序条件，字段顺序就是排序顺序 |
 
 时间频度字典表
