@@ -34,7 +34,7 @@ params说明：
 | fields | string | 是 | city,netservice | 指定计算哪些指标，并作为查询结果返回 |
 | pageNum | string | 否 | 1 | 分页索引，第几页 |
 | pageRecorders | string | 否 | 50 | 分页查询时，单页总条数 |
-| timefram | string | 否 | 5 | 查询数据的时间频度，单位为分钟，当传时间频度的时候，group参数必填 |
+| granule | string | 否 | 5 | 查询数据的时间频度，单位为分钟，当传时间频度的时候，group参数必填 |
 | order | string | 否 | \[\["city","desc"\],\["netservice","asc"\]\] | 排序条件 |
 
 field列表：
@@ -121,8 +121,6 @@ field列表：
 api测试工具， api响应码查询工具，监测点查询工具，指标查询工具，监测数据错误码查询工具
 
 # FAQ：
-
-
 
 
 
