@@ -38,7 +38,7 @@ base.data.url
 # 请求示例
 
 ```
-                   httpclient = new DefaultHttpClient();
+            httpclient = new DefaultHttpClient();
             String url = "http://192.168.4.137/url";
             HttpPost httppost = new HttpPost(url);
             System.out.println("请求: " + httppost.getRequestLine());
@@ -68,9 +68,7 @@ base.data.url
 
 # 返回结果示例：
 
-```
+\`\`\`
 
-```
-
-
+\`\`\`
 
