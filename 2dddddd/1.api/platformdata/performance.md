@@ -38,6 +38,9 @@ params说明：
 | 值 | 含义 |
 | :--- | :--- |
 | STR\_MINUTE5 | 五分钟频度 |
+| STR\_MINUTE30 |  |
+| STR\_HOUR |  |
+| STR\_DAY |  |
 
 field列表：
 
