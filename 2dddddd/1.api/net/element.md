@@ -37,6 +37,10 @@ params说明：
 | granule | string | 否 | STR\_DAY | 查询数据的时间频度，请查看时间频度字典表 |
 | order | string | 否 | \[\["city","desc"\],\["netservice","asc"\]\] | 排序条件 |
 
+
+
+
+
 dHeader字典表：
 
 | 字段英文名称 | 字段中文名称 |
