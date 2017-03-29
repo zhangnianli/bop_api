@@ -46,8 +46,6 @@ params说明：
 | STR\_HOUR | 1小时频度 |
 | STR\_DAY | 1天频度 |
 
-
-
 dHeader字典表：
 
 | 字段英文名称 | 字段中文名称 |
@@ -72,7 +70,7 @@ dHeader字典表：
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | int | 错误码,0表示查询正常 |
+| errorCode | int | 错误码,0表示查询正常 |
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
 
