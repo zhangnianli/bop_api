@@ -36,7 +36,18 @@ params说明：
 | dHeader | string | 是 | city,netservice | 指定计算哪些指标，并作为查询结果返回,详见dHeader字典表 |
 | granule | string | 否 | STR\_DAY | 时间频度，详见时间频度字典表 |
 
-field列表：
+时间频度字典表
+
+| 值 | 含义 |
+| :--- | :--- |
+| STR\_MINUTE5 | 五分钟频度 |
+| STR\_MINUTE30 | 30分钟频度 |
+| STR\_HOUR | 1小时频度 |
+| STR\_DAY | 1天频度 |
+
+
+
+dHeader列表：
 
 | 字段英文名称 | 字段中文名称 |
 | :--- | :--- |
