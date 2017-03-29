@@ -1,10 +1,10 @@
 # 业务编号
 
-base.data.city
+base.data.url
 
 # api请求地址
 
-[http://api.bonree.com/base/data/city](http://api.bonree.com/base/city)
+[http://api.bonree.com/base/data/](http://api.bonree.com/base/city)url
 
 # 请求参数：
 
@@ -18,7 +18,7 @@ base.data.city
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
-| lastModif | string | 20170201000000 | 最后修改时间 |
+| urlcode | string | 20170201000000 | 最后修改时间 |
 
 # 返回参数说明：
 
