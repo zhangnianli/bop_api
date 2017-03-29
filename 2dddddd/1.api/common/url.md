@@ -39,7 +39,7 @@ base.data.url
 
 ```
             httpclient = new DefaultHttpClient();
-            String url = "http://192.168.4.137/url";
+            String url = "http://api.bonree.com/base/data/url";
             HttpPost httppost = new HttpPost(url);
             System.out.println("请求: " + httppost.getRequestLine());
             // 创建参数队列
