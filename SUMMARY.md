@@ -35,7 +35,7 @@
     * [platform](2dddddd/1.api/platformdata.md)
       * [元素快照统计数据](2dddddd/1.api/platformdata/elementstatdata.md)
       * [元素快照详细数据](2dddddd/1.api/platformdata/elementdetaildata.md)
-      * [performance](2dddddd/1.api/platformdata/performance.md)
+      * [融合数据统计](2dddddd/1.api/platformdata/performance.md)
     * [base](2dddddd/1.api/common.md)
       * [运营商](2dddddd/1.api/common/dictionary.md)
       * [城市](2dddddd/1.api/common/city.md)
