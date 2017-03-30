@@ -21,17 +21,17 @@ apm.data.healthdata
 | dType | string | 是 | json | 数据类型\(csv、json\) |
 | beAppId | string | 是 | 1035,1023,2023 | 后端应用ID |
 | dTime | string | 是 | 20170201000000-20170301000000 | 查询时间范围 |
-| dHeader | string | 是 | beAppId,totalMa,errorMa,totalVm,errorVm | 指标数据项 |
+| dHeader | string | 是 | BE\_APP\_ID,TOTAL\_MA,ERROR\_MA,TOTAL\_VM,ERROR\_VM | 指标数据项 |
 
 # dHeader字段说明：
 
 | 字段 | 名称 |
 | :--- | :--- |
-| beAppId | 应用ID |
-| totalMa | 主机总数 |
-| errorMa | 不健康主机数 |
-| totalVm | 容器总数 |
-| errorVm | 不健康容器数 |
+| BE\_APP\_ID | 应用ID |
+| TOTAL\_MA | 主机总数 |
+| ERROR\_MA | 不健康主机数 |
+| TOTAL\_VM | 容器总数 |
+| ERROR\_VM | 不健康容器数 |
 
 # 返回参数说明：
 
@@ -52,7 +52,7 @@ apm.data.healthdata
     List<NameValuePair> formparams = new ArrayList<NameValuePair>();
     formparams.add(new BasicNameValuePair("username", "bonreetest"));
     formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-    formparams.add(new BasicNameValuePair("params", "{\"dtype\":\"json\",\"beAppId\":\"1035,1023,2023\",\"dtime\":\"20170201000000-20170301000000\",\"dHeader\":\"beAppId,totalMa,errorMa,totalVm,errorVm\"}"));
+    formparams.add(new BasicNameValuePair("params", "{\"dtype\":\"json\",\"beAppId\":\"1035,1023,2023\",\"dtime\":\"20170201000000-20170301000000\",\"dHeader\":\"BE_APP_ID,TOTAL_MA,ERROR_MA,TOTAL_VM,ERROR_VM\"}"));
     UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
     httppost.setEntity(uefEntity);
     // 执行
@@ -75,7 +75,7 @@ apm.data.healthdata
     "error_code": 0,
     "reason": "查询成功",
     "result": [
-        ["beAppId","totalMa","errorMa","totalVm","errorVm"],
+        ["BE_APP_ID","TOTAL_MA","ERROR_MA","TOTAL_VM","ERROR_VM"],
         ["1035", "100", "5", "100", "8"]
     }]
 }
