@@ -18,10 +18,10 @@ platform.data.element.detaildata
 
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| dtype | string | 是 | json | 数据类型\(csv、json\) |
+| dType | string | 是 | json | 数据类型\(csv、json\) |
 | appId | string | 是 | 1035,1023,2023 | 应用ID |
 | partUrlCode | string | 否 | 13575031,15465778 | 截取后的URL CODE |
-| dtime | string | 是 | 20170201000000-20170301000000 | 查询时间范围 |
+| dTime | string | 是 | 20170201000000-20170301000000 | 查询时间范围 |
 | pageNum | string | 否 | 1 | 页码 |
 | pageRecorders | string | 否 | 50 | 每页行数 |
 | orderByFlag | string | 否 | DTIME DESC | 排序字段 |
