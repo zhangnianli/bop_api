@@ -49,7 +49,7 @@ apm.data.app.infodata
     List<NameValuePair> formparams = new ArrayList<NameValuePair>();
     formparams.add(new BasicNameValuePair("username", "bonreetest"));
     formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-    formparams.add(new BasicNameValuePair("params", "{\"dtype\":\"json\",\"dHeader\":\"BE_APP_ID,BE_APP_NAME,APP_GUID\"}"));
+    formparams.add(new BasicNameValuePair("params", "{\"dType\":\"json\",\"dHeader\":\"BE_APP_ID,BE_APP_NAME,APP_GUID\"}"));
     UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
     httppost.setEntity(uefEntity);
     // 执行
