@@ -77,7 +77,7 @@ apm.data.cluster.bebtdata
     "error_code": 0,
     "reason": "查询成功",
     "result": [
-        ["beAppId","clusterId","clusterName","totalCalls","errorCalls","sumRespTime","sampleCount"],
+        ["BE_APP_ID","CLUSTER_ID","CLUSTER_NAME","TOTAL_CALLS","ERROR_CALLS","SUM_RESP_TIME","SAMPLE_COUNT"],
         ["1035", "5077", "xxx", "1021", "10","929","7"],
         ["1023", "5077", "xxx", "2021", "20","930","7"],
         ["2023", "5077", "xxx", "2021", "30","940","8"]
