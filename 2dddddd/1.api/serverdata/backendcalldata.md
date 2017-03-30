@@ -22,21 +22,21 @@ apm.data.backendcall.statdata
 | beAppId | string | 是 | 1035,1023,2023 | 后端应用ID |
 | dTime | string | 是 | 20170201000000-20170301000000 | 查询时间范围 |
 | beType | string | 否 | sql | 查询后端类型\(sql,rpc,nosql\) |
-| dHeader | string | 是 | beAppId,backendId,backendName,clusterId,totalCalls,errorCalls,sumRespTime,sampleCount | 指标数据项 |
+| dHeader | string | 是 | BE\_APP\_ID,BACKEND\_ID,BACKEND\_NAME,BACKEND\_TYPE,CLUSTER\_ID,TOTAL\_CALLS,ERROR\_CALLS,SUM\_RESP\_TIME,SAMPLE\_COUNT | 指标数据项 |
 
 # dHeader字段说明：
 
 | 字段 | 名称 |
 | :--- | :--- |
-| beAppId | 应用ID |
-| backendId | 后端ID |
-| backendName | 后端名称 |
-| backendType | 后端类型（sql/rpc/nosql） |
-| clusterId | 集群ID |
-| totalCalls | 总调用数 |
-| errorCalls | 错误调用数 |
-| sumRespTime | 总耗时 |
-| sampleCount | 样本数 |
+| BE\_APP\_ID | 应用ID |
+| BACKEND\_ID | 后端ID |
+| BACKEND\_NAME | 后端名称 |
+| BACKEND\_TYPE | 后端类型（sql/rpc/nosql） |
+| CLUSTER\_ID | 集群ID |
+| TOTAL\_CALLS | 总调用数 |
+| ERROR\_CALLS | 错误调用数 |
+| SUM\_RESP\_TIME | 总耗时 |
+| SAMPLE\_COUNT | 样本数 |
 
 # 返回参数说明：
 
@@ -57,7 +57,7 @@ apm.data.backendcall.statdata
     List<NameValuePair> formparams = new ArrayList<NameValuePair>();
     formparams.add(new BasicNameValuePair("username", "bonreetest"));
     formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-    formparams.add(new BasicNameValuePair("params", "{\"dtype\":\"json\",\"beAppId\":\"1035,1023,2023\",\"dtime\":\"20170201000000-20170301000000\",\"dHeader\":\"beAppId,backendId,backendName,clusterId,totalCalls,errorCalls,sumRespTime,sampleCount\"}"));
+    formparams.add(new BasicNameValuePair("params", "{\"dtype\":\"json\",\"beAppId\":\"1035,1023,2023\",\"dtime\":\"20170201000000-20170301000000\",\"dHeader\":\"BE_APP_ID,BACKEND_ID,BACKEND_NAME,BACKEND_TYPE,CLUSTER_ID,TOTAL_CALLS,ERROR_CALLS,SUM_RESP_TIME,SAMPLE_COUNT\"}"));
     UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
     httppost.setEntity(uefEntity);
     // 执行
