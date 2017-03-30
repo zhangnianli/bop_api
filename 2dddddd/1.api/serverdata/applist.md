@@ -69,7 +69,7 @@ apm.data.app.infodata
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason": "查询成功",
     "result": [
         ["BE_APP_ID","BE_APP_NAME","APP_GUID"],
