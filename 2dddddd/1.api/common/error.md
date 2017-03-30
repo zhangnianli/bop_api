@@ -16,27 +16,27 @@ POST/GET
 | :--- | :--- | :--- | :--- | :--- |
 | token | string | 是 | \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* | 令牌 |
 | username | string | 是 | bonreetest | 用户名 |
-| params | string | {"lastModif":"20170201000000"} | 参数json |
+|  | params | string | {"lastModif":"20170201000000"} | 参数json |
 
 # **params说明**
 
-| 参数名称 | 参数类型 | 是否必选 |示例值 | 参数说明 |
+| 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| dHeader | String | 是 | ERROR_ID,ERROR_NAME | 接口返回字段,配置\*返回全部 |
+| dHeader | String | 是 | ERROR\_ID,ERROR\_NAME | 接口返回字段,配置\*返回全部 |
 
 # **dHeader说明**
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| ERROR_ID | Number | 619 | 错误ID |
-| ERROR_NAME | string | 请求超时 | 错误描述 |
-| ERROR_TYPE | Number | 1 | 错误分类 |
+| ERROR\_ID | Number | 619 | 错误ID |
+| ERROR\_NAME | string | 请求超时 | 错误描述 |
+| ERROR\_TYPE | Number | 1 | 错误分类 |
 
 # **返回参数说明**
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | Number | 错误码 |
+| errorCode | Number | 错误码 |
 | reason | string | 结果说明 |
 | result | string | 查询结果 |
 
@@ -74,7 +74,7 @@ POST/GET
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason":"查询成功",
     "result: [
         ["ERROR_ID","ERROR_NAME","ERROR_TYPE]",

@@ -26,7 +26,7 @@ POST/GET
 | taskId | Number | 否 | 1 | 任务ID |
 | taskType | Number | 否 | 1 | 1:v4   2:SDK 3:BROWSER 4:SERVER |
 | monitorFun | Number | 否 | 1 | 检测任务类型： V4：（监测功能（0网络环境监测、2网页浏览监测、3网页元素监测、4下载监测,5流媒体，6元素组，7端口测试，9事务测试,99-移动单元素，98移动私有协议，97移动网络，96移动全元素、100-MAA）\)，95：BMTP，151：sdk,152：browser,153：server |
-| dHeader | String | 是 | APPID,TASK_TYPE,TASK_ID | 接口返回字段,配置\*返回全部 |
+| dHeader | String | 是 | APPID,TASK\_TYPE,TASK\_ID | 接口返回字段,配置\*返回全部 |
 
 # **dHeader说明**
 
@@ -34,17 +34,17 @@ POST/GET
 | :--- | :--- | :--- | :--- |
 | APPID | Number | 3 | 应用ID |
 | ID | Number | 1 |  |
-| TASK_TYPE | Number | 1 | 1-v4 2-SDK 3-BROWSER 4-SERVER |
-| MONITOR_FUN | Number | 6 | 检测任务类型V4：（监测功能（0网络环境监测、2网页浏览监测、3网页元素监测、4下载监测,5流媒体，6元素组，7端口测试，9事务测试,99-移动单元素，98移动私有协议，97移动网络，96移动全元素、100-MAA）\)，95：BMTP，151：sdk,152：browser,153：server |
-| TASK_ID | Number | 170435 | 任务ID |
+| TASK\_TYPE | Number | 1 | 1-v4 2-SDK 3-BROWSER 4-SERVER |
+| MONITOR\_FUN | Number | 6 | 检测任务类型V4：（监测功能（0网络环境监测、2网页浏览监测、3网页元素监测、4下载监测,5流媒体，6元素组，7端口测试，9事务测试,99-移动单元素，98移动私有协议，97移动网络，96移动全元素、100-MAA）\)，95：BMTP，151：sdk,152：browser,153：server |
+| TASK\_ID | Number | 170435 | 任务ID |
 | URL | string | [http://www.baidu.com](http://www.baidu.com) | 任务地址 |
-| URL_MERGE_RULE | Number | 3 | 请求地址合并（1:完全匹配，2：通配符，3：正则表达式） |
+| URL\_MERGE\_RULE | Number | 3 | 请求地址合并（1:完全匹配，2：通配符，3：正则表达式） |
 
 # **返回参数说明**
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | Number | 错误码 |
+| errorCode | Number | 错误码 |
 | reason | string | 结果说明 |
 | result | string | 查询结果 |
 
@@ -83,7 +83,7 @@ POST/GET
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason":"查询成功",
     "result: [
         ["APPID","ID","TASK_TYPE","MONITOR_FUN","TASK_ID","URL","URL_MERGE_RULE"],

@@ -22,22 +22,22 @@ POST/GET
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| dHeader | String | 是 | BROWSER_ID,BROWSER_NAME,BROWSER_VER_NAME | 接口返回字段,配置\*返回全部 |
+| dHeader | String | 是 | BROWSER\_ID,BROWSER\_NAME,BROWSER\_VER\_NAME | 接口返回字段,配置\*返回全部 |
 
 # **dHeader说明**
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| BROWSER_ID | Number | 1 | 浏览器ID |
-| BROWSER_NAME | string | IE | 浏览器名称 |
-| BROWSER_VER_ID | Number | 106 | 版本ID |
-| BROWSER_VER_NAME | string | IE6 | 版本名称 |
+| BROWSER\_ID | Number | 1 | 浏览器ID |
+| BROWSER\_NAME | string | IE | 浏览器名称 |
+| BROWSER\_VER\_ID | Number | 106 | 版本ID |
+| BROWSER\_VER\_NAME | string | IE6 | 版本名称 |
 
 # **返回参数说明**
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | Number | 错误码 |
+| errorCode | Number | 错误码 |
 | reason | string | 结果说明 |
 | result | string | 查询结果 |
 
@@ -75,7 +75,7 @@ POST/GET
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason":"查询成功",
     "result: [
         ["BROWSER_ID","BROWSER_NAME","BROWSER_VER_ID","BROWSER_VER_NAME"],

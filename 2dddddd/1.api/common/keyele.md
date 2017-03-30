@@ -23,15 +23,15 @@ POST/GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | appId | Number | 否 | 1 | appId |
-| dHeader | String | 是 | ERROR_ID,ERROR_NAME | 接口返回字段,配置\*返回全部 |
+| dHeader | String | 是 | ERROR\_ID,ERROR\_NAME | 接口返回字段,配置\*返回全部 |
 
 # **dHeader说明**
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| KEY_ID | Number | 1 | 关键元素ID |
+| KEY\_ID | Number | 1 | 关键元素ID |
 | APPID | Number | 1 | 应用ID |
-| KEY_FLAG | Number | 1 | 匹配规则1-完全匹配 2-通配符 |
+| KEY\_FLAG | Number | 1 | 匹配规则1-完全匹配 2-通配符 |
 | URL | string | [http://www.baidu.com](http://www.baidu.com) |  |
 | STATUS | Number | 2 | 关键元素状态 1-正常 2-禁用，3-删除 |
 
@@ -39,7 +39,7 @@ POST/GET
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | Number | 错误码 |
+| errorCode | Number | 错误码 |
 | reason | string | 结果说明 |
 | result | string | 查询结果 |
 
@@ -78,7 +78,7 @@ POST/GET
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason":"查询成功",
     "result: [
         ["KEY_ID","APPID","KEY_FLAG","URL","STATUS"],

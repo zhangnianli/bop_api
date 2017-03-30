@@ -16,26 +16,26 @@ base.data.loadCustomHeader
 
 # **params说明**
 
-| 参数名称 | 参数类型 | 是否必选 |示例值 | 参数说明 |
+| 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | lastModif | string | 否 | 20170201000000 | 最后修改时间 |
-| dHeader | String | 是 | ACCOUNT_ID,COLUMN_FIELDS,COLUMN_LABELS,LASTMODIF | 接口返回字段,配置\*返回全部 |
+| dHeader | String | 是 | ACCOUNT\_ID,COLUMN\_FIELDS,COLUMN\_LABELS,LASTMODIF | 接口返回字段,配置\*返回全部 |
 
 # **dHeader说明**
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| ACCOUNT_ID | Number | 1 |  |
-| COLUMN_FIELDS | string | responseTime,dnsTime,tcpTime | 表头字段 |
-| COLUMN_LABELS | string | 响应用时,DNS用时,TCP用时 | 表头对应描述 |
-| BUSINESS_TYPE | Number | 508 |  |
+| ACCOUNT\_ID | Number | 1 |  |
+| COLUMN\_FIELDS | string | responseTime,dnsTime,tcpTime | 表头字段 |
+| COLUMN\_LABELS | string | 响应用时,DNS用时,TCP用时 | 表头对应描述 |
+| BUSINESS\_TYPE | Number | 508 |  |
 | LASTMODIF | Number | 1446307200000 | 最后修改时间 |
 
 # **返回参数说明**
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | int | 错误码 |
+| errorCode | int | 错误码 |
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
 
@@ -70,7 +70,7 @@ base.data.loadCustomHeader
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason": "查询成功",
     "result": [
         ["ACCOUNT_ID","COLUMN_FIELDS","COLUMN_LABELS","BUSINESS_TYPE","LASTMODIF"],
