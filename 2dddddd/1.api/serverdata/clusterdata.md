@@ -54,7 +54,7 @@ apm.data.cluster.bebtdata
     List<NameValuePair> formparams = new ArrayList<NameValuePair>();
     formparams.add(new BasicNameValuePair("username", "bonreetest"));
     formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-    formparams.add(new BasicNameValuePair("params", "{\"dtype\":\"json\",\"appId\":\"1035,1023,2023\",\"dtime\":\"20170201000000-20170301000000\",\"dHeader\":\"BE_APP_ID,CLUSTER_ID,CLUSTER_NAME,TOTAL_CALLS,ERROR_CALLS,SUM_RESP_TIME,SAMPLE_COUNT\"}"));
+    formparams.add(new BasicNameValuePair("params", "{\"dType\":\"json\",\"appId\":\"1035,1023,2023\",\"dTime\":\"20170201000000-20170301000000\",\"dHeader\":\"BE_APP_ID,CLUSTER_ID,CLUSTER_NAME,TOTAL_CALLS,ERROR_CALLS,SUM_RESP_TIME,SAMPLE_COUNT\"}"));
     UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
     httppost.setEntity(uefEntity);
     // 执行
@@ -74,7 +74,7 @@ apm.data.cluster.bebtdata
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason": "查询成功",
     "result": [
         ["BE_APP_ID","CLUSTER_ID","CLUSTER_NAME","TOTAL_CALLS","ERROR_CALLS","SUM_RESP_TIME","SAMPLE_COUNT"],
