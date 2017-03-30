@@ -18,9 +18,9 @@ apm.data.healthdata
 
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| dtype | string | 是 | json | 数据类型\(csv、json\) |
+| dType | string | 是 | json | 数据类型\(csv、json\) |
 | beAppId | string | 是 | 1035,1023,2023 | 后端应用ID |
-| dtime | string | 是 | 20170201000000-20170301000000 | 查询时间范围 |
+| dTime | string | 是 | 20170201000000-20170301000000 | 查询时间范围 |
 | dHeader | string | 是 | beAppId,totalMa,errorMa,totalVm,errorVm | 指标数据项 |
 
 # dHeader字段说明：
