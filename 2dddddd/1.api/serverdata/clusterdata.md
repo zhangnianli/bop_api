@@ -18,22 +18,22 @@ apm.data.cluster.bebtdata
 
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| dtype | string | 是 | json | 数据类型\(csv、json\) |
+| dType | string | 是 | json | 数据类型\(csv、json\) |
 | beAppId | string | 是 | 1035,1023,2023 | 后端应用ID |
 | dTime | string | 是 | 20170201000000-20170301000000 | 查询时间范围 |
-| dHeader | string | 是 | beAppId,clusterId,clusterName,totalCalls,errorCalls,sumRespTime,sampleCount | 指标数据项 |
+| dHeader | string | 是 | BE\_APP\_ID,CLUSTER\_ID,CLUSTER\_NAME,TOTAL\_CALLS,ERROR\_CALLS,SUM\_RESP\_TIME,SAMPLE\_COUNT | 指标数据项 |
 
 # dHeader字段说明：
 
 | 字段 | 名称 |
 | :--- | :--- |
-| beAppId | 应用ID |
-| clusterId | 集群ID |
-| clusterName | 集群名称 |
-| totalCalls | 总请求数 |
-| errorCalls | 错误请求数 |
-| sumRespTime | 总耗时 |
-| sampleCount | 样本数 |
+| BE\_APP\_ID | 应用ID |
+| CLUSTER\_ID | 集群ID |
+| CLUSTER\_NAME | 集群名称 |
+| TOTAL\_CALLS | 总请求数 |
+| ERROR\_CALLS | 错误请求数 |
+| SUM\_RESP\_TIME | 总耗时 |
+| SAMPLE\_COUNT | 样本数 |
 
 # 返回参数说明：
 
