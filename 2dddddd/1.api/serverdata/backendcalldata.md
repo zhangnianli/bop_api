@@ -80,7 +80,7 @@ apm.data.backendcall.statdata
     "error_code": 0,
     "reason": "查询成功",
     "result": [
-        ["beAppId","backendId","backendName","clusterId","totalCalls","errorCalls","sumRespTime","sampleCount"],
+        ["BE_APP_ID","BACKEND_ID","BACKEND_NAME","BACKEND_TYPE","CLUSTER_ID","TOTAL_CALLS","ERROR_CALLS","SUM_RESP_TIME","SAMPLE_COUNT"],
         ["1035", "661208", "xxx", "101", "1021", "10","929","7"],
         ["1023", "661208", "xxx", "102", "2021", "20","930","7"],
         ["2023", "661208", "xxx", "103", "2021", "30","940","8"]
