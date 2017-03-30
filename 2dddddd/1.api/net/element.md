@@ -41,7 +41,7 @@ params说明：
 
 | 值 | 含义 |
 | :--- | :--- |
-| STR\_MINUTE5 | 五分钟频度 |
+| STR\_MINUTE5 | 5分钟频度 |
 | STR\_MINUTE30 | 30分钟频度 |
 | STR\_HOUR | 1小时频度 |
 | STR\_DAY | 1天频度 |
