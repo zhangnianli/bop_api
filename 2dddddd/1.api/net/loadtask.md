@@ -85,7 +85,7 @@ POST/GET
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason":"查询成功",
     "result: [
         ["ROLE_NAME","URL","TASK_ID","MONITOR_FUN","FLAG","START_TIME","END_TIME","PARENT_ID","ROLE_TYPE","NETENV_MON"],
