@@ -20,7 +20,7 @@ apm.data.cluster.bebtdata
 | :--- | :--- | :--- | :--- | :--- |
 | dtype | string | 是 | json | 数据类型\(csv、json\) |
 | beAppId | string | 是 | 1035,1023,2023 | 后端应用ID |
-| dtime | string | 是 | 20170201000000-20170301000000 | 查询时间范围 |
+| dTime | string | 是 | 20170201000000-20170301000000 | 查询时间范围 |
 | dHeader | string | 是 | beAppId,clusterId,clusterName,totalCalls,errorCalls,sumRespTime,sampleCount | 指标数据项 |
 
 # dHeader字段说明：
