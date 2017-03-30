@@ -18,7 +18,8 @@ apm.data.user.package
 
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| dtype | string | 是 | json | 数据类型\(csv、json\) |
+| dType | string | 是 | json | 数据类型\(csv、json\) |
+| username | string | 是 | bonreetest | 用户名 |
 | dHeader | string | 是 | startTime,endTime,agentNum | 指标数据项 |
 
 # dHeader字段说明：
