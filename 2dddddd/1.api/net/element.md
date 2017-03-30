@@ -50,7 +50,7 @@ dHeader字典表：
 
 | 字段英文名称 | 字段中文名称 |
 | :--- | :--- |
-| TASKID | roleid |
+| TASKID | 任务ID |
 | COUNTRY | 国家 |
 | CITY\_CODE | 城市 |
 | NETSERVICE | 运营商 |
