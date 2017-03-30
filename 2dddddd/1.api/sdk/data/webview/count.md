@@ -18,7 +18,7 @@ POST／GET
 | :--- | :--- | :--- | :--- | :--- |
 | token | string\(32\) | 是 | xxxxxxxx | 令牌 |
 | dType | string | 是 | json/csv | 数据类型 |
-| userName | string | 是 | bonree | 用户名 |
+| username | string | 是 | bonree | 用户名 |
 | params | string | 是 |  | 参数json |
 
 ### params参数
@@ -26,11 +26,11 @@ POST／GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json/csv | 数据类型 |
-| sdkAppId | string | 是 | 1111,2222 | 应用id |
+| taskId | string | 是 | 1111,2222 | 应用id |
 | dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围 |
 | filters | string | 否 |  | 数据筛选条件 |
 | dHeader | string | 是 | sdkAppId,appName,webviewErrorRate | 指标数据项 |
-| groupField | string | 否 | "appId" | 数据组合条件 |
+| group | string | 否 | "appId" | 数据组合条件 |
 
 ### filters参数
 
@@ -42,22 +42,22 @@ POST／GET
 
 | 参数名称 | 参数类型 | 是否必选 | 返回示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| sdkAppId | string | 否 | 1111 | sdk应用id |
-| webViewErrorRate | string | 否 | 0.01 | 错误率 |
-| webViewErrorCount | string | 否 | 1 | 发生错误的访问数 |
-| webViewCount | string | 否 | 100 | 访问数 |
+| TASK\_ID | string | 否 | 1111 | sdk应用id |
+| WEBVIEW\_ERROR\_RATE | string | 否 | 0.01 | 错误率 |
+| WEBVIEW\_ERROR\_COUNT | string | 否 | 1 | 发生错误的访问数 |
+| WEBVIEW\_COUNT | string | 否 | 100 | 访问数 |
 
 ### groupfield参数
 
 | 参数名称 | 参数说明 |
 | :--- | :--- |
-| sdkAppId | sdk应用id |
+| TASK\_ID | sdk应用id |
 
 # 返回参数说明
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | int | 错误码 |
+| errorCode | int | 错误码 |
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
 
