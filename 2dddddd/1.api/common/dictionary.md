@@ -34,7 +34,7 @@ base.data.netservice
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | int | 错误码 |
+| errorCode | int | 错误码 |
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
 
@@ -69,7 +69,7 @@ base.data.netservice
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason": "查询成功",
     "result": [
         ["ID","NAME","NAMEEN","LASTMODIF"],

@@ -24,7 +24,7 @@ POST/GET
 | :--- | :--- | :--- | :--- | :--- |
 | userId | Number | 否 | 1 | 用户id |
 | appId | Number | 否 | 1 | appId |
-| dHeader | String | 是 | APPID,APPNAME,KEY_FLAG | 接口返回字段,配置\*返回全部 |
+| dHeader | String | 是 | APPID,APPNAME,KEY\_FLAG | 接口返回字段,配置\*返回全部 |
 
 # **dHeader说明**
 
@@ -32,8 +32,8 @@ POST/GET
 | :--- | :--- | :--- | :--- |
 | APPID | Number | 1 | AppID |
 | APPNAME | string | fdf | App名称 |
-| USER_ID | Number | 1 | 用户ID |
-| KEY_FLAG | Number | 1 | 是否为关键业务 0-不是 1-是 |
+| USER\_ID | Number | 1 | 用户ID |
+| KEY\_FLAG | Number | 1 | 是否为关键业务 0-不是 1-是 |
 | B1 | Number | 1 | 健康阈值：性能体验阈值（s） |
 | B2 | Number | 90 | 健康阈值：请求错误率 |
 | B3 | Number | 100 | 健康阈值：任务可用性 |
@@ -46,7 +46,7 @@ POST/GET
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | Number | 错误码 |
+| errorCode | Number | 错误码 |
 | reason | string | 结果说明 |
 | result | string | 查询结果 |
 
@@ -85,7 +85,7 @@ POST/GET
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason":"查询成功",
     "result: [
         ["APPID","APPNAME","USER_ID","KEY_FLAG","B1","B2","B3","B4","B5","B6","STATUS"],

@@ -16,20 +16,20 @@ POST/GET
 | :--- | :--- | :--- | :--- | :--- |
 | token | string | 是 | \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* | 令牌 |
 | username | string | 是 | bonreetest | 用户名 |
-| dHeader | String | 是 | ACCESS_MODEL_ID,ACCESS_MODEL_NAME | 接口返回字段,配置\*返回全部 |
+| dHeader | String | 是 | ACCESS\_MODEL\_ID,ACCESS\_MODEL\_NAME | 接口返回字段,配置\*返回全部 |
 
 # **dHeader说明**
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| ACCESS_MODEL_ID | Number | 1 | 接入方式ID |
-| ACCESS_MODEL_NAME | string | 2G | 接入方式名称 |
+| ACCESS\_MODEL\_ID | Number | 1 | 接入方式ID |
+| ACCESS\_MODEL\_NAME | string | 2G | 接入方式名称 |
 
 # **返回参数说明**
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | Number | 错误码 |
+| errorCode | Number | 错误码 |
 | reason | string | 结果说明 |
 | result | string | 查询结果 |
 
@@ -67,7 +67,7 @@ POST/GET
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason":"查询成功",
     "result: [
        ["ACCESS_MODEL_ID","ACCESS_MODEL_NAME"],

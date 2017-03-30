@@ -20,25 +20,24 @@ POST/GET
 
 # **params说明**
 
-|  参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
+| 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| dHeader | String | 是 | OS_ID,OS_NAME,OS_VER_NAME | 接口返回字段,配置\*返回全部 |
+| dHeader | String | 是 | OS\_ID,OS\_NAME,OS\_VER\_NAME | 接口返回字段,配置\*返回全部 |
 
 # **dHeader说明**
 
-# **dHeader说明**
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| OS_ID | Number | 1 | 操作系统ID |
-| OS_NAME | string | Windows | 操作系统名称 |
-| OS_VER_ID | Number | 101 | 版本ID |
-| OS_VER_NAME | string | Win7 | 版本名称 |
+| OS\_ID | Number | 1 | 操作系统ID |
+| OS\_NAME | string | Windows | 操作系统名称 |
+| OS\_VER\_ID | Number | 101 | 版本ID |
+| OS\_VER\_NAME | string | Win7 | 版本名称 |
 
 # **返回参数说明**
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | Number | 错误码 |
+| errorCode | Number | 错误码 |
 | reason | string | 结果说明 |
 | result | string | 查询结果 |
 
@@ -76,7 +75,7 @@ POST/GET
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason":"查询成功",
     "result: [
         ["OS_ID","OS_NAME","OS_VER_ID","OS_VER_NAME"],
