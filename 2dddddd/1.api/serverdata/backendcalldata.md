@@ -77,7 +77,7 @@ apm.data.backendcall.statdata
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason": "查询成功",
     "result": [
         ["BE_APP_ID","BACKEND_ID","BACKEND_NAME","BACKEND_TYPE","CLUSTER_ID","TOTAL_CALLS","ERROR_CALLS","SUM_RESP_TIME","SAMPLE_COUNT"],
