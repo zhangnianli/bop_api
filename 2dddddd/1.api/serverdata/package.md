@@ -69,7 +69,7 @@ apm.data.user.package
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason": "查询成功",
     "result": [
         ["START_TIME","END_TIME","AGENT_NUM"],
