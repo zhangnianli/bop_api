@@ -55,7 +55,7 @@ apm.data.app.config
     List<NameValuePair> formparams = new ArrayList<NameValuePair>();
     formparams.add(new BasicNameValuePair("username", "bonreetest"));
     formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-    formparams.add(new BasicNameValuePair("params", "{\"dtype\":\"json\",\"beAppId\":\"1035,1036,1037\",\"dHeader\":\"BE_APP_ID,BT_THRSHLD,BT_THRSHLD_SLOW_TIMES,BT_THRSHLD_VERYSLOW_TIMES,BT_THRSHLD_STALL_TIMES,SQL_EXETIME_THRESHOLD,NOSQL_EXETIME_THRESHOLD,REMOTECALL_EXETIME_THRESHOLD,UPDATE_TIME\"}"));
+    formparams.add(new BasicNameValuePair("params", "{\"dType\":\"json\",\"beAppId\":\"1035,1036,1037\",\"dHeader\":\"BE_APP_ID,BT_THRSHLD,BT_THRSHLD_SLOW_TIMES,BT_THRSHLD_VERYSLOW_TIMES,BT_THRSHLD_STALL_TIMES,SQL_EXETIME_THRESHOLD,NOSQL_EXETIME_THRESHOLD,REMOTECALL_EXETIME_THRESHOLD,UPDATE_TIME\"}"));
     UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
     httppost.setEntity(uefEntity);
     // 执行
