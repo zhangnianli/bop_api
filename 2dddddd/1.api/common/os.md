@@ -16,7 +16,7 @@ POST/GET
 | :--- | :--- | :--- | :--- | :--- |
 | token | string | 是 | \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* | 令牌 |
 | username | string | 是 | bonreetest | 用户名 |
-| params | string | 是 | {"lastModif":"20170201000000"} | 参数json |
+| params | string | 是 | {"dHeader":"\*"} | 参数json |
 
 # **params说明**
 
