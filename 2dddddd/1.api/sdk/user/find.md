@@ -52,6 +52,7 @@ POST／GET
 | :--- | :--- | :--- |
 | error\_code | int | 错误码 |
 | reason | string | 返回说明 |
+| type | string | 返回数据类型 |
 | result | string | 返回结果集 |
 
 # 请求示例
