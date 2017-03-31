@@ -22,9 +22,9 @@ params说明：
 
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| type | string | 是 | json/csv | 数据类型 |
+| dType | string | 是 | json/csv | 数据类型 |
 | appId | string | 否 | 123456 | 应用ID |
-| dtime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
+| dTime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
 | monitors | string | 是 | ALL/IDC/LM/PP/IDC | 监测点类型 |
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
 | filters | string | 否 | \[{“filed”:”CPU\_RATE”, “condo”:”&gt;=”,”value”:”6”}\] | 字段值筛选条件 |
