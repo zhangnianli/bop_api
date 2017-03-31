@@ -32,7 +32,7 @@ params说明：
 | filters | string | 否 | \[{“filed”:”CPU\_RATE”, “condo”:”&gt;=”,”value”:”6”}\] | 字段值筛选条件 |
 | group | string | 否 | city,netservice | 分组条件，字段顺序为分组顺序 |
 | dHeader | string | 是 | city,netservice | 指定计算哪些指标，并作为查询结果返回 |
-| granule | string  | 否 | STR\_MINUTE5 | 时间频度值，对的Time按指定时间频度分组计算 |
+| granule | string | 否 | STR\_MINUTE5 | 时间频度值，对的Time按指定时间频度分组计算 |
 
 时间频度字典表
 
@@ -55,7 +55,7 @@ dHeader列表：
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | int | 错误码，0表示正常查询 |
+| errorCode | int | 错误码，0表示正常查询 |
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
 
