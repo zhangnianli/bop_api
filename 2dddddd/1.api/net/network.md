@@ -35,11 +35,11 @@ params说明：
 
 dHeader列表：
 
-| 字段英文名称 | 字段描述 |
+| 字段英文名称 | 字段中文名 |
 | :--- | :--- |
 | PING\_SET | 时延 |
 | PING\_LOST\_RATE | 丢包率 |
-| TASKID | taskid |
+| TASKID | 任务ID |
 
 # 返回参数说明
 
