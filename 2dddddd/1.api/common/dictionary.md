@@ -19,15 +19,15 @@ base.data.netservice
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | lastModif | string | 否 | 20170201000000 | 最后修改时间 |
-| dHeader | String | 是 | ID,NAME,LASTMODIF | 接口返回字段,配置\*返回全部 |
+| dHeader | String | 是 | NETSERVICE\_ID,NETSERVICE\_NAME,LASTMODIF | 接口返回字段,配置\*返回全部 |
 
 # **dHeader说明**
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| ID | Number | 1 | 运营商ID |
-| NAME | string | 中国移动 | 运营商名称 |
-| NAMEEN | string | China\_CMCC | 运营商英文名称 |
+| NETSERVICE\_ID | Number | 1 | 运营商ID |
+| NETSERVICE\_NAME | string | 中国移动 | 运营商名称 |
+| NETSERVICE\_NAME\_EN | string | China\_CMCC | 运营商英文名称 |
 | LASTMODIF | Number | 1446307200000 | 最后修改时间 |
 
 # **返回参数说明**
