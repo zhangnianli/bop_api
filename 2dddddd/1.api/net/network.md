@@ -24,22 +24,22 @@ params说明：
 
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| type | string | 是 | json/csv | 数据类型 |
+| dType | string | 是 | json/csv | 数据类型 |
 | taskId | string | 否 | 170435,170436 | 任务ID |
-| dtime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
+| dTime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
 | monitors | string | 是 | ALL/IDC/LM/PP/IDC\|PP | 监测点类型 |
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
 | filters | string | 否 | \[{“filed”:”CPU\_RATE”, “condo”:”&gt;=”,”value”:”6”}\] | 字段值筛选条件 |
 | group | string | 否 | city,netservice | 分组条件，字段顺序为分组顺序 |
-| fields | string | 是 | city,netservice | 指定计算哪些指标，并作为查询结果返回 |
+| dHeader | string | 是 | city,netservice | 指定计算哪些指标，并作为查询结果返回 |
 
-field列表：
+dHeader列表：
 
-| 字段英文名称 | 字段中文名称 |
+| 字段英文名称 | 字段中文名 |
 | :--- | :--- |
 | PING\_SET | 时延 |
 | PING\_LOST\_RATE | 丢包率 |
-| TASKID | roleid |
+| TASKID | 任务ID |
 
 # 返回参数说明
 
