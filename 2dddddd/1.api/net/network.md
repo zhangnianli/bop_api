@@ -33,7 +33,7 @@ params说明：
 | group | string | 否 | city,netservice | 分组条件，字段顺序为分组顺序 |
 | dHeader | string | 是 | city,netservice | 指定计算哪些指标，并作为查询结果返回 |
 
-field列表：
+dHeader列表：
 
 | 字段英文名称 | 字段中文名称 |
 | :--- | :--- |
