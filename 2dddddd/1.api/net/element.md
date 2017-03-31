@@ -37,7 +37,6 @@ params说明：
 | granule | string | 否 | 5 | 查询数据的时间频度，单位为分钟，当传时间频度的时候，group参数必填 |
 | order | string | 否 | \[\["city","desc"\],\["netservice","asc"\]\] | 排序条件 |
 
-  
 时间频度字典表
 
 | 值 | 含义 |
@@ -72,7 +71,7 @@ params说明：
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | int | 错误码,0表示查询正常 |
+| errorCode | int | 错误码,0表示查询正常 |
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
 
