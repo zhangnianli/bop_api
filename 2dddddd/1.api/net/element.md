@@ -37,7 +37,7 @@ params说明：
 | timefram | string | 否 | 5 | 查询数据的时间频度，单位为分钟，当传时间频度的时候，group参数必填 |
 | order | string | 否 | \[\["city","desc"\],\["netservice","asc"\]\] | 排序条件 |
 
-<<<<<<< HEAD
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD  
 时间频度字典表
 
 | 值 | 含义 |
@@ -47,10 +47,11 @@ params说明：
 | STR\_HOUR | 1小时频度 |
 | STR\_DAY | 1天频度 |
 
-dHeader字典表：
-=======
+# dHeader字典表：
+
 field列表：
->>>>>>> 0063b65f2955cc5f9eb1d745efd2a9491a2e190f
+
+> > > > > > > 0063b65f2955cc5f9eb1d745efd2a9491a2e190f
 
 | 字段英文名称 | 字段中文名称 |
 | :--- | :--- |
