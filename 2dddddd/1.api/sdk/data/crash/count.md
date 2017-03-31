@@ -18,7 +18,7 @@ POST／GET
 | :--- | :--- | :--- | :--- | :--- |
 | token | string\(32\) | 是 | xxxxxxxx | 令牌 |
 | dType | string | 是 | json/csv | 数据类型 |
-| userName | string | 是 | bonree | 用户名 |
+| username | string | 是 | bonree | 用户名 |
 | params | string | 是 |  | 参数json |
 
 ### params参数
@@ -26,46 +26,46 @@ POST／GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json/csv | 数据类型 |
-| sdkAppId | string | 是 | 1111,2222 | 应用id |
+| taskId | string | 是 | 1111,2222 | 应用id |
 | dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围 |
 | filters | string | 否 |  | 数据筛选条件 |
 | dHeader | string | 是 |  | 指标数据项 |
-| orderFlag | string | 否 | sdkAppId | 排序依据 |
-| groupField | string | 是 | sdkAppId,stackInfoCode | 数据组合条件 |
+| order | string | 否 | sdkAppId | 排序依据 |
+| group | string | 是 | sdkAppId,stackInfoCode | 数据组合条件 |
 
 ### filter参数
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
-| osVersion | string | "osVersion":\["1111"\] | 操作系统id |
-| brandName | string | "brandName":\["1111"\] | 设备型号id |
-| crashType | string |  | 崩溃类型 |
+| OS\_VERSION | string | "osVersion":\["1111"\] | 操作系统id |
+| BRAND\_NAME | string | "brandName":\["1111"\] | 设备型号id |
+| CRASH\_TYPE | string |  | 崩溃类型 |
 
 ### dHeader参数
 
 | 参数名称 | 参数类型 | 是否必选 | 返回示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| sdkAppId | string | 否 | 1111 | sdk应用id |
-| minMonitorTime | string | 否 | 201601010000 | 首次发生时间 |
-| maxMonitorTime | string | 否 | 201601020000 | 末次发生时间 |
-| crashCount | string | 否 | 200 | 崩溃次数 |
-| crashRate | string | 否 | 0.01 | 崩溃率 |
-| startCount | string | 否 | 100 | sdk应用启动次数 |
-| userCount | string | 否 | 100 | 崩溃影响用户数 |
-| crashType | string | 否 | NullPoinerException | 崩溃类型 |
+| TASK\_ID | string | 否 | 1111 | sdk应用id |
+| MIN\_MONITORTIME | string | 否 | 201601010000 | 首次发生时间 |
+| MAX\_MONITORTIME | string | 否 | 201601020000 | 末次发生时间 |
+| CRASH\_COUNT | string | 否 | 200 | 崩溃次数 |
+| CRASH\_RATE | string | 否 | 0.01 | 崩溃率 |
+| START\_COUNT | string | 否 | 100 | sdk应用启动次数 |
+| USER\_COUNT | string | 否 | 100 | 崩溃影响用户数 |
+| CRASH\_TYPE | string | 否 | NullPoinerException | 崩溃类型 |
 
 ### groupField参数
 
 | 参数名称 | 参数说明 |
 | :--- | :--- |
-| sdkAppId | sdk应用id |
-| crashType | 崩溃类型 |
+| TASK\_ID | sdk应用id |
+| CRASH\_TYPE | 崩溃类型 |
 
 # 返回参数说明
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | int | 错误码 |
+| errorCode | int | 错误码 |
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
 

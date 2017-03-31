@@ -17,7 +17,7 @@ POST／GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | token | string\(32\) | 是 | xxxxxxxx | 令牌 |
-| userName | string | 是 | bonree | 用户名 |
+| username | string | 是 | bonree | 用户名 |
 | params | string | 是 |  | 参数json |
 
 ### params参数
@@ -25,56 +25,56 @@ POST／GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json/csv | 数据类型 |
-| sdkAppId | string | 是 | 1111,2222 | 应用id |
+| taskId | string | 是 | 1111,2222 | 应用id |
 | dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围\(时间最长一个月\) |
 | filters | string | 否 | {"crashType":\["1111"\]} | 数据筛选条件 |
 | dHeader | string | 是 | appId,crashType,crashCount,userCount | 指标数据项 |
-| groupField | string | 是 |  | 分组条件 |
-| orderFlag | string | 是 |  | 排序条件 |
-| topFilters | int | 是 | 10 | 指标数量筛选 |
+| group | string | 是 |  | 分组条件 |
+| order | string | 是 |  | 排序条件 |
+| top | int | 是 | 10 | 指标数量筛选 |
 
 ### filters参数
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
-| crashType | string |  | 崩溃类型 |
+| CRASH\_TYPE | string |  | 崩溃类型 |
 
 ### dHeader参数
 
 | 参数名称 | 参数类型 | 是否必选 | 返回示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| sdkAppId | string | 否 | 1111 | sdk应用id |
-| sdkAppVs | string | 否 | 1.0.1 | sdk应用版本 |
-| crashType | string | 否 | NullPointerException | 崩溃类型 |
-| osVersion | string | 否 | ios 9 | 操作系统 |
-| brandName | string | 否 | iphone 5s | 设备型号 |
-| crashCount | string | 否 | 100 | 崩溃次数 |
-| crashRate | string | 否 | 0.01 | 崩溃率 |
-| startCount | string | 否 | 1000 | sdk启动次数 |
-| userCount | string | 否 | 1000 | 影响用户数 |
+| TASK\_ID | string | 否 | 1111 | sdk应用id |
+| TASK\_VERSION\_ID | string | 否 | 1.0.1 | sdk应用版本 |
+| CRASH\_TYPE | string | 否 | NullPointerException | 崩溃类型 |
+| OS\_VERSION | string | 否 | ios 9 | 操作系统 |
+| BRAND\_NAME | string | 否 | iphone 5s | 设备型号 |
+| CRASH\_COUNT | string | 否 | 100 | 崩溃次数 |
+| CRASH\_RATE | string | 否 | 0.01 | 崩溃率 |
+| START\_COUNT | string | 否 | 1000 | sdk启动次数 |
+| USER\_COUNT | string | 否 | 1000 | 影响用户数 |
 
 ### groupfield参数
 
 | 参数名称 | 参数说明 |
 | :--- | :--- |
-| sdkAppId | sdk应用id |
-| sdkAppVs | sdk应用版本id |
-| crashType | 崩溃类型 |
-| osVersion | 操作系统 |
-| brandName | 设备型号 |
+| TASK\_ID | sdk应用id |
+| TASK\_VERSION\_ID | sdk应用版本id |
+| CRASH\_TYPE | 崩溃类型 |
+| OS\_VERSION | 操作系统 |
+| BRAND\_NAME | 设备型号 |
 
 ### orderFlag参数
 
 | 参数名称 | 参数说明 |
 | :--- | :--- |
-| crashRate | 崩溃率 |
-| crashCount | 崩溃次数 |
+| CRASH\_RATE | 崩溃率 |
+| CRASH\_COUNT | 崩溃次数 |
 
 # 返回参数说明
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | int | 错误码 |
+| errorCode | int | 错误码 |
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
 

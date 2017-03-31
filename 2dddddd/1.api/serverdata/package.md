@@ -18,22 +18,23 @@ apm.data.user.package
 
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| dtype | string | 是 | json | 数据类型\(csv、json\) |
-| dHeader | string | 是 | startTime,endTime,agentNum | 指标数据项 |
+| dType | string | 是 | json | 数据类型\(csv、json\) |
+| username | string | 是 | bonreetest | 用户名 |
+| dHeader | string | 是 | START\_TIME,END\_TIME,AGENT\_NUM | 指标数据项 |
 
 # dHeader字段说明：
 
 | 字段 | 名称 |
 | :--- | :--- |
-| startTime | 套餐开始时间 |
-| endTime | 套餐结束时间 |
-| agentNum | 探针数量 |
+| START\_TIME | 套餐开始时间 |
+| END\_TIME | 套餐结束时间 |
+| AGENT\_NUM | 探针数量 |
 
 # 返回参数说明：
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | int | 错误码 |
+| errorCode | int | 错误码 |
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
 
@@ -48,7 +49,7 @@ apm.data.user.package
     List<NameValuePair> formparams = new ArrayList<NameValuePair>();
     formparams.add(new BasicNameValuePair("username", "bonreetest"));
     formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-    formparams.add(new BasicNameValuePair("params", "{\"dtype\":\"json\",\"dHeader\":\"startTime,endTime,agentNum\"}"));
+    formparams.add(new BasicNameValuePair("params", "{\"dType\":\"json\",\"dHeader\":\"START_TIME,END_TIME,AGENT_NUM\"}"));
     UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
     httppost.setEntity(uefEntity);
     // 执行
@@ -68,10 +69,10 @@ apm.data.user.package
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason": "查询成功",
     "result": [
-        ["startTime","endTime","agentNum"],
+        ["START_TIME","END_TIME","AGENT_NUM"],
         ["2016-12-12", "2017-12-12", "100"]
     ]
 }

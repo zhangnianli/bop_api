@@ -18,7 +18,7 @@ POST／GET
 | :--- | :--- | :--- | :--- | :--- |
 | token | string\(32\) | 是 | xxxxxxxx | 令牌 |
 | dType | string | 是 | json/csv | 数据类型 |
-| userName | string | 是 | bonree | 用户名 |
+| username | string | 是 | bonree | 用户名 |
 | params | string | 是 |  | 参数json |
 
 ### params参数
@@ -26,7 +26,7 @@ POST／GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json/csv | 数据类型 |
-| sdkAppId | string | 是 | 1111,2222 | 应用id |
+| taskId | string | 是 | 1111,2222 | 应用id |
 | filters | string | 否 |  | 数据筛选条件 |
 | dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围 |
 | dHeader | string | 是 |  | 指标数据项 |
@@ -35,21 +35,21 @@ POST／GET
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
-| crashType | string |  | 崩溃类型 |
+| CRASH\_TYPE | string |  | 崩溃类型 |
 
 ### dHeader参数
 
 | 参数名称 | 参数类型 | 是否必选 | 返回示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| sdkAppId | string | 否 | 1111 | sdk应用appId |
-| osVersion | string | 否 | ios 9 | 操作系统名称 |
-| brandName | string | 否 | iphone 5s | 设备型号 |
+| TASK\_ID | string | 否 | 1111 | sdk应用appId |
+| OS\_VERSION | string | 否 | ios 9 | 操作系统名称 |
+| BRAND\_NAME | string | 否 | iphone 5s | 设备型号 |
 
 # 返回参数说明
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | int | 错误码 |
+| errorCode | int | 错误码 |
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
 

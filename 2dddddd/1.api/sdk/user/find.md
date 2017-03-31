@@ -18,7 +18,7 @@ POST／GET
 | :--- | :--- | :--- | :--- | :--- |
 | token | string\(32\) | 是 | xxxxxxxx | 令牌 |
 | dType | string | 是 | json/csv | 数据类型 |
-| userName | string | 是 | bonree | 用户名 |
+| username | string | 是 | bonree | 用户名 |
 | params | string | 是 |  | 参数json |
 
 ### params参数
@@ -33,18 +33,18 @@ POST／GET
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
-| userName | string | "userName":\["admin"\] | 用户名 |
+| USERNAME | string | "userName":\["admin"\] | 用户名 |
 
 ### dHeader参数
 
 | 参数名称 | 参数类型 | 是否必选 | 返回示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| userName | string | 是 | bonree | 用户名 |
-| validTimeFrom | string | 否 | 20160101000000 | 有效期开始时间 |
-| validTimeTo | string | 否 | 20160102000000 | 有效期结束时间 |
-| remainDeviceCount | string | 否 | 1000 | 剩余活跃设备数 |
-| activeDeviceCount | string | 否 | 10000 | 活跃设备数 |
-| isValid | string | 否 | false | 用户状态信息 |
+| USERNAME | string | 是 | bonree | 用户名 |
+| START\_VALID\_TIME | string | 否 | 20160101000000 | 有效期开始时间 |
+| END\_VALID\_TIME | string | 否 | 20160102000000 | 有效期结束时间 |
+| REMAIN\_DEVICE\_COUNT | string | 否 | 1000 | 剩余活跃设备数 |
+| ACTIVE\_DEVICE\_COUNT | string | 否 | 10000 | 活跃设备数 |
+| USER\_STATUE | string | 否 | false | 用户状态信息 |
 
 # 返回参数说明
 

@@ -18,29 +18,29 @@ apm.data.app.config
 
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| dtype | string | 是 | json | 数据类型\(csv、json\) |
+| dType | string | 是 | json | 数据类型\(csv、json\) |
 | beAppId | string | 否 | 1035,1036,1037 | 后端应用ID |
-| dHeader | string | 是 | beAppId,btThrshld,btThrshldSlowTimes,btThrshldVerySlowTimes,btThrshldStallTimes,sqlExeTimeThreshold,noSqlExeTimeThreshold,remoteCallExeTimeThreshold,updateTime | 指标数据项 |
+| dHeader | string | 是 | BE\_APP\_ID,BT\_THRSHLD,BT\_THRSHLD\_SLOW\_TIMES,BT\_THRSHLD\_VERYSLOW\_TIMES,BT\_THRSHLD\_STALL\_TIMES,SQL\_EXETIME\_THRESHOLD,NOSQL\_EXETIME\_THRESHOLD,REMOTECALL\_EXETIME\_THRESHOLD,UPDATE\_TIME | 指标数据项 |
 
 # dHeader字段说明：
 
 | 字段 | 名称 |
 | :--- | :--- |
-| beAppId | 后端应用ID |
-| btThrshld | 业务健康度阀值-健康 |
-| btThrshldSlowTimes | 业务健康度阀值-较慢 |
-| btThrshldVerySlowTimes | 业务健康度阀值-很慢 |
-| btThrshldStallTimes | 业务健康度阀值-停滞 |
-| sqlExeTimeThreshold | sql调用健康度阀值 |
-| noSqlExeTimeThreshold | nosql调用健康度阀值 |
-| remoteCallExeTimeThreshold | rpc调用健康度阀值 |
-| updateTime | 更新时间 |
+| BE\_APP\_ID | 后端应用ID |
+| BT\_THRSHLD | 业务健康度阀值-健康 |
+| BT\_THRSHLD\_SLOW\_TIMES | 业务健康度阀值-较慢 |
+| BT\_THRSHLD\_VERYSLOW\_TIMES | 业务健康度阀值-很慢 |
+| BT\_THRSHLD\_STALL\_TIMES | 业务健康度阀值-停滞 |
+| SQL\_EXETIME\_THRESHOLD | sql调用健康度阀值 |
+| NOSQL\_EXETIME\_THRESHOLD | nosql调用健康度阀值 |
+| REMOTECALL\_EXETIME\_THRESHOLD | rpc调用健康度阀值 |
+| UPDATE\_TIME | 更新时间 |
 
 # 返回参数说明：
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | int | 错误码 |
+| errorCode | int | 错误码 |
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
 
@@ -55,7 +55,7 @@ apm.data.app.config
     List<NameValuePair> formparams = new ArrayList<NameValuePair>();
     formparams.add(new BasicNameValuePair("username", "bonreetest"));
     formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-    formparams.add(new BasicNameValuePair("params", "{\"dtype\":\"json\",\"beAppId\":\"1035,1036,1037\",\"dHeader\":\"beAppId,btThrshld,btThrshldSlowTimes,btThrshldVerySlowTimes,btThrshldStallTimes,sqlExeTimeThreshold,noSqlExeTimeThreshold,remoteCallExeTimeThreshold,updateTime\"}"));
+    formparams.add(new BasicNameValuePair("params", "{\"dType\":\"json\",\"beAppId\":\"1035,1036,1037\",\"dHeader\":\"BE_APP_ID,BT_THRSHLD,BT_THRSHLD_SLOW_TIMES,BT_THRSHLD_VERYSLOW_TIMES,BT_THRSHLD_STALL_TIMES,SQL_EXETIME_THRESHOLD,NOSQL_EXETIME_THRESHOLD,REMOTECALL_EXETIME_THRESHOLD,UPDATE_TIME\"}"));
     UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
     httppost.setEntity(uefEntity);
     // 执行
@@ -75,10 +75,10 @@ apm.data.app.config
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason": "查询成功",
     "result": [
-        ["beAppId","btThrshld","btThrshldSlowTimes","btThrshldVerySlowTimes","btThrshldStallTimes","sqlExeTimeThreshold","noSqlExeTimeThreshold","remoteCallExeTimeThreshold","updateTime"],
+        ["BE_APP_ID","BT_THRSHLD","BT_THRSHLD_SLOW_TIMES","BT_THRSHLD_VERYSLOW_TIMES","BT_THRSHLD_STALL_TIMES","SQL_EXETIME_THRESHOLD","NOSQL_EXETIME_THRESHOLD","REMOTECALL_EXETIME_THRESHOLD","UPDATE_TIME"],
         ["1035","10","20","30","40","50","50","50","20170327120000"],
         ["1036","10","20","30","40","50","50","50","20170327120000"],
         ["1037","10","20","30","40","50","50","50","20170327120000"]
