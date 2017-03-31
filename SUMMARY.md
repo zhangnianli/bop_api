@@ -9,7 +9,7 @@
     * [net](2dddddd/1.api/net.md)
       * [任务信息](2dddddd/1.api/net/loadtask.md)
       * [元素数据统计信息](2dddddd/1.api/net/element.md)
-      * [network](2dddddd/1.api/net/network.md)
+      * [网络数据统计信息](2dddddd/1.api/net/network.md)
       * [用户权限](2dddddd/1.api/net/loaduser.md)
     * [sdk](2dddddd/1.api/sdk.md)
       * [sdk检测数据查询](2dddddd/1.api/sdk/data.md)
