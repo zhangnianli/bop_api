@@ -33,6 +33,17 @@ params说明：
 | group | string | 否 | city,netservice | 分组条件，字段顺序为分组顺序 |
 | dHeader | string | 是 | city,netservice | 指定计算哪些指标，并作为查询结果返回 |
 
+时间频度字典表
+
+| 值 | 含义 |
+| :--- | :--- |
+| STR\_MINUTE5 | 5分钟频度 |
+| STR\_MINUTE30 | 30分钟频度 |
+| STR\_HOUR | 1小时频度 |
+| STR\_DAY | 1天频度 |
+
+
+
 dHeader列表：
 
 | 字段英文名称 | 字段中文名 |
