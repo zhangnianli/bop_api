@@ -33,7 +33,7 @@ POST／GET
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
-
+| USERNAME | string | USERNAME:\["sys"\] | 用户名 |
 
 ### params参数
 
