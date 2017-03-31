@@ -39,7 +39,7 @@ dHeader列表：
 | :--- | :--- |
 | PING\_SET | 时延 |
 | PING\_LOST\_RATE | 丢包率 |
-| TASKID | roleid |
+| TASKID | taskid |
 
 # 返回参数说明
 
