@@ -25,7 +25,6 @@ POST／GET
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| dType | string | 是 | json/csv | 数据类型 |
 | taskId | string | 是 | 1111,2222 | 应用id |
 | dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围 |
 | filters | string | 否 |  | 数据筛选条件 |
@@ -36,7 +35,7 @@ POST／GET
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
 | CRASH\_TYPE | string |  | 崩溃类型 |
-| MONITORTIME | string |  | 监测时间 |
+| MONITORTIME | string |  | 监测时间点 |
 
 ### dHeader指标
 
