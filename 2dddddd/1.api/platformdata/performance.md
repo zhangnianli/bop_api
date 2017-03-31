@@ -4,7 +4,7 @@ platform.performance.statdata
 
 # api请求地址
 
-https://api.bonree.com/platform/performance/statdata
+[https://api.bonree.com/platform/performance/statdata](https://api.bonree.com/platform/performance/statdata)
 
 # 请求方式
 
@@ -28,7 +28,7 @@ params说明：
 | monitors | string | 是 | ALL/IDC/LM/PP/IDC | 监测点类型 |
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
 | filters | string | 否 | \[{“filed”:”CPU\_RATE”, “condo”:”&gt;=”,”value”:”6”}\] | 字段值筛选条件 |
-| group | string | 否 | city,netservice | 分组条件，字段顺序为分组顺序，当timefram参数有值时，该参数必填，分组条件必须包括MONITOR\_TIME\_CODE。 |
+| group | string | 否 | city,netservice | 分组条件，字段顺序为分组顺序，当timefram参数有值时，该参数必填。 |
 | timefram | string | 否 | 5 | 时间频度（查询结果的时间聚合频度，比如5分钟频度），单位分钟，当改参数有值时，group参数必填 |
 | dHeader | string | 是 | city,netservice | 指标查询结果，可以指定计算哪些指标 |
 | orderByFlag | string | 否 | city desc/nerservice asc,city desc | 排序条件，字段顺序就是排序顺序 |
