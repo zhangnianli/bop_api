@@ -1,12 +1,12 @@
-# 业务编号
+# **业务编号**
 
 base.data.loadCustomHeader
 
-# api请求地址
+# **api请求地址**
 
 [http://api.bonree.com/base/data/loadCustomHeader](http://api.bonree.com/base/city)
 
-# 请求参数：
+# **请求参数**
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
@@ -14,31 +14,32 @@ base.data.loadCustomHeader
 | token | string | xxxxxxxxxxxxx | 令牌 |
 | params | string | {"lastModif":"20170201000000"} | 参数json |
 
-**params说明：**
+# **params说明**
 
-| 参数名称 | 参数类型 | 示例值 | 参数说明 |
-| :--- | :--- | :--- | :--- |
-| lastModif | string | 20170201000000 | 最后修改时间 |
+| 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
+| :--- | :--- | :--- | :--- | :--- |
+| lastModif | string | 否 | 20170201000000 | 最后修改时间 |
+| dHeader | String | 是 | ACCOUNT\_ID,COLUMN\_FIELDS,COLUMN\_LABELS,LASTMODIF | 接口返回字段,配置\*返回全部 |
 
-# 返回参数说明：
-
-| 名称 | 类型 | 描述 |
-| :--- | :--- | :--- |
-| error\_code | int | 错误码 |
-| reason | string | 返回说明 |
-| result | string | 返回结果集 |
-
-# result说明
+# **dHeader说明**
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| accountId | Number | 1 |  |
-| columnFields | string | responseTime,dnsTime,tcpTime | 表头字段 |
-| columnLabels | string | 响应用时,DNS用时,TCP用时 | 表头对应描述 |
-| businessType | Number | 508 |  |
-| lastModif | Number | 1446307200000 | 最后修改时间 |
+| ACCOUNT\_ID | Number | 1 |  |
+| COLUMN\_FIELDS | string | responseTime,dnsTime,tcpTime | 表头字段 |
+| COLUMN\_LABELS | string | 响应用时,DNS用时,TCP用时 | 表头对应描述 |
+| BUSINESS\_TYPE | Number | 508 |  |
+| LASTMODIF | Number | 1446307200000 | 最后修改时间 |
 
-# 请求示例
+# **返回参数说明**
+
+| 名称 | 类型 | 描述 |
+| :--- | :--- | :--- |
+| errorCode | int | 错误码 |
+| reason | string | 返回说明 |
+| result | string | 返回结果集 |
+
+# **请求示例**
 
 ```
     HttpClient httpclient = new DefaultHttpClient();
@@ -65,19 +66,25 @@ base.data.loadCustomHeader
     httpclient.getConnectionManager().shutdown();
 ```
 
-# 返回结果示例：
+# **返回结果示例**
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason": "查询成功",
     "result": [
-        ["accountId","columnFields","columnLabels","businessType","lastModif"],
+        ["ACCOUNT_ID","COLUMN_FIELDS","COLUMN_LABELS","BUSINESS_TYPE","LASTMODIF"],
         [1,"responseTime,dnsTime,tcpTime,sslTime,serverResponseTime,serverHandleTime,requestUrl,monitorTime",null,508,"20170321101456"],
         [1,"avgResponseTime,maxResponseTime,minResponseTime,totalResponseTime,avgServerHandleTime,requestCount,perminRequestCount,slowRequestCount,slowSpeedRate,roleSplit,domain",null,507,"20170321101506"]
     ]
 }
 ```
+
+# **api工具**
+
+api测试工具， api响应码查询工具，监测点查询工具，指标查询工具，监测数据错误码查询工具
+
+# **FAQ**
 
 
 

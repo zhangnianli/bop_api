@@ -18,22 +18,23 @@ apm.data.app.infodata
 
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| dtype | string | 是 | json | 数据类型\(csv、json\) |
-| dHeader | string | 是 | beAppId,beAppName,appGuid | 指标数据项 |
+| dType | string | 是 | json | 数据类型\(csv、json\) |
+| username | string | 是 | bonreetest | 用户名 |
+| dHeader | string | 是 | BE\_APP\_ID,BE\_APP\_NAME,APP\_GUID | 指标数据项 |
 
 # dHeader字段说明：
 
 | 字段 | 名称 |
 | :--- | :--- |
-| beAppId | 应用ID |
-| beAppName | 应用名称 |
-| appGuid | 应用GUID |
+| BE\_APP\_ID | 应用ID |
+| BE\_APP\_NAME | 应用名称 |
+| APP\_GUID | 应用GUID |
 
 # 返回参数说明：
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | int | 错误码 |
+| errorCode | int | 错误码 |
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
 
@@ -48,7 +49,7 @@ apm.data.app.infodata
     List<NameValuePair> formparams = new ArrayList<NameValuePair>();
     formparams.add(new BasicNameValuePair("username", "bonreetest"));
     formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-    formparams.add(new BasicNameValuePair("params", "{\"dtype\":\"json\",\"dHeader\":\"beAppId,beAppName,appGuid\"}"));
+    formparams.add(new BasicNameValuePair("params", "{\"dType\":\"json\",\"dHeader\":\"BE_APP_ID,BE_APP_NAME,APP_GUID\"}"));
     UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
     httppost.setEntity(uefEntity);
     // 执行
@@ -68,10 +69,10 @@ apm.data.app.infodata
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason": "查询成功",
     "result": [
-        ["beAppId","beAppName","appGuid"],
+        ["BE_APP_ID","BE_APP_NAME","APP_GUID"],
         ["1035", "bonree", "xxxxxxxxx"],
         [ "1023", "apple", "xxxxxxxxxxx"]
     ]

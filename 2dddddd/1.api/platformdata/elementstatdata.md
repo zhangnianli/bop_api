@@ -18,12 +18,12 @@ platform.data.element.statdata
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| dtype | string | 是 | json | 数据类型\(csv、json\) |
+| dType | string | 是 | json | 数据类型\(csv、json\) |
 | appId | string | 是 | 1035 | 应用ID |
-| dtime | string | 是 | 20170201000000-20170301000000 | 查询时间范围 |
+| dTime | string | 是 | 20170201000000-20170301000000 | 查询时间范围 |
 | pageNum | string | 否 | 1 | 页码 |
 | pageRecorders | string | 否 | 50 | 每页行数 |
-| orderByFlag | string | 否 | DTIME$AVG DESC | 排序字段 |
+| order | string | 否 | DTIME$AVG DESC | 排序字段 |
 | group | strng | 是 | PARTURLCODE | 分组字段（APPID,TASKID,TASKTYPE,CITYCODE,NETSERVICEID,ACCESSMODE,OSID,OSVERID,BROWSERID,BROWSERVERID,ERRORID,PARTURLCODE） |
 | filters | string | 否 | {"netserviceAndNetStandard":\[{"netserviseId":"1","netStandard":"1"},{"netserviseId":"1","netStandard":"2"}\],"cityCode":\[1100000,1200000\],"browsr":\[0,1,2,3,4\],"onlyError":"1"} | 过滤条件：netserviceAndNetStandard:运营商&网络接入方式；cityCode:地域；browsr:浏览器；onlyError:0-只查正确数据;1-只查错误数据； |
 | dHeader | string | 是 | APPID,PARTURLCODE,DTIME$MAX,DTIME$MIN,DTIME$AVG,DTIME$SUM,DNSTIME$AVG,TCPTIME$AVG | \*指标数据项 |
@@ -71,7 +71,7 @@ platform.data.element.statdata
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | int | 错误码 |
+| errorCode | int | 错误码 |
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
 
@@ -86,7 +86,7 @@ platform.data.element.statdata
     List<NameValuePair> formparams = new ArrayList<NameValuePair>();
     formparams.add(new BasicNameValuePair("username", "bonreetest"));
     formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-    formparams.add(new BasicNameValuePair("params", "{\"dtype\":\"json\",\"appId\":\"1035\",\"dtime\":\"20170201000000-20170301000000\",\"pageNum\":\"1\",\"pageRecorders\":\"50\",\"orderByFlag\":\"{\"field\":\"eleDnsAvg\",\"order\":\"asc\"}\",\"dHeader\":\"appId,domain,eleDnsAvg,eleDnsMax,eleDnsMin\"}"));
+    formparams.add(new BasicNameValuePair("params", "{\"dType\":\"json\",\"appId\":\"1035\",\"dTime\":\"20170201000000-20170301000000\",\"pageNum\":\"1\",\"pageRecorders\":\"50\",\"order\":\"DTIME$AVG DESC\",\"dHeader\":\"appId,domain,eleDnsAvg,eleDnsMax,eleDnsMin\"}"));
     UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
     httppost.setEntity(uefEntity);
     // 执行
@@ -106,7 +106,7 @@ platform.data.element.statdata
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason": "查询成功",
     "result": [
         ["appId","domain","eleDnsAvg","eleDnsMax","eleDnsMin"],

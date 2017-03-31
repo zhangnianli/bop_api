@@ -1,39 +1,46 @@
-# 业务编号
+# **业务编号**
 
 base.data.loadError
 
-# api请求地址
+# **api请求地址**
 
 [http://api.bonree.com/base/data/loadError](http://api.bonree.com/basedata/loadOs)
 
-# 请求方式
+# **请求方式**
 
 POST/GET
 
-# 请求参数
+# **请求参数**
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | token | string | 是 | \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* | 令牌 |
 | username | string | 是 | bonreetest | 用户名 |
+|  | params | string | {"lastModif":"20170201000000"} | 参数json |
 
-# 返回参数说明
+# **params说明**
 
-| 名称 | 类型 | 描述 |
-| :--- | :--- | :--- |
-| error\_code | Number | 错误码 |
-| reason | string | 结果说明 |
-| result | string | 查询结果 |
+| 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
+| :--- | :--- | :--- | :--- | :--- |
+| dHeader | String | 是 | ERROR\_ID,ERROR\_NAME | 接口返回字段,配置\*返回全部 |
 
-# result说明
+# **dHeader说明**
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| errorId | Number | 619 | 错误ID |
-| errorName | string | 请求超时 | 错误描述 |
-| errorType | Number | 1 | 错误分类 |
+| ERROR\_ID | Number | 619 | 错误ID |
+| ERROR\_NAME | string | 请求超时 | 错误描述 |
+| ERROR\_TYPE | Number | 1 | 错误分类 |
 
-# 请求示例
+# **返回参数说明**
+
+| 名称 | 类型 | 描述 |
+| :--- | :--- | :--- |
+| errorCode | Number | 错误码 |
+| reason | string | 结果说明 |
+| result | string | 查询结果 |
+
+# **请求示例**
 
 ```
  POST:
@@ -63,25 +70,25 @@ POST/GET
   http://api.bonree.com/base/data/loadError?token=asdas12312312ddwew5we5we5&username=bonreetest
 ```
 
-# 返回结果示例
+# **返回结果示例**
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason":"查询成功",
     "result: [
-        ["errorId","errorName","errorType"],
+        ["ERROR_ID","ERROR_NAME","ERROR_TYPE]",
         [0,"成功",1],
         [1,"Operation not permitted",1]
     ]
 }
 ```
 
-# api工具：
+# **api工具**
 
 api测试工具， api响应码查询工具，监测点查询工具，指标查询工具，监测数据错误码查询工具
 
-# FAQ：
+# **FAQ**
 
 
 

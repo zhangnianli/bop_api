@@ -1,16 +1,16 @@
-# 业务编号
+# **业务编号**
 
 net.task.loadTask
 
-# api请求地址
+# **api请求地址**
 
 [http://api.bonree.com/net/task/loadTask](http://api.bonree.com/net/task/loadTask)
 
-# 请求方式
+# **请求方式**
 
 POST/GET
 
-# 请求参数
+# **请求参数**
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -18,38 +18,39 @@ POST/GET
 | username | string | 是 | bonreetest | 用户名 |
 | params | string | 是 | {"monitor\_fun":3} | 请求参数json |
 
-## param参数
+## **param参数**
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| monitorFun | Number | 是 | 3 | 任务类型0-网络 3-浏览 4-传输 5-流媒体 6-元素组 7-协议 9-事务 96-移动浏览 97-移动网络 98-移动协议 95-BMTP |
+| monitorFun | Number | 否 | 3 | 任务类型0-网络 3-浏览 4-传输 5-流媒体 6-元素组 7-协议 9-事务 96-移动浏览 97-移动网络 98-移动协议 95-BMTP |
 | taskId | Number | 否 | 170435 | 任务ID |
 | flag | Number | 否 | 1 | 任务状态；0-禁用，1-启用，9-结束 |
+| dHeader | String | 是 | ROLE\_NAME,MONITOR\_FUN,TASK\_ID | 接口返回字段,配置\*返回全部 |
 
-# 返回参数说明
-
-| 名称 | 类型 | 描述 |
-| :--- | :--- | :--- |
-| error\_code | Number | 错误码 |
-| reason | string | 结果说明 |
-| result | string | 查询结果 |
-
-# result说明
+# **dHeader说明**
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| roleName | string | 勿删长期测试qq | 任务名称 |
-| url | string | [http://www.qq.com](http://www.qq.com) | 任务地址 |
-| taskId | Number | 170435 | 任务ID |
-| monitorFun | Number | 3 | 任务类型 |
-| flag | Number | 1 | 任务状态 |
-| startTime | Number | 1393603200000 | 任务起始时间 |
-| endTime | Number | 1488211200000 | 任务结束时间 |
-| parentId | Number | 340832 | 父任务ID |
-| roleType | Number | 9 | 0任务组，1,事务，3元素组，5事务或元素组子任务，9单一任务 |
-| netenvMon | string | 111 | 网络环境监测（111全部监测，（第1位表示DNS，第2位表示ICMP，第3位表示Tracert，1表示测试，0表示不测试）） |
+| ROLE\_NAME | string | 勿删长期测试qq | 任务名称 |
+| URL | string | [http://www.qq.com](http://www.qq.com) | 任务地址 |
+| TASK\_ID | Number | 170435 | 任务ID |
+| MONITOR\_FUN | Number | 3 | 任务类型 |
+| FLAG | Number | 1 | 任务状态 |
+| START\_TIME | Number | 1393603200000 | 任务起始时间 |
+| END\_TIME | Number | 1488211200000 | 任务结束时间 |
+| PARENT\_ID | Number | 340832 | 父任务ID |
+| ROLE\_TYPE | Number | 9 | 0任务组，1,事务，3元素组，5事务或元素组子任务，9单一任务 |
+| NETENV\_MON | string | 111 | 网络环境监测（111全部监测，（第1位表示DNS，第2位表示ICMP，第3位表示Tracert，1表示测试，0表示不测试）） |
 
-# 请求示例
+# **返回参数说明**
+
+| 名称 | 类型 | 描述 |
+| :--- | :--- | :--- |
+| errorCode | Number | 错误码 |
+| reason | string | 结果说明 |
+| result | string | 查询结果 |
+
+# **请求示例**
 
 ```
  POST:
@@ -80,25 +81,25 @@ POST/GET
   http://api.bonree.com/net/task/loadTask?token=asdas12312312ddwew5we5we5&username=bonreetest&param={"monitor_fun":3}
 ```
 
-# 返回结果示例
+# **返回结果示例**
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason":"查询成功",
     "result: [
-        ["roleName","url","taskId","monitorFun","flag","startTime","endTime","parentId","roleType","netenvMon"],
+        ["ROLE_NAME","URL","TASK_ID","MONITOR_FUN","FLAG","START_TIME","END_TIME","PARENT_ID","ROLE_TYPE","NETENV_MON"],
         ["勿删长期测试qq","http://www.qq.com",170435,3,1,1393603200000,1488211200000,340832,9,"111"],
         ["QQ任务组","http://",340832,3,0,1446307200000,1446307200000,0,0,"000"]
     ]
 }
 ```
 
-# api工具：
+# **api工具**
 
 api测试工具， api响应码查询工具，监测点查询工具，指标查询工具，监测数据错误码查询工具
 
-# FAQ：
+# **FAQ**
 
 
 

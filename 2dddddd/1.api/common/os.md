@@ -1,40 +1,47 @@
-# 业务编号
+# **业务编号**
 
 base.data.loadOs
 
-# api请求地址
+# **api请求地址**
 
 [http://api.bonree.com/base/data/loadOs](http://api.bonree.com/basedata/loadOs)
 
-# 请求方式
+# **请求方式**
 
 POST/GET
 
-# 请求参数
+# **请求参数**
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | token | string | 是 | \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* | 令牌 |
 | username | string | 是 | bonreetest | 用户名 |
+| params | string | 是 | {"lastModif":"20170201000000"} | 参数json |
 
-# 返回参数说明
+# **params说明**
 
-| 名称 | 类型 | 描述 |
-| :--- | :--- | :--- |
-| error\_code | Number | 错误码 |
-| reason | string | 结果说明 |
-| result | string | 查询结果 |
+| 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
+| :--- | :--- | :--- | :--- | :--- |
+| dHeader | String | 是 | OS\_ID,OS\_NAME,OS\_VER\_NAME | 接口返回字段,配置\*返回全部 |
 
-# result说明
+# **dHeader说明**
 
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
-| osId | Number | 1 | 操作系统ID |
-| osName | string | Windows | 操作系统名称 |
-| osVerId | Number | 101 | 版本ID |
-| osVerName | string | Win7 | 版本名称 |
+| OS\_ID | Number | 1 | 操作系统ID |
+| OS\_NAME | string | Windows | 操作系统名称 |
+| OS\_VER\_ID | Number | 101 | 版本ID |
+| OS\_VER\_NAME | string | Win7 | 版本名称 |
 
-# 请求示例
+# **返回参数说明**
+
+| 名称 | 类型 | 描述 |
+| :--- | :--- | :--- |
+| errorCode | Number | 错误码 |
+| reason | string | 结果说明 |
+| result | string | 查询结果 |
+
+# **请求示例**
 
 ```
  POST:
@@ -64,25 +71,25 @@ POST/GET
   http://api.bonree.com/base/data/loadOs?token=asdas12312312ddwew5we5we5&username=bonreetest
 ```
 
-# 返回结果示例
+# **返回结果示例**
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason":"查询成功",
     "result: [
-        ["osId","osName","osVerId","osVerName"],
+        ["OS_ID","OS_NAME","OS_VER_ID","OS_VER_NAME"],
         [1,"Windows",101,"Win7"],
         [1,"Windows",102,"Win Vista"]
     ]
 }
 ```
 
-# api工具：
+# **api工具**
 
 api测试工具， api响应码查询工具，监测点查询工具，指标查询工具，监测数据错误码查询工具
 
-# FAQ：
+# **FAQ**
 
 
 

@@ -18,28 +18,28 @@ apm.data.cluster.bebtdata
 
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| dtype | string | 是 | json | 数据类型\(csv、json\) |
+| dType | string | 是 | json | 数据类型\(csv、json\) |
 | beAppId | string | 是 | 1035,1023,2023 | 后端应用ID |
-| dtime | string | 是 | 20170201000000-20170301000000 | 查询时间范围 |
-| dHeader | string | 是 | beAppId,clusterId,clusterName,totalCalls,errorCalls,sumRespTime,sampleCount | 指标数据项 |
+| dTime | string | 是 | 20170201000000-20170301000000 | 查询时间范围 |
+| dHeader | string | 是 | BE\_APP\_ID,CLUSTER\_ID,CLUSTER\_NAME,TOTAL\_CALLS,ERROR\_CALLS,SUM\_RESP\_TIME,SAMPLE\_COUNT | 指标数据项 |
 
 # dHeader字段说明：
 
 | 字段 | 名称 |
 | :--- | :--- |
-| beAppId | 应用ID |
-| clusterId | 集群ID |
-| clusterName | 集群名称 |
-| totalCalls | 总请求数 |
-| errorCalls | 错误请求数 |
-| sumRespTime | 总耗时 |
-| sampleCount | 样本数 |
+| BE\_APP\_ID | 应用ID |
+| CLUSTER\_ID | 集群ID |
+| CLUSTER\_NAME | 集群名称 |
+| TOTAL\_CALLS | 总请求数 |
+| ERROR\_CALLS | 错误请求数 |
+| SUM\_RESP\_TIME | 总耗时 |
+| SAMPLE\_COUNT | 样本数 |
 
 # 返回参数说明：
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| error\_code | int | 错误码 |
+| errorCode | int | 错误码 |
 | reason | string | 返回说明 |
 | result | string | 返回结果集 |
 
@@ -54,7 +54,7 @@ apm.data.cluster.bebtdata
     List<NameValuePair> formparams = new ArrayList<NameValuePair>();
     formparams.add(new BasicNameValuePair("username", "bonreetest"));
     formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-    formparams.add(new BasicNameValuePair("params", "{\"dtype\":\"json\",\"appId\":\"1035,1023,2023\",\"dtime\":\"20170201000000-20170301000000\",\"dHeader\":\"beAppId,clusterId,clusterName,totalCalls,errorCalls,sumRespTime,sampleCount\"}"));
+    formparams.add(new BasicNameValuePair("params", "{\"dType\":\"json\",\"appId\":\"1035,1023,2023\",\"dTime\":\"20170201000000-20170301000000\",\"dHeader\":\"BE_APP_ID,CLUSTER_ID,CLUSTER_NAME,TOTAL_CALLS,ERROR_CALLS,SUM_RESP_TIME,SAMPLE_COUNT\"}"));
     UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
     httppost.setEntity(uefEntity);
     // 执行
@@ -74,10 +74,10 @@ apm.data.cluster.bebtdata
 
 ```
 {
-    "error_code": 0,
+    "errorCode": 0,
     "reason": "查询成功",
     "result": [
-        ["beAppId","clusterId","clusterName","totalCalls","errorCalls","sumRespTime","sampleCount"],
+        ["BE_APP_ID","CLUSTER_ID","CLUSTER_NAME","TOTAL_CALLS","ERROR_CALLS","SUM_RESP_TIME","SAMPLE_COUNT"],
         ["1035", "5077", "xxx", "1021", "10","929","7"],
         ["1023", "5077", "xxx", "2021", "20","930","7"],
         ["2023", "5077", "xxx", "2021", "30","940","8"]
