@@ -4,7 +4,7 @@ platform.performance.statdata
 
 # api请求地址
 
-https://api.bonree.com/platform/performance/statdata
+[https://api.bonree.com/platform/performance/statdata](https://api.bonree.com/platform/performance/statdata)
 
 # 请求方式
 
@@ -22,16 +22,16 @@ params说明：
 
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| type | string | 是 | json/csv | 数据类型 |
+| dType | string | 是 | json/csv | 数据类型 |
 | appId | string | 否 | 123456 | 应用ID |
-| dtime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
+| dTime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
 | monitors | string | 是 | ALL/IDC/LM/PP/IDC | 监测点类型 |
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
 | filters | string | 否 | \[{“filed”:”CPU\_RATE”, “condo”:”&gt;=”,”value”:”6”}\] | 字段值筛选条件 |
-| group | string | 否 | city,netservice | 分组条件，字段顺序为分组顺序，当timefram参数有值时，该参数必填，分组条件必须包括MONITOR\_TIME\_CODE。 |
-| timefram | string | 否 | 5 | 时间频度（查询结果的时间聚合频度，比如5分钟频度），单位分钟，当改参数有值时，group参数必填 |
+| group | string | 否 | city,netservice | 分组条件，字段顺序为分组顺序，当timefram参数有值时，该参数必填。 |
+| granule | string | 否 | 5 | 时间频度（查询结果的时间聚合频度，比如5分钟频度），单位分钟，当改参数有值时，group参数必填 |
 | dHeader | string | 是 | city,netservice | 指标查询结果，可以指定计算哪些指标 |
-| orderByFlag | string | 否 | city desc/nerservice asc,city desc | 排序条件，字段顺序就是排序顺序 |
+| order | string | 否 | city desc/nerservice asc,city desc | 排序条件，字段顺序就是排序顺序 |
 
 field列表：
 
@@ -65,6 +65,9 @@ field列表：
 | SERVERRESPONSETIME | 服务器处理时间 | 服务器处理时间均值 |
 | ERRORID | 错误码 | 错误类型码 |
 | MONITOR\_TIME\_CODE | 时间频度码 | 按时间频度划分的时间频度值 |
+| MONITORTIME | 监测时间 | 监测时间 |
+| VISITNUM | 总访问次数 | 总访问次数 |
+| KEYVISITNUM | 关键元素访问次数 | 关键元素错误访问总次数 |
 
 # 返回参数说明
 
