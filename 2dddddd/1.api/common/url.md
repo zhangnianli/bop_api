@@ -51,7 +51,7 @@ POST/GET
   List<NameValuePair> formparams = new ArrayList<NameValuePair>();
   formparams.add(new BasicNameValuePair("username", "bonreetest"));
   formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-  formparams.add(new BasicNameValuePair("params", "{\"url_code\":3}"));
+  formparams.add(new BasicNameValuePair("params", "{\"url_code\":"68564669272373008"}"));
   UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
   httppost.setEntity(uefEntity);
   // 执行
