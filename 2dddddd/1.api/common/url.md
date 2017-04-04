@@ -29,7 +29,7 @@ POST/GET
 | 名称 | 类型 | 示例值 | 描述 |
 | :--- | :--- | :--- | :--- |
 | URL\_CODE | string | 1 | urlCode |
-| URL | string | [http://www.baidu.com](http://www.baidu.com) |  |
+| URL | string | [http://www.baidu.com](http://www.baidu.com) | url |
 
 # **返回参数说明**
 
