@@ -77,9 +77,8 @@ POST/GET
     "errorCode": 0,
     "reason":"查询成功",
     "result: [
-        ["KEY_ID","APPID","KEY_FLAG","URL","STATUS"],
-        [1,1,1,"3",3],
-        [2,1,2,"3",3]
+            ["urlcode","url"],
+            ["68564669272373008","http://www.lll.com/application/company/360"]
     ]
 }
 ```
