@@ -35,7 +35,7 @@ POST/GET
 
 | 名称 | 类型 | 描述 |
 | :--- | :--- | :--- |
-| errorCode | Number | 错误码 |
+| error\_code | Number | 错误码 |
 | reason | string | 结果说明 |
 | result | string | 查询结果 |
 
@@ -74,7 +74,7 @@ POST/GET
 
 ```
 {
-    "errorCode": 0,
+    "error_code": 0,
     "reason":"查询成功",
     "result: [
             ["urlcode","url"],
