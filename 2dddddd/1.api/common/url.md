@@ -67,7 +67,7 @@ POST/GET
   httpclient.getConnectionManager().shutdown();
 
  GET:
-  http://api.bonree.com/base/data/loadKeyele?token=asdas12312312ddwew5we5we5&username=bonreetest&param={"urlcode":"68564669272373008"}
+  http://api.bonree.com/base/data/url?token=asdas12312312ddwew5we5we5&username=bonreetest&params={"urlcode":"68564669272373008"}
 ```
 
 # **返回结果示例**
