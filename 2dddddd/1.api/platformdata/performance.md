@@ -40,6 +40,8 @@ field列表：
 | APPID | 应用ID | 应用ID |
 | TASKID | TASKID | ROLE\_ID |
 | CITYCODE | 城市 | 监测点城市 |
+| DISTRICT | 省份 | 监测点省份 |
+| COUNTRY | 国家 | 监测点国家 |
 | NETSERVICEID | 运营商 | 监测点运营商 |
 | ACCESSMODE | 接入方式 | 监测点接入方式 |
 | BROWSER | 浏览器 | 浏览器类型 |
