@@ -45,6 +45,7 @@ field列表：
 | NETSERVICEID | 运营商 | 监测点运营商 |
 | ACCESSMODE | 接入方式 | 监测点接入方式 |
 | BROWSER | 浏览器 | 浏览器类型 |
+| BROWSERVERID | 浏览器版本 | 浏览器的详细版本 |
 | ERRRATE | 请求错误率 | 请求错误次数/请求次数 |
 | SLOWRATE | 慢速比 | 慢请求次数/请求次数 |
 | REQUESTNUM | 请求次数 | 总请求次数 |
