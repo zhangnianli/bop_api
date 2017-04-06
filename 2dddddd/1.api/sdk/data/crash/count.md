@@ -32,7 +32,7 @@ POST／GET
 | order | string | 否 | sdkAppId | 排序依据 |
 | group | string | 是 | sdkAppId,stackInfoCode | 数据组合条件 |
 
-### filter参数
+### filters参数
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
@@ -53,7 +53,7 @@ POST／GET
 | USER\_COUNT | string | 否 | 100 | 崩溃影响用户数 |
 | CRASH\_TYPE | string | 否 | NullPoinerException | 崩溃类型 |
 
-### groupField参数
+### group参数
 
 | 参数名称 | 参数说明 |
 | :--- | :--- |
