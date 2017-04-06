@@ -23,6 +23,7 @@
           * [count](2dddddd/1.api/sdk/data/webview/count.md)
       * [sdk应用信息查询](2dddddd/1.api/sdk/task.md)
         * [find](2dddddd/1.api/sdk/task/find.md)
+        * [versionInfo](2dddddd/1.api/sdk/task/versioninfo.md)
       * [sdk用户信息查询](2dddddd/1.api/sdk/user.md)
         * [find](2dddddd/1.api/sdk/user/find.md)
     * [server](2dddddd/1.api/serverdata.md)
