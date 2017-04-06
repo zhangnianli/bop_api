@@ -57,7 +57,7 @@ POST／GET
 | KEY\_FUNCTION | string | 否 |  | 关键方法 |
 | CAUSE\_BY | string | 否 |  | causeby |
 
-### groupField参数
+### group参数
 
 | 参数名称 | 参数说明 |
 | :--- | :--- |
