@@ -52,7 +52,7 @@ POST／GET
 | START\_COUNT | string | 否 | 1000 | sdk启动次数 |
 | USER\_COUNT | string | 否 | 1000 | 影响用户数 |
 
-### groupfield参数
+### group参数
 
 | 参数名称 | 参数说明 |
 | :--- | :--- |
@@ -62,7 +62,7 @@ POST／GET
 | OS\_VERSION | 操作系统 |
 | BRAND\_NAME | 设备型号 |
 
-### orderFlag参数
+### order参数
 
 | 参数名称 | 参数说明 |
 | :--- | :--- |
