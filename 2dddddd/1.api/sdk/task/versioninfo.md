@@ -29,7 +29,7 @@ POST／GET
 | fiters | string | 否 |  | 数据筛选条件 |
 | dHeader | string | 是 |  | 指标数据项 |
 
-### filter参数
+### filters参数
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
@@ -56,7 +56,7 @@ POST／GET
 
 ```java
 HttpClient httpclient = new DefaultHttpClient();
-String url = "https://api.bonree.com/sdk/report/task/find";
+String url = "http://api.bonree.com/sdk/version/find";
 String params = "{\"dType\":\"json\"}";
 
 HttpPost httppost = new HttpPost(url);
