@@ -1,6 +1,6 @@
 # 业务编号
 
-platform.performance.statdata
+platform.data.performance.statdata
 
 # api请求地址
 
