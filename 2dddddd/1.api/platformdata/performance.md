@@ -87,7 +87,7 @@ field列表：
 
 ```
         HttpClient httpclient = new DefaultHttpClient();
-        String url = "https://api.bonree.com/platform/performance/statdata";
+        String url = "https://api.bonree.com/platform/data/performance/statdata";
         HttpPost httppost = new HttpPost(url);
         System.out.println("请求: " + httppost.getRequestLine());
         // 创建参数队列
