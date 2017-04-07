@@ -4,7 +4,7 @@ platform.data.performance.statdata
 
 # api请求地址
 
-[https://api.bonree.com/platform/performance/statdata](https://api.bonree.com/platform/performance/statdata)
+[https://api.bonree.com/platform/data/performance/statdata](https://api.bonree.com/platform/performance/statdata)
 
 # 请求方式
 
