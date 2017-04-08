@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # **业务编号**
 
 base.data.netservice

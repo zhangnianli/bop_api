@@ -1,12 +1,12 @@
 # 业务编号
 
-sdk.data.crash.find
+sdk.version.find
 
 # api请求地址
 
-[http://api.bonree.com/sdk/data/crash/find](http://api.bonree.com/sdk/report/data/crash/distribution)
+[http://api.bonree.com/sdk/version/find](http://api.bonree.com/sdk/report/task/find)
 
-[https://api.bonree.com/sdk/data/crash/find](https://api.bonree.com/sdk/report/data/crash/distribution)
+[https://api.bonree.com/sdk/version/find](https://api.bonree.com/sdk/report/task/find)
 
 # 请求方式
 
@@ -25,24 +25,23 @@ POST／GET
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| taskId | string | 是 | 1111,2222 | 应用id |
-| filters | string | 否 |  | 数据筛选条件 |
-| dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围 |
+| dType | string | 是 | json/csv | 数据类型 |
+| fiters | string | 否 |  | 数据筛选条件 |
 | dHeader | string | 是 |  | 指标数据项 |
 
-### filter参数
+### filters参数
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
-| CRASH\_TYPE | string |  | 崩溃类型 |
+| TASK\_VERSION\_ID | string |  | sdk应用版本ID |
 
-### dHeader参数
+### params参数
 
-| 参数名称 | 参数类型 | 是否必选 | 返回示例值 | 参数说明 |
+| 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| TASK\_ID | string | 否 | 1111 | sdk应用appId |
-| OS\_VERSION | string | 否 | ios 9 | 操作系统名称 |
-| BRAND\_NAME | string | 否 | iphone 5s | 设备型号 |
+| TASK\_VERSION\_ID | string | 否 | bonree | sdk应用版本ID |
+| SDK\_VERSION | string | 否 | bonreeApp | sdk版本 |
+| TASK\_VERSION\_NAME | string | 否 | 1111 | sdk应用版本名称 |
 
 # 返回参数说明
 
@@ -57,8 +56,8 @@ POST／GET
 
 ```java
 HttpClient httpclient = new DefaultHttpClient();
-String url = "https://api.bonree.com/sdk/report/data/crash/find";
-String params = "{\"dType\":\"json\",\"sdkAppId\":[1111,2222],\"dTime\":\"20160101000000-20160102000000\",\"dHeader\":[osId,osVersion,brandName,brandId],\"filter\":{\"crashTypeCode\":[\"1111\",\"2222\"]}}";
+String url = "http://api.bonree.com/sdk/version/find";
+String params = "{\"dType\":\"json\"}";
 
 HttpPost httppost = new HttpPost(url);
 System.out.println("请求: " + httppost.getRequestLine());
@@ -85,12 +84,12 @@ httpclient.getConnectionManager().shutdown();
 # 返回示例
 
 ```
-{“error_code”: 0,
-    “reason”:”查询成功”,
-     result: [
-              ["osId","osVersion","brandId",“brandName”],
-              ["1111","ios9","1111","iphone"]
-]
+{"error_code": 0,
+    "reason":"查询成功",
+    "result":[
+        ["username","appName","appId"],
+        ["bonree","bonreeApp","1111"],
+    ]
 }
 ```
 

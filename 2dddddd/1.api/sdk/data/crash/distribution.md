@@ -24,7 +24,6 @@ POST／GET
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| dType | string | 是 | json/csv | 数据类型 |
 | taskId | string | 是 | 1111,2222 | 应用id |
 | dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围\(时间最长一个月\) |
 | filters | string | 否 | {"crashType":\["1111"\]} | 数据筛选条件 |
@@ -53,7 +52,7 @@ POST／GET
 | START\_COUNT | string | 否 | 1000 | sdk启动次数 |
 | USER\_COUNT | string | 否 | 1000 | 影响用户数 |
 
-### groupfield参数
+### group参数
 
 | 参数名称 | 参数说明 |
 | :--- | :--- |
@@ -63,7 +62,7 @@ POST／GET
 | OS\_VERSION | 操作系统 |
 | BRAND\_NAME | 设备型号 |
 
-### orderFlag参数
+### order参数
 
 | 参数名称 | 参数说明 |
 | :--- | :--- |
@@ -76,6 +75,7 @@ POST／GET
 | :--- | :--- | :--- |
 | errorCode | int | 错误码 |
 | reason | string | 返回说明 |
+| type | string | 返回数据类型 |
 | result | string | 返回结果集 |
 
 # 请求示例

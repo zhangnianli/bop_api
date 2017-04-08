@@ -25,7 +25,6 @@ POST／GET
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| dType | string | 是 | json/csv | 数据类型 |
 | taskId | string | 是 | "1111,2222" | 应用id |
 | dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围\(时间最长一个月\) |
 | pageNum | int | 是 | 1 | 页码 |
@@ -58,7 +57,7 @@ POST／GET
 | KEY\_FUNCTION | string | 否 |  | 关键方法 |
 | CAUSE\_BY | string | 否 |  | causeby |
 
-### groupField参数
+### group参数
 
 | 参数名称 | 参数说明 |
 | :--- | :--- |
@@ -72,6 +71,7 @@ POST／GET
 | :--- | :--- | :--- |
 | errorCode | int | 错误码 |
 | reason | string | 返回说明 |
+| type | string | 返回数据类型 |
 | result | string | 返回结果集 |
 
 # 请求示例

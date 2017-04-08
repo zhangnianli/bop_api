@@ -16,12 +16,6 @@ POST/GET
 | :--- | :--- | :--- | :--- | :--- |
 | token | string | 是 | \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* | 令牌 |
 | username | string | 是 | bonreetest | 用户名 |
-| params | string | 是 | {"dHeader":“ACCESS\_MODEL\_ID,ACCESS\_MODEL\_NAME”} | 请求参数json |
-
-# **params参数**
-
-| 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
-| :--- | :--- | :--- | :--- | :--- |
 | dHeader | String | 是 | ACCESS\_MODEL\_ID,ACCESS\_MODEL\_NAME | 接口返回字段,配置\*返回全部 |
 
 # **dHeader说明**

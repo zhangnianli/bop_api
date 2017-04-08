@@ -25,7 +25,6 @@ POST／GET
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| dType | string | 是 | json/csv | 数据类型 |
 | taskId | string | 是 | 1111,2222 | 应用id |
 | dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围 |
 | filters | string | 否 |  | 数据筛选条件 |
@@ -33,7 +32,7 @@ POST／GET
 | order | string | 否 | sdkAppId | 排序依据 |
 | group | string | 是 | sdkAppId,stackInfoCode | 数据组合条件 |
 
-### filter参数
+### filters参数
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
@@ -54,7 +53,7 @@ POST／GET
 | USER\_COUNT | string | 否 | 100 | 崩溃影响用户数 |
 | CRASH\_TYPE | string | 否 | NullPoinerException | 崩溃类型 |
 
-### groupField参数
+### group参数
 
 | 参数名称 | 参数说明 |
 | :--- | :--- |
@@ -67,6 +66,7 @@ POST／GET
 | :--- | :--- | :--- |
 | errorCode | int | 错误码 |
 | reason | string | 返回说明 |
+| type | string | 返回数据类型 |
 | result | string | 返回结果集 |
 
 # 请求示例
