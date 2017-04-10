@@ -53,32 +53,33 @@ field列表：
 | REQUESTNUM | 请求次数 | 总请求次数 |
 | REQUESTNUM1 | 请求次数 | 健康请求次数 |
 | REQUESTNUM2 | 请求次数 | 慢请求请求次数 |
-| BLOCKTIME | block时间 | block时间之和 |
-| BLOCKTIME1 | block时间 | block时间之和，健康请求 |
-| BLOCKTIME2 | block时间 | block时间之和，慢请求 |
-| DNSTIME | dns时间 | dns时间之和，所有请求 |
-| DNSTIME1 | dns时间 | dns时间之和，健康请求 |
-| DNSTIME2 | dns时间 | dns时间之和，慢请求 |
-| TCPTIME | tcp时间 | tcp时间之和 |
-| TCPTIME1 | tcp时间 | tcp时间，健康请求 |
-| TCPTIME2 | tcp时间 | tcp时间，慢请求 |
-| SSLTIME | ssl时间 | ssl时间之和 |
-| SSLTIME1 | ssl时间 | ssl时间，健康请求 |
-| SSLTIME2 | ssl时间 | ssl时间,慢请求 |
-| CLIENTRESPONSETIME | response时间 | response时间之和,所有请求的。 |
-| CLIENTRESPONSETIME1 | response时间 | response时间之和,健康请求的 |
-| CLIENTRESPONSETIME2 | response时间 | response时间之和，不健康请求的,不健康请求指慢请求 |
+| BLOCKTIME | block时间 | block时间均值 |
+| BLOCKTIME1 | block时间 | block时间均值，健康请求 |
+| BLOCKTIME2 | block时间 | block时间均值，慢请求 |
+| DNSTIME | dns时间 | dns时间均值，所有请求 |
+| DNSTIME1 | dns时间 | dns时间均值，健康请求 |
+| DNSTIME2 | dns时间 | dns时间均值，慢请求 |
+| TCPTIME | tcp时间 | tcp时间均值 |
+| TCPTIME1 | tcp时间 | tcp时间均值，健康请求 |
+| TCPTIME2 | tcp时间 | tcp时间均值，慢请求 |
+| SSLTIME | ssl时间 | ssl时间均值之和 |
+| SSLTIME1 | ssl时间 | ssl时间均值，健康请求 |
+| SSLTIME2 | ssl时间 | ssl时间均值，慢请求 |
+| CLIENTRESPONSETIME | response时间 | response时间均值,所有请求的。 |
+| CLIENTRESPONSETIME1 | response时间 | response时间均值,健康请求的 |
+| CLIENTRESPONSETIME2 | response时间 | response时间均值，不健康请求的,不健康请求指慢请求 |
 | DTIME | 整体性能 | 整体性能时间均值 |
 | SERVERRESPONSETIME | 服务器响应时间 | 客户端响应时间与下载时间之和均值 |
 | SERVERRESPONSETIME1 | 服务器响应时间 | 客户端响应时间与下载时间之和均值,健康请求 |
 | SERVERRESPONSETIME2 | 服务器响应时间 | 客户端响应时间与下载时间之和均值,慢请求 |
-| SERVERDEALTIME | 服务器处理时间 | 服务器处理时间 |
+| SERVERDEALTIME | 服务器处理时间 | 服务器处理时间均值 |
 | ERRORID | 错误码 | 错误类型码 |
 | MONITOR\_TIME\_CODE | 时间频度码 | 按时间频度划分的时间频度值 |
 | MONITORTIME | 监测时间 | 监测时间 |
 | VISITNUM | 总访问次数 | 总访问次数 |
 | KEYVISITNUM | 关键元素访问次数 | 关键元素访问总次数 |
 | KEYVISITNUM\_ERROR | 关键元素错误访问次数 | 受影响的访问次数 |
+| TERMINAL\_TYPE | 终端类型 | 1:pc browser; 2:mobile brower;3:mobile app |
 
 # 返回参数说明
 
