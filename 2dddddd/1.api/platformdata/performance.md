@@ -73,7 +73,8 @@ field列表：
 | MONITOR\_TIME\_CODE | 时间频度码 | 按时间频度划分的时间频度值 |
 | MONITORTIME | 监测时间 | 监测时间 |
 | VISITNUM | 总访问次数 | 总访问次数 |
-| KEYVISITNUM | 关键元素访问次数 | 关键元素错误访问总次数 |
+| KEYVISITNUM | 关键元素访问次数 | 关键元素访问总次数 |
+| KEYVISITNUM\_ERROR | 关键元素错误访问次数 | 受影响的访问次数 |
 
 # 返回参数说明
 
