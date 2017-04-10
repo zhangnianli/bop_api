@@ -51,6 +51,8 @@ field列表：
 | ERRRATE | 请求错误率 | 请求错误次数/请求次数 |
 | SLOWRATE | 慢速比 | 慢请求次数/请求次数 |
 | REQUESTNUM | 请求次数 | 总请求次数 |
+| REQUESTNUM1 | 请求次数 | 健康请求次数 |
+| REQUESTNUM2 | 请求次数 | 慢请求请求次数 |
 | BLOCKTIME | block时间 | block时间之和 |
 | BLOCKTIME1 | block时间 | block时间之和，健康请求 |
 | BLOCKTIME2 | block时间 | block时间之和，慢请求 |
