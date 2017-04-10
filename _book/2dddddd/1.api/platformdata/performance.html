@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.1.4.3" data-basepath="..\..\.." data-revision="1491018057479">
+    <div class="book"  data-level="4.1.4.3" data-basepath="..\..\.." data-revision="1491803667767">
     
 
 <div class="book-summary">
@@ -188,7 +188,7 @@
                         
                             <b>4.1.1.2.</b>
                         
-                         元素数据统计信息
+                         element
                     </a>
                 
             
@@ -204,7 +204,7 @@
                         
                             <b>4.1.1.3.</b>
                         
-                         网络数据统计信息
+                         network
                     </a>
                 
             
@@ -438,6 +438,22 @@
                             <b>4.1.2.2.1.</b>
                         
                          find
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.1.2.2.2" data-path="2dddddd/1.api/sdk/task/versioninfo.html">
+            
+                
+                    <a href="..\..\../2dddddd/1.api/sdk/task/versioninfo.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.2.2.2.</b>
+                        
+                         versionInfo
                     </a>
                 
             
@@ -1133,12 +1149,12 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_296">
+                    <section class="normal" id="section-gitbook_27">
                     
                         <h1 id="">业务编号</h1>
-<p>platform.performance.statdata</p>
+<p>platform.data.performance.statdata</p>
 <h1 id="api">api请求地址</h1>
-<p><a href="https://api.bonree.com/platform/performance/statdata" target="_blank">https://api.bonree.com/platform/performance/statdata</a></p>
+<p><a href="https://api.bonree.com/platform/performance/statdata" target="_blank">https://api.bonree.com/platform/data/performance/statdata</a></p>
 <h1 id="">请求方式</h1>
 <p>POST／GET</p>
 <h1 id="">请求参数</h1>
@@ -1227,8 +1243,8 @@
 <td style="text-align:left">filters</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">否</td>
-<td style="text-align:left">[{“filed”:”CPU_RATE”, “condo”:”&gt;=”,”value”:”6”}]</td>
-<td style="text-align:left">字段值筛选条件</td>
+<td style="text-align:left">{&quot;netserviceAndNetStandard&quot;:[{&quot;netserviceId&quot;:&quot;1&quot;,&quot;netStandard&quot;:&quot;1&quot;},{&quot;netserviceId&quot;:&quot;1&quot;,&quot;netStandard&quot;:&quot;2&quot;}],&quot;cityCode&quot;:[1100000,1200000],&quot;districtCode&quot;:[110000],&quot;countryCode&quot;:[110000],&quot;browsr&quot;:[0,1,2,3,4],&quot;browsrVer&quot;:[107,108]&quot;,onlyError&quot;:&quot;1&quot;,&quot;errorId&quot;:&quot;404&quot;}</td>
+<td style="text-align:left">包括运营商,接入方式,城市,省份,国家,浏览器,浏览器版本,错误id</td>
 </tr>
 <tr>
 <td style="text-align:left">group</td>
@@ -1241,14 +1257,14 @@
 <td style="text-align:left">granule</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">否</td>
-<td style="text-align:left">5</td>
+<td style="text-align:left">STR_MINUTE5,STR_MINUTE10,STR_MINUTE30,STR_HOUR,STR_HOUR12,STR_DAY</td>
 <td style="text-align:left">时间频度（查询结果的时间聚合频度，比如5分钟频度），单位分钟，当改参数有值时，group参数必填</td>
 </tr>
 <tr>
 <td style="text-align:left">dHeader</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">是</td>
-<td style="text-align:left">city,netservice</td>
+<td style="text-align:left">APPID,DTIME</td>
 <td style="text-align:left">指标查询结果，可以指定计算哪些指标</td>
 </tr>
 <tr>
@@ -1286,6 +1302,16 @@
 <td style="text-align:left">监测点城市</td>
 </tr>
 <tr>
+<td style="text-align:left">DISTRICT</td>
+<td style="text-align:left">省份</td>
+<td style="text-align:left">监测点省份</td>
+</tr>
+<tr>
+<td style="text-align:left">COUNTRY</td>
+<td style="text-align:left">国家</td>
+<td style="text-align:left">监测点国家</td>
+</tr>
+<tr>
 <td style="text-align:left">NETSERVICEID</td>
 <td style="text-align:left">运营商</td>
 <td style="text-align:left">监测点运营商</td>
@@ -1296,9 +1322,24 @@
 <td style="text-align:left">监测点接入方式</td>
 </tr>
 <tr>
+<td style="text-align:left">OSID</td>
+<td style="text-align:left">操作系统</td>
+<td style="text-align:left">操作系统类型</td>
+</tr>
+<tr>
+<td style="text-align:left">OSVERID</td>
+<td style="text-align:left">操作系统版本</td>
+<td style="text-align:left">操作系统详细版本</td>
+</tr>
+<tr>
 <td style="text-align:left">BROWSER</td>
 <td style="text-align:left">浏览器</td>
 <td style="text-align:left">浏览器类型</td>
+</tr>
+<tr>
+<td style="text-align:left">BROWSERVERID</td>
+<td style="text-align:left">浏览器版本</td>
+<td style="text-align:left">浏览器的详细版本</td>
 </tr>
 <tr>
 <td style="text-align:left">ERRRATE</td>
@@ -1397,8 +1438,23 @@
 </tr>
 <tr>
 <td style="text-align:left">SERVERRESPONSETIME</td>
+<td style="text-align:left">服务器响应时间</td>
+<td style="text-align:left">客户端响应时间与下载时间之和均值</td>
+</tr>
+<tr>
+<td style="text-align:left">SERVERRESPONSETIME1</td>
+<td style="text-align:left">服务器响应时间</td>
+<td style="text-align:left">客户端响应时间与下载时间之和均值,健康请求</td>
+</tr>
+<tr>
+<td style="text-align:left">SERVERRESPONSETIME2</td>
+<td style="text-align:left">服务器响应时间</td>
+<td style="text-align:left">客户端响应时间与下载时间之和均值,慢请求</td>
+</tr>
+<tr>
+<td style="text-align:left">SERVERDEALTIME</td>
 <td style="text-align:left">服务器处理时间</td>
-<td style="text-align:left">服务器处理时间均值</td>
+<td style="text-align:left">服务器处理时间</td>
 </tr>
 <tr>
 <td style="text-align:left">ERRORID</td>
@@ -1423,7 +1479,12 @@
 <tr>
 <td style="text-align:left">KEYVISITNUM</td>
 <td style="text-align:left">关键元素访问次数</td>
-<td style="text-align:left">关键元素错误访问总次数</td>
+<td style="text-align:left">关键元素访问总次数</td>
+</tr>
+<tr>
+<td style="text-align:left">KEYVISITNUM_ERROR</td>
+<td style="text-align:left">关键元素错误访问次数</td>
+<td style="text-align:left">受影响的访问次数</td>
 </tr>
 </tbody>
 </table>
@@ -1438,7 +1499,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">error_code</td>
+<td style="text-align:left">errorCode</td>
 <td style="text-align:left">int</td>
 <td style="text-align:left">错误码，0表示成功查询</td>
 </tr>
@@ -1456,7 +1517,7 @@
 </table>
 <h1 id="">请求示例</h1>
 <pre><code>        HttpClient httpclient = new DefaultHttpClient();
-        String url = &quot;https://api.bonree.com/platform/performance/statdata&quot;;
+        String url = &quot;https://api.bonree.com/platform/data/performance/statdata&quot;;
         HttpPost httppost = new HttpPost(url);
         System.out.println(&quot;请求: &quot; + httppost.getRequestLine());
         // 创建参数队列
@@ -1479,7 +1540,7 @@
         httpclient.getConnectionManager().shutdown();
 </code></pre><h1 id="">返回结果示例</h1>
 <pre><code>{
-    &quot;error_code&quot;: 0,
+    &quot;errorCode&quot;: 0,
     &quot;reason&quot;: &quot;查询成功&quot;,
     &quot;result&quot;: [
         [APPID,&quot;ERRORID&quot;],
