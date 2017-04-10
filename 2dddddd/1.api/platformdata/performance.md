@@ -44,6 +44,8 @@ field列表：
 | COUNTRY | 国家 | 监测点国家 |
 | NETSERVICEID | 运营商 | 监测点运营商 |
 | ACCESSMODE | 接入方式 | 监测点接入方式 |
+| OSID | 操作系统 | 操作系统类型 |
+| OSVERID | 操作系统版本 | 操作系统详细版本 |
 | BROWSER | 浏览器 | 浏览器类型 |
 | BROWSERVERID | 浏览器版本 | 浏览器的详细版本 |
 | ERRRATE | 请求错误率 | 请求错误次数/请求次数 |
