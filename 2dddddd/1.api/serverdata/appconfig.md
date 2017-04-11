@@ -35,6 +35,7 @@ apm.data.app.config
 | NOSQL\_EXETIME\_THRESHOLD | nosql调用健康度阀值 |
 | REMOTECALL\_EXETIME\_THRESHOLD | rpc调用健康度阀值 |
 | UPDATE\_TIME | 更新时间 |
+| IP\_COUNT | 外网主机统计个数 |
 
 # 返回参数说明：
 
