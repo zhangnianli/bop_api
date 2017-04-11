@@ -43,7 +43,7 @@ platform.data.element.statdata
 | OSVERID | 系统版本 |
 | BROWSERID | 浏览器类型 |
 | BROWSERVERID | 浏览器版本 |
-| TERMINAL\_TYPE | 客户端类型 |
+| TERMINAL\_TYPE | 客户端类型\(1:pc browser; 2:mobile brower;3:mobile app\) |
 | ERRORID | 错误码 |
 | PARTURLCODE | 截取后的URL CODE |
 | DTIME$MAX | 最大响应时间 |
