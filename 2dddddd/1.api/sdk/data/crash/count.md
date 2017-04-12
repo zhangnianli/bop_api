@@ -30,7 +30,7 @@ POST／GET
 | filters | string | 否 | "filters":{"OS\_VERSION":\["android"\]} | 数据筛选条件 |
 | dHeader | string | 是 | "dHeader":"TASK\_ID,CRASH\_RATE" | 指标数据项 |
 | order | string | 否 | "order":"TASK\_ID DESC, CRASH\_TYPE ASC" | 排序依据 |
-| group | string | 是 | "group":"" | 数据组合条件 |
+| group | string | 是 | "group":"TASK\_ID,CRASH\_TYPE" | 数据组合条件 |
 
 ### filters参数
 
@@ -40,7 +40,7 @@ POST／GET
 | BRAND\_NAME | string | "brandName":\["1111"\] | 设备型号id |
 | CRASH\_TYPE | string |  | 崩溃类型 |
 
-### dHeader&order参数
+### dHeaderℴ参数
 
 | 参数名称 | 参数类型 | 是否必选 | 返回示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
