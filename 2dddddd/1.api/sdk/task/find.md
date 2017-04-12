@@ -28,6 +28,13 @@ POST／GET
 | dType | string | 是 | json/csv | 数据类型 |
 | userName | string | 否 |  | 用户 |
 | dHeader | string | 是 |  | 指标数据项 |
+| filters | string | 否 |  | 数据筛选条件 |
+
+### filters参数
+
+| 参数名称 | 参数类型 | 示例值 | 参数说明 |
+| :--- | :--- | :--- | :--- |
+| TASK\_ID | string | "TASK\_ID":\["10241","10240"\] | sdk应用ID |
 
 ### params参数
 
