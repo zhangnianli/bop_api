@@ -26,7 +26,7 @@ POST／GET
 | :--- | :--- | :--- | :--- | :--- |
 | taskId | string | 是 | "taskId":"10240,10241" | 应用id |
 | dType | string | 是 | json/csv | 返回的数据格式 |
-| dTime | string | 是 | "dTime":"20160101000000-20160102000000" | 数据时间范围\(时间最长一个月\) |
+| dTime | string | 是 | "dTime":"20160101000000-20160102000000" | 数据时间范围 |
 | pageNum | int | 是 | "pageNum":1 | 页码 |
 | pageRecorders | int | 是 | "pageRecorders":50 | 每页条数 |
 | filters | string | 否 | "filters":{"TASK\_ID":\["10241"\]} | 数据筛选条件 |
