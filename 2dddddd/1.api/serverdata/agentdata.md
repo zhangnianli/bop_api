@@ -1,10 +1,10 @@
 # 业务编号
 
-apm.data.agent.btdata
+apm.data.agent.statdata
 
 # api请求地址
 
-[http://api.bonree.com/apm/data/agent/btdata](http://api.bonree.com/apm/cluster/bebtdata)
+[http://api.bonree.com/apm/data/agent/statdata](http://api.bonree.com/apm/cluster/bebtdata)
 
 # 请求参数：
 
