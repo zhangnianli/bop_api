@@ -17,7 +17,6 @@ POST／GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | token | string\(32\) | 是 | xxxxxxxx | 令牌 |
-| dType | string | 是 | json/csv | 数据类型 |
 | username | string | 是 | bonree | 用户名 |
 | params | string | 是 |  | 参数json |
 
@@ -25,12 +24,13 @@ POST／GET
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| taskId | string | 是 | 1111,2222 | 应用id |
-| dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围 |
-| filters | string | 否 |  | 数据筛选条件 |
-| dHeader | string | 是 |  | 指标数据项 |
-| order | string | 否 | sdkAppId | 排序依据 |
-| group | string | 是 | sdkAppId,stackInfoCode | 数据组合条件 |
+| taskId | string | 是 | "taskId":"10240,10241" | 应用id |
+| dType | String | 是 | json/csv | 返回的数据类型 |
+| dTime | string | 是 | "dTime":"20160101000000-20160102000000" | 数据时间范围 |
+| filters | string | 否 | "filters":{"OS\_VERSION":\["android"\]} | 数据筛选条件 |
+| dHeader | string | 是 | "dHeader":"TASK\_ID,CRASH\_RATE" | 指标数据项 |
+| order | string | 否 | "order":"TASK\_ID DESC, CRASH\_TYPE ASC" | 排序依据 |
+| group | string | 是 | "group":"" | 数据组合条件 |
 
 ### filters参数
 
@@ -40,7 +40,7 @@ POST／GET
 | BRAND\_NAME | string | "brandName":\["1111"\] | 设备型号id |
 | CRASH\_TYPE | string |  | 崩溃类型 |
 
-### dHeader参数
+### dHeader&order参数
 
 | 参数名称 | 参数类型 | 是否必选 | 返回示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
