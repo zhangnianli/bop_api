@@ -35,6 +35,7 @@ POST／GET
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
 | CRASH\_TYPE | string |  | 崩溃类型 |
+| TASK\_ID | string |  | sdk应用ID |
 
 ### dHeader参数
 
