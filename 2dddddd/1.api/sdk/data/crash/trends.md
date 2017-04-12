@@ -17,7 +17,6 @@ POST／GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | token | string\(32\) | 是 | xxxxxxxx | 令牌 |
-| dType | string | 是 | json/csv | 数据类型 |
 | username | string | 是 | bonree | 用户名 |
 | params | string | 是 |  | 参数json |
 
@@ -25,17 +24,20 @@ POST／GET
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| taskId | string | 是 | 1111,2222 | 应用id |
-| dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围 |
-| filters | string | 否 |  | 数据筛选条件 |
-| dHeader | string | 是 |  | 指标数据项 |
+| taskId | string | 是 | “taskId”：“1024110240” | 应用id |
+| dType | string | 是 | json/csv | 返回数据类型 |
+| dTime | string | 是 | "dTime":"20160101000000-20160102000000" | 数据时间范围 |
+| filters | string | 否 | "filters":{"CRASH\_TYPE:\["Exception"\],"} | 数据筛选条件 |
+| dHeader | string | 是 | "dHeader":"TASK\_ID,MONITORTIME" | 指标数据项 |
 
 ### filters参数
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
-| CRASH\_TYPE | string |  | 崩溃类型 |
-| MONITORTIME | string |  | 监测时间点 |
+| CRASH\_TYPE | string | "CRASH\_TYPE":\["Exception","NullPointerException"\] | 崩溃类型 |
+| MONITORTIME | string | "MONITORTIME":\["20160101000000","20160102000000"\] | 监测时间点 |
+| OS\_VERSION | string | "OS\_VERSION":\["android","ios"\] |  |
+| BRAND\_NAME | string | "BRAND\_NAME":\["MI 2S","Iphone"\] |  |
 
 ### dHeader指标
 
