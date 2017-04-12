@@ -24,14 +24,14 @@ POST／GET
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| taskId | string | 是 | 1111,2222 | 应用id |
+| taskId | string | 是 | "taskId":"10240,10240" | 应用id |
 | dType | string | 是 | json/csv | 返回的数据类型 |
-| dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围\(时间最长一个月\) |
-| filters | string | 否 | {"crashType":\["1111"\]} | 数据筛选条件 |
-| dHeader | string | 是 | appId,crashType,crashCount,userCount | 指标数据项 |
-| group | string | 是 |  | 分组条件 |
-| order | string | 是 |  | 排序条件 |
-| top | int | 是 | 10 | 指标数量筛选 |
+| dTime | string | 是 | "dTime":"20160101000000-20160102000000" | 数据时间范围\(时间最长一个月\) |
+| filters | string | 否 | "filters":{"CRASH\_TYPE":\["NullPointerException"\]} | 数据筛选条件 |
+| dHeader | string | 是 | "dHeader":"TASK\_ID,CRASH\_TYPE" | 指标数据项 |
+| group | string | 是 | "group":"TASK\_ID,CRASH\_TYPE" | 分组条件 |
+| order | string | 是 | "order":"TASK\_ID DESC,CRASH\_TYPE ASC" | 排序条件 |
+| top | int | 是 | "top":10 | 指标数量筛选 |
 
 ### filters参数
 

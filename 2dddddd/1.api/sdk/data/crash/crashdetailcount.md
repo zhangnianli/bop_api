@@ -31,7 +31,7 @@ POST／GET
 | pageRecorders | int | 是 | "pageRecorders":50 | 每页条数 |
 | filters | string | 否 | "filters":{"TASK\_ID":\["10241"\]} | 数据筛选条件 |
 | dHeader | string | 是 | "dHeader":"TASK\_ID" | 指标数据项 |
-| order | string | 否 | "order":\["TASKID DESC","OSVERSION DESC"\] | 排序依据 |
+| order | string | 否 | "order":"TASKID DESC,OSVERSION DESC" | 排序依据 |
 | group | string | 是 | "group":"TASK\_ID" | 数据组合条件 |
 
 ### filters参数
