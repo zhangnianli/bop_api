@@ -36,7 +36,7 @@ POST／GET
 | :--- | :--- | :--- | :--- |
 | TASK\_ID | string | "TASK\_ID":\["10241","10240"\] | sdk应用ID |
 
-### params参数
+### dHeader参数
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -58,7 +58,7 @@ POST／GET
 
 ```java
 HttpClient httpclient = new DefaultHttpClient();
-String url = "https://api.bonree.com/sdk/report/task/find";
+String url = "https://api.bonree.com/sdk/task/find";
 String params = "{\"dType\":\"json\"}";
 
 HttpPost httppost = new HttpPost(url);
