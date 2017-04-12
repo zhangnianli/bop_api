@@ -26,9 +26,9 @@ POST／GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json | 数据类型 |
-| userName | string | 否 |  | 用户 |
-| dHeader | string | 是 |  | 指标数据项 |
-| filters | string | 否 |  | 数据筛选条件 |
+| userName | string | 否 | "userName":"Test" | 用户 |
+| dHeader | string | 是 | "dHeader":"TASK\_ID,TASK\_NAME" | 指标数据项 |
+| filters | string | 否 | "filters":{"TASK\_ID":\["10240","10241"\]} | 数据筛选条件 |
 
 ### filters参数
 
