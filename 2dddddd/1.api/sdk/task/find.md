@@ -38,12 +38,12 @@ POST／GET
 
 ### dHeader参数
 
-| 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
-| :--- | :--- | :--- | :--- | :--- |
-| USERNAME | string | 否 | bonree | 用户名 |
-| TASK\_NAME | string | 否 | bonreeApp | sdk应用名 |
-| TASK\_ID | string | 否 | 1111 | sdk应用id |
-| TASK\_MD5 | string | 否 | ×××× | 应用md5值 |
+| 参数名称 | 参数类型 | 是否必选 | 参数说明 |
+| :--- | :--- | :--- | :--- |
+| USERNAME | string | 否 | 用户名 |
+| TASK\_NAME | string | 否 | sdk应用名 |
+| TASK\_ID | string | 否 | sdk应用id |
+| TASK\_MD5 | string | 否 | 应用md5值 |
 
 # 返回参数说明
 
