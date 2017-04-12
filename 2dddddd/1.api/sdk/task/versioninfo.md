@@ -17,7 +17,6 @@ POST／GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | token | string\(32\) | 是 | xxxxxxxx | 令牌 |
-| dType | string | 是 | json | 数据类型 |
 | username | string | 是 | bonree | 用户名 |
 | params | string | 是 |  | 参数json |
 
@@ -25,8 +24,8 @@ POST／GET
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| dType | string | 是 | json/csv | 数据类型 |
-| fiters | string | 否 |  | 数据筛选条件 |
+| dType | string | 是 | json | 数据类型 |
+| filters | string | 否 |  | 数据筛选条件 |
 | dHeader | string | 是 |  | 指标数据项 |
 
 ### filters参数
