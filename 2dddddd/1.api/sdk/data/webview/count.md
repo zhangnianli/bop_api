@@ -25,10 +25,10 @@ POST／GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json/csv | 数据类型 |
-| taskId | string | 是 | 1111,2222 | 应用id |
-| dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围 |
-| dHeader | string | 是 | sdkAppId,appName,webviewErrorRate | 指标数据项 |
-| group | string | 否 | "appId" | 数据组合条件 |
+| taskId | string | 是 | "taskId":"10240,10241" | 应用id |
+| dTime | string | 是 | "dTime":"20160101000000-20160102000000" | 数据时间范围 |
+| dHeader | string | 是 | "dHeader":"TASK\_ID" | 指标数据项 |
+| group | string | 否 | "group":"TASK\_ID" | 数据组合条件 |
 
 ### filters参数
 
