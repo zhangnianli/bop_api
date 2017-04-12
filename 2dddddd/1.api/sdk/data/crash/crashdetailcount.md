@@ -24,37 +24,38 @@ POST／GET
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| taskId | string | 是 | "1111,2222" | 应用id |
-| dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围\(时间最长一个月\) |
-| pageNum | int | 是 | 1 | 页码 |
-| pageRecorders | int | 是 | 50 | 每页条数 |
-| filters | string | 否 |  | 数据筛选条件 |
-| dHeader | string | 是 |  | 指标数据项 |
-| order | string | 否 | sdkAppId | 排序依据 |
-| group | string | 是 | "sdkAppId,stackInfoCode" | 数据组合条件 |
+| taskId | string | 是 | "taskId":"10240,10241" | 应用id |
+| dType | string | 是 | json/csv | 返回的数据格式 |
+| dTime | string | 是 | "dTime":"20160101000000-20160102000000" | 数据时间范围\(时间最长一个月\) |
+| pageNum | int | 是 | "pageNum":1 | 页码 |
+| pageRecorders | int | 是 | "pageRecorders":50 | 每页条数 |
+| filters | string | 否 | "filters":{"TASK\_ID":\["10241"\]} | 数据筛选条件 |
+| dHeader | string | 是 | "dHeader":"TASK\_ID" | 指标数据项 |
+| order | string | 否 | "order":\["TASKID DESC","OSVERSION DESC"\] | 排序依据 |
+| group | string | 是 | "group":"TASK\_ID" | 数据组合条件 |
 
 ### filters参数
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
-| OS\_VERSION | string |  | 操作系统 |
-| BRAND\_NAME | string |  | 设备型号 |
-| CRASH\_TYPE | string |  | 崩溃类型 |
+| OS\_VERSION | string | "OS\_VERSION":\["android"\] | 操作系统 |
+| BRAND\_NAME | string | "BRAND\_NAME":\["MI 2S"\] | 设备型号 |
+| CRASH\_TYPE | string | "CRASH\_TYPE":\["NullPointerException"\] | 崩溃类型 |
 
 ### dHeader参数
 
-| 参数名称 | 参数类型 | 是否必选 | 返回示例值 | 参数说明 |
-| :--- | :--- | :--- | :--- | :--- |
-| TASK\_ID | string | 否 | 1111 | sdk应用id |
-| MIN\_MONITORTIME | string | 否 | 201601010000 | 首次发生时间 |
-| MAX\_MONITORTIME | string | 否 | 201601020000 | 末次发生时间 |
-| CRASH\_COUNT | string | 否 | 200 | 崩溃次数 |
-| CRASH\_RATE | string | 否 | 0.01 | 崩溃率 |
-| START\_COUNT | string | 否 | 100 | sdk应用启动次数 |
-| USER\_COUNT | string | 否 | 100 | 崩溃影响用户数 |
-| CRASH\_TYPE | string | 否 | NullPoinerException | 崩溃类型 |
-| KEY\_FUNCTION | string | 否 |  | 关键方法 |
-| CAUSE\_BY | string | 否 |  | causeby |
+| 参数名称 | 参数类型 | 是否必选 | 参数说明 |
+| :--- | :--- | :--- | :--- |
+| TASK\_ID | string | 否 | sdk应用id |
+| MIN\_MONITORTIME | string | 否 | 首次发生时间 |
+| MAX\_MONITORTIME | string | 否 | 末次发生时间 |
+| CRASH\_COUNT | string | 否 | 崩溃次数 |
+| CRASH\_RATE | string | 否 | 崩溃率 |
+| START\_COUNT | string | 否 | sdk应用启动次数 |
+| USER\_COUNT | string | 否 | 崩溃影响用户数 |
+| CRASH\_TYPE | string | 否 | 崩溃类型 |
+| KEY\_FUNCTION | string | 否 | 关键方法 |
+| CAUSE\_BY | string | 否 | causeby |
 
 ### group参数
 
