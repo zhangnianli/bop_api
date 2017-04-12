@@ -24,20 +24,20 @@ POST／GET
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| dType | string | 是 | json/csv | 数据类型 |
-| userName | string | 否 |  | 用户名 |
-| dHeader | string | 是 |  | 指标数据项 |
+| dType | string | 是 | json | 数据类型 |
+| userName | string | 否 | "userName":"Test" | 用户名 |
+| dHeader | string | 是 | "dHeader":"USERNAME" | 指标数据项 |
 
 ### dHeader参数
 
-| 参数名称 | 参数类型 | 是否必选 | 返回示例值 | 参数说明 |
-| :--- | :--- | :--- | :--- | :--- |
-| USERNAME | string | 是 | bonree | 用户名 |
-| START\_VALID\_TIME | string | 否 | 20160101000000 | 有效期开始时间 |
-| END\_VALID\_TIME | string | 否 | 20160102000000 | 有效期结束时间 |
-| REMAIN\_DEVICE\_COUNT | string | 否 | 1000 | 剩余活跃设备数 |
-| ACTIVE\_DEVICE\_COUNT | string | 否 | 10000 | 活跃设备数 |
-| USER\_STATUE | string | 否 | false | 用户状态信息 |
+| 参数名称 | 参数类型 | 是否必选 | 参数说明 |
+| :--- | :--- | :--- | :--- |
+| USERNAME | string | 是 | 用户名 |
+| START\_VALID\_TIME | string | 否 | 有效期开始时间 |
+| END\_VALID\_TIME | string | 否 | 有效期结束时间 |
+| REMAIN\_DEVICE\_COUNT | string | 否 | 剩余活跃设备数 |
+| ACTIVE\_DEVICE\_COUNT | string | 否 | 活跃设备数 |
+| USER\_STATUE | string | 否 | 用户状态信息 |
 
 # 返回参数说明
 
