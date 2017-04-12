@@ -49,7 +49,7 @@ apm.data.agent.bebtdata
 
 ```
     HttpClient httpclient = new DefaultHttpClient();
-    String url = "http://api.bonree.com/apm/cluster/bebtdata";
+    String url = "http://api.bonree.com/apm/agent/bebtdata";
     HttpPost httppost = new HttpPost(url);
     System.out.println("请求: " + httppost.getRequestLine());
     // 创建参数队列
