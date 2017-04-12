@@ -45,15 +45,15 @@ POST／GET
 
 | 参数名称 | 参数类型 | 是否必选 | 参数说明 |
 | :--- | :--- | :--- | :--- |
-| TASK\_ID | string | 否 | sdk应用id |
-| TASK\_VERSION\_ID | string | 否 | sdk应用版本 |
+| TASK\_ID | int | 否 | sdk应用id |
+| TASK\_VERSION\_ID | int | 否 | sdk应用版本 |
 | CRASH\_TYPE | string | 否 | 崩溃类型 |
 | OS\_VERSION | string | 否 | 操作系统 |
 | BRAND\_NAME | string | 否 | 设备型号 |
-| CRASH\_COUNT | string | 否 | 崩溃次数 |
-| CRASH\_RATE | string | 否 | 崩溃率 |
-| START\_COUNT | string | 否 | sdk启动次数 |
-| USER\_COUNT | string | 否 | 影响用户数 |
+| CRASH\_COUNT | int | 否 | 崩溃次数 |
+| CRASH\_RATE | double | 否 | 崩溃率 |
+| START\_COUNT | int | 否 | sdk启动次数 |
+| USER\_COUNT | int | 否 | 影响用户数 |
 
 ### group参数
 
