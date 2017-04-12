@@ -17,7 +17,6 @@ POST／GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | token | string\(32\) | 是 | xxxxxxxx | 令牌 |
-| dType | string | 是 | json/csv | 数据类型 |
 | username | string | 是 | bonree | 用户名 |
 | params | string | 是 |  | 参数json |
 
@@ -25,25 +24,26 @@ POST／GET
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| taskId | string | 是 | 1111,2222 | 应用id |
-| filters | string | 否 |  | 数据筛选条件 |
-| dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围 |
-| dHeader | string | 是 |  | 指标数据项 |
+| taskId | string | 是 | "taskId":"10241,10240" | 应用id |
+| dType | string  | 是 | json/csv | 返回数据类型 |
+| filters | string | 否 | "filters":{"CRASH\_TYPE:\["Exception"\],"TASK\_ID":\["10241"\]} | 数据筛选条件 |
+| dTime | string | 是 | "dTime":"20160101000000-20160102000000" | 数据时间范围 |
+| dHeader | string | 是 | "dHeader":"TASK\_ID,OS\_VERSION" | 指标数据项 |
 
 ### filter参数
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
-| CRASH\_TYPE | string |  | 崩溃类型 |
-| TASK\_ID | string |  | sdk应用ID |
+| CRASH\_TYPE | string | "CRASH\_TYPE":\["Exception","NullPointerException"\] | 崩溃类型 |
+| TASK\_ID | string | "TASK\_ID":\["10241","10240"\] | sdk应用ID |
 
 ### dHeader参数
 
-| 参数名称 | 参数类型 | 是否必选 | 返回示例值 | 参数说明 |
-| :--- | :--- | :--- | :--- | :--- |
-| TASK\_ID | string | 否 | 1111 | sdk应用appId |
-| OS\_VERSION | string | 否 | ios 9 | 操作系统名称 |
-| BRAND\_NAME | string | 否 | iphone 5s | 设备型号 |
+| 参数名称 | 参数类型 | 是否必选 | 参数说明 |
+| :--- | :--- | :--- | :--- |
+| TASK\_ID | string | 否 | sdk应用appId |
+| OS\_VERSION | string | 否 | 操作系统名称 |
+| BRAND\_NAME | string | 否 | 设备型号 |
 
 # 返回参数说明
 
