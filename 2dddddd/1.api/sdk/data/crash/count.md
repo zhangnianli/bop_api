@@ -36,9 +36,9 @@ POST／GET
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
-| OS\_VERSION | string | "osVersion":\["1111"\] | 操作系统id |
-| BRAND\_NAME | string | "brandName":\["1111"\] | 设备型号id |
-| CRASH\_TYPE | string |  | 崩溃类型 |
+| OS\_VERSION | string | "OS\_VERSION":\["android","ios"\] | 操作系统id |
+| BRAND\_NAME | string | "BRAND\_NAME":\["MI 2S","iphone"\] | 设备型号id |
+| CRASH\_TYPE | string | "CRASH\_TYPE":\["NullPointerException","Exception"\] | 崩溃类型 |
 
 ### dHeaderℴ参数
 
