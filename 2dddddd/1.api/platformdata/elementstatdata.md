@@ -20,6 +20,7 @@ platform.data.element.statdata
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json | 数据类型\(csv、json\) |
 | appId | string | 是 | 1035 | 应用ID |
+| partUrlCode | string | 否 | 32020152,6541200 | 截取后的URL CODE |
 | dTime | string | 是 | 20170201000000-20170301000000 | 查询时间范围 |
 | pageNum | string | 否 | 1 | 页码 |
 | pageRecorders | string | 否 | 50 | 每页行数 |
