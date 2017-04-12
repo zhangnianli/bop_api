@@ -25,6 +25,7 @@ POST／GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | taskId | string | 是 | 1111,2222 | 应用id |
+| dType | string | 是 | json/csv | 返回的数据类型 |
 | dTime | string | 是 | 20160101000000-20160102000000 | 数据时间范围\(时间最长一个月\) |
 | filters | string | 否 | {"crashType":\["1111"\]} | 数据筛选条件 |
 | dHeader | string | 是 | appId,crashType,crashCount,userCount | 指标数据项 |
