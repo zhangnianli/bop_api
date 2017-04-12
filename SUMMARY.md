@@ -33,6 +33,7 @@
       * [后端应用信息列表](2dddddd/1.api/serverdata/applist.md)
       * [套餐信息](2dddddd/1.api/serverdata/package.md)
       * [应用配置](2dddddd/1.api/serverdata/appconfig.md)
+      * [agent数据统计](2dddddd/1.api/serverdata/agentdata.md)
     * [platform](2dddddd/1.api/platformdata.md)
       * [元素快照统计数据](2dddddd/1.api/platformdata/elementstatdata.md)
       * [元素快照详细数据](2dddddd/1.api/platformdata/elementdetaildata.md)
