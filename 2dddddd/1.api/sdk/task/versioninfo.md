@@ -25,22 +25,22 @@ POST／GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json | 数据类型 |
-| filters | string | 否 |  | 数据筛选条件 |
-| dHeader | string | 是 |  | 指标数据项 |
+| filters | string | 否 | "filters":{"TASK\_VERSION\_ID":\["59015"\]} | 数据筛选条件 |
+| dHeader | string | 是 | "dHeader":"SDK\_VERSION" | 指标数据项 |
 
 ### filters参数
 
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
-| TASK\_VERSION\_ID | string |  | sdk应用版本ID |
+| TASK\_VERSION\_ID | string | "TASK\_VERSION\_ID":\["59015"\] | sdk应用版本ID |
 
-### params参数
+### dHeader参数
 
-| 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
-| :--- | :--- | :--- | :--- | :--- |
-| TASK\_VERSION\_ID | string | 否 | bonree | sdk应用版本ID |
-| SDK\_VERSION | string | 否 | bonreeApp | sdk版本 |
-| TASK\_VERSION\_NAME | string | 否 | 1111 | sdk应用版本名称 |
+| 参数名称 | 参数类型 | 是否必选 | 参数说明 |
+| :--- | :--- | :--- | :--- |
+| TASK\_VERSION\_ID | string | 否 | sdk应用版本ID |
+| SDK\_VERSION | string | 否 | sdk版本 |
+| TASK\_VERSION\_NAME | string | 否 | sdk应用版本名称 |
 
 # 返回参数说明
 
