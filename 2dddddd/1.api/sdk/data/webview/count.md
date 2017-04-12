@@ -38,12 +38,12 @@ POST／GET
 
 ### dHeader参数
 
-| 参数名称 | 参数类型 | 是否必选 | 返回示例值 | 参数说明 |
-| :--- | :--- | :--- | :--- | :--- |
-| TASK\_ID | string | 否 | 1111 | sdk应用id |
-| WEBVIEW\_ERROR\_RATE | string | 否 | 0.01 | 错误率 |
-| WEBVIEW\_ERROR\_COUNT | string | 否 | 1 | 发生错误的访问数 |
-| WEBVIEW\_COUNT | string | 否 | 100 | 访问数 |
+| 参数名称 | 参数类型 | 是否必选 | 参数说明 |
+| :--- | :--- | :--- | :--- |
+| TASK\_ID | string | 否 | sdk应用id |
+| WEBVIEW\_ERROR\_RATE | string | 否 | 错误率 |
+| WEBVIEW\_ERROR\_COUNT | string | 否 | 发生错误的访问数 |
+| WEBVIEW\_COUNT | string | 否 | 访问数 |
 
 ### group参数
 
