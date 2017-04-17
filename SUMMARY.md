@@ -38,6 +38,7 @@
       * [元素快照统计数据](2dddddd/1.api/platformdata/elementstatdata.md)
       * [元素快照详细数据](2dddddd/1.api/platformdata/elementdetaildata.md)
       * [融合统计信息](2dddddd/1.api/platformdata/performance.md)
+      * [ajax快照](2dddddd/1.api/platformdata/ajaxkuai-zhao.md)
     * [base](2dddddd/1.api/common.md)
       * [运营商](2dddddd/1.api/common/dictionary.md)
       * [城市](2dddddd/1.api/common/city.md)
