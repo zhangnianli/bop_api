@@ -44,14 +44,14 @@ field列表：
 
 ```
         HttpClient httpclient = new DefaultHttpClient();
-        String url = "https://api.bonree.com/platform/data/performance/statdata";
+        String url = "https://api.bonree.com/platform/data/snapshots/data";
         HttpPost httppost = new HttpPost(url);
         System.out.println("请求: " + httppost.getRequestLine());
         // 创建参数队列
         List<NameValuePair> formparams = new ArrayList<NameValuePair>();
         formparams.add(new BasicNameValuePair("username", "bonreetest"));
         formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-        formparams.add(new BasicNameValuePair("params", "{\"token\":\"*******\",\"dtype\":\"json\",\"taskId\":\"1035\",\"dtime\":\"20170201000000-20170301000000\"}"));
+        formparams.add(new BasicNameValuePair("params", "{\"token\":\"*******\",\"dType\":\"json\",\"rowkeys\":\"1492081200:6d6f0839-4700-4482-4856-68e32d8b4cec\"}"));
         UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
         httppost.setEntity(uefEntity);
         // 执行
@@ -74,8 +74,8 @@ field列表：
     "errorCode": 0,
     "reason": "查询成功",
     "result": [
-        [APPID,"ERRORID"],
-        [1,"123"]
+        [ROWKEY,"RESULT"],
+        ["1492081200:6d6f0839-4700-4482-4856-68e32d8b4cec", 0]
     ]
 }
 ```
