@@ -29,8 +29,8 @@ browser.data.js.error.statdata
 | :--- | :--- |
 | APP\_ID | 应用ID |
 | ERROR\_TATE | 错误率 |
-| ERROR\_NUM | 错误次数 |
-| BT\_THRSHLD\_VERYSLOW\_TIMES | 业务健康度阀值-很慢 |
+| ERROR\_NUM | 发生js错误的页面次数 |
+| TOTAL\_NUM | 总的页面次数 |
 
 # 返回参数说明：
 
@@ -74,7 +74,7 @@ browser.data.js.error.statdata
     "errorCode": 0,
     "reason": "查询成功",
     "result": [
-        ["APP_ID","ERROR_RATE","ERROR_NUM",""],
+        ["APP_ID","ERROR_RATE","ERROR_NUM","TOTAL_NUM"],
         ["1035","0.2","20","100"],
         ["1036","0.2","20","100"],
         ["1037","0.2","20","100"]
