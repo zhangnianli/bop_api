@@ -20,22 +20,15 @@ browser.data.app.config
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json | 数据类型\(csv、json\) |
 | username | string | 是 | bonreetest | 用户名 |
-|  | dHeader | string | APP\_ID,APP\_NAME,APP\_GUID | 指标数据项 |
+| dHeader | string | 是 | APP\_ID,APP\_NAME,APP\_GUID | 指标数据项 |
 
 # dHeader字段说明：
 
 | 字段 | 名称 |
 | :--- | :--- |
-| APP\_ID | 后端应用ID |
-| APP\_NAME | 业务健康度阀值-健康 |
-| APP\_GUID | 业务健康度阀值-较慢 |
-| BT\_THRSHLD\_VERYSLOW\_TIMES | 业务健康度阀值-很慢 |
-| BT\_THRSHLD\_STALL\_TIMES | 业务健康度阀值-停滞 |
-| SQL\_EXETIME\_THRESHOLD | sql调用健康度阀值 |
-| NOSQL\_EXETIME\_THRESHOLD | nosql调用健康度阀值 |
-| REMOTECALL\_EXETIME\_THRESHOLD | rpc调用健康度阀值 |
-| UPDATE\_TIME | 更新时间 |
-| IP\_COUNT | 外网主机统计个数 |
+| APP\_ID | 应用ID |
+| APP\_NAME | 应用名称 |
+| APP\_GUID | 应用GUID |
 
 # 返回参数说明：
 
