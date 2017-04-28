@@ -72,10 +72,10 @@ browser.data.app.config
     "errorCode": 0,
     "reason": "查询成功",
     "result": [
-        ["BE_APP_ID","BT_THRSHLD","BT_THRSHLD_SLOW_TIMES","BT_THRSHLD_VERYSLOW_TIMES","BT_THRSHLD_STALL_TIMES","SQL_EXETIME_THRESHOLD","NOSQL_EXETIME_THRESHOLD","REMOTECALL_EXETIME_THRESHOLD","UPDATE_TIME"],
-        ["1035","10","20","30","40","50","50","50","20170327120000"],
-        ["1036","10","20","30","40","50","50","50","20170327120000"],
-        ["1037","10","20","30","40","50","50","50","20170327120000"]
+        ["APP_ID","APP_NAME","APP_GUID"],
+        ["1035","APP1","3cae7c0c-ad56-4b36-82a4-40ddc6d3513a"],
+        ["1036","APP2","3cae7c0c-ad56-4b36-82a4-40ddc6d3513b"],
+        ["1037","APP3","3cae7c0c-ad56-4b36-82a4-40ddc6d3513c"]
     ]
 }
 ```
