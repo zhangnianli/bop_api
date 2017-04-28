@@ -19,16 +19,16 @@ browser.data.app.config
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json | 数据类型\(csv、json\) |
-| userId | string | 是 | 1035 | 应用ID |
+| username | string | 是 | bonreetest | 用户名 |
 |  | dHeader | string | APP\_ID,APP\_NAME,APP\_GUID | 指标数据项 |
 
 # dHeader字段说明：
 
 | 字段 | 名称 |
 | :--- | :--- |
-| BE\_APP\_ID | 后端应用ID |
-| BT\_THRSHLD | 业务健康度阀值-健康 |
-| BT\_THRSHLD\_SLOW\_TIMES | 业务健康度阀值-较慢 |
+| APP\_ID | 后端应用ID |
+| APP\_NAME | 业务健康度阀值-健康 |
+| APP\_GUID | 业务健康度阀值-较慢 |
 | BT\_THRSHLD\_VERYSLOW\_TIMES | 业务健康度阀值-很慢 |
 | BT\_THRSHLD\_STALL\_TIMES | 业务健康度阀值-停滞 |
 | SQL\_EXETIME\_THRESHOLD | sql调用健康度阀值 |
