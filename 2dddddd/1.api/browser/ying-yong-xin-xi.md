@@ -19,8 +19,8 @@ browser.data.app.config
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json | 数据类型\(csv、json\) |
-| appId | string | 是 | 1035,1036,1037 | 应用ID |
-| dHeader | string | 是 | BE\_APP\_ID,BT\_THRSHLD,BT\_THRSHLD\_SLOW\_TIMES,BT\_THRSHLD\_VERYSLOW\_TIMES,BT\_THRSHLD\_STALL\_TIMES,SQL\_EXETIME\_THRESHOLD,NOSQL\_EXETIME\_THRESHOLD,REMOTECALL\_EXETIME\_THRESHOLD,UPDATE\_TIME | 指标数据项 |
+| userId | string | 是 | 1035 | 应用ID |
+|  | dHeader | string | APP\_ID,APP\_NAME,APP\_GUID | 指标数据项 |
 
 # dHeader字段说明：
 
