@@ -12,7 +12,7 @@ browser.data.js.error.statdata
 | :--- | :--- | :--- | :--- | :--- |
 | username | string | 是 | bonreetest | 用户名 |
 | token | string | 是 | xxxxxxxxxxxxx | 令牌 |
-| params | string | 是 | {"dtype":"json","appId":"1035"} | 参数json |
+| params | string | 是 | {"dtype":"json","appId":"1035,1036,1037"} | 参数json |
 
 **params说明：**
 
@@ -20,22 +20,17 @@ browser.data.js.error.statdata
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json | 数据类型\(csv、json\) |
 | appId | string | 是 | 1035,1036,1037 | 应用ID |
-| dHeader | string | 是 | BE\_APP\_ID,BT\_THRSHLD,BT\_THRSHLD\_SLOW\_TIMES,BT\_THRSHLD\_VERYSLOW\_TIMES,BT\_THRSHLD\_STALL\_TIMES,SQL\_EXETIME\_THRESHOLD,NOSQL\_EXETIME\_THRESHOLD,REMOTECALL\_EXETIME\_THRESHOLD,UPDATE\_TIME | 指标数据项 |
+| dTime | string | 是 | 20170428000000-20170429000000 | 时间范围 |
+| dHeader | string | 是 | APP\_ID,ERROR\_TATE,ERROR\_NUM, | 指标数据项 |
 
 # dHeader字段说明：
 
 | 字段 | 名称 |
 | :--- | :--- |
-| BE\_APP\_ID | 后端应用ID |
-| BT\_THRSHLD | 业务健康度阀值-健康 |
-| BT\_THRSHLD\_SLOW\_TIMES | 业务健康度阀值-较慢 |
+| APP\_ID | 应用ID |
+| ERROR\_TATE | 错误率 |
+| ERROR\_NUM | 错误次数 |
 | BT\_THRSHLD\_VERYSLOW\_TIMES | 业务健康度阀值-很慢 |
-| BT\_THRSHLD\_STALL\_TIMES | 业务健康度阀值-停滞 |
-| SQL\_EXETIME\_THRESHOLD | sql调用健康度阀值 |
-| NOSQL\_EXETIME\_THRESHOLD | nosql调用健康度阀值 |
-| REMOTECALL\_EXETIME\_THRESHOLD | rpc调用健康度阀值 |
-| UPDATE\_TIME | 更新时间 |
-| IP\_COUNT | 外网主机统计个数 |
 
 # 返回参数说明：
 
@@ -79,10 +74,10 @@ browser.data.js.error.statdata
     "errorCode": 0,
     "reason": "查询成功",
     "result": [
-        ["BE_APP_ID","BT_THRSHLD","BT_THRSHLD_SLOW_TIMES","BT_THRSHLD_VERYSLOW_TIMES","BT_THRSHLD_STALL_TIMES","SQL_EXETIME_THRESHOLD","NOSQL_EXETIME_THRESHOLD","REMOTECALL_EXETIME_THRESHOLD","UPDATE_TIME"],
-        ["1035","10","20","30","40","50","50","50","20170327120000"],
-        ["1036","10","20","30","40","50","50","50","20170327120000"],
-        ["1037","10","20","30","40","50","50","50","20170327120000"]
+        ["APP_ID","ERROR_RATE","ERROR_NUM",""],
+        ["1035","0.2","20","100"],
+        ["1036","0.2","20","100"],
+        ["1037","0.2","20","100"]
     ]
 }
 ```
