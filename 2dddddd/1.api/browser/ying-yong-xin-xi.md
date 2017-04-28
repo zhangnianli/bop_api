@@ -12,7 +12,7 @@ browser.data.app.config
 | :--- | :--- | :--- | :--- | :--- |
 | username | string | 是 | bonreetest | 用户名 |
 | token | string | 是 | xxxxxxxxxxxxx | 令牌 |
-| params | string | 是 | {"dtype":"json","appId":"1035"} | 参数json |
+| params | string | 是 | {"dtype":"json","username":"bonreetest"} | 参数json |
 
 **params说明：**
 
