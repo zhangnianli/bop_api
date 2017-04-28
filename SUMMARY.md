@@ -55,7 +55,9 @@
       * [createCustom](2dddddd/1.api/custom/createcustom.md)
       * [editPwd](2dddddd/1.api/custom/editpwd.md)
     * [browser](2dddddd/1.api/browser.md)
-      * app信息
+      * [产品信息](2dddddd/1.api/browser/chan-pin-xin-xi.md)
+      * [应用信息](2dddddd/1.api/browser/ying-yong-xin-xi.md)
+      * [js错误统计](2dddddd/1.api/browser/jscuo-wu-tong-ji.md)
   * [2.平台技术](2dddddd/2..md)
   * [3.常用工具](2dddddd/3..md)
     * [API测试工具](2dddddd/3./api.md)
