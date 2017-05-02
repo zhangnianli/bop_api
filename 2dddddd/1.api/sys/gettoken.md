@@ -1,39 +1,39 @@
-# ÒµÎñ±àºÅ
+ï»¿# ä¸šåŠ¡ç¼–å·
 
 custom.check
 
-# apiÇëÇóµØÖ·
+# apiè¯·æ±‚åœ°å€
 
 [http://api.bonree.com/custom/check](http://api.bonree.com/custom/check)
 
-# ÇëÇó·½Ê½
+# è¯·æ±‚æ–¹å¼
 
 POST/GET
 
-# ÇëÇó²ÎÊı
+# è¯·æ±‚å‚æ•°
 
-| ²ÎÊıÃû³Æ | ²ÎÊıÀàĞÍ | ÊÇ·ñ±ØÑ¡ | Ê¾ÀıÖµ | ²ÎÊıËµÃ÷ |
+| å‚æ•°åç§° | å‚æ•°ç±»å‹ | æ˜¯å¦å¿…é€‰ | ç¤ºä¾‹å€¼ | å‚æ•°è¯´æ˜ |
 | :--- | :--- | :--- | :--- | :--- |
-| username | string | ÊÇ | myusername | ÁîÅÆ |
-| token | string | ÊÇ | systomen | ÏµÍ³Ğ£Ñétoken |
+| username | string | æ˜¯ | myusername | ä»¤ç‰Œ |
+| token | string | æ˜¯ | systomen | ç³»ç»Ÿæ ¡éªŒtoken |
 
-# ·µ»Ø²ÎÊıËµÃ÷
+# è¿”å›å‚æ•°è¯´æ˜
 
-| Ãû³Æ | ÀàĞÍ | ÃèÊö |
+| åç§° | ç±»å‹ | æè¿° |
 | :--- | :--- | :--- |
-| error\_code | int | ÏìÓ¦ÂëËµÃ÷ |
-| reason | string | ·µ»ØËµÃ÷ |
-| result | string | ·µ»Ø½á¹û¼¯ |
+| error\_code | int | å“åº”ç è¯´æ˜ |
+| reason | string | è¿”å›è¯´æ˜ |
+| result | string | è¿”å›ç»“æœé›† |
 
-# ÇëÇóÊµÀı
+# è¯·æ±‚å®ä¾‹
 
 curl
 
-# ·µ»Ø½á¹ûÊµÀı
+# è¿”å›ç»“æœå®ä¾‹
 ```js
 {
 	"error_code":0,
-	"reason":"Ğ£Ñé³É¹¦",
+	"reason":"æ ¡éªŒæˆåŠŸ",
 	"result":{
 		"usertoken":"usertoken"
 	}
