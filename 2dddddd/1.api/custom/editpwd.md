@@ -28,7 +28,7 @@ POST/GET
 
 # 请求实例
 
-curl
+curl [http://api.bonree.com/custom/editpwd](#)?username=upduser&token=abcdabcd&params={"oldpwd":"oldpwd","newpwd":"mynewpwd"}
 
 # 返回结果实例
 
