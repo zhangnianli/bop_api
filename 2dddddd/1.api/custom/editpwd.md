@@ -36,9 +36,12 @@ curl [http://api.bonree.com/custom/editpwd](#)?username=upduser&token=abcdabcd&p
 {
     "error_code":0,
     "reason":"修改成功",
-    "result":{
-        "usertoken":"usertoken"
+    "type":"data",
+    "result": {
+        "username":"bonreetest",
+        "v4Token":"42eb62ff35418c03"
     }
+
 }
 ```
 
