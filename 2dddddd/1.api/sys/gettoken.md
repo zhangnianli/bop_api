@@ -33,7 +33,7 @@ curl [[http://api.bonree.com/sys/g](#)etToken](#)
     "error_code":0,
     "reason":"成功",
     "result":[
-        "usertoken":"usertoken"
+        {"token":"abcd","bizId":1}, ...
     ]
 }
 ```
