@@ -15,7 +15,7 @@ POST/GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | username | string | 是 | myusername | 令牌 |
-| params | string | 是 | {"pwd":"abcdabcd"} | params中包含所有其他参数 |
+| params | string | 是 | {"pwd":"abcdabcd"} | params中包含所有其他参数，pwd为md5 |
 | token | string | 是 | systoken | 系统校验token |
 
 # 返回参数说明
