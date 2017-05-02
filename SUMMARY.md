@@ -55,6 +55,7 @@
             * [createCustom](2dddddd/1.api/custom/createcustom.md)
             * [editPwd](2dddddd/1.api/custom/editpwd.md)
         * [sys](2dddddd/sys.md)
+            * [getToken](2dddddd/gettoken.md)
     * [2.平台技术](2dddddd/2..md)
     * [3.常用工具](2dddddd/3..md)
         * [API测试工具](2dddddd/3./api.md)
