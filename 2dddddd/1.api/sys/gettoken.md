@@ -31,7 +31,7 @@ curl [[http://api.bonree.com/sys/g](#)etToken](#)
 ```js
 {
     "error_code":0,
-    "reason":"校验成功",
+    "reason":"成功",
     "result":{
         "usertoken":"usertoken"
     }
