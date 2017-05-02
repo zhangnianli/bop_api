@@ -16,8 +16,7 @@ POST/GET
 | :--- | :--- | :--- | :--- | :--- |
 | username | string | 是 | myusername | 令牌 |
 | token | string | 是 | systomen | 系统校验token |
-| oldpwd | string | 是 | abcdabcdabcdabcdabcdabcdabcdabcd | 旧密码md5 |
-| newpwd | string | 是 | abcdabcdabcdabcdabcdabcdabcdabcd | 新密码md5 |
+| params | string | 是 | params={"oldpwd":"aaa","newpwd":"mynewpwd"} | 其他参数放到params中，oldpwd、newpwd |
 
 # 返回参数说明
 
