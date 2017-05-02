@@ -24,7 +24,7 @@ POST/GET
 
 # 请求实例
 
-curl
+curl [[http://api.bonree.com/sys/g](#)etToken](#)
 
 # 返回结果实例
 
