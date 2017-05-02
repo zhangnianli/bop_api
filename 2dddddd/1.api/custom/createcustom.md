@@ -15,7 +15,7 @@ POST/GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | username | string | 是 | myusername | 令牌 |
-| pwd | string | 是 | abcdabcdabcdabcdabcdabcdabcdabcd | 密码的32位md5值 |
+| params | string | 是 | {"pwd":"abcdabcd"} | params中包含所有其他参数 |
 | token | string | 是 | systoken | 系统校验token |
 
 # 返回参数说明
@@ -34,11 +34,11 @@ curl
 
 ```js
 {
-	"error_code":0,
-	"reason":"创建成功",
-	"result":{
-		"usertoken":"usertoken"
-	}
+    "error_code":0,
+    "reason":"创建成功",
+    "result":{
+        "usertoken":"usertoken"
+    }
 }
 ```
 
