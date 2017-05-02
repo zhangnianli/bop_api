@@ -28,7 +28,7 @@ POST/GET
 
 # 请求实例
 
-curl
+curl [http://api.bonree.com/custom/create](#)?username=inusername&token=abcdabcdabcd&params={'pwd':'mypwdmd5'}
 
 # 返回结果实例
 
