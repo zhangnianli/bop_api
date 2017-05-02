@@ -20,7 +20,7 @@ POST/GET
 | :--- | :--- | :--- |
 | error\_code | int | 响应码说明 |
 | reason | string | 返回说明 |
-| result | string | 返回结果集 |
+| result | string | 返回结果集，token数组\[\] |
 
 # 请求实例
 
@@ -32,9 +32,9 @@ curl [[http://api.bonree.com/sys/g](#)etToken](#)
 {
     "error_code":0,
     "reason":"成功",
-    "result":{
+    "result":[
         "usertoken":"usertoken"
-    }
+    ]
 }
 ```
 
