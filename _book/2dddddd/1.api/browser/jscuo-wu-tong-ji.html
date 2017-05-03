@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>操作系统版本 | bop_api</title>
+        <title>js错误统计 | bop_api</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="..\..\../2dddddd/1.api/common/accessmodel.html" />
+    <link rel="next" href="..\..\../2dddddd/2..html" />
     
     
-    <link rel="prev" href="..\..\../2dddddd/1.api/common/city.html" />
+    <link rel="prev" href="..\..\../2dddddd/1.api/browser/ying-yong-xin-xi.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.1.5.3" data-basepath="..\..\.." data-revision="1493703630479">
+    <div class="book"  data-level="4.1.7.3" data-basepath="..\..\.." data-revision="1493703630479">
     
 
 <div class="book-summary">
@@ -778,7 +778,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="4.1.5.3" data-path="2dddddd/1.api/common/os.html">
+        <li class="chapter " data-level="4.1.5.3" data-path="2dddddd/1.api/common/os.html">
             
                 
                     <a href="..\..\../2dddddd/1.api/common/os.html">
@@ -1030,7 +1030,7 @@
         </li>
     
         
-        <li class="chapter " data-level="4.1.7.3" data-path="2dddddd/1.api/browser/jscuo-wu-tong-ji.html">
+        <li class="chapter active" data-level="4.1.7.3" data-path="2dddddd/1.api/browser/jscuo-wu-tong-ji.html">
             
                 
                     <a href="..\..\../2dddddd/1.api/browser/jscuo-wu-tong-ji.html">
@@ -1251,33 +1251,24 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_19">
+                    <section class="normal" id="section-gitbook_26">
                     
-                        <h1 id=""><strong>业务编号</strong></h1>
-<p>base.data.loadOs</p>
-<h1 id="api"><strong>api请求地址</strong></h1>
-<p><a href="http://api.bonree.com/basedata/loadOs" target="_blank">http://api.bonree.com/base/data/loadOs</a></p>
-<h1 id=""><strong>请求方式</strong></h1>
-<p>POST/GET</p>
-<h1 id=""><strong>请求参数</strong></h1>
+                        <h1 id="">业务编号</h1>
+<p>browser.data.js.error.statdata</p>
+<h1 id="api">api请求地址</h1>
+<p><a href="http://api.bonree.com/browser/data/js/error/statdata" target="_blank">http://api.bonree.com/browser/data/js/error/statdata</a></p>
+<h1 id="">请求参数：</h1>
 <table>
 <thead>
 <tr>
 <th style="text-align:left">参数名称</th>
 <th style="text-align:left">参数类型</th>
-<th style="text-align:left">是否必选</th>
+<th style="text-align:left">是否必填</th>
 <th style="text-align:left">示例值</th>
 <th style="text-align:left">参数说明</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:left">token</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">是</td>
-<td style="text-align:left">*****************</td>
-<td style="text-align:left">令牌</td>
-</tr>
 <tr>
 <td style="text-align:left">username</td>
 <td style="text-align:left">string</td>
@@ -1286,73 +1277,91 @@
 <td style="text-align:left">用户名</td>
 </tr>
 <tr>
+<td style="text-align:left">token</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">xxxxxxxxxxxxx</td>
+<td style="text-align:left">令牌</td>
+</tr>
+<tr>
 <td style="text-align:left">params</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">是</td>
-<td style="text-align:left">{&quot;lastModif&quot;:&quot;20170201000000&quot;}</td>
+<td style="text-align:left">{&quot;dtype&quot;:&quot;json&quot;,&quot;appId&quot;:&quot;1035,1036,1037&quot;}</td>
 <td style="text-align:left">参数json</td>
 </tr>
 </tbody>
 </table>
-<h1 id="params"><strong>params说明</strong></h1>
+<p><strong>params说明：</strong></p>
 <table>
 <thead>
 <tr>
 <th style="text-align:left">参数名称</th>
 <th style="text-align:left">参数类型</th>
-<th style="text-align:left">是否必选</th>
+<th style="text-align:left">是否必填</th>
 <th style="text-align:left">示例值</th>
 <th style="text-align:left">参数说明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">dHeader</td>
-<td style="text-align:left">String</td>
+<td style="text-align:left">dType</td>
+<td style="text-align:left">string</td>
 <td style="text-align:left">是</td>
-<td style="text-align:left">OS_ID,OS_NAME,OS_VER_NAME</td>
-<td style="text-align:left">接口返回字段,配置*返回全部</td>
+<td style="text-align:left">json</td>
+<td style="text-align:left">数据类型(csv、json)</td>
+</tr>
+<tr>
+<td style="text-align:left">appId</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">1035,1036,1037</td>
+<td style="text-align:left">应用ID</td>
+</tr>
+<tr>
+<td style="text-align:left">dTime</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">20170428000000-20170429000000</td>
+<td style="text-align:left">时间范围</td>
+</tr>
+<tr>
+<td style="text-align:left">dHeader</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">APP_ID,ERROR_TATE,ERROR_NUM,</td>
+<td style="text-align:left">指标数据项</td>
 </tr>
 </tbody>
 </table>
-<h1 id="dheader"><strong>dHeader说明</strong></h1>
+<h1 id="dheader">dHeader字段说明：</h1>
 <table>
 <thead>
 <tr>
+<th style="text-align:left">字段</th>
 <th style="text-align:left">名称</th>
-<th style="text-align:left">类型</th>
-<th style="text-align:left">示例值</th>
-<th style="text-align:left">描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">OS_ID</td>
-<td style="text-align:left">Number</td>
-<td style="text-align:left">1</td>
-<td style="text-align:left">操作系统ID</td>
+<td style="text-align:left">APP_ID</td>
+<td style="text-align:left">应用ID</td>
 </tr>
 <tr>
-<td style="text-align:left">OS_NAME</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">Windows</td>
-<td style="text-align:left">操作系统名称</td>
+<td style="text-align:left">ERROR_TATE</td>
+<td style="text-align:left">错误率</td>
 </tr>
 <tr>
-<td style="text-align:left">OS_VER_ID</td>
-<td style="text-align:left">Number</td>
-<td style="text-align:left">101</td>
-<td style="text-align:left">版本ID</td>
+<td style="text-align:left">ERROR_NUM</td>
+<td style="text-align:left">发生js错误的页面次数</td>
 </tr>
 <tr>
-<td style="text-align:left">OS_VER_NAME</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">Win7</td>
-<td style="text-align:left">版本名称</td>
+<td style="text-align:left">TOTAL_NUM</td>
+<td style="text-align:left">总的页面次数</td>
 </tr>
 </tbody>
 </table>
-<h1 id=""><strong>返回参数说明</strong></h1>
+<h1 id="">返回参数说明：</h1>
 <table>
 <thead>
 <tr>
@@ -1364,61 +1373,56 @@
 <tbody>
 <tr>
 <td style="text-align:left">errorCode</td>
-<td style="text-align:left">Number</td>
+<td style="text-align:left">int</td>
 <td style="text-align:left">错误码</td>
 </tr>
 <tr>
 <td style="text-align:left">reason</td>
 <td style="text-align:left">string</td>
-<td style="text-align:left">结果说明</td>
+<td style="text-align:left">返回说明</td>
 </tr>
 <tr>
 <td style="text-align:left">result</td>
 <td style="text-align:left">string</td>
-<td style="text-align:left">查询结果</td>
+<td style="text-align:left">返回结果集</td>
 </tr>
 </tbody>
 </table>
-<h1 id=""><strong>请求示例</strong></h1>
-<pre><code> POST:
-  HttpClient httpclient = new DefaultHttpClient();
-  String url = &quot;http://api.bonree.com/base/data/loadOs&quot;;
-  HttpPost httppost = new HttpPost(url);
-  System.out.println(&quot;请求: &quot; + httppost.getRequestLine());
-  // 创建参数队列
-  List&lt;NameValuePair&gt; formparams = new ArrayList&lt;NameValuePair&gt;();
-  formparams.add(new BasicNameValuePair(&quot;username&quot;, &quot;bonreetest&quot;));
-  formparams.add(new BasicNameValuePair(&quot;token&quot;, &quot;xxxxxxxxxx&quot;));
-  UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, &quot;UTF-8&quot;);
-  httppost.setEntity(uefEntity);
-  // 执行
-  HttpResponse response = httpclient.execute(httppost);
-  HttpEntity entity = response.getEntity();
-  System.out.println(&quot;----------------------------------------&quot;);
-  System.out.println(&quot;状态:&quot; + response.getStatusLine());
-  if (entity != null) {
-   System.out.println(&quot;Response content length: &quot; + entity.getContentLength());
-   System.out.println(&quot;Response content :&quot; + EntityUtils.toString(entity, &quot;UTF-8&quot;));
-  }
-  // 关闭连接,释放资源
-  httpclient.getConnectionManager().shutdown();
-
- GET:
-  http://api.bonree.com/base/data/loadOs?token=asdas12312312ddwew5we5we5&amp;username=bonreetest
-</code></pre><h1 id=""><strong>返回结果示例</strong></h1>
+<h1 id="">请求示例</h1>
+<pre><code>    HttpClient httpclient = new DefaultHttpClient();
+    String url = &quot;http://api.bonree.com/apm/app/infodata&quot;;
+    HttpPost httppost = new HttpPost(url);
+    System.out.println(&quot;请求: &quot; + httppost.getRequestLine());
+    // 创建参数队列
+    List&lt;NameValuePair&gt; formparams = new ArrayList&lt;NameValuePair&gt;();
+    formparams.add(new BasicNameValuePair(&quot;username&quot;, &quot;bonreetest&quot;));
+    formparams.add(new BasicNameValuePair(&quot;token&quot;, &quot;xxxxxxxxxx&quot;));
+    formparams.add(new BasicNameValuePair(&quot;params&quot;, &quot;{xxx}&quot;));
+    UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, &quot;UTF-8&quot;);
+    httppost.setEntity(uefEntity);
+    // 执行
+    HttpResponse response = httpclient.execute(httppost);
+    HttpEntity entity = response.getEntity();
+    System.out.println(&quot;----------------------------------------&quot;);
+    System.out.println(&quot;状态:&quot; + response.getStatusLine());
+    if (entity != null) {
+        System.out.println(&quot;Response content length: &quot; + entity.getContentLength());
+        System.out.println(&quot;Response content :&quot; + EntityUtils.toString(entity, &quot;UTF-8&quot;));
+    }
+    // 关闭连接,释放资源
+    httpclient.getConnectionManager().shutdown();
+</code></pre><h1 id="">返回结果示例：</h1>
 <pre><code>{
     &quot;errorCode&quot;: 0,
-    &quot;reason&quot;:&quot;查询成功&quot;,
-    &quot;result: [
-        [&quot;OS_ID&quot;,&quot;OS_NAME&quot;,&quot;OS_VER_ID&quot;,&quot;OS_VER_NAME&quot;],
-        [1,&quot;Windows&quot;,101,&quot;Win7&quot;],
-        [1,&quot;Windows&quot;,102,&quot;Win Vista&quot;]
+    &quot;reason&quot;: &quot;查询成功&quot;,
+    &quot;result&quot;: [
+        [&quot;APP_ID&quot;,&quot;ERROR_RATE&quot;,&quot;ERROR_NUM&quot;,&quot;TOTAL_NUM&quot;],
+        [&quot;1035&quot;,&quot;0.2&quot;,&quot;20&quot;,&quot;100&quot;],
+        [&quot;1036&quot;,&quot;0.2&quot;,&quot;20&quot;,&quot;100&quot;],
+        [&quot;1037&quot;,&quot;0.2&quot;,&quot;20&quot;,&quot;100&quot;]
     ]
 }
-</code></pre><h1 id="api"><strong>api工具</strong></h1>
-<p>api测试工具， api响应码查询工具，监测点查询工具，指标查询工具，监测数据错误码查询工具</p>
-<h1 id="faq"><strong>FAQ</strong></h1>
-
+</code></pre>
                     
                     </section>
                 
@@ -1428,10 +1432,10 @@
         </div>
 
         
-        <a href="..\..\../2dddddd/1.api/common/city.html" class="navigation navigation-prev " aria-label="Previous page: 城市"><i class="fa fa-angle-left"></i></a>
+        <a href="..\..\../2dddddd/1.api/browser/ying-yong-xin-xi.html" class="navigation navigation-prev " aria-label="Previous page: 应用信息"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="..\..\../2dddddd/1.api/common/accessmodel.html" class="navigation navigation-next " aria-label="Next page: 接入方式"><i class="fa fa-angle-right"></i></a>
+        <a href="..\..\../2dddddd/2..html" class="navigation navigation-next " aria-label="Next page: 2.平台技术"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
