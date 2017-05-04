@@ -1,10 +1,10 @@
 # 业务编号
 
-browser.data.product
+browser.data.user.package
 
 # api请求地址
 
-[http://api.bonree.com/browser/data/product](http://api.bonree.com/browser/data/product)
+[http://api.bonree.com/browser/data/user/package](http://api.bonree.com/browser/user/package)
 
 # 请求参数：
 
@@ -12,30 +12,24 @@ browser.data.product
 | :--- | :--- | :--- | :--- | :--- |
 | username | string | 是 | bonreetest | 用户名 |
 | token | string | 是 | xxxxxxxxxxxxx | 令牌 |
-| params | string | 是 | {"dtype":"json","appId":"1035"} | 参数json |
+| params | string | 是 | {"dtype":"json","username":"bonreetest"} | 参数json |
 
 **params说明：**
 
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json | 数据类型\(csv、json\) |
-| appId | string | 是 | 1035,1036,1037 | 应用ID |
-| dHeader | string | 是 | BE\_APP\_ID,BT\_THRSHLD,BT\_THRSHLD\_SLOW\_TIMES,BT\_THRSHLD\_VERYSLOW\_TIMES,BT\_THRSHLD\_STALL\_TIMES,SQL\_EXETIME\_THRESHOLD,NOSQL\_EXETIME\_THRESHOLD,REMOTECALL\_EXETIME\_THRESHOLD,UPDATE\_TIME | 指标数据项 |
+| username | string | 是 | bonreetest | 用户名 |
+| dHeader | string | 是 | VALID\_FROM,VALID\_TO,LIMITED\_NUM,LIMITED\_MONTHED\_PV | 指标数据项 |
 
 # dHeader字段说明：
 
 | 字段 | 名称 |
 | :--- | :--- |
-| BE\_APP\_ID | 后端应用ID |
-| BT\_THRSHLD | 业务健康度阀值-健康 |
-| BT\_THRSHLD\_SLOW\_TIMES | 业务健康度阀值-较慢 |
-| BT\_THRSHLD\_VERYSLOW\_TIMES | 业务健康度阀值-很慢 |
-| BT\_THRSHLD\_STALL\_TIMES | 业务健康度阀值-停滞 |
-| SQL\_EXETIME\_THRESHOLD | sql调用健康度阀值 |
-| NOSQL\_EXETIME\_THRESHOLD | nosql调用健康度阀值 |
-| REMOTECALL\_EXETIME\_THRESHOLD | rpc调用健康度阀值 |
-| UPDATE\_TIME | 更新时间 |
-| IP\_COUNT | 外网主机统计个数 |
+| VALID\_FROM | 有效期开始时间 |
+| VALID\_TO | 有效期结束时间 |
+| LIMITED\_NUM | 每个应用每日页面或者ajax的数量上限 |
+| LIMITED\_MONTHED\_PV | 月PV限制，每个账号每月最大的PV限制 |
 
 # 返回参数说明：
 
@@ -79,10 +73,8 @@ browser.data.product
     "errorCode": 0,
     "reason": "查询成功",
     "result": [
-        ["BE_APP_ID","BT_THRSHLD","BT_THRSHLD_SLOW_TIMES","BT_THRSHLD_VERYSLOW_TIMES","BT_THRSHLD_STALL_TIMES","SQL_EXETIME_THRESHOLD","NOSQL_EXETIME_THRESHOLD","REMOTECALL_EXETIME_THRESHOLD","UPDATE_TIME"],
-        ["1035","10","20","30","40","50","50","50","20170327120000"],
-        ["1036","10","20","30","40","50","50","50","20170327120000"],
-        ["1037","10","20","30","40","50","50","50","20170327120000"]
+        ["VALID_FROM","VALID_TO","LIMITED_NUM","LIMITED_MONTHED_PV"],
+        ["20170327120000","20170327130000","20","30"]
     ]
 }
 ```

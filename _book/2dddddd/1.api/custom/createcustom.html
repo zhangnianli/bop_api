@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.1.6.2" data-basepath="..\..\.." data-revision="1493703630479">
+    <div class="book"  data-level="4.1.6.2" data-basepath="..\..\.." data-revision="1493868808898">
     
 
 <div class="book-summary">
@@ -1006,7 +1006,7 @@
                         
                             <b>4.1.7.1.</b>
                         
-                         产品信息
+                         browser套餐信息
                     </a>
                 
             
@@ -1022,7 +1022,7 @@
                         
                             <b>4.1.7.2.</b>
                         
-                         应用信息
+                         browser应用信息
                     </a>
                 
             
@@ -1038,7 +1038,7 @@
                         
                             <b>4.1.7.3.</b>
                         
-                         js错误统计
+                         browser js错误统计
                     </a>
                 
             
@@ -1251,7 +1251,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_22">
+                    <section class="normal" id="section-gitbook_130">
                     
                         <h1 id="">业务编号</h1>
 <p>custom.create</p>
@@ -1279,11 +1279,11 @@
 <td style="text-align:left">令牌</td>
 </tr>
 <tr>
-<td style="text-align:left">pwd</td>
+<td style="text-align:left">params</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">是</td>
-<td style="text-align:left">abcdabcdabcdabcdabcdabcdabcdabcd</td>
-<td style="text-align:left">密码的32位md5值</td>
+<td style="text-align:left">{&quot;pwd&quot;:&quot;abcdabcd&quot;}</td>
+<td style="text-align:left">params中包含所有其他参数，pwd为md5</td>
 </tr>
 <tr>
 <td style="text-align:left">token</td>
@@ -1322,14 +1322,17 @@
 </tbody>
 </table>
 <h1 id="">请求实例</h1>
-<p>curl</p>
+<p>curl <a href="#">http://api.bonree.com/custom/create</a>?username=inusername&amp;token=abcdabcdabcd&amp;params={&#39;pwd&#39;:&#39;mypwdmd5&#39;}</p>
 <h1 id="">返回结果实例</h1>
 <pre><code class="lang-js">{
     <span class="hljs-string">"error_code"</span>:<span class="hljs-number">0</span>,
     <span class="hljs-string">"reason"</span>:<span class="hljs-string">"创建成功"</span>,
-    <span class="hljs-string">"result"</span>:{
-        <span class="hljs-string">"usertoken"</span>:<span class="hljs-string">"usertoken"</span>
+    <span class="hljs-string">"type"</span>:<span class="hljs-string">"data"</span>,
+    <span class="hljs-string">"result"</span>: {
+        <span class="hljs-string">"username"</span>:<span class="hljs-string">"bonreetest"</span>,
+        <span class="hljs-string">"v4Token"</span>:<span class="hljs-string">"42eb62ff35418c03"</span>
     }
+
 }
 </code></pre>
 <h1 id="faq">FAQ</h1>

@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>产品信息 | bop_api</title>
+        <title>browser套餐信息 | bop_api</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.1.7.1" data-basepath="..\..\.." data-revision="1493703630479">
+    <div class="book"  data-level="4.1.7.1" data-basepath="..\..\.." data-revision="1493868808898">
     
 
 <div class="book-summary">
@@ -1006,7 +1006,7 @@
                         
                             <b>4.1.7.1.</b>
                         
-                         产品信息
+                         browser套餐信息
                     </a>
                 
             
@@ -1022,7 +1022,7 @@
                         
                             <b>4.1.7.2.</b>
                         
-                         应用信息
+                         browser应用信息
                     </a>
                 
             
@@ -1038,7 +1038,7 @@
                         
                             <b>4.1.7.3.</b>
                         
-                         js错误统计
+                         browser js错误统计
                     </a>
                 
             
@@ -1251,12 +1251,12 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_25">
+                    <section class="normal" id="section-gitbook_133">
                     
                         <h1 id="">业务编号</h1>
-<p>browser.data.product</p>
+<p>browser.data.user.package</p>
 <h1 id="api">api请求地址</h1>
-<p><a href="http://api.bonree.com/browser/data/product" target="_blank">http://api.bonree.com/browser/data/product</a></p>
+<p><a href="http://api.bonree.com/browser/user/package" target="_blank">http://api.bonree.com/browser/data/user/package</a></p>
 <h1 id="">请求参数：</h1>
 <table>
 <thead>
@@ -1287,7 +1287,7 @@
 <td style="text-align:left">params</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">是</td>
-<td style="text-align:left">{&quot;dtype&quot;:&quot;json&quot;,&quot;appId&quot;:&quot;1035&quot;}</td>
+<td style="text-align:left">{&quot;dtype&quot;:&quot;json&quot;,&quot;username&quot;:&quot;bonreetest&quot;}</td>
 <td style="text-align:left">参数json</td>
 </tr>
 </tbody>
@@ -1312,17 +1312,17 @@
 <td style="text-align:left">数据类型(csv、json)</td>
 </tr>
 <tr>
-<td style="text-align:left">appId</td>
+<td style="text-align:left">username</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">是</td>
-<td style="text-align:left">1035,1036,1037</td>
-<td style="text-align:left">应用ID</td>
+<td style="text-align:left">bonreetest</td>
+<td style="text-align:left">用户名</td>
 </tr>
 <tr>
 <td style="text-align:left">dHeader</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">是</td>
-<td style="text-align:left">BE_APP_ID,BT_THRSHLD,BT_THRSHLD_SLOW_TIMES,BT_THRSHLD_VERYSLOW_TIMES,BT_THRSHLD_STALL_TIMES,SQL_EXETIME_THRESHOLD,NOSQL_EXETIME_THRESHOLD,REMOTECALL_EXETIME_THRESHOLD,UPDATE_TIME</td>
+<td style="text-align:left">VALID_FROM,VALID_TO,LIMITED_NUM,LIMITED_MONTHED_PV</td>
 <td style="text-align:left">指标数据项</td>
 </tr>
 </tbody>
@@ -1337,44 +1337,20 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">BE_APP_ID</td>
-<td style="text-align:left">后端应用ID</td>
+<td style="text-align:left">VALID_FROM</td>
+<td style="text-align:left">有效期开始时间</td>
 </tr>
 <tr>
-<td style="text-align:left">BT_THRSHLD</td>
-<td style="text-align:left">业务健康度阀值-健康</td>
+<td style="text-align:left">VALID_TO</td>
+<td style="text-align:left">有效期结束时间</td>
 </tr>
 <tr>
-<td style="text-align:left">BT_THRSHLD_SLOW_TIMES</td>
-<td style="text-align:left">业务健康度阀值-较慢</td>
+<td style="text-align:left">LIMITED_NUM</td>
+<td style="text-align:left">每个应用每日页面或者ajax的数量上限</td>
 </tr>
 <tr>
-<td style="text-align:left">BT_THRSHLD_VERYSLOW_TIMES</td>
-<td style="text-align:left">业务健康度阀值-很慢</td>
-</tr>
-<tr>
-<td style="text-align:left">BT_THRSHLD_STALL_TIMES</td>
-<td style="text-align:left">业务健康度阀值-停滞</td>
-</tr>
-<tr>
-<td style="text-align:left">SQL_EXETIME_THRESHOLD</td>
-<td style="text-align:left">sql调用健康度阀值</td>
-</tr>
-<tr>
-<td style="text-align:left">NOSQL_EXETIME_THRESHOLD</td>
-<td style="text-align:left">nosql调用健康度阀值</td>
-</tr>
-<tr>
-<td style="text-align:left">REMOTECALL_EXETIME_THRESHOLD</td>
-<td style="text-align:left">rpc调用健康度阀值</td>
-</tr>
-<tr>
-<td style="text-align:left">UPDATE_TIME</td>
-<td style="text-align:left">更新时间</td>
-</tr>
-<tr>
-<td style="text-align:left">IP_COUNT</td>
-<td style="text-align:left">外网主机统计个数</td>
+<td style="text-align:left">LIMITED_MONTHED_PV</td>
+<td style="text-align:left">月PV限制，每个账号每月最大的PV限制</td>
 </tr>
 </tbody>
 </table>
@@ -1433,10 +1409,8 @@
     &quot;errorCode&quot;: 0,
     &quot;reason&quot;: &quot;查询成功&quot;,
     &quot;result&quot;: [
-        [&quot;BE_APP_ID&quot;,&quot;BT_THRSHLD&quot;,&quot;BT_THRSHLD_SLOW_TIMES&quot;,&quot;BT_THRSHLD_VERYSLOW_TIMES&quot;,&quot;BT_THRSHLD_STALL_TIMES&quot;,&quot;SQL_EXETIME_THRESHOLD&quot;,&quot;NOSQL_EXETIME_THRESHOLD&quot;,&quot;REMOTECALL_EXETIME_THRESHOLD&quot;,&quot;UPDATE_TIME&quot;],
-        [&quot;1035&quot;,&quot;10&quot;,&quot;20&quot;,&quot;30&quot;,&quot;40&quot;,&quot;50&quot;,&quot;50&quot;,&quot;50&quot;,&quot;20170327120000&quot;],
-        [&quot;1036&quot;,&quot;10&quot;,&quot;20&quot;,&quot;30&quot;,&quot;40&quot;,&quot;50&quot;,&quot;50&quot;,&quot;50&quot;,&quot;20170327120000&quot;],
-        [&quot;1037&quot;,&quot;10&quot;,&quot;20&quot;,&quot;30&quot;,&quot;40&quot;,&quot;50&quot;,&quot;50&quot;,&quot;50&quot;,&quot;20170327120000&quot;]
+        [&quot;VALID_FROM&quot;,&quot;VALID_TO&quot;,&quot;LIMITED_NUM&quot;,&quot;LIMITED_MONTHED_PV&quot;],
+        [&quot;20170327120000&quot;,&quot;20170327130000&quot;,&quot;20&quot;,&quot;30&quot;]
     ]
 }
 </code></pre>
@@ -1452,7 +1426,7 @@
         <a href="..\..\../2dddddd/1.api/browser.html" class="navigation navigation-prev " aria-label="Previous page: browser"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="..\..\../2dddddd/1.api/browser/ying-yong-xin-xi.html" class="navigation navigation-next " aria-label="Next page: 应用信息"><i class="fa fa-angle-right"></i></a>
+        <a href="..\..\../2dddddd/1.api/browser/ying-yong-xin-xi.html" class="navigation navigation-next " aria-label="Next page: browser应用信息"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
