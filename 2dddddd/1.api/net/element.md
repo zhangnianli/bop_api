@@ -30,7 +30,7 @@ params说明：
 | monitors | string | 是 | ALL/IDC/LM/PP | 监测点类型 |
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
 | filters | string | 否 | \[\["OR","D\_TIME","&gt;=",0.1\],\["AND","ERRORID","=",0\]\] | 字段值筛选条件,详见筛选条件列表 |
-| group | string | 否 | city,netservice | 分组条件，字段顺序为分组顺序 |
+| group | string | 是 | city,netservice | 分组条件，字段顺序为分组顺序 |
 | dHeader | string | 是 | city,netservice | 指定计算哪些指标，并作为查询结果返回 |
 | pageNum | string | 否 | 1 | 分页索引，第几页 |
 | pageRecorders | string | 否 | 50 | 分页查询时，单页总条数 |
