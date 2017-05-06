@@ -18,7 +18,7 @@ POST／GET
 | :--- | :--- | :--- | :--- | :--- |
 | username | string | 是 | bonreetest | 用户名 |
 | token | string（32） | 是 | xxx | 令牌 |
-| params | string | 是 | {“type”:2,"taskId":123456} | 请求参数 |
+| params | string | 是 | {“dType”:json,"taskId":123456} | 请求参数 |
 
 params说明：
 
@@ -27,7 +27,7 @@ params说明：
 | dType | string | 是 | json/csv | 数据类型 |
 | taskId | string | 否 | 170435,170436 | 任务ID |
 | dTime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
-| monitors | string | 是 | ALL/IDC/LM/PP/IDC | 监测点类型 |
+| monitors | string | 是 | ALL/IDC/LM/PP | 监测点类型 |
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
 | filters | string | 否 | \[\["OR","D\_TIME","&gt;=",0.1\],\["AND","ERRORID","=",0\]\] | 字段值筛选条件,详见筛选条件列表 |
 | group | string | 否 | city,netservice | 分组条件，字段顺序为分组顺序 |
