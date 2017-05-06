@@ -85,7 +85,7 @@ params说明：
         List<NameValuePair> formparams = new ArrayList<NameValuePair>();
         formparams.add(new BasicNameValuePair("username", "bonreetest"));
         formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-        formparams.add(new BasicNameValuePair("params", "{\"token\":\"*******\",\"dtype\":\"json\",\"taskId\":\"1035\",\"dtime\":\"20170201000000-20170301000000\"}"));
+        formparams.add(new BasicNameValuePair("params", "{\"token\":\"*******\",\"dType\":\"json\",\"taskId\":\"1035\",\"dTime\":\"20170201000000-20170301000000\"}"));
         UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
         httppost.setEntity(uefEntity);
         // 执行
