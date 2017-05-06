@@ -27,7 +27,7 @@ params说明：
 | dType | string | 是 | json/csv | 数据类型 |
 | taskId | string | 否 | 170435,170436 | 任务ID |
 | dTime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
-| monitors | string | 是 | ALL/IDC/LM/PP | 监测点类型 |
+| monitors | string | 是 | ALL\|IDC\|LM\|PP | 监测点类型 |
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
 | filters | string | 否 | \[\["OR","D\_TIME","&gt;=",0.1\],\["AND","ERRORID","=",0\]\] | 字段值筛选条件,详见筛选条件列表 |
 | group | string | 是 | city,netservice | 分组条件，字段顺序为分组顺序 |
