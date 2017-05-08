@@ -86,7 +86,7 @@ params说明：
         List<NameValuePair> formparams = new ArrayList<NameValuePair>();
         formparams.add(new BasicNameValuePair("username", "bonreetest"));
         formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-        formparams.add(new BasicNameValuePair("params", "{\"token\":\"*******\",\"dType\":\"json\",\"taskId\":\"1035\",\"dTime\":\"20170201000000-20170301000000\"}"));
+        formparams.add(new BasicNameValuePair("params", "{\"token\":\"*******\",\"dType\":\"json\",\"taskId\":\"1035\",\"dTime\":\"20170201000000-20170301000000\",\"dHeader\":\"TASKID,COUNTRY\"}"));
         UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
         httppost.setEntity(uefEntity);
         // 执行
@@ -110,16 +110,16 @@ params说明：
     "reason": "查询成功",
     "result": [
         [
-            "role_id",
-            "domain"
+            "TASKID",
+            "COUNTRY"
         ],
         [
             "1035",
-            "www.baidu.com"
+            "1100000"
         ],
         [
             "1023",
-            "www.bonree.com"
+            "2100000"
         ]
     ]
 }
