@@ -1,47 +1,41 @@
-# ÒµÎñ±àºÅ
+ï»¿# ä¸šåŠ¡ç¼–å·
 
-custom.create
+custom.delete
 
-# apiÇëÇóµØÖ·
+# apiè¯·æ±‚åœ°å€
 
-[http://api.bonree.com/custom/create](http://api.bonree.com/custom/create)
+[http://api.bonree.com/custom/delete](http://api.bonree.com/custom/delete)
 
-# ÇëÇó·½Ê½
+# è¯·æ±‚æ–¹å¼
 
 POST/GET
 
-# ÇëÇó²ÎÊı
+# è¯·æ±‚å‚æ•°
 
-| ²ÎÊıÃû³Æ | ²ÎÊıÀàĞÍ | ÊÇ·ñ±ØÑ¡ | Ê¾ÀıÖµ | ²ÎÊıËµÃ÷ |
+| å‚æ•°åç§° | å‚æ•°ç±»å‹ | æ˜¯å¦å¿…é€‰ | ç¤ºä¾‹å€¼ | å‚æ•°è¯´æ˜ |
 | :--- | :--- | :--- | :--- | :--- |
-| username | string | ÊÇ | myusername | ÁîÅÆ |
-| params | string | ÊÇ | {"pwd":"abcdabcd"} | paramsÖĞ°üº¬ËùÓĞÆäËû²ÎÊı£¬pwdÎªmd5 |
-| token | string | ÊÇ | systoken | ÏµÍ³Ğ£Ñétoken |
+| username | string | æ˜¯ | myusername | ä»¤ç‰Œ |
+| token | string | æ˜¯ | systoken | ç³»ç»Ÿæ ¡éªŒtoken |
 
-# ·µ»Ø²ÎÊıËµÃ÷
+# è¿”å›å‚æ•°è¯´æ˜
 
-| Ãû³Æ | ÀàĞÍ | ÃèÊö |
+| åç§° | ç±»å‹ | æè¿° |
 | :--- | :--- | :--- |
-| error\_code | int | ÏìÓ¦ÂëËµÃ÷ |
-| reason | string | ·µ»ØËµÃ÷ |
-| result | string | ·µ»Ø½á¹û¼¯ |
+| error\_code | int | å“åº”ç è¯´æ˜ |
+| reason | string | è¿”å›è¯´æ˜ |
+| type | string | è¿”å›ç»“æœç±»å‹ |
 
-# ÇëÇóÊµÀı
+# è¯·æ±‚å®ä¾‹
 
-curl [http://api.bonree.com/custom/create](#)?username=inusername&token=abcdabcdabcd&params={'pwd':'mypwdmd5'}
+curl [http://api.bonree.com/custom/delete](#)?username=delusername&token=abcdabcdabcd
 
-# ·µ»Ø½á¹ûÊµÀı
+# è¿”å›ç»“æœå®ä¾‹
 
 ```js
 {
     "error_code":0,
-    "reason":"´´½¨³É¹¦",
-    "type":"data",
-    "result": {
-        "username":"bonreetest",
-        "v4Token":"42eb62ff35418c03"
-    }
-
+    "reason":"æˆåŠŸ",
+    "type":"data"
 }
 ```
 
