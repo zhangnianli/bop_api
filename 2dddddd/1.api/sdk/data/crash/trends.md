@@ -91,14 +91,14 @@ httpclient.getConnectionManager().shutdown();
 
 # 返回示例
 
-{"error\_code": 0,  
-    "reason":"查询成功",  
-    "result":\[  
-        \["appid","granuleId","monitorTime","crashRate","startCount"\],  
-        \["1111","1","20161101000000","0.01","1"\],  
-        \["1111","2","20161101000100","0.01","1"\]  
-    \]  
-}  
+{"error\_code": 0,
+    "reason":"查询成功",
+    "result":\[
+        \["appid","granuleId","monitorTime","crashRate","startCount"\],
+        \["1111","1","20161101000000","0.01","1"\],
+        \["1111","2","20161101000100","0.01","1"\]
+    \]
+}
 \`\`\`
 
 # api工具：
