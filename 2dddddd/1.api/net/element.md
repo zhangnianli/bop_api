@@ -29,7 +29,7 @@ params说明：
 | dTime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
 | monitors | string | 是 | ALL/IDC/LM/MB/BMTP/PP | 监测点类型\(多个值竖线分隔\) |
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
-| filters | string | 否 | {"netserviceAndNetStandard":\[{"netserviceId":"1","netStandard":"1"},{"netserviceId":"1","netStandard":"2"}\],"cityCode":\[1100000,1200000\],"districtCode":\[110000\],"countryCode":\[110000\],"browsr":\[0,1,2,3,4\],"browsrVer":\[107,108\]","errorId":"404"} | 字段值筛选条件,详见筛选条件列表 |
+| filters | string | 否 | {"netserviceAndNetStandard":\[{"netserviceId":"1","netStandard":"1"},{"netserviceId":"1","netStandard":"2"}\],"cityCode":\[1100000,1200000\],"districtCode":\[110000\],"countryCode":\[110000\],"browsr":\[0,1,2,3,4\],"browsrVer":\[107,108\]","errorId":"404"} | 包括运营商,接入方式,城市,省份,国家,浏览器,浏览器版本,错误id |
 | group | string | 是 | TASKID,COUNTRY | 分组条件，字段顺序为分组顺序 |
 | dHeader | string | 是 | TASKID,COUNTRY,USEABLE | 指定计算哪些指标，并作为查询结果返回 |
 | pageNum | string | 否 | 1 | 分页索引，第几页 |
