@@ -31,6 +31,7 @@ field列表：
 | :--- | :--- | :--- |
 | ROWKEY | 请求的rowkey | 请求条件里面的rowkey |
 | RESULT | 结果 | 快照是否存在 0-不存在;1-存在 |
+| SERVER\_HANDLE\_TIME | 服务器处理时间 | 后端服务处理时间,单位s |
 
 # 返回参数说明
 
