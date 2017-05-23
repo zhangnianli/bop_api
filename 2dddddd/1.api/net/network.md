@@ -24,7 +24,7 @@ params说明：
 
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| type | string | 是 | json/csv | 数据类型 |
+| dType | string | 是 | json/csv | 数据类型 |
 | taskId | string | 否 | 170435,170436 | 任务ID |
 | dTime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
