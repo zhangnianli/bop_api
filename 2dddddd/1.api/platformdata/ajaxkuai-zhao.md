@@ -75,8 +75,8 @@ field列表：
     "errorCode": 0,
     "reason": "查询成功",
     "result": [
-        [ROWKEY,"RESULT"],
-        ["1492081200:6d6f0839-4700-4482-4856-68e32d8b4cec", 0]
+        [ROWKEY,"RESULT","SERVER_HANDLE_TIME"],
+        ["1492081200:6d6f0839-4700-4482-4856-68e32d8b4cec", 0, 0.5]
     ]
 }
 ```
