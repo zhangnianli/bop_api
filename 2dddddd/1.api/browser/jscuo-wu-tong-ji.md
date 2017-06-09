@@ -21,7 +21,7 @@ browser.data.js.error.statdata
 | dType | string | 是 | json | 数据类型\(csv、json\) |
 | appId | string | 是 | 1035,1036,1037 | 应用ID |
 | dTime | string | 是 | 20170428000000-20170429000000 | 时间范围 |
-| group | string | 否 | APP\_ID | 为空时APP_ID返回0 |
+| group | string | 否 | APP\_ID | 为空时APP\_ID返回0 |
 | dHeader | string | 是 | APP\_ID,ERROR\_TATE,ERROR\_NUM, | 指标数据项 |
 
 # dHeader字段说明：
