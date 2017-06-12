@@ -10,7 +10,7 @@ hbase.immediately.{表名}
 
 | 参数名称 | 参数类型 | 是否必要填 | 实例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| statmainid | long | 是 | 10350505,10270801 | 查询的statmainid，多个id用“,”分隔 |
+| statmainid | string | 是 | 10350505,10270801 | 查询的statmainid，多个id用“,”分隔 |
 | monitortime | string | 是 | 1496250000,1496332800 | 查询时间起始时间，两个时间之间用“,”分隔，如果只有一个时间，则传递一个时间。 |
 | field | string | 否 | STAT\_MAI\_ID,ERRORID,MONITOR\_TIME | 查询的字段集，字段之间用“,”分隔，如果没有不传递该值，表示查询所有字段。 |
 
