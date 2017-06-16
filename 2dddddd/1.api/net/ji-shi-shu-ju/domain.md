@@ -1,10 +1,10 @@
 # 业务编号
 
-net.nav.detaildata
+net.domain.detaildata
 
 # API请求地址
 
-/net/nav/detaildata
+/net/domain/detaildata
 
 # 请求参数：
 
