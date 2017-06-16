@@ -1,6 +1,6 @@
 # 业务编号
 
-hbase.immediately.{表名}
+net.nav.detaildata
 
 # API请求地址
 
