@@ -66,8 +66,9 @@ platform.data.element.statdata
 | ERRORRATE | 请求错误率 |
 | MONITORTIME$MIN | 首次发生时间 |
 | MONITORTIME$MAX | 末次发生时间 |
-| VISITNUM$SUM | 受影响访问次数 |
-| KEYVISITNUM$SUM | 受影响访问次数（按关键元素统计） |
+| ~~VISITNUM$SUM~~ | ~~受影响访问次数~~ |
+| ~~KEYVISITNUM$SUM~~ | ~~受影响访问次数（按关键元素统计）~~ |
+| ERROR\_RATIO | 错误次数/总错误次数 |
 
 # 返回参数说明：
 
