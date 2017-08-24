@@ -8,11 +8,11 @@ net.nav.detaildata
 
 # 请求参数：
 
-| 参数名称 | 参数类型 | 是否必要填 | 实例值 | 参数说明 | 支持数据 |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| statmainid | string | 是 | 10350505,10270801 | 查询的statmainid，多个id用“,”分隔 |  |
-| monitortime | string | 是 | 1496250000,1496332800 | 查询时间起始时间，两个时间之间用“,”分隔，如果只有一个时间，则传递一个时间。 |  |
-| field | string | 否 | STAT\_MAI\_ID,ERRORID,MONITOR\_TIME | 查询的字段集，字段之间用“,”分隔，如果没有不传递该值，表示查询所有字段。 | STAT\_NAVIGATE\_ID,STAT\_MAIN\_ID,ROLE\_ID,USERNAME,ERRORID,REDIRECT,STEP1,STEP2,STEP3,STEP4,STEP5,STEP6,STEP7,STEP8,STEP9,STEP10,STEP11,STEP12,FILE\_SIZE,FILE\_DOWN,MONITOR\_TIME,BYTES\_RECEIVED,DNS\_LOOK\_UPS,ROUND\_TRIPS,TCP\_CONNECTS,D\_TIME,ROLE\_IP,FIRST\_TIME,ROLE\_CITYCODE,ROLE\_NETSERVICE,C\_CITYCODE,C\_NETSERVICE\_ID,C\_DNS,C\_NETSPEED,C\_CLIENT\_TYPE,C\_LAST\_IP,MIME\_TYPE,HEADER,CPU\_RATE,MEM\_RATE,CYCLE\_SPEED,ERRELE\_FLAG,STEP13,PROCESS\_NUM,A1,A2,A3,A4,A5,A6,T1,T2,T3,T4,T5,T6,CLIENT\_NUM,T\_BLOCK\_TIME,DOC\_COMPLETE,IE\_VERSION,OS\_VERSION,DOM\_INFO,MONITOR\_TIME\_CODE,DOMLOADTIME,ONLOADTIME,CPU\_RATES,MEM\_RATES,JSTIME,E2XX,E3XX,E4XX,E5XX,E6XX,STARTRENDER,PX,REQHEADER,HIJACKFLAG,FIRST\_FULLTIME,FIRST\_ELENUM,FIRST\_ELEINDEX,ECACHE,K100\_TIME,HIJACK\_TYPE,TRANSFER\_NUM,TRACERT\_CITYCODE,TRACERT\_NETSERVICEID,C\_LONG\_LATITUDE,C\_NET\_STANDARD,C\_SIG\_INTENSITY,C\_ACCESS\_POINT,C\_LOCALDNS,UPSTREAMS,DOWNSTREAMS,IMAGE\_LOAD\_TIME,IMAGE\_LOAD\_SIZE,GUID |
+| 参数名称 | 参数类型 | 是否必要填 | 实例值 | 参数说明 |
+| :--- | :--- | :--- | :--- | :--- |
+| username | string | 是 | bonreetest | 用户名 |
+| token | string | 是 | XXXXXXXXXXXX | token值 |
+| params | string | 否 | {“statmainid”:“1212323”,“monitortime":1496988449”,"filed":”stat\_main\_id,errorid“} | 其中包含statmainid、monitortime、filed参数的json字符串，其中，statmainid和monitortime为必须的 |
 
 # 请求参数示例：返回参数说明：
 
