@@ -32,6 +32,7 @@ params说明：
 | filters | string | 否 | \[{“filed”:”CPU\_RATE”, “condo”:”&gt;=”,”value”:”6”}\] | 字段值筛选条件 |
 | group | string | 否 | city,netservice | 分组条件，字段顺序为分组顺序 |
 | fields | string | 是 | city,netservice | 指定计算哪些指标，并作为查询结果返回 |
+| user | string | 是 | bonreetest | V4用户名 |
 
 field列表：
 
