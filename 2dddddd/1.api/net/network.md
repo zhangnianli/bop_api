@@ -31,6 +31,7 @@ params说明：
 | filters | string | 否 | {"netserviceAndNetStandard":\[{"netserviceId":"1","netStandard":"1"},{"netserviceId":"1","netStandard":"2"}\],"cityCode":\[1100000,1200000\],"districtCode":\[110000\],"countryCode":\[110000\],"browsr":\[0,1,2,3,4\],"browsrVer":\[107,108\]","errorId":"404"} | 字段值筛选条件 |
 | group | string | 否 | city,netservice | 分组条件，字段顺序为分组顺序 |
 | dHeader | string | 是 | TASKID,PING\_SET | 指定计算哪些指标，并作为查询结果返回 |
+| user | string | 是 | bonreetest | V4平台的用户名 |
 
 field列表：
 
