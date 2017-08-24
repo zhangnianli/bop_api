@@ -30,21 +30,18 @@ POST/GET
 curl
 
 # 返回结果实例
-
 ```js
 {
-    "error_code":0,
-    "reason":"用户已存在",
-    "type":"data",
-    "result": {
-        "username":"bonreetest",
-        "v4Token":"42eb62ff35418c03"
-    }
-
+	"error_code":0,
+	"reason":"校验成功",
+	"result":{
+		"usertoken":"usertoken"
+	}
 }
 ```
 
 # FAQ
+
 
 
 

@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.1.6.2" data-basepath="..\..\.." data-revision="1493869135937">
+    <div class="book"  data-level="4.1.6.2" data-basepath="..\..\.." data-revision="1491988116197">
     
 
 <div class="book-summary">
@@ -707,22 +707,6 @@
             
         </li>
     
-        
-        <li class="chapter " data-level="4.1.4.4" data-path="2dddddd/1.api/platformdata/ajaxkuai-zhao.html">
-            
-                
-                    <a href="..\..\../2dddddd/1.api/platformdata/ajaxkuai-zhao.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.1.4.4.</b>
-                        
-                         ajax快照
-                    </a>
-                
-            
-            
-        </li>
-    
 
             </ul>
             
@@ -980,76 +964,6 @@
             
         </li>
     
-        
-        <li class="chapter " data-level="4.1.7" data-path="2dddddd/1.api/browser.html">
-            
-                
-                    <a href="..\..\../2dddddd/1.api/browser.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.1.7.</b>
-                        
-                         browser
-                    </a>
-                
-            
-            
-            <ul class="articles">
-                
-    
-        
-        <li class="chapter " data-level="4.1.7.1" data-path="2dddddd/1.api/browser/chan-pin-xin-xi.html">
-            
-                
-                    <a href="..\..\../2dddddd/1.api/browser/chan-pin-xin-xi.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.1.7.1.</b>
-                        
-                         browser套餐信息
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.1.7.2" data-path="2dddddd/1.api/browser/ying-yong-xin-xi.html">
-            
-                
-                    <a href="..\..\../2dddddd/1.api/browser/ying-yong-xin-xi.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.1.7.2.</b>
-                        
-                         browser应用信息
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="4.1.7.3" data-path="2dddddd/1.api/browser/jscuo-wu-tong-ji.html">
-            
-                
-                    <a href="..\..\../2dddddd/1.api/browser/jscuo-wu-tong-ji.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.1.7.3.</b>
-                        
-                         browser js错误统计
-                    </a>
-                
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
 
             </ul>
             
@@ -1251,7 +1165,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_247">
+                    <section class="normal" id="section-gitbook_11">
                     
                         <h1 id="">业务编号</h1>
 <p>custom.create</p>
@@ -1279,11 +1193,11 @@
 <td style="text-align:left">令牌</td>
 </tr>
 <tr>
-<td style="text-align:left">params</td>
+<td style="text-align:left">pwd</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">是</td>
-<td style="text-align:left">{&quot;pwd&quot;:&quot;abcdabcd&quot;}</td>
-<td style="text-align:left">params中包含所有其他参数，pwd为md5</td>
+<td style="text-align:left">abcdabcdabcdabcdabcdabcdabcdabcd</td>
+<td style="text-align:left">密码的32位md5值</td>
 </tr>
 <tr>
 <td style="text-align:left">token</td>
@@ -1322,17 +1236,14 @@
 </tbody>
 </table>
 <h1 id="">请求实例</h1>
-<p>curl <a href="#">http://api.bonree.com/custom/create</a>?username=inusername&amp;token=abcdabcdabcd&amp;params={&#39;pwd&#39;:&#39;mypwdmd5&#39;}</p>
+<p>curl</p>
 <h1 id="">返回结果实例</h1>
 <pre><code class="lang-js">{
     <span class="hljs-string">"error_code"</span>:<span class="hljs-number">0</span>,
     <span class="hljs-string">"reason"</span>:<span class="hljs-string">"创建成功"</span>,
-    <span class="hljs-string">"type"</span>:<span class="hljs-string">"data"</span>,
-    <span class="hljs-string">"result"</span>: {
-        <span class="hljs-string">"username"</span>:<span class="hljs-string">"bonreetest"</span>,
-        <span class="hljs-string">"v4Token"</span>:<span class="hljs-string">"42eb62ff35418c03"</span>
+    <span class="hljs-string">"result"</span>:{
+        <span class="hljs-string">"usertoken"</span>:<span class="hljs-string">"usertoken"</span>
     }
-
 }
 </code></pre>
 <h1 id="faq">FAQ</h1>

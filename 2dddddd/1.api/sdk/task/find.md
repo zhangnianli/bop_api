@@ -35,6 +35,7 @@ POST／GET
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
 | TASK\_ID | string | "TASK\_ID":\["10241","10240"\] | sdk应用ID |
+| FLAG | string | “1” | sdk应用状态1-正常;2-禁用;9-删除 |
 
 ### dHeader参数
 
@@ -44,6 +45,7 @@ POST／GET
 | TASK\_NAME | string | 否 | sdk应用名 |
 | TASK\_ID | string | 否 | sdk应用id |
 | TASK\_MD5 | string | 否 | 应用md5值 |
+| FLAG | string | 否 | 应用状态 |
 
 # 返回参数说明
 

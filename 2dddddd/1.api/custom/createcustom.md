@@ -15,7 +15,7 @@ POST/GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | username | string | 是 | myusername | 令牌 |
-| params | string | 是 | {"pwd":"abcdabcd"} | params中包含所有其他参数，pwd为md5 |
+| pwd | string | 是 | abcdabcdabcdabcdabcdabcdabcdabcd | 密码的32位md5值 |
 | token | string | 是 | systoken | 系统校验token |
 
 # 返回参数说明
@@ -28,20 +28,17 @@ POST/GET
 
 # 请求实例
 
-curl [http://api.bonree.com/custom/create](#)?username=inusername&token=abcdabcdabcd&params={'pwd':'mypwdmd5'}
+curl
 
 # 返回结果实例
 
 ```js
 {
-    "error_code":0,
-    "reason":"创建成功",
-    "type":"data",
-    "result": {
-        "username":"bonreetest",
-        "v4Token":"42eb62ff35418c03"
-    }
-
+	"error_code":0,
+	"reason":"创建成功",
+	"result":{
+		"usertoken":"usertoken"
+	}
 }
 ```
 
