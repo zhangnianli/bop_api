@@ -27,7 +27,7 @@ params说明：
 | dTime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
 | monitors | string | 是 | ALL/IDC/LM/PP/IDC | 监测点类型 |
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
-| filters | string | 否 | {"netserviceAndNetStandard":\[{"netserviceId":"1","netStandard":"1"},{"netserviceId":"1","netStandard":"2"}\],"cityCode":\[1100000,1200000\],"districtCode":\[110000\],"countryCode":\[110000\],"browsr":\[0,1,2,3,4\],"browsrVer":\[107,108\]",onlyError":"1","errorId":"404"} | 包括运营商,接入方式,城市,省份,国家,浏览器,浏览器版本,错误id |
+| filters | string | 否 | {"netserviceAndNetStandard":\[{"netserviceId":"1","netStandard":"1"},{"netserviceId":"1","netStandard":"2"}\],"cityCode":\[1100000,1200000\],"districtCode":\[110000\],"countryCode":\[110000\],"browsr":\[0,1,2,3,4\],"browsrVer":\[107,108\]",onlyError":"1","errorId":"404"} | 包括运营商,接入方式,城市,省份,国家,浏览器,浏览器版本,错误id,onlyError:0-查询正常数据；1-查询错误数据；2-查询慢数据；20-查询慢+正常数据 |
 | group | string | 是 | city,netservice | 分组条件，字段顺序为分组顺序，当timefram参数有值时，该参数必填。 |
 | granule | string | 否 | STR\_MINUTE5,STR\_MINUTE10,STR\_MINUTE30,STR\_HOUR,STR\_HOUR12,STR\_DAY | 时间频度（查询结果的时间聚合频度，比如5分钟频度），单位分钟，当改参数有值时，group参数必填 |
 | dHeader | string | 是 | APPID,DTIME | 指标查询结果，可以指定计算哪些指标 |
