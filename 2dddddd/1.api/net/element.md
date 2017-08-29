@@ -1,5 +1,3 @@
-
-
 # 业务编号
 
 net.data.element.statdata
