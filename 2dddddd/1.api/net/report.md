@@ -1,6 +1,6 @@
 # 业务编号
 
-net.data.element.statdata
+net.data.report.statdata
 
 # api请求地址
 
@@ -9,6 +9,8 @@ net.data.element.statdata
 # 请求方式
 
 POST／GET
+
+# 请求参数
 
 # 请求参数
 
