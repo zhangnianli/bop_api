@@ -34,6 +34,7 @@ params说明：
 | granule | string | 否 | 5 | 查询数据的时间频度，单位为分钟，当传时间频度的时候，group参数必填 |
 | order | string | 否 | \[\["city","desc"\],\["netservice","asc"\]\] | 排序条件 |
 | user | string | 是 | bonreetest | V4用户名 |
+|  |  |  |  |  |
 
 filters字段
 
@@ -55,8 +56,9 @@ filters字段
 | cycleSpeedWeigh | int | 否 | 2 | 整体速度大于几倍的平均周期速度 |
 | tracertMatching | int | 否 | 0 | 是否匹配出口ip 0:否;1:是 |
 | errorIds | string | 否 | \["302","404"\] | 错误ID,默认包含0 |
-| performanceIndex | string  | 否 | {"type":"0","inde":"D\_TIME","min":"0.5",""mark":"0"} | 指标筛选,type:筛选样式,0:指定值;1:指标百分比;2:样本数; inde:指标; min:最小值; max:最大值; mark:标识,0:与\(保留\);1:或\(排除\) |
+| performanceIndex | string | 否 | {"type":"0","inde":"D\_TIME","min":"0.5",""mark":"0"} | 指标筛选,type:筛选样式,0:指定值;1:指标百分比;2:样本数; inde:指标; min:最小值; max:最大值; mark:标识,0:与\(保留\);1:或\(排除\) |
 | hijack | int | 否 | 0 | 是否排除劫持数据;0:不排除;1排除 |
+| domain | string | 否 | \["www.bonree.com"\] | 域名筛选 |
 
 时间频度字典表
 
