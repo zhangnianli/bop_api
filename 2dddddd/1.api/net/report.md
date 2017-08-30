@@ -25,8 +25,6 @@ params说明：
 | dType | string | 是 | json/csv | 数据类型 |
 | taskId | string | 是 | 170435,170436 | 任务ID |
 | dTime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
-| monitors | string | 否 | {"idc": {"selected": "in","agents": \["1100101\_1","1100101\_2" \]},"lm": {"selected": "all","agents": \[\]},"mb": {"selected": "ex","agents": \["1100503\_16"\]},"bmtp": {"selected": "all","agents": \[\]},"pp": {"selected": "all","agents": \[\]}} | 监测点类型,selected表示选中类型,all:为全部选中;in:选中agents里面的值,ex:排除agents里面的值;agents为数组,里面的值为字符串,citycode\_netserverid |
-| access | string | 否 | \["1","2"\] | 接入方式,仅支持wap与bmtp |
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
 | filters | string | 否 | \[\["OR","D\_TIME","&gt;=",0.1\],\["AND","ERRORID","=",0\]\] | 字段值筛选条件,详见筛选条件列表 |
 | group | string | 是 | city,netservice | 分组条件，字段顺序为分组顺序 |
@@ -36,6 +34,19 @@ params说明：
 | granule | string | 否 | 5 | 查询数据的时间频度，单位为分钟，当传时间频度的时候，group参数必填 |
 | order | string | 否 | \[\["city","desc"\],\["netservice","asc"\]\] | 排序条件 |
 | user | string | 是 | bonreetest | V4用户名 |
+
+filters字段
+
+| 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
+| :--- | :--- | :--- | :--- | :--- |
+| monitors | string | 否 | {"idc": {"selected": "in","agents": \["1100101\_1","1100101\_2" \]},"lm": {"selected": "all","agents": \[\]},"mb": {"selected": "ex","agents": \["1100503\_16"\]},"bmtp": {"selected": "all","agents": \[\]},"pp": {"selected": "all","agents": \[\]}} | 监测点类型,selected表示选中类型,all:为全部选中;in:选中agents里面的值,ex:排除agents里面的值;agents为数组,里面的值为字符串,citycode\_netserverid |
+| access | string | 否 | \["1","2"\] | 接入方式,仅支持wap与bmtp |
+| agentSpeed | string | 否 | \["1","2","3"\] | 监测点带宽,1:\[0, 512Kb\];2:\(512Kb, 2Mb\];3:\(2Mb, 4Mb\];4:\(4Mb, 10Mb\];5:\(10Mb, 20Mb\];6:\(20Mb, ∞\) |
+| browser | string | 否 | \["1","2","3"\] | 监测点浏览器版本,1: IE6; 2: IE7; 3: IE8; 4:IE9; 5:IE10; 6:IE11; 100:chrome\(WebKit\); 101:chrome\(blink\); -1:其它 |
+| os | string | 否 | \["2","3","4","5"\] | 监测点操作系统版本: 2:WIN2003; 3:WINXP; 4:WINVISTA; 5:WIN7; 6:WIN8; 9:WIN10; -1:其它 |
+| clientNums | string | 否 | {"selected":"in", nums:\["123", "456"\]} | 客户端ID,selected表示选中类型,in:选中nums里面的值,ex:排除nums里面的值 |
+
+
 
 时间频度字典表
 
