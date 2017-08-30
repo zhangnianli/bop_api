@@ -4,13 +4,11 @@ net.data.report.statdata
 
 # api请求地址
 
-[https://api.bonree.com/net/element/statdata](https://api.bonree.com/net/element/]%28https://[api.bonree.com/net/report/taskdata]%28http://api.bonree.com/net/report/taskdata%29statdata]%28https://api.bonree.com/net/element/]%28https://[api.bonree.com/net/report/taskdata]%28http://api.bonree.com/net/report/taskdata%29statdata)
+[https://api.bonree.com/net/report/statdata](https://api.bonree.com/net/element/]%28https://[api.bonree.com/net/report/taskdata]%28http://api.bonree.com/net/report/taskdata%29statdata]%28https://api.bonree.com/net/element/]%28https://[api.bonree.com/net/report/taskdata]%28http://api.bonree.com/net/report/taskdata%29statdata)
 
 # 请求方式
 
 POST／GET
-
-# 请求参数
 
 # 请求参数
 
@@ -27,7 +25,7 @@ params说明：
 | dType | string | 是 | json/csv | 数据类型 |
 | taskId | string | 否 | 170435,170436 | 任务ID |
 | dTime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
-| monitors | string | 是 | ALL/IDC/LM/PP/IDC | 监测点类型 |
+| monitors | string | 是 | {"idc": {"selected": "in","agents": \["1100101\_1","1100101\_2" \]},"lm": {"selected": "all","agents": \[\]},"mb": {"selected": "ex","agents": \["1100503\_16"\]},"bmtp": {"selected": "all","agents": \[\]},"pp": {"selected": "all","agents": \[\]}} | 监测点类型,selected表示选中类型,all:为全部选中;in:选中agents里面的值,ex:排除agents里面的值;agents为数组,里面的值为字符串,citycode\_netserverid |
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
 | filters | string | 否 | \[\["OR","D\_TIME","&gt;=",0.1\],\["AND","ERRORID","=",0\]\] | 字段值筛选条件,详见筛选条件列表 |
 | group | string | 否 | city,netservice | 分组条件，字段顺序为分组顺序 |
