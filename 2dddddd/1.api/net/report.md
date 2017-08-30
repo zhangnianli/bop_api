@@ -25,6 +25,7 @@ params说明：
 | dType | string | 是 | json/csv | 数据类型 |
 | taskId | string | 是 | 170435,170436 | 任务ID |
 | dTime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
+| weekTime | string | 是 | {"staerWeek":"1", "endWeek":"7","startHour":"00:00","endHour":"23:05"} |  |
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
 | filters | string | 否 |  | 字段值筛选条件,详见筛选条件列表 |
 | group | string | 是 | city,netservice | 分组条件，字段顺序为分组顺序 |
@@ -59,6 +60,7 @@ filters字段
 | performanceIndex | string | 否 | {"type":"0","inde":"D\_TIME","min":"0.5",""mark":"0"} | 指标筛选,type:筛选样式,0:指定值;1:指标百分比;2:样本数; inde:指标; min:最小值; max:最大值; mark:标识,0:与\(保留\);1:或\(排除\) |
 | hijack | int | 否 | 0 | 是否排除劫持数据;0:不排除;1排除 |
 | domain | string | 否 | \["www.bonree.com"\] | 域名筛选 |
+|  |  |  |  |  |
 
 时间频度字典表
 
