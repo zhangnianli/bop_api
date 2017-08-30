@@ -16,7 +16,7 @@ POST／GET
 | :--- | :--- | :--- | :--- | :--- |
 | username | string | 是 | bonreetest | 用户名 |
 | token | string（32） | 是 | xxx | 令牌 |
-| params | string | 是 | {“type”:2,"taskId":123456} | 请求参数 |
+| params | string | 是 | {“dType”:2,"taskId":123456} | 请求参数 |
 
 params说明：
 
