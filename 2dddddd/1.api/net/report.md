@@ -125,14 +125,14 @@ POST／GET
 
 ```
         HttpClient httpclient = new DefaultHttpClient();
-        String url = "https://api.bonree.com/net/element/statdata";
+        String url = "https://api.bonree.com/net/report/statdata";
         HttpPost httppost = new HttpPost(url);
         System.out.println("请求: " + httppost.getRequestLine());
         // 创建参数队列
         List<NameValuePair> formparams = new ArrayList<NameValuePair>();
         formparams.add(new BasicNameValuePair("username", "bonreetest"));
         formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-        formparams.add(new BasicNameValuePair("params", "{\"token\":\"*******\",\"dtype\":\"json\",\"taskId\":\"1035\",\"dtime\":\"20170201000000-20170301000000\"}"));
+        formparams.add(new BasicNameValuePair("params", "{\"token\":\"*******\",\"dtype\":\"json\",\"taskId\":\"1035\",\"dTime\":\"20170201000000-20170301000000\"}"));
         UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
         httppost.setEntity(uefEntity);
         // 执行
@@ -156,16 +156,14 @@ POST／GET
     "reason": "查询成功",
     "result": [
         [
-            "role_id",
-            "domain"
+            "ROLE_ID",
+            "D_TIME",
+            "DOWN_SPEED"
         ],
         [
             "1035",
-            "www.baidu.com"
-        ],
-        [
-            "1023",
-            "www.bonree.com"
+            "2.3",
+            "945.8"
         ]
     ]
 }
