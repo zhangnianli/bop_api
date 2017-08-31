@@ -114,7 +114,8 @@ POST／GET
 | ROLE\_CITYCODE | 目标城市码 |  |
 | ROLE\_DISTRICTCODE | 目标地区码 |  |
 | ROLE\_NETSERVICE | 目标运营商码 |  |
-| ARRIVAL\_RATE | 到达率 |  |
+| ARRIVAL\_SCALE | 到达率 |  |
+| COVERAGE\_SCALE | 覆盖率 |  |
 
 # 返回参数说明
 
