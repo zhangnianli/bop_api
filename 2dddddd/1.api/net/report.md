@@ -1,6 +1,4 @@
-```
-业务编号
-```
+# **业务编号**
 
 net.data.report.statdata
 
@@ -60,12 +58,12 @@ POST／GET
 | cycleSpeed | string | 否 | {"min":"1000", max:"2000"} | 周期平均速度,单位:KB/s |
 | cycleSpeedWeigh | int | 否 | 2 | 整体速度大于几倍的平均周期速度 |
 | tracertMatching | int | 否 | 0 | 是否匹配出口ip 0:否;1:是 |
-| groupFilter | int  | 否 | 0 | 是否排除样本数不一致数据,0:否;1:是 |
+| groupFilter | int | 否 | 0 | 是否排除样本数不一致数据,0:否;1:是 |
 | errorIds | string | 否 | \["302","404"\] | 错误ID,默认包含0 |
 | performanceIndex | string | 否 | {"type":"0","index":"D\_TIME","min":"0.5","max":"1.0","mark":"0", "group":"0"} | 指标筛选,type:筛选样式,0:指定值,1:指标百分比,2:样本数; index:指标; min:最小值; max:最大值; mark:标识,0:与\(保留\),1:或\(排除\);group分组, type为1或2时生效,0表示没有分组,1表示城市运营商,2表示地区运营商 |
 | hijack | int | 否 | 0 | 是否排除劫持数据;0:不排除;1排除 |
 | domain | string | 否 | \["www.bonree.com"\] | 域名筛选 |
-| clickParam | string | 否 | {"onlyError":"0","granule":{"key":"STR\_HOUR","value":"201708302300"},"index":{"ROLE\_IP":"1.1.1.1","OS\_VERSION":"2"},"GROUPFLG\_INFO":"D\_TIME\|0.097\|0.099\|1\|0\|0\|4","filter\_bline":"D\_TIME\|0.097\|0.099\|1\|0\|0\|4"} | 点击条件,onlyError:1只有错误;0都有;2只有正确;granule粒度,key表示点击时的粒度,value表示粒度的值;index指标,里面包含指标筛选条件,GROUPFLG\_INFO统计柱图筛选,指标\|最小值\|最大值\|逻辑符号1表示与,0表示或\|占位\|占位\|是否小于等于,5表示是 |
+| clickParam | string | 否 | {"onlyError":"0","granule":{"key":"STR\_HOUR","value":"201708302300"},"index":{"ROLE\_IP":"1.1.1.1","OS\_VERSION":"2"},"indexFilter":{"name":"D\_TIME","min":"0.097","max":"0.099"}} | 点击条件,onlyError:1只有错误;0都有;2只有正确;granule粒度,key表示点击时的粒度,value表示粒度的值;index指标,里面包含指标筛选条件,indexFilter性能值筛选,name指标名称,min最小值,max最大值,左闭右开 |
 | dgmParam | string | 否 | {"groupId":\[5307,5308,5309\], "groupDmg":"true"} | 分组统计条件,groupId:分组ID,值为数组,groupDmg:是否分组 |
 
 #### 时间频度字典表
