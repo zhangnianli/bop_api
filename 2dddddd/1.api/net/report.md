@@ -35,7 +35,6 @@ params说明：
 | granule | string | 否 | 5 | 查询数据的时间频度，单位为分钟，当传时间频度的时候，group参数必填 |
 | order | string | 否 | \[\["city","desc"\],\["netservice","asc"\]\] | 排序条件 |
 | user | string | 是 | bonreetest | V4用户名 |
-|  |  |  |  |  |
 
 filters字段
 
