@@ -67,9 +67,18 @@ filters字段
 | 值 | 含义 |
 | :--- | :--- |
 | STR\_MINUTE5 | 5分钟频度 |
+| STR\_MINUTE10 | 10分钟频度 |
+| STR\_MINUTE15 | 15分钟频度 |
 | STR\_MINUTE30 | 30分钟频度 |
 | STR\_HOUR | 1小时频度 |
+| STR\_HOUR2 | 2小时频度 |
+| STR\_HOUR4 | 4小时频度 |
+| STR\_HOUR8 | 8小时频度 |
+| STR\_HOUR12 | 12小时频度 |
 | STR\_DAY | 1天频度 |
+| STR\_WEEK | 1周频度 |
+| STR\_MONTH | 1个月频度 |
+| STR\_YEAR | 1年频度 |
 
 # dHeader字典表：
 
