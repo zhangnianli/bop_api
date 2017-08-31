@@ -111,7 +111,9 @@ POST／GET
 | CITY\_CODE | 城市码 |  |
 | DISTRICTCODE | 地区码 |  |
 | NETSERVICE\_ID | 运营商码 |  |
-| CLIENT\_CITY\_NETSERVICE\_NUM |  |  |
+| CLIENT\_CITY\_NETSERVICE\_NUM | 监测点城市运营商数量 | 按城市运营商分组 |
+| ROLE\_CITY\_NETSERVICE\_NUM | 目标点城市运营商数量 |  按目标城市运营商分组 |
+| ARRIVAL\_RATE | 到达率 |  |
 
 # 返回参数说明
 
