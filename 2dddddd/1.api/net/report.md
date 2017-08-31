@@ -24,7 +24,6 @@ POST／GET
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json/csv | 数据类型 |
 | taskId | string | 是 | 170435,170436 | 任务ID |
-| taskType | string | 是 | nav | 任务类型,nav:浏览数据;transfer:传输数据;flv:流媒体数据;port:协议数据;host元素组数据;net:网络数据;bmtpnav:bmtp的浏览数据;bmtpflv:bmtp的流媒体数据 |
 | dTime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
 | dHeader | string | 是 | ROLE\_ID,CITY\_CODE,D\_TIME | 指定返回的指标,多个逗号分隔,具体字段查看dHeader字典表 |
 | user | string | 是 | bonreetest | V4用户名 |
@@ -33,7 +32,7 @@ POST／GET
 | filters | string | 否 |  | 字段值筛选条件,详见筛选条件列表 |
 | group | string | 否 | ROLE\_ID,CITY\_CODE | 分组条件，字段顺序为分组顺序 |
 | mainIndex | string | 否 | {"name":"D\_TIME", "warnNormal":"10","warnGeneral":"20"} | 主指标,结果返回最小值,最大值,中位数和平均值;warnNormal正常警显值;warnGeneral普通警显值,根据配置的值计算慢速比 |
-| calType | string | 否 | avg/max/min | 指标计算方式,默认为平均值 |
+| calType | string | 否 | avg/max/min/mid | 指标计算方式,只有主指标会计算中位数,默认为平均值 |
 | pageNum | int | 否 | 1 | 分页索引，第几页 |
 | pageRecorders | int | 否 | 50 | 分页查询时，单页总条数 |
 | granule | string | 否 | STR\_HOUR | 查询数据的时间频度，单位为分钟，当传时间频度的时候，group参数必填 |
@@ -49,10 +48,10 @@ POST／GET
 | agentSpeed | string | 否 | \["1","2","3"\] | 监测点带宽,1:\[0, 512Kb\];2:\(512Kb, 2Mb\];3:\(2Mb, 4Mb\];4:\(4Mb, 10Mb\];5:\(10Mb, 20Mb\];6:\(20Mb, ∞\) |
 | browser | string | 否 | \["1","2","3"\] | 监测点浏览器版本,1: IE6; 2: IE7; 3: IE8; 4:IE9; 5:IE10; 6:IE11; 100:chrome\(WebKit\); 101:chrome\(blink\); -1:其它 |
 | os | string | 否 | \["2","3","4","5"\] | 监测点操作系统版本: 2:WIN2003; 3:WINXP; 4:WINVISTA; 5:WIN7; 6:WIN8; 9:WIN10; -1:其它 |
-| clientIds | string | 否 | {"selected":"in", "ids":\["123", "456"\]} | 客户端ID,selected表示选中类型,in:选中ids里面的值,ex:排除ids里面的值 |
-| clientIPs | string | 否 | {"selected":"in", "ips":\["1.1.1.1", "8.8.8.8"\]} | 客户端IP,selected表示选中类型,in:选中ips里面的值,ex:排除ips里面的值 |
-| clientDNS | string | 否 | {"selected":"in", "ips":\["1.1.1.1", "8.8.8.8"\]} | 客户端DNS,selected表示选中类型,in:选中ips里面的值,ex:排除ips里面的值 |
-| roleIPs | string | 否 | {"selected":"in", "ips":\["1.1.1.1", "8.8.8.8"\]} | 目标IP,selected表示选中类型,in:选中ips里面的值,ex:排除ips里面的值 |
+| clientIds | string | 否 | {"selected":"in", "ids":\["123", "456"\]} | 客户端ID,selected表示选中类型,in:选中ids里面的值,notin:排除ids里面的值 |
+| clientIPs | string | 否 | {"selected":"in", "ips":\["1.1.1.1", "8.8.8.8"\]} | 客户端IP,selected表示选中类型,in:选中ips里面的值,notin:排除ips里面的值 |
+| clientDNS | string | 否 | {"selected":"in", "ips":\["1.1.1.1", "8.8.8.8"\]} | 客户端DNS,selected表示选中类型,in:选中ips里面的值,notin:排除ips里面的值 |
+| roleIPs | string | 否 | {"selected":"in", "ips":\["1.1.1.1", "8.8.8.8"\]} | 目标IP,selected表示选中类型,in:选中ips里面的值,notin:排除ips里面的值 |
 | CPURate | string | 否 | {"min":"48", max:"60"} | 客户端CUP占用率 |
 | memoryRate | string | 否 | {"min":"48", max:"60"} | 客户端内存占用率 |
 | processNum | string | 否 | {"min":"48", max:"60"} | 客户端进程数量 |
