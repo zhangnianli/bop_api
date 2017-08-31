@@ -49,7 +49,7 @@ filters字段
 | clientIds | string | 否 | {"selected":"in", "ids":\["123", "456"\]} | 客户端ID,selected表示选中类型,in:选中ids里面的值,ex:排除ids里面的值 |
 | clientIPs | string | 否 | {"selected":"in", "ips":\["1.1.1.1", "8.8.8.8"\]} | 客户端IP,selected表示选中类型,in:选中ips里面的值,ex:排除ips里面的值 |
 | clientDNS | string | 否 | {"selected":"in", "ips":\["1.1.1.1", "8.8.8.8"\]} | 客户端DNS,selected表示选中类型,in:选中ips里面的值,ex:排除ips里面的值 |
-| targetIPs | string | 否 | {"selected":"in", "ips":\["1.1.1.1", "8.8.8.8"\]} | 目标IP,selected表示选中类型,in:选中ips里面的值,ex:排除ips里面的值 |
+| roleIPs | string | 否 | {"selected":"in", "ips":\["1.1.1.1", "8.8.8.8"\]} | 目标IP,selected表示选中类型,in:选中ips里面的值,ex:排除ips里面的值 |
 | CPURate | string | 否 | {"min":"48", max:"60"} | 客户端CUP占用率 |
 | memoryRate | string | 否 | {"min":"48", max:"60"} | 客户端内存占用率 |
 | processNum | string | 否 | {"min":"48", max:"60"} | 客户端进程数量 |
@@ -57,10 +57,11 @@ filters字段
 | cycleSpeedWeigh | int | 否 | 2 | 整体速度大于几倍的平均周期速度 |
 | tracertMatching | int | 否 | 0 | 是否匹配出口ip 0:否;1:是 |
 | errorIds | string | 否 | \["302","404"\] | 错误ID,默认包含0 |
-| performanceIndex | string | 否 | {"type":"0","inde":"D\_TIME","min":"0.5",""mark":"0"} | 指标筛选,type:筛选样式,0:指定值;1:指标百分比;2:样本数; inde:指标; min:最小值; max:最大值; mark:标识,0:与\(保留\);1:或\(排除\) |
+| performanceIndex | string | 否 | {"type":"0","index":"D\_TIME","min":"0.5",""mark":"0"} | 指标筛选,type:筛选样式,0:指定值;1:指标百分比;2:样本数; index:指标; min:最小值; max:最大值; mark:标识,0:与\(保留\);1:或\(排除\) |
 | hijack | int | 否 | 0 | 是否排除劫持数据;0:不排除;1排除 |
 | domain | string | 否 | \["www.bonree.com"\] | 域名筛选 |
-|  |  |  |  |  |
+| clickParam | string | 否 | {"onlyError":"0","granule":{"key":"STR\_HOUR","value":"201708302300"},"index":{"ROLE\_IP":"1.1.1.1","OS\_VERSION":"2"},"GROUPFLG\_INFO":"D\_TIME\|0.097\|0.099\|1\|0\|0\|4","filter\_bline":"D\_TIME\|0.097\|0.099\|1\|0\|0\|4"} | 点击条件,onlyError:1只有错误;0都有;2只有正确;granule粒度,key表示点击时的粒度,value表示粒度的值;index指标,里面包含指标筛选条件,GROUPFLG\_INFO统计柱图筛选,指标\|最小值\|最大值\|逻辑符号1表示与,0表示或\|占位\|占位\|是否小于等于,5表示是 |
+| dgmParam | string | 否 | {"groupId":\[5307,5308,5309\], "groupDmg":"true"} | 分组统计条件,groupId:分组ID,值为数组,groupDmg:是否分组 |
 
 时间频度字典表
 
