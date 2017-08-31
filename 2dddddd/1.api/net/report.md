@@ -60,6 +60,7 @@ POST／GET
 | cycleSpeed | string | 否 | {"min":"1000", max:"2000"} | 周期平均速度,单位:KB/s |
 | cycleSpeedWeigh | int | 否 | 2 | 整体速度大于几倍的平均周期速度 |
 | tracertMatching | int | 否 | 0 | 是否匹配出口ip 0:否;1:是 |
+| groupFilter | int  | 否 | 0 | 是否排除样本数不一致数据,0:否;1:是 |
 | errorIds | string | 否 | \["302","404"\] | 错误ID,默认包含0 |
 | performanceIndex | string | 否 | {"type":"0","index":"D\_TIME","min":"0.5","max":"1.0","mark":"0", "group":"0"} | 指标筛选,type:筛选样式,0:指定值,1:指标百分比,2:样本数; index:指标; min:最小值; max:最大值; mark:标识,0:与\(保留\),1:或\(排除\);group分组, type为1或2时生效,0表示没有分组,1表示城市运营商,2表示地区运营商 |
 | hijack | int | 否 | 0 | 是否排除劫持数据;0:不排除;1排除 |
