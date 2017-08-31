@@ -18,25 +18,26 @@ POST／GET
 | token | string（32） | 是 | xxx | 令牌 |
 | params | string | 是 | {“dType”:2,"taskId":123456} | 请求参数 |
 
-params说明：
+## params说明：
 
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json/csv | 数据类型 |
 | taskId | string | 是 | 170435,170436 | 任务ID |
+| taskType | string | 是 | nav | 任务类型,nav:浏览数据;transfer:传输数据;flv:流媒体数据;port:协议数据;host元素组数据;net:网络数据;bmtpnav:bmtp的浏览数据;bmtpflv:bmtp的流媒体数据 |
 | dTime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
 | weekTime | string | 否 | {"staerWeek":"1", "endWeek":"7","startHour":"00:00","endHour":"23:05"} |  |
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
 | filters | string | 否 |  | 字段值筛选条件,详见筛选条件列表 |
-| group | string | 是 | city,netservice | 分组条件，字段顺序为分组顺序 |
-| dHeader | string | 是 | city,netservice | 指定计算哪些指标，并作为查询结果返回 |
+| group | string | 是 | ROLE\_ID,CITY\_CODE | 分组条件，字段顺序为分组顺序 |
+| dHeader | string | 是 | ROLE\_ID,CITY\_CODE,D\_TIME | 指定计算哪些指标，并作为查询结果返回 |
 | pageNum | string | 否 | 1 | 分页索引，第几页 |
 | pageRecorders | string | 否 | 50 | 分页查询时，单页总条数 |
 | granule | string | 否 | STR\_HOUR | 查询数据的时间频度，单位为分钟，当传时间频度的时候，group参数必填 |
-| order | string | 否 | \[\["city","desc"\],\["netservice","asc"\]\] | 排序条件 |
+| order | string | 否 | ROLE\_ID ASC,CITY\_CODE DESC | 排序条件 |
 | user | string | 是 | bonreetest | V4用户名 |
 
-filters字段
+### filters字段
 
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -56,13 +57,13 @@ filters字段
 | cycleSpeedWeigh | int | 否 | 2 | 整体速度大于几倍的平均周期速度 |
 | tracertMatching | int | 否 | 0 | 是否匹配出口ip 0:否;1:是 |
 | errorIds | string | 否 | \["302","404"\] | 错误ID,默认包含0 |
-| performanceIndex | string | 否 | {"type":"0","index":"D\_TIME","min":"0.5",""mark":"0"} | 指标筛选,type:筛选样式,0:指定值;1:指标百分比;2:样本数; index:指标; min:最小值; max:最大值; mark:标识,0:与\(保留\);1:或\(排除\) |
+| performanceIndex | string | 否 | {"type":"0","index":"D\_TIME","min":"0.5","max":"1.0","mark":"0", "group":"0"} | 指标筛选,type:筛选样式,0:指定值,1:指标百分比,2:样本数; index:指标; min:最小值; max:最大值; mark:标识,0:与\(保留\),1:或\(排除\);group分组, type为1或2时生效,0表示没有分组,1表示城市运营商,2表示地区运营商 |
 | hijack | int | 否 | 0 | 是否排除劫持数据;0:不排除;1排除 |
 | domain | string | 否 | \["www.bonree.com"\] | 域名筛选 |
 | clickParam | string | 否 | {"onlyError":"0","granule":{"key":"STR\_HOUR","value":"201708302300"},"index":{"ROLE\_IP":"1.1.1.1","OS\_VERSION":"2"},"GROUPFLG\_INFO":"D\_TIME\|0.097\|0.099\|1\|0\|0\|4","filter\_bline":"D\_TIME\|0.097\|0.099\|1\|0\|0\|4"} | 点击条件,onlyError:1只有错误;0都有;2只有正确;granule粒度,key表示点击时的粒度,value表示粒度的值;index指标,里面包含指标筛选条件,GROUPFLG\_INFO统计柱图筛选,指标\|最小值\|最大值\|逻辑符号1表示与,0表示或\|占位\|占位\|是否小于等于,5表示是 |
 | dgmParam | string | 否 | {"groupId":\[5307,5308,5309\], "groupDmg":"true"} | 分组统计条件,groupId:分组ID,值为数组,groupDmg:是否分组 |
 
-时间频度字典表
+#### 时间频度字典表
 
 | 值 | 含义 |
 | :--- | :--- |
@@ -82,7 +83,7 @@ filters字段
 
 # dHeader字典表：
 
-down:
+### down:
 
 | 字段英文名称 | 字段中文名称 | 备注 |
 | :--- | :--- | :--- |
