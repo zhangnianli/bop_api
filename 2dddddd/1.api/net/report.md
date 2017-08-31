@@ -34,6 +34,7 @@ POST／GET
 | group | string | 是 | ROLE\_ID,CITY\_CODE | 分组条件，字段顺序为分组顺序 |
 | dHeader | string | 是 | ROLE\_ID,CITY\_CODE,D\_TIME | 指定计算哪些指标，并作为查询结果返回 |
 | mainIndex | string | 否 | {"name":"D\_TIME", "warnMin":"10","warnMax":"20"} | 主指标,结果返回最小值,最大值,中位数和平均值;warnMin最小警显值;warnMax最大警显值,根据配置的值计算慢速比 |
+| calType | string | 否 | avg/max/min | 指标计算方式,默认为平均值 |
 | pageNum | string | 否 | 1 | 分页索引，第几页 |
 | pageRecorders | string | 否 | 50 | 分页查询时，单页总条数 |
 | granule | string | 否 | STR\_HOUR | 查询数据的时间频度，单位为分钟，当传时间频度的时候，group参数必填 |
