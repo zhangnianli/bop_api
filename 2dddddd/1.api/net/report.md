@@ -84,21 +84,23 @@ filters字段
 
 | 字段英文名称 | 字段中文名称 |
 | :--- | :--- |
-| TASKID | TASKID |
-| COUNTRY | 国家 |
-| CITY\_CODE | 城市 |
-| NETSERVICE | 运营商 |
-| BROWSER | 浏览器 |
-| ROLE\_USEABLE | 总任务可用性\(%\) |
-| USEABLE | 任务可用性\(%\) |
-| ERRNUM | 任务错误次数\(次\) |
-| ERRORTYPE | 错误类型 |
-| FIRST\_TIME | 首次发生时间 |
-| LAST\_TIME | 末次发生时间 |
-| ALLNUM | 总检测次数 |
-| ALLNUM\_ERR | 总错误次数 |
-| ERRRATE\_ROLE | 任务错误占比 |
-| ERRRATE | 错误率 |
+| ROLE\_ID | 任务ID |
+| D\_TIME | 整体性能\(s\) |
+| DOWN\_SPEED | 平均传输速度\(KB/s\) |
+| DOWN\_TIME | 传输用时\(s\) |
+| DNS\_TIME | DNS用时\(s\) |
+| TCP\_TIME | TCP用时\(s\) |
+| SEND\_TIME | 发送用时\(s\) |
+| R\_TIME | 响应用时\(s\) |
+| SSL\_TIME | SSL握手用时 |
+| ONEBYTE\_TIME | 首包用时\(s\) |
+| USEABLE | 成功率\(%\) |
+| ERRNUM | 错误次数 |
+| MNUM | 有效监测次数 |
+| SLOW\_RATE | 慢速比\(%\) |
+| HIJACK | 总劫持次数 |
+| HIJACKPER | 劫持比例\(%\) |
+| HIJACKDNS | 域名劫持次数 |
 
 # 返回参数说明
 
