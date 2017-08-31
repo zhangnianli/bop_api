@@ -34,11 +34,10 @@ POST／GET
 | group | string | 否 | ROLE\_ID,CITY\_CODE | 分组条件，字段顺序为分组顺序 |
 | mainIndex | string | 否 | {"name":"D\_TIME", "warnNormal":"10","warnGeneral":"20"} | 主指标,结果返回最小值,最大值,中位数和平均值;warnNormal正常警显值;warnGeneral普通警显值,根据配置的值计算慢速比 |
 | calType | string | 否 | avg/max/min | 指标计算方式,默认为平均值 |
-| pageNum | string | 否 | 1 | 分页索引，第几页 |
-| pageRecorders | string | 否 | 50 | 分页查询时，单页总条数 |
+| pageNum | int | 否 | 1 | 分页索引，第几页 |
+| pageRecorders | int | 否 | 50 | 分页查询时，单页总条数 |
 | granule | string | 否 | STR\_HOUR | 查询数据的时间频度，单位为分钟，当传时间频度的时候，group参数必填 |
 | order | string | 否 | ROLE\_ID ASC,CITY\_CODE DESC | 排序条件 |
-| user | string | 是 | bonreetest | V4用户名 |
 | dgmParam | string | 否 | {"groupId":\[5307,5308,5309\], "groupDmg":"true"} | 分组统计条件,groupId:分组ID,值为数组;groupDmg:是否分组 |
 
 ### filters字段
