@@ -37,7 +37,7 @@ POST／GET
 | pageRecorders | int | 否 | 50 | 分页查询时，单页总条数 |
 | granule | string | 否 | STR\_HOUR | 查询数据的时间频度，单位为分钟，当传时间频度的时候，group参数必填 |
 | order | string | 否 | ROLE\_ID ASC,CITY\_CODE DESC | 排序条件 |
-| dgmParam | string | 否 | {"groupId":\[5307,5308,5309\], "groupDmg":"true"} | 分组统计条件,groupId:分组ID,值为数组;groupDmg:是否分组 |
+| dgmParam | string | 否 | {"group":{"123\_test":\["1100101\_1\_1"\],"124\_test2":\["1100101\_2\_1"\]}, "groupDmg":"true"} | 分组统计条件,groupDmg:是否分组;group为具体的分组条件,key为groupId\_groupName,value为监测点组,监测点形式为CITYCODE\_NETSERVICEID\_CLIENTTYPE |
 
 ### filters字段
 
@@ -62,7 +62,6 @@ POST／GET
 | errorIds | string | 否 | \["302","404"\] | 错误ID,默认包含0 |
 | performanceIndex | string | 否 | {"type":"0","index":"D\_TIME","min":"0.5","max":"1.0","mark":"0", "group":"0"} | 指标筛选,type:筛选样式,0:指定值,1:指标百分比,2:样本数; index:指标; min:最小值; max:最大值; mark:标识,0:与\(保留\),1:或\(排除\);group分组, type为1或2时生效,0表示没有分组,1表示城市运营商,2表示地区运营商 |
 | hijack | int | 否 | 0 | 是否排除劫持数据;0:不排除;1排除 |
-| domain | string | 否 | \["www.bonree.com"\] | 域名筛选 |
 | clickParam | string | 否 | {"onlyError":"0","granule":{"key":"STR\_HOUR","value":"201708302300"},"index":{"ROLE\_IP":"1.1.1.1","OS\_VERSION":"2"},"indexFilter":{"name":"D\_TIME","min":"0.097","max":"0.099"}} | 点击条件,onlyError:1只有错误;0都有;2只有正确;granule粒度,key表示点击时的粒度,value表示粒度的值;index指标,里面包含指标筛选条件,indexFilter性能值筛选,name指标名称,min最小值,max最大值,左闭右开 |
 
 #### 时间频度字典表
