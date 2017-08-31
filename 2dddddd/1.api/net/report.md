@@ -26,11 +26,12 @@ POST／GET
 | taskId | string | 是 | 170435,170436 | 任务ID |
 | taskType | string | 是 | nav | 任务类型,nav:浏览数据;transfer:传输数据;flv:流媒体数据;port:协议数据;host元素组数据;net:网络数据;bmtpnav:bmtp的浏览数据;bmtpflv:bmtp的流媒体数据 |
 | dTime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
-| weekTime | string | 否 | {"startWeek":"1", "endWeek":"7","startHour":"00:00","endHour":"23:05"} |  |
+| dHeader | string | 是 | ROLE\_ID,CITY\_CODE,D\_TIME | 指定返回的指标,多个逗号分隔,具体字段查看dHeader字典表 |
+| user | string | 是 | bonreetest | V4用户名 |
+| weekTime | string | 否 | {"startWeek":"1", "endWeek":"3","startHour":"00:00","endHour":"12:00"} | 选中dTime时间内的交集,示例值表示查询周一到周三,0点到12点范围内的数据 |
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
 | filters | string | 否 |  | 字段值筛选条件,详见筛选条件列表 |
-| group | string | 是 | ROLE\_ID,CITY\_CODE | 分组条件，字段顺序为分组顺序 |
-| dHeader | string | 是 | ROLE\_ID,CITY\_CODE,D\_TIME | 指定计算哪些指标，并作为查询结果返回 |
+| group | string | 否 | ROLE\_ID,CITY\_CODE | 分组条件，字段顺序为分组顺序 |
 | mainIndex | string | 否 | {"name":"D\_TIME", "warnNormal":"10","warnGeneral":"20"} | 主指标,结果返回最小值,最大值,中位数和平均值;warnNormal正常警显值;warnGeneral普通警显值,根据配置的值计算慢速比 |
 | calType | string | 否 | avg/max/min | 指标计算方式,默认为平均值 |
 | pageNum | string | 否 | 1 | 分页索引，第几页 |
@@ -38,12 +39,13 @@ POST／GET
 | granule | string | 否 | STR\_HOUR | 查询数据的时间频度，单位为分钟，当传时间频度的时候，group参数必填 |
 | order | string | 否 | ROLE\_ID ASC,CITY\_CODE DESC | 排序条件 |
 | user | string | 是 | bonreetest | V4用户名 |
+| dgmParam | string | 否 | {"groupId":\[5307,5308,5309\], "groupDmg":"true"} | 分组统计条件,groupId:分组ID,值为数组;groupDmg:是否分组 |
 
 ### filters字段
 
 | 参数名称 | 参数类型 | 是否必填 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| monitors | string | 否 | {"idc": {"selected": "in","agents": \["1100101\_1","1100101\_2" \]},"lm": {"selected": "all","agents": \[\]},"mb": {"selected": "notin","agents": \["1100503\_16"\]},"bmtp": {"selected": "all","agents": \[\]},"pp": {"selected": "all","agents": \[\]}} | 监测点类型,selected表示选中类型,all:为全部选中;in:选中agents里面的值,notin:排除agents里面的值;agents为数组,里面的值为字符串,citycode\_netserverid |
+| monitors | string | 否 | {"idc": {"selected": "in","agents": \["1100101\_1","1100101\_2" \]},"lm": {"selected": "all","agents": \[\]},"mb": {"selected": "notin","agents": \["1100503\_16"\]},"bmtp": {"selected": "all","agents": \[\]},"pp": {"selected": "all","agents": \[\]}} | 监测点类型,默认全选.selected表示选中类型,all:为全部选中;in:选中agents里面的值,notin:排除agents里面的值;agents为数组,里面的值为字符串,citycode\_netserverid |
 | access | string | 否 | \["1","2"\] | 接入方式,仅支持wap与bmtp |
 | agentSpeed | string | 否 | \["1","2","3"\] | 监测点带宽,1:\[0, 512Kb\];2:\(512Kb, 2Mb\];3:\(2Mb, 4Mb\];4:\(4Mb, 10Mb\];5:\(10Mb, 20Mb\];6:\(20Mb, ∞\) |
 | browser | string | 否 | \["1","2","3"\] | 监测点浏览器版本,1: IE6; 2: IE7; 3: IE8; 4:IE9; 5:IE10; 6:IE11; 100:chrome\(WebKit\); 101:chrome\(blink\); -1:其它 |
@@ -64,7 +66,6 @@ POST／GET
 | hijack | int | 否 | 0 | 是否排除劫持数据;0:不排除;1排除 |
 | domain | string | 否 | \["www.bonree.com"\] | 域名筛选 |
 | clickParam | string | 否 | {"onlyError":"0","granule":{"key":"STR\_HOUR","value":"201708302300"},"index":{"ROLE\_IP":"1.1.1.1","OS\_VERSION":"2"},"indexFilter":{"name":"D\_TIME","min":"0.097","max":"0.099"}} | 点击条件,onlyError:1只有错误;0都有;2只有正确;granule粒度,key表示点击时的粒度,value表示粒度的值;index指标,里面包含指标筛选条件,indexFilter性能值筛选,name指标名称,min最小值,max最大值,左闭右开 |
-| dgmParam | string | 否 | {"groupId":\[5307,5308,5309\], "groupDmg":"true"} | 分组统计条件,groupId:分组ID,值为数组,groupDmg:是否分组 |
 
 #### 时间频度字典表
 
