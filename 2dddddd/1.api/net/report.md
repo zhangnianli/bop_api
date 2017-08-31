@@ -32,7 +32,7 @@ params说明：
 | dHeader | string | 是 | city,netservice | 指定计算哪些指标，并作为查询结果返回 |
 | pageNum | string | 否 | 1 | 分页索引，第几页 |
 | pageRecorders | string | 否 | 50 | 分页查询时，单页总条数 |
-| granule | string | 否 | 5 | 查询数据的时间频度，单位为分钟，当传时间频度的时候，group参数必填 |
+| granule | string | 否 | STR\_HOUR | 查询数据的时间频度，单位为分钟，当传时间频度的时候，group参数必填 |
 | order | string | 否 | \[\["city","desc"\],\["netservice","asc"\]\] | 排序条件 |
 | user | string | 是 | bonreetest | V4用户名 |
 
@@ -82,25 +82,32 @@ filters字段
 
 # dHeader字典表：
 
-| 字段英文名称 | 字段中文名称 |
-| :--- | :--- |
-| ROLE\_ID | 任务ID |
-| D\_TIME | 整体性能\(s\) |
-| DOWN\_SPEED | 平均传输速度\(KB/s\) |
-| DOWN\_TIME | 传输用时\(s\) |
-| DNS\_TIME | DNS用时\(s\) |
-| TCP\_TIME | TCP用时\(s\) |
-| SEND\_TIME | 发送用时\(s\) |
-| R\_TIME | 响应用时\(s\) |
-| SSL\_TIME | SSL握手用时 |
-| ONEBYTE\_TIME | 首包用时\(s\) |
-| USEABLE | 成功率\(%\) |
-| ERRNUM | 错误次数 |
-| MNUM | 有效监测次数 |
-| SLOW\_RATE | 慢速比\(%\) |
-| HIJACK | 总劫持次数 |
-| HIJACKPER | 劫持比例\(%\) |
-| HIJACKDNS | 域名劫持次数 |
+down:
+
+| 字段英文名称 | 字段中文名称 | 备注 |
+| :--- | :--- | :--- |
+| ROLE\_ID | 任务ID |  |
+| D\_TIME | 整体性能\(s\) | $MIN最小值;$MAX最大值;$MID中位数 |
+| DOWN\_SPEED | 平均传输速度\(KB/s\) | $MIN最小值;$MAX最大值;$MID中位数 |
+| DOWN\_TIME | 传输用时\(s\) | $MIN最小值;$MAX最大值;$MID中位数 |
+| DNS\_TIME | DNS用时\(s\) | $MIN最小值;$MAX最大值;$MID中位数 |
+| TCP\_TIME | TCP用时\(s\) | $MIN最小值;$MAX最大值;$MID中位数 |
+| SEND\_TIME | 发送用时\(s\) | $MIN最小值;$MAX最大值;$MID中位数 |
+| R\_TIME | 响应用时\(s\) | $MIN最小值;$MAX最大值;$MID中位数 |
+| SSL\_TIME | SSL握手用时\(s\) | $MIN最小值;$MAX最大值;$MID中位数 |
+| ONEBYTE\_TIME | 首包用时\(s\) | $MIN最小值;$MAX最大值;$MID中位数 |
+| BYTES\_RECEIVED | 传输大小\(KB\) | $MIN最小值;$MAX最大值;$MID中位数 |
+| USEABLE | 成功率\(%\) | 有效次数/\(有效次数+错误次数\) |
+| ERRNUM | 错误次数 |  |
+| MNUM | 有效监测次数 |  |
+| SLOW\_RATE | 慢速比\(%\) |  |
+| HIJACK | 总劫持次数 |  |
+| HIJACKPER | 劫持比例\(%\) |  |
+| HIJACKDNS | 域名劫持次数 |  |
+| CITY\_CODE | 城市码 |  |
+| DISTRICTCODE | 地区码 |  |
+| NETSERVICE\_ID | 运营商码 |  |
+| CLIENT\_CITY\_NETSERVICE\_NUM |  |  |
 
 # 返回参数说明
 
