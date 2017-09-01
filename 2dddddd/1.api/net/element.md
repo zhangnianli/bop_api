@@ -4,7 +4,7 @@ net.data.element.statdata
 
 # api请求地址
 
-[https://api.bonree.com/net/element/statdata](https://api.bonree.com/net/element/]%28https://[api.bonree.com/net/report/taskdata]%28http://api.bonree.com/net/report/taskdata%29statdata]%28https://api.bonree.com/net/element/]%28https://[api.bonree.com/net/report/taskdata]%28http://api.bonree.com/net/report/taskdata%29statdata)
+[https://api.bonree.com/net/data/element/statdata](https://api.bonree.com/net/element/]%28https://[api.bonree.com/net/report/taskdata]%28http://api.bonree.com/net/report/taskdata%29statdata]%28https://api.bonree.com/net/element/]%28https://[api.bonree.com/net/report/taskdata]%28http://api.bonree.com/net/report/taskdata%29statdata)
 
 # 请求方式
 
