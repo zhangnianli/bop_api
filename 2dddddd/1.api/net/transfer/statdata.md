@@ -139,7 +139,7 @@ POST／GET
 
 ```
         HttpClient httpclient = new DefaultHttpClient();
-        String url = "https://api.bonree.com/net/report/transfer";
+        String url = "https://api.bonree.com/net/data/transfer/statdata";
         HttpPost httppost = new HttpPost(url);
         System.out.println("请求: " + httppost.getRequestLine());
         // 创建参数队列
