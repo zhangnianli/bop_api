@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>report统计数据 | bop_api</title>
+        <title>report传输数据 | bop_api</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.1.1.5" data-basepath="..\..\.." data-revision="1504170092205">
+    <div class="book"  data-level="4.1.1.5" data-basepath="..\..\.." data-revision="1504234052084">
     
 
 <div class="book-summary">
@@ -236,7 +236,7 @@
                         
                             <b>4.1.1.5.</b>
                         
-                         report统计数据
+                         report传输数据
                     </a>
                 
             
@@ -1238,9 +1238,9 @@
                     <section class="normal" id="section-gitbook_15">
                     
                         <h1 id=""><strong>业务编号</strong></h1>
-<p>net.data.report.statdata</p>
+<p>net.data.report.transfer</p>
 <h1 id="api">api请求地址</h1>
-<p><a href="https://api.bonree.com/net/element/]%28https://[api.bonree.com/net/report/taskdata]%28http://api.bonree.com/net/report/taskdata%29statdata]%28https://api.bonree.com/net/element/]%28https://[api.bonree.com/net/report/taskdata]%28http://api.bonree.com/net/report/taskdata%29statdata" target="_blank">https://api.bonree.com/net/report/statdata</a></p>
+<p><a href="https://api.bonree.com/net/element/]%28https://[api.bonree.com/net/report/taskdata]%28http://api.bonree.com/net/report/taskdata%29statdata]%28https://api.bonree.com/net/element/]%28https://[api.bonree.com/net/report/taskdata]%28http://api.bonree.com/net/report/taskdata%29statdata" target="_blank">https://api.bonree.com/net/report/transfer</a></p>
 <h1 id="">请求方式</h1>
 <p>POST／GET</p>
 <h1 id="">请求参数</h1>
@@ -1305,13 +1305,6 @@
 <td style="text-align:left">任务ID</td>
 </tr>
 <tr>
-<td style="text-align:left">taskType</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">是</td>
-<td style="text-align:left">nav</td>
-<td style="text-align:left">任务类型,nav:浏览数据;transfer:传输数据;flv:流媒体数据;port:协议数据;host元素组数据;net:网络数据;bmtpnav:bmtp的浏览数据;bmtpflv:bmtp的流媒体数据</td>
-</tr>
-<tr>
 <td style="text-align:left">dTime</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">是</td>
@@ -1319,11 +1312,25 @@
 <td style="text-align:left">数据时间范围，（时间最长一个月）</td>
 </tr>
 <tr>
+<td style="text-align:left">dHeader</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">ROLE_ID,CITY_CODE,D_TIME</td>
+<td style="text-align:left">指定返回的指标,多个逗号分隔,具体字段查看dHeader字典表</td>
+</tr>
+<tr>
+<td style="text-align:left">user</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">bonreetest</td>
+<td style="text-align:left">V4用户名</td>
+</tr>
+<tr>
 <td style="text-align:left">weekTime</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">否</td>
-<td style="text-align:left">{&quot;startWeek&quot;:&quot;1&quot;, &quot;endWeek&quot;:&quot;7&quot;,&quot;startHour&quot;:&quot;00:00&quot;,&quot;endHour&quot;:&quot;23:05&quot;}</td>
-<td style="text-align:left"></td>
+<td style="text-align:left">{&quot;startWeek&quot;:&quot;1&quot;, &quot;endWeek&quot;:&quot;3&quot;,&quot;startHour&quot;:&quot;00:00&quot;,&quot;endHour&quot;:&quot;12:00&quot;}</td>
+<td style="text-align:left">选中dTime时间内的交集,示例值表示查询周一到周三,0点到12点范围内的数据</td>
 </tr>
 <tr>
 <td style="text-align:left">dateFM</td>
@@ -1336,22 +1343,15 @@
 <td style="text-align:left">filters</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">否</td>
-<td style="text-align:left"></td>
+<td style="text-align:left">{&quot;browser&quot;:[&quot;1&quot;,&quot;2&quot;],&quot;os&quot;:[&quot;2&quot;,&quot;3&quot;,&quot;4&quot;],&quot;clientIds&quot;:{&quot;selected&quot;:&quot;in&quot;, &quot;ids&quot;:[&quot;123&quot;, &quot;456&quot;]}}</td>
 <td style="text-align:left">字段值筛选条件,详见筛选条件列表</td>
 </tr>
 <tr>
 <td style="text-align:left">group</td>
 <td style="text-align:left">string</td>
-<td style="text-align:left">是</td>
+<td style="text-align:left">否</td>
 <td style="text-align:left">ROLE_ID,CITY_CODE</td>
 <td style="text-align:left">分组条件，字段顺序为分组顺序</td>
-</tr>
-<tr>
-<td style="text-align:left">dHeader</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">是</td>
-<td style="text-align:left">ROLE_ID,CITY_CODE,D_TIME</td>
-<td style="text-align:left">指定计算哪些指标，并作为查询结果返回</td>
 </tr>
 <tr>
 <td style="text-align:left">mainIndex</td>
@@ -1364,19 +1364,19 @@
 <td style="text-align:left">calType</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">否</td>
-<td style="text-align:left">avg/max/min</td>
-<td style="text-align:left">指标计算方式,默认为平均值</td>
+<td style="text-align:left">avg/max/min/mid</td>
+<td style="text-align:left">指标计算方式,只有主指标会计算中位数,默认为平均值</td>
 </tr>
 <tr>
 <td style="text-align:left">pageNum</td>
-<td style="text-align:left">string</td>
+<td style="text-align:left">int</td>
 <td style="text-align:left">否</td>
 <td style="text-align:left">1</td>
 <td style="text-align:left">分页索引，第几页</td>
 </tr>
 <tr>
 <td style="text-align:left">pageRecorders</td>
-<td style="text-align:left">string</td>
+<td style="text-align:left">int</td>
 <td style="text-align:left">否</td>
 <td style="text-align:left">50</td>
 <td style="text-align:left">分页查询时，单页总条数</td>
@@ -1396,11 +1396,11 @@
 <td style="text-align:left">排序条件</td>
 </tr>
 <tr>
-<td style="text-align:left">user</td>
+<td style="text-align:left">dgmParam</td>
 <td style="text-align:left">string</td>
-<td style="text-align:left">是</td>
-<td style="text-align:left">bonreetest</td>
-<td style="text-align:left">V4用户名</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">{&quot;group&quot;:{&quot;123&quot;:[&quot;1100101_1_1&quot;],&quot;124&quot;:[&quot;1100101_2_1&quot;]}, &quot;groupDmg&quot;:&quot;true&quot;}</td>
+<td style="text-align:left">分组统计条件,groupDmg:是否分组;group为具体的分组条件,key为groupId,value为监测点组,监测点形式为CITYCODE_NETSERVICEID_CLIENTTYPE;返回的数据中每行都包含DMG_ID用于标识属于哪个监测组</td>
 </tr>
 </tbody>
 </table>
@@ -1420,8 +1420,8 @@
 <td style="text-align:left">monitors</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">否</td>
-<td style="text-align:left">{&quot;idc&quot;: {&quot;selected&quot;: &quot;in&quot;,&quot;agents&quot;: [&quot;1100101_1&quot;,&quot;1100101_2&quot; ]},&quot;lm&quot;: {&quot;selected&quot;: &quot;all&quot;,&quot;agents&quot;: []},&quot;mb&quot;: {&quot;selected&quot;: &quot;ex&quot;,&quot;agents&quot;: [&quot;1100503_16&quot;]},&quot;bmtp&quot;: {&quot;selected&quot;: &quot;all&quot;,&quot;agents&quot;: []},&quot;pp&quot;: {&quot;selected&quot;: &quot;all&quot;,&quot;agents&quot;: []}}</td>
-<td style="text-align:left">监测点类型,selected表示选中类型,all:为全部选中;in:选中agents里面的值,ex:排除agents里面的值;agents为数组,里面的值为字符串,citycode_netserverid</td>
+<td style="text-align:left">{&quot;idc&quot;: {&quot;selected&quot;: &quot;in&quot;,&quot;agents&quot;: [&quot;1100101_1&quot;,&quot;1100101_2&quot; ]},&quot;lm&quot;: {&quot;selected&quot;: &quot;all&quot;,&quot;agents&quot;: []},&quot;mb&quot;: {&quot;selected&quot;: &quot;notin&quot;,&quot;agents&quot;: [&quot;1100503_16&quot;]},&quot;bmtp&quot;: {&quot;selected&quot;: &quot;all&quot;,&quot;agents&quot;: []},&quot;pp&quot;: {&quot;selected&quot;: &quot;all&quot;,&quot;agents&quot;: []}}</td>
+<td style="text-align:left">监测点类型,默认全选.selected表示选中类型,all:为全部选中;in:选中agents里面的值,notin:排除agents里面的值;agents为数组,里面的值为字符串,citycode_netserverid</td>
 </tr>
 <tr>
 <td style="text-align:left">access</td>
@@ -1456,28 +1456,28 @@
 <td style="text-align:left">string</td>
 <td style="text-align:left">否</td>
 <td style="text-align:left">{&quot;selected&quot;:&quot;in&quot;, &quot;ids&quot;:[&quot;123&quot;, &quot;456&quot;]}</td>
-<td style="text-align:left">客户端ID,selected表示选中类型,in:选中ids里面的值,ex:排除ids里面的值</td>
+<td style="text-align:left">客户端ID,selected表示选中类型,in:选中ids里面的值,notin:排除ids里面的值</td>
 </tr>
 <tr>
 <td style="text-align:left">clientIPs</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">否</td>
 <td style="text-align:left">{&quot;selected&quot;:&quot;in&quot;, &quot;ips&quot;:[&quot;1.1.1.1&quot;, &quot;8.8.8.8&quot;]}</td>
-<td style="text-align:left">客户端IP,selected表示选中类型,in:选中ips里面的值,ex:排除ips里面的值</td>
+<td style="text-align:left">客户端IP,selected表示选中类型,in:选中ips里面的值,notin:排除ips里面的值</td>
 </tr>
 <tr>
 <td style="text-align:left">clientDNS</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">否</td>
 <td style="text-align:left">{&quot;selected&quot;:&quot;in&quot;, &quot;ips&quot;:[&quot;1.1.1.1&quot;, &quot;8.8.8.8&quot;]}</td>
-<td style="text-align:left">客户端DNS,selected表示选中类型,in:选中ips里面的值,ex:排除ips里面的值</td>
+<td style="text-align:left">客户端DNS,selected表示选中类型,in:选中ips里面的值,notin:排除ips里面的值</td>
 </tr>
 <tr>
 <td style="text-align:left">roleIPs</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">否</td>
 <td style="text-align:left">{&quot;selected&quot;:&quot;in&quot;, &quot;ips&quot;:[&quot;1.1.1.1&quot;, &quot;8.8.8.8&quot;]}</td>
-<td style="text-align:left">目标IP,selected表示选中类型,in:选中ips里面的值,ex:排除ips里面的值</td>
+<td style="text-align:left">目标IP,selected表示选中类型,in:选中ips里面的值,notin:排除ips里面的值</td>
 </tr>
 <tr>
 <td style="text-align:left">CPURate</td>
@@ -1550,25 +1550,11 @@
 <td style="text-align:left">是否排除劫持数据;0:不排除;1排除</td>
 </tr>
 <tr>
-<td style="text-align:left">domain</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">[&quot;www.bonree.com&quot;]</td>
-<td style="text-align:left">域名筛选</td>
-</tr>
-<tr>
 <td style="text-align:left">clickParam</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">否</td>
 <td style="text-align:left">{&quot;onlyError&quot;:&quot;0&quot;,&quot;granule&quot;:{&quot;key&quot;:&quot;STR_HOUR&quot;,&quot;value&quot;:&quot;201708302300&quot;},&quot;index&quot;:{&quot;ROLE_IP&quot;:&quot;1.1.1.1&quot;,&quot;OS_VERSION&quot;:&quot;2&quot;},&quot;indexFilter&quot;:{&quot;name&quot;:&quot;D_TIME&quot;,&quot;min&quot;:&quot;0.097&quot;,&quot;max&quot;:&quot;0.099&quot;}}</td>
 <td style="text-align:left">点击条件,onlyError:1只有错误;0都有;2只有正确;granule粒度,key表示点击时的粒度,value表示粒度的值;index指标,里面包含指标筛选条件,indexFilter性能值筛选,name指标名称,min最小值,max最大值,左闭右开</td>
-</tr>
-<tr>
-<td style="text-align:left">dgmParam</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">{&quot;groupId&quot;:[5307,5308,5309], &quot;groupDmg&quot;:&quot;true&quot;}</td>
-<td style="text-align:left">分组统计条件,groupId:分组ID,值为数组,groupDmg:是否分组</td>
 </tr>
 </tbody>
 </table>
@@ -1636,7 +1622,7 @@
 </tbody>
 </table>
 <h1 id="dheader">dHeader字典表：</h1>
-<h3 id="down">down:</h3>
+<h3 id="">统计字段:</h3>
 <table>
 <thead>
 <tr>
@@ -1806,14 +1792,14 @@
 </table>
 <h1 id="">请求示例</h1>
 <pre><code>        HttpClient httpclient = new DefaultHttpClient();
-        String url = &quot;https://api.bonree.com/net/report/statdata&quot;;
+        String url = &quot;https://api.bonree.com/net/report/transfer&quot;;
         HttpPost httppost = new HttpPost(url);
         System.out.println(&quot;请求: &quot; + httppost.getRequestLine());
         // 创建参数队列
         List&lt;NameValuePair&gt; formparams = new ArrayList&lt;NameValuePair&gt;();
         formparams.add(new BasicNameValuePair(&quot;username&quot;, &quot;bonreetest&quot;));
         formparams.add(new BasicNameValuePair(&quot;token&quot;, &quot;xxxxxxxxxx&quot;));
-        formparams.add(new BasicNameValuePair(&quot;params&quot;, &quot;{\&quot;token\&quot;:\&quot;*******\&quot;,\&quot;dtype\&quot;:\&quot;json\&quot;,\&quot;taskId\&quot;:\&quot;1035\&quot;,\&quot;dTime\&quot;:\&quot;20170201000000-20170301000000\&quot;}&quot;));
+        formparams.add(new BasicNameValuePair(&quot;params&quot;, &quot;{\&quot;dType\&quot;:\&quot;json\&quot;,\&quot;taskId\&quot;:\&quot;1035\&quot;,\&quot;user\&quot;:\&quot;bonreetest\&quot;,\&quot;dTime\&quot;:\&quot;20170201000000-20170301000000\&quot;,\&quot;dHeader\&quot;:\&quot;ROLE_ID,CITY_CODE,D_TIME\&quot;,\&quot;group\&quot;:\&quot;ROLE_ID,CITY_CODE\&quot;}&quot;));
         UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, &quot;UTF-8&quot;);
         httppost.setEntity(uefEntity);
         // 执行
@@ -1834,13 +1820,13 @@
     &quot;result&quot;: [
         [
             &quot;ROLE_ID&quot;,
-            &quot;D_TIME&quot;,
-            &quot;DOWN_SPEED&quot;
+            &quot;CITY_CODE&quot;,
+            &quot;D_TIME&quot;
         ],
         [
             &quot;1035&quot;,
-            &quot;2.3&quot;,
-            &quot;945.8&quot;
+            &quot;1100101&quot;,
+            &quot;0.34&quot;
         ]
     ]
 }
