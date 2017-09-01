@@ -13,7 +13,6 @@
       * [element](2dddddd/1.api/net/element.md)
       * [network](2dddddd/1.api/net/network.md)
       * [用户权限](2dddddd/1.api/net/loaduser.md)
-      * [report传输数据](2dddddd/1.api/net/report.md)
     * [sdk](2dddddd/1.api/sdk.md)
       * [sdk检测数据查询](2dddddd/1.api/sdk/data.md)
         * [崩溃数据查询](2dddddd/1.api/sdk/data/crash.md)
