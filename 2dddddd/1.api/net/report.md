@@ -134,7 +134,7 @@ POST／GET
         List<NameValuePair> formparams = new ArrayList<NameValuePair>();
         formparams.add(new BasicNameValuePair("username", "bonreetest"));
         formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-        formparams.add(new BasicNameValuePair("params", "{\"token\":\"*******\",\"dtype\":\"json\",\"taskId\":\"1035\",\"dTime\":\"20170201000000-20170301000000\"}"));
+        formparams.add(new BasicNameValuePair("params", "{\"dType\":\"json\",\"taskId\":\"1035\",\"dTime\":\"20170201000000-20170301000000\",\"dHeader\":\"ROLE_ID,CITY_CODE,D_TIME\",\"group\":\"ROLE_ID,CITY_CODE\"}"));
         UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
         httppost.setEntity(uefEntity);
         // 执行
