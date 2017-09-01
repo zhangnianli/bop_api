@@ -61,8 +61,6 @@ POST／GET
 
 # dHeader字典表：
 
-
-
 | 字段英文名称 | 字段中文名称 | 备注 |
 | :--- | :--- | :--- |
 | ROLE\_ID | 任务ID |  |
@@ -76,26 +74,15 @@ POST／GET
 | SSL\_TIME | SSL握手用时\(s\) | $MIN最小值;$MAX最大值;$MID中位数 |
 | ONEBYTE\_TIME | 首包用时\(s\) | $MIN最小值;$MAX最大值;$MID中位数 |
 | BYTES\_RECEIVED | 传输大小\(KB\) | $MIN最小值;$MAX最大值;$MID中位数 |
+| ERRORID | 错误ID | 0表示正常 |
+| HIJACK | 是否发送劫持 | 1是,0否 |
+| SLOW | 是否慢请求 | 根据主指标判断是否慢请求,1是,0否 |
 | CITY\_CODE | 城市码 |  |
 | DISTRICTCODE | 地区码 |  |
 | NETSERVICE\_ID | 运营商码 |  |
 | ROLE\_CITYCODE | 目标城市码 |  |
 | ROLE\_DISTRICTCODE | 目标地区码 |  |
 | ROLE\_NETSERVICE | 目标运营商码 |  |
-
-### 分组字段
-
-| 字段英文名称 | 字段中文名称 | 备注 |
-| :--- | :--- | :--- |
-| ROLE\_ID | 任务ID |  |
-| CITY\_CODE | 城市码 |  |
-| DISTRICTCODE | 地区码 |  |
-| NETSERVICE\_ID | 运营商码 |  |
-| ROLE\_CITYCODE | 目标城市码 |  |
-| ROLE\_DISTRICTCODE | 目标地区码 |  |
-| ROLE\_NETSERVICE | 目标运营商码 |  |
-
-# 
 
 # 返回参数说明
 
