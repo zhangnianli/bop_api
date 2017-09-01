@@ -30,6 +30,7 @@ POST／GET
 | weekTime | string | 否 | {"startWeek":"1", "endWeek":"3","startHour":"00:00","endHour":"12:00"} | 选中dTime时间内的交集,示例值表示查询周一到周三,0点到12点范围内的数据 |
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
 | filters | string | 否 | {"browser":\["1","2"\],"os":\["2","3","4"\],"clientIds":{"selected":"in", "ids":\["123", "456"\]}} | 字段值筛选条件,详见筛选条件列表 |
+| mainIndex | string | 否 | {"name":"D\_TIME", "warnNormal":"10","warnGeneral":"20"} | 主指标,warnNormal正常警显值;warnGeneral普通警显值,根据配置的值计算是否慢请求 |
 | pageNum | int | 否 | 1 | 分页索引，第几页 |
 | pageRecorders | int | 否 | 50 | 分页查询时，单页总条数 |
 | order | string | 否 | ROLE\_ID ASC,CITY\_CODE DESC | 排序条件 |
