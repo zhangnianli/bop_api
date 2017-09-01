@@ -33,8 +33,6 @@ POST／GET
 | filters | string | 否 | {"browser":\["1","2"\],"os":\["2","3","4"\],"clientIds":{"selected":"in", "ids":\["123", "456"\]}} | 字段值筛选条件,详见筛选条件列表 |
 | mainIndex | string | 否 | {"name":"D\_TIME", "warnNormal":"10","warnGeneral":"20"} | 主指标,结果返回最小值,最大值,中位数和平均值;warnNormal正常警显值;warnGeneral普通警显值,根据配置的值计算慢速比 |
 | calType | string | 否 | avg/max/min/mid | 指标计算方式,只有主指标会计算中位数,默认为平均值 |
-| pageNum | int | 否 | 1 | 分页索引，第几页 |
-| pageRecorders | int | 否 | 50 | 分页查询时，单页总条数 |
 | granule | string | 否 | STR\_HOUR | 查询数据的时间频度，单位为分钟，当传时间频度的时候，group参数必填 |
 | order | string | 否 | ROLE\_ID ASC,CITY\_CODE DESC | 排序条件 |
 | dgmParam | string | 否 | {"group":{"123":\["1100101\_1\_1"\],"124":\["1100101\_2\_1"\]}, "groupDmg":"true"} | 分组统计条件,groupDmg:是否分组;group为具体的分组条件,key为groupId,value为监测点组,监测点形式为CITYCODE\_NETSERVICEID\_CLIENTTYPE;返回的数据中每行都包含DMG\_ID用于标识属于哪个监测组 |
