@@ -159,13 +159,13 @@ POST／GET
     "result": [
         [
             "ROLE_ID",
-            "D_TIME",
-            "DOWN_SPEED"
+            "CITY_CODE",
+            "D_TIME"
         ],
         [
             "1035",
-            "2.3",
-            "945.8"
+            "1100101",
+            "0.34"
         ]
     ]
 }
