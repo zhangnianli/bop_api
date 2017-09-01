@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.1.1.3" data-basepath="..\..\.." data-revision="1504234052084">
+    <div class="book"  data-level="4.1.1.3" data-basepath="..\..\.." data-revision="1504248799279">
     
 
 <div class="book-summary">
@@ -228,18 +228,56 @@
         </li>
     
         
-        <li class="chapter " data-level="4.1.1.5" data-path="2dddddd/1.api/net/report.html">
+        <li class="chapter " data-level="4.1.1.5" data-path="2dddddd/1.api/net/transfer.html">
             
                 
-                    <a href="..\..\../2dddddd/1.api/net/report.html">
+                    <a href="..\..\../2dddddd/1.api/net/transfer.html">
                         <i class="fa fa-check"></i>
                         
                             <b>4.1.1.5.</b>
                         
-                         report传输数据
+                         transfer
                     </a>
                 
             
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1.1.5.1" data-path="2dddddd/1.api/net/transfer/statdata.html">
+            
+                
+                    <a href="..\..\../2dddddd/1.api/net/transfer/statdata.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.1.5.1.</b>
+                        
+                         statdata
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4.1.1.5.2" data-path="2dddddd/1.api/net/transfer/detaildata.html">
+            
+                
+                    <a href="..\..\../2dddddd/1.api/net/transfer/detaildata.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.1.5.2.</b>
+                        
+                         detaildata
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -1235,12 +1273,12 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_14">
+                    <section class="normal" id="section-gitbook_87">
                     
                         <h1 id="">业务编号</h1>
 <p>net.data.network.statdata</p>
 <h1 id="api">api请求地址</h1>
-<p><a href="https://api.bonree.com/net/network/]%28https://[api.bonree.com/net/report/taskdata]%28http://api.bonree.com/net/report/taskdata%29statdata" target="_blank">https://api.bonree.com/net/network/statdata</a></p>
+<p><a href="https://api.bonree.com/net/network/]%28https://[api.bonree.com/net/report/taskdata]%28http://api.bonree.com/net/report/taskdata%29statdata" target="_blank">https://api.bonree.com/net/data/network/statdata</a></p>
 <h1 id="">请求方式</h1>
 <p>POST／GET</p>
 <h1 id="">请求参数</h1>
@@ -1409,7 +1447,7 @@
 </table>
 <h1 id="">请求示例</h1>
 <pre><code>        HttpClient httpclient = new DefaultHttpClient();
-        String url = &quot;https://api.bonree.com/net/network/statdata&quot;;
+        String url = &quot;https://api.bonree.com/net/data/network/statdata&quot;;
         HttpPost httppost = new HttpPost(url);
         System.out.println(&quot;请求: &quot; + httppost.getRequestLine());
         // 创建参数队列
