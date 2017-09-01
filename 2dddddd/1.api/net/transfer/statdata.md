@@ -1,6 +1,6 @@
 # **业务编号**
 
-net.data.report.transfer
+net.data.report.transfer.statdata
 
 # api请求地址
 
