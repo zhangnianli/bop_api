@@ -9,7 +9,6 @@
     * [net](2dddddd/1.api/net.md)
       * [任务信息](2dddddd/1.api/net/loadtask.md)
       * [transfer](2dddddd/1.api/net/report/transfer.md)
-        * [statdata](2dddddd/1.api/net/report/transfer/statdata.md)
       * [element](2dddddd/1.api/net/element.md)
       * [network](2dddddd/1.api/net/network.md)
       * [用户权限](2dddddd/1.api/net/loaduser.md)
