@@ -13,6 +13,7 @@
       * [用户权限](2dddddd/1.api/net/loaduser.md)
       * [transfer](2dddddd/1.api/net/transfer.md)
         * [statdata](2dddddd/1.api/net/transfer/statdata.md)
+        * [detaildata](2dddddd/1.api/net/transfer/detaildata.md)
     * [sdk](2dddddd/1.api/sdk.md)
       * [sdk检测数据查询](2dddddd/1.api/sdk/data.md)
         * [崩溃数据查询](2dddddd/1.api/sdk/data/crash.md)
