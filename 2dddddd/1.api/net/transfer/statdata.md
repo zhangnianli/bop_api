@@ -27,10 +27,10 @@ POST／GET
 | dTime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
 | dHeader | string | 是 | ROLE\_ID,CITY\_CODE,D\_TIME | 指定返回的指标,多个逗号分隔,具体字段查看dHeader字典表 |
 | user | string | 是 | bonreetest | V4用户名 |
+| group | string | 是 | ROLE\_ID,CITY\_CODE | 分组条件，字段顺序为分组顺序 |
 | weekTime | string | 否 | {"startWeek":"1", "endWeek":"3","startHour":"00:00","endHour":"12:00"} | 选中dTime时间内的交集,示例值表示查询周一到周三,0点到12点范围内的数据 |
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
 | filters | string | 否 | {"browser":\["1","2"\],"os":\["2","3","4"\],"clientIds":{"selected":"in", "ids":\["123", "456"\]}} | 字段值筛选条件,详见筛选条件列表 |
-| group | string | 是 | ROLE\_ID,CITY\_CODE | 分组条件，字段顺序为分组顺序 |
 | mainIndex | string | 否 | {"name":"D\_TIME", "warnNormal":"10","warnGeneral":"20"} | 主指标,结果返回最小值,最大值,中位数和平均值;warnNormal正常警显值;warnGeneral普通警显值,根据配置的值计算慢速比 |
 | calType | string | 否 | avg/max/min/mid | 指标计算方式,只有主指标会计算中位数,默认为平均值 |
 | pageNum | int | 否 | 1 | 分页索引，第几页 |
