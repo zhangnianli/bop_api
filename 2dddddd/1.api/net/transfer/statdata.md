@@ -4,7 +4,7 @@ net.data.report.transfer.statdata
 
 # api请求地址
 
-[https://api.bonree.com/net/data/transfer](https://api.bonree.com/net/element/]%28https://[api.bonree.com/net/report/taskdata]%28http://api.bonree.com/net/report/taskdata%29statdata]%28https://api.bonree.com/net/element/]%28https://[api.bonree.com/net/report/taskdata]%28http://api.bonree.com/net/report/taskdata%29statdata)/statdata
+[https://api.bonree.com/net/data/transfer/statdata](https://api.bonree.com/net/data/transfer/statdata)
 
 # 请求方式
 
@@ -27,7 +27,7 @@ POST／GET
 | dTime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
 | dHeader | string | 是 | ROLE\_ID,CITY\_CODE,D\_TIME | 指定返回的指标,多个逗号分隔,具体字段查看dHeader字典表 |
 | user | string | 是 | bonreetest | V4用户名 |
-| group | string | 是 | ROLE\_ID,CITY\_CODE | 分组条件，字段顺序为分组顺序 |
+| group | string | 是 | ROLE\_ID,CITY\_CODE | 分组条件，字段顺序为分组顺序,详见分组列表 |
 | weekTime | string | 否 | {"startWeek":"1", "endWeek":"3","startHour":"00:00","endHour":"12:00"} | 选中dTime时间内的交集,示例值表示查询周一到周三,0点到12点范围内的数据 |
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
 | filters | string | 否 | {"browser":\["1","2"\],"os":\["2","3","4"\],"clientIds":{"selected":"in", "ids":\["123", "456"\]}} | 字段值筛选条件,详见筛选条件列表 |
@@ -84,6 +84,8 @@ POST／GET
 
 # dHeader字典表：
 
+### 统计字段:
+
 | 字段英文名称 | 字段中文名称 | 备注 |
 | :--- | :--- | :--- |
 | ROLE\_ID | 任务ID |  |
@@ -112,6 +114,20 @@ POST／GET
 | ROLE\_NETSERVICE | 目标运营商码 |  |
 | ARRIVAL\_SCALE | 到达率 |  |
 | COVERAGE\_SCALE | 覆盖率 |  |
+
+### 分组字段
+
+| 字段英文名称 | 字段中文名称 | 备注 |
+| :--- | :--- | :--- |
+| ROLE\_ID | 任务ID |  |
+| CITY\_CODE | 城市码 |  |
+| DISTRICTCODE | 地区码 |  |
+| NETSERVICE\_ID | 运营商码 |  |
+| ROLE\_CITYCODE | 目标城市码 |  |
+| ROLE\_DISTRICTCODE | 目标地区码 |  |
+| ROLE\_NETSERVICE | 目标运营商码 |  |
+
+# 
 
 # 返回参数说明
 
