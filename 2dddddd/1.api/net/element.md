@@ -27,7 +27,7 @@ params说明：
 | dTime | string | 是 | 20161101000000-20161102000000 | 数据时间范围，（时间最长一个月） |
 | monitors | string | 是 | ALL/IDC/LM/PP/IDC | 监测点类型 |
 | dateFM | string | 否 | 默认是yyyy-MM-dd HH:mm:ss | 数据时间类型 |
-| filters | string | 否 | \[\["OR","D\_TIME","&gt;=",0.1\],\["AND","ERRORID","=",0\]\] | 字段值筛选条件,详见筛选条件列表 |
+| filters | string | 否 | {"netserviceAndNetStandard":\[{"netserviceId":"1","netStandard":"1"},{"netserviceId":"1","netStandard":"2"}\],"cityCode":\[1100000,1200000\],"districtCode":\[110000\],"countryCode":\[110000\],"browsr":\[0,1,2,3,4\],"browsrVer":\[107,108\]",onlyError":"1","errorId":"404"} | 字段值筛选条件,详见筛选条件列表 |
 | group | string | 否 | city,netservice | 分组条件，字段顺序为分组顺序 |
 | dHeader | string | 是 | city,netservice | 指定计算哪些指标，并作为查询结果返回 |
 | pageNum | string | 否 | 1 | 分页索引，第几页 |
