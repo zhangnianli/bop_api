@@ -125,8 +125,6 @@ POST／GET
 | ROLE\_DISTRICTCODE | 目标地区码 |  |
 | ROLE\_NETSERVICE | 目标运营商码 |  |
 
-\#
-
 # 返回参数说明
 
 | 名称 | 类型 | 描述 |
