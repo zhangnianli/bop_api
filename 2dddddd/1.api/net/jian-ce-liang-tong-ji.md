@@ -71,7 +71,7 @@ POST:
   List<NameValuePair> formparams = new ArrayList<NameValuePair>();
   formparams.add(new BasicNameValuePair("username", "bonreetest"));
   formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-  formparams.add(new BasicNameValuePair("params", "{\"dTime\":\"20170901-20170910\",\"dHeader\":\"MONITOR_COUNT,MONITOR_NET_COUNT\",\"granule\":\"STR_DAY\"}"));
+  formparams.add(new BasicNameValuePair("params", "{\"dTime\":\"20170901-20170905\",\"dHeader\":\"MONITOR_COUNT,MONITOR_NET_COUNT\",\"granule\":\"STR_DAY\"}"));
   UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
   httppost.setEntity(uefEntity);
   // 执行
@@ -97,9 +97,11 @@ POST:
     "errorCode": 0,
     "reason":"查询成功",
     "result: [
-        ["ROLE_NAME","URL","TASK_ID","MONITOR_FUN","FLAG","START_TIME","END_TIME","PARENT_ID","ROLE_TYPE","NETENV_MON"],
-        ["勿删长期测试qq","http://www.qq.com",170435,3,1,1393603200000,1488211200000,340832,9,"111"],
-        ["QQ任务组","http://",340832,3,0,1446307200000,1446307200000,0,0,"000"]
+        ["STR_DAY","MONITOR_COUNT","MONITOR_NET_COUNT"],
+        ["20170901","1234","981"],
+        ["20170902","1221","972"],
+        ["20170903","1220","968"],
+        ["20170904","1243","980"]
     ]
 }
 ```
