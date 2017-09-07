@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>getToken | bop_api</title>
+        <title>监测量统计 | bop_api</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="..\..\../2dddddd/2..html" />
+    <link rel="next" href="..\..\../2dddddd/1.api/sdk.html" />
     
     
-    <link rel="prev" href="..\..\../2dddddd/sys.html" />
+    <link rel="prev" href="..\..\../2dddddd/1.api/net/transfer/detaildata.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.1.7.1" data-basepath="..\..\.." data-revision="1504248799279">
+    <div class="book"  data-level="4.1.1.6" data-basepath="..\..\.." data-revision="1504766114182">
     
 
 <div class="book-summary">
@@ -278,6 +278,22 @@
     
 
             </ul>
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="4.1.1.6" data-path="2dddddd/1.api/net/jian-ce-liang-tong-ji.html">
+            
+                
+                    <a href="..\..\../2dddddd/1.api/net/jian-ce-liang-tong-ji.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.1.6.</b>
+                        
+                         监测量统计
+                    </a>
+                
+            
             
         </li>
     
@@ -1052,7 +1068,7 @@
                 
     
         
-        <li class="chapter active" data-level="4.1.7.1" data-path="2dddddd/1.api/sys/gettoken.html">
+        <li class="chapter " data-level="4.1.7.1" data-path="2dddddd/1.api/sys/gettoken.html">
             
                 
                     <a href="..\..\../2dddddd/1.api/sys/gettoken.html">
@@ -1273,17 +1289,193 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_132">
+                    <section class="normal" id="section-gitbook_12">
                     
-                        <p># 业务编号</p>
-<p>sys.getToken</p>
-<h1 id="api">api请求地址</h1>
-<p><a href="http://api.bonree.com/sys/getToken" target="_blank"><a href="http://api.bonree.com/custom/check" target="_blank">http://api.bonree.com/sys/g</a>etToken</a></p>
-<h1 id="">请求方式</h1>
+                        <h1 id=""><strong>业务编号</strong></h1>
+<p>net.task.monitorStat</p>
+<h1 id="api"><strong>api请求地址</strong></h1>
+<p><a href="http://api.bonree.com/net/task/monitorStat" target="_blank">http://api.bonree.com/net/task/monitorStat</a></p>
+<h1 id=""><strong>请求方式</strong></h1>
 <p>POST/GET</p>
-<h1 id="">请求参数</h1>
-<p>无</p>
-<h1 id="">返回参数说明</h1>
+<h1 id=""><strong>请求参数</strong></h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数名称</th>
+<th style="text-align:left">参数类型</th>
+<th style="text-align:left">是否必选</th>
+<th style="text-align:left">示例值</th>
+<th style="text-align:left">参数说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">token</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">*****************</td>
+<td style="text-align:left">令牌</td>
+</tr>
+<tr>
+<td style="text-align:left">username</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">bonreetest</td>
+<td style="text-align:left">用户名</td>
+</tr>
+<tr>
+<td style="text-align:left">params</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">{&quot;dTime&quot;:&quot;20170901-20170910&quot;,&quot;dHeader&quot;:&quot;MONITOR_COUNT&quot;}</td>
+<td style="text-align:left">请求参数json</td>
+</tr>
+</tbody>
+</table>
+<h2 id="param"><strong>param参数</strong></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数名称</th>
+<th style="text-align:left">参数类型</th>
+<th style="text-align:left">是否必选</th>
+<th style="text-align:left">示例值</th>
+<th style="text-align:left">参数说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">dTime</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">20170906-20170907</td>
+<td style="text-align:left">时间范围,精确到天</td>
+</tr>
+<tr>
+<td style="text-align:left">dHeader</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">MONITOR_COUNT,MONITOR_NET_COUNT</td>
+<td style="text-align:left">接口返回字段</td>
+</tr>
+<tr>
+<td style="text-align:left">monitorFun</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">3,4</td>
+<td style="text-align:left">任务类型(多个&quot;,&quot;分割)0-网络 3-浏览 4-传输 5-流媒体 6-元素组 7-协议 9-事务 10-推流  96-移动浏览 97-移动网络 98-移动协议 95-BMTP</td>
+</tr>
+<tr>
+<td style="text-align:left">granule</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">STR_DAY</td>
+<td style="text-align:left">查询粒度,详细请看粒度表</td>
+</tr>
+<tr>
+<td style="text-align:left">flag</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">0,1</td>
+<td style="text-align:left">任务状态；0-禁用，1-启用，9-结束，默认全部</td>
+</tr>
+</tbody>
+</table>
+<h3 id="">时间频度字典表</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">值</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">STR_DAY</td>
+<td style="text-align:left">天</td>
+</tr>
+<tr>
+<td style="text-align:left">STR_WEEK</td>
+<td style="text-align:left">周</td>
+</tr>
+<tr>
+<td style="text-align:left">STR_MONTH</td>
+<td style="text-align:left">月</td>
+</tr>
+<tr>
+<td style="text-align:left">STR_YEAR</td>
+<td style="text-align:left">年</td>
+</tr>
+</tbody>
+</table>
+<h1 id="dheader"><strong>dHeader说明</strong></h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">示例值</th>
+<th style="text-align:left">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ROLE_NAME</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">勿删长期测试qq</td>
+<td style="text-align:left">任务名称</td>
+</tr>
+<tr>
+<td style="text-align:left">URL</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left"><a href="http://www.qq.com" target="_blank">http://www.qq.com</a></td>
+<td style="text-align:left">任务地址</td>
+</tr>
+<tr>
+<td style="text-align:left">TASK_ID</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">170435</td>
+<td style="text-align:left">任务ID</td>
+</tr>
+<tr>
+<td style="text-align:left">MONITOR_FUN</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">3</td>
+<td style="text-align:left">任务类型</td>
+</tr>
+<tr>
+<td style="text-align:left">FLAG</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">任务状态</td>
+</tr>
+<tr>
+<td style="text-align:left">START_TIME</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">1393603200000</td>
+<td style="text-align:left">任务起始时间</td>
+</tr>
+<tr>
+<td style="text-align:left">END_TIME</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">1488211200000</td>
+<td style="text-align:left">任务结束时间</td>
+</tr>
+<tr>
+<td style="text-align:left">MONITOR_COUNT</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">1234</td>
+<td style="text-align:left">监测次数</td>
+</tr>
+<tr>
+<td style="text-align:left">MONITOR_NET_COUNT</td>
+<td style="text-align:left">number</td>
+<td style="text-align:left">1000</td>
+<td style="text-align:left">网络监测次数</td>
+</tr>
+</tbody>
+</table>
+<h1 id=""><strong>返回参数说明</strong></h1>
 <table>
 <thead>
 <tr>
@@ -1294,34 +1486,64 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">error_code</td>
-<td style="text-align:left">int</td>
-<td style="text-align:left">响应码说明</td>
+<td style="text-align:left">errorCode</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">错误码</td>
 </tr>
 <tr>
 <td style="text-align:left">reason</td>
 <td style="text-align:left">string</td>
-<td style="text-align:left">返回说明</td>
+<td style="text-align:left">结果说明</td>
 </tr>
 <tr>
 <td style="text-align:left">result</td>
 <td style="text-align:left">string</td>
-<td style="text-align:left">返回结果集，token数组[]</td>
+<td style="text-align:left">查询结果</td>
 </tr>
 </tbody>
 </table>
-<h1 id="">请求实例</h1>
-<p>curl <a href="#"><a href="#">http://api.bonree.com/sys/g</a>etToken</a></p>
-<h1 id="">返回结果实例</h1>
-<pre><code class="lang-js">{
-    <span class="hljs-string">"error_code"</span>:<span class="hljs-number">0</span>,
-    <span class="hljs-string">"reason"</span>:<span class="hljs-string">"成功"</span>,
-    <span class="hljs-string">"result"</span>:[
-        {<span class="hljs-string">"token"</span>:<span class="hljs-string">"abcd"</span>,<span class="hljs-string">"bizId"</span>:<span class="hljs-number">1</span>}, ...
+<h1 id=""><strong>请求示例</strong></h1>
+<pre><code>POST:
+  HttpClient httpclient = new DefaultHttpClient();
+  String url = &quot;http://api.bonree.com/net/task/monitorStat&quot;;
+  HttpPost httppost = new HttpPost(url);
+  System.out.println(&quot;请求: &quot; + httppost.getRequestLine());
+  // 创建参数队列
+  List&lt;NameValuePair&gt; formparams = new ArrayList&lt;NameValuePair&gt;();
+  formparams.add(new BasicNameValuePair(&quot;username&quot;, &quot;bonreetest&quot;));
+  formparams.add(new BasicNameValuePair(&quot;token&quot;, &quot;xxxxxxxxxx&quot;));
+  formparams.add(new BasicNameValuePair(&quot;params&quot;, &quot;{\&quot;dTime\&quot;:\&quot;20170901-20170905\&quot;,\&quot;dHeader\&quot;:\&quot;MONITOR_COUNT,MONITOR_NET_COUNT\&quot;,\&quot;granule\&quot;:\&quot;STR_DAY\&quot;}&quot;));
+  UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, &quot;UTF-8&quot;);
+  httppost.setEntity(uefEntity);
+  // 执行
+  HttpResponse response = httpclient.execute(httppost);
+  HttpEntity entity = response.getEntity();
+  System.out.println(&quot;----------------------------------------&quot;);
+  System.out.println(&quot;状态:&quot; + response.getStatusLine());
+  if (entity != null) {
+   System.out.println(&quot;Response content length: &quot; + entity.getContentLength());
+   System.out.println(&quot;Response content :&quot; + EntityUtils.toString(entity, &quot;UTF-8&quot;));
+  }
+  // 关闭连接,释放资源
+  httpclient.getConnectionManager().shutdown();
+
+ GET:
+  http://api.bonree.com/net/task/monitorStat?token=xxxxxxxxxx&amp;username=bonreetest&amp;param={&quot;dTime&quot;:&quot;20170901-20170905&quot;,&quot;dHeader&quot;:&quot;MONITOR_COUNT,MONITOR_NET_COUNT&quot;,&quot;granule&quot;:&quot;STR_DAY&quot;}
+</code></pre><h1 id=""><strong>返回结果示例</strong></h1>
+<pre><code>{
+    &quot;errorCode&quot;: 0,
+    &quot;reason&quot;:&quot;查询成功&quot;,
+    &quot;result: [
+        [&quot;STR_DAY&quot;,&quot;MONITOR_COUNT&quot;,&quot;MONITOR_NET_COUNT&quot;],
+        [&quot;20170901&quot;,&quot;1234&quot;,&quot;981&quot;],
+        [&quot;20170902&quot;,&quot;1221&quot;,&quot;972&quot;],
+        [&quot;20170903&quot;,&quot;1220&quot;,&quot;968&quot;],
+        [&quot;20170904&quot;,&quot;1243&quot;,&quot;980&quot;]
     ]
 }
-</code></pre>
-<h1 id="faq">FAQ</h1>
+</code></pre><h1 id="api"><strong>api工具</strong></h1>
+<p>api测试工具， api响应码查询工具，监测点查询工具，指标查询工具，监测数据错误码查询工具</p>
+<h1 id="faq"><strong>FAQ</strong></h1>
 
                     
                     </section>
@@ -1332,10 +1554,10 @@
         </div>
 
         
-        <a href="..\..\../2dddddd/sys.html" class="navigation navigation-prev " aria-label="Previous page: sys"><i class="fa fa-angle-left"></i></a>
+        <a href="..\..\../2dddddd/1.api/net/transfer/detaildata.html" class="navigation navigation-prev " aria-label="Previous page: detaildata"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="..\..\../2dddddd/2..html" class="navigation navigation-next " aria-label="Next page: 2.平台技术"><i class="fa fa-angle-right"></i></a>
+        <a href="..\..\../2dddddd/1.api/sdk.html" class="navigation navigation-next " aria-label="Next page: sdk"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
