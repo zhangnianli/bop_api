@@ -16,17 +16,17 @@ POST/GET
 | :--- | :--- | :--- | :--- | :--- |
 | token | string | 是 | \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* | 令牌 |
 | username | string | 是 | bonreetest | 用户名 |
-| params | string | 是 | {"dTime":"20170901-20170910"} | 请求参数json |
+| params | string | 是 | {"dTime":"20170901-20170910","dHeader":"MONITOR\_COUNT"} | 请求参数json |
 
 ## **param参数**
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | dTime | string | 是 | 20170906-20170907 | 时间范围,精确到天 |
+| dHeader | string | 是 | MONITOR\_COUNT,MONITOR\_NET\_COUNT | 接口返回字段 |
 | monitorFun | number | 否 | 3 | 任务类型\(多个","分割\)0-网络 3-浏览 4-传输 5-流媒体 6-元素组 7-协议 9-事务 96-移动浏览 97-移动网络 98-移动协议 95-BMTP |
 | granule | string | 否 | STR\_DAY | 查询粒度,详细请看粒度表 |
-| flag | number | 否 | 1 | 任务状态；0-禁用，1-启用，9-结束 |
-| dHeader | string | 是 | ROLE\_NAME,MONITOR\_FUN,TASK\_ID | 接口返回字段,配置\*返回全部 |
+| flag | number | 否 | 1 | 任务状态；0-禁用，1-启用，9-结束，默认全部 |
 
 ### 时间频度字典表
 
@@ -71,7 +71,7 @@ POST:
   List<NameValuePair> formparams = new ArrayList<NameValuePair>();
   formparams.add(new BasicNameValuePair("username", "bonreetest"));
   formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-  formparams.add(new BasicNameValuePair("params", "{\"dTime\":\"20170901-20170910\"}"));
+  formparams.add(new BasicNameValuePair("params", "{\"dTime\":\"20170901-20170910\",\"dHeader\":\"MONITOR_COUNT,MONITOR_NET_COUNT\"}"));
   UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
   httppost.setEntity(uefEntity);
   // 执行
