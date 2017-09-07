@@ -16,16 +16,26 @@ POST/GET
 | :--- | :--- | :--- | :--- | :--- |
 | token | string | 是 | \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* | 令牌 |
 | username | string | 是 | bonreetest | 用户名 |
-| params | string | 是 | {"monitor\_fun":3} | 请求参数json |
+| params | string | 是 | {"dTime":"20170901-20170910"} | 请求参数json |
 
 ## **param参数**
 
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
-| monitorFun | Number | 否 | 3 | 任务类型\(多个","分割\)0-网络 3-浏览 4-传输 5-流媒体 6-元素组 7-协议 9-事务 96-移动浏览 97-移动网络 98-移动协议 95-BMTP |
-| taskId | Number | 否 | 170435 | 任务ID\(多个","分割\) |
-| flag | Number | 否 | 1 | 任务状态；0-禁用，1-启用，9-结束 |
-| dHeader | String | 是 | ROLE\_NAME,MONITOR\_FUN,TASK\_ID | 接口返回字段,配置\*返回全部 |
+| dTime | string | 是 | 20170906-20170907 | 时间范围,精确到天 |
+| monitorFun | number | 否 | 3 | 任务类型\(多个","分割\)0-网络 3-浏览 4-传输 5-流媒体 6-元素组 7-协议 9-事务 96-移动浏览 97-移动网络 98-移动协议 95-BMTP |
+| granule | string | 否 | STR\_DAY | 查询粒度,详细请看粒度表 |
+| flag | number | 否 | 1 | 任务状态；0-禁用，1-启用，9-结束 |
+| dHeader | string | 是 | ROLE\_NAME,MONITOR\_FUN,TASK\_ID | 接口返回字段,配置\*返回全部 |
+
+### 时间频度字典表
+
+| 值 | 描述 |
+| :--- | :--- |
+| STR\_DAY | 天 |
+| STR\_WEEK | 周 |
+| STR\_MONTH | 月 |
+| STR\_YEAR | 年 |
 
 # **dHeader说明**
 
@@ -33,14 +43,13 @@ POST/GET
 | :--- | :--- | :--- | :--- |
 | ROLE\_NAME | string | 勿删长期测试qq | 任务名称 |
 | URL | string | [http://www.qq.com](http://www.qq.com) | 任务地址 |
-| TASK\_ID | Number | 170435 | 任务ID |
-| MONITOR\_FUN | Number | 3 | 任务类型 |
-| FLAG | Number | 1 | 任务状态 |
-| START\_TIME | Number | 1393603200000 | 任务起始时间 |
-| END\_TIME | Number | 1488211200000 | 任务结束时间 |
-| PARENT\_ID | Number | 340832 | 父任务ID |
-| ROLE\_TYPE | Number | 9 | 0任务组，1,事务，3元素组，5事务或元素组子任务，9单一任务 |
-| NETENV\_MON | string | 111 | 网络环境监测（111全部监测，（第1位表示DNS，第2位表示ICMP，第3位表示Tracert，1表示测试，0表示不测试）） |
+| TASK\_ID | number | 170435 | 任务ID |
+| MONITOR\_FUN | number | 3 | 任务类型 |
+| FLAG | number | 1 | 任务状态 |
+| START\_TIME | number | 1393603200000 | 任务起始时间 |
+| END\_TIME | number | 1488211200000 | 任务结束时间 |
+| MONITOR\_COUNT | number | 1234 | 监测次数 |
+| MONITOR\_NET\_COUNT | number | 1000 | 网络监测次数 |
 
 # **返回参数说明**
 
