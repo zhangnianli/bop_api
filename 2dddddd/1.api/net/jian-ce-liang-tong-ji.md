@@ -64,7 +64,7 @@ POST/GET
 ```
 POST:
   HttpClient httpclient = new DefaultHttpClient();
-  String url = "http://api.bonree.com/net/task/loadTask";
+  String url = "http://api.bonree.com/net/task/monitorStat";
   HttpPost httppost = new HttpPost(url);
   System.out.println("请求: " + httppost.getRequestLine());
   // 创建参数队列
