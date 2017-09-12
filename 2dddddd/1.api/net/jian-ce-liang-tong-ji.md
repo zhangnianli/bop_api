@@ -44,6 +44,7 @@ POST/GET
 | :--- | :--- | :--- | :--- |
 | ROLE\_NAME | string | 勿删长期测试qq | 任务名称 |
 | URL | string | [http://www.qq.com](http://www.qq.com) | 任务地址 |
+| USERNAME | string | bonreetest | 账户名称 |
 | TASK\_ID | number | 170435 | 任务ID |
 | MONITOR\_FUN | number | 3 | 任务类型 |
 | FLAG | number | 1 | 任务状态 |
