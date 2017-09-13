@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.1.1.6" data-basepath="..\..\.." data-revision="1504766114182">
+    <div class="book"  data-level="4.1.1.6" data-basepath="..\..\.." data-revision="1505283255515">
     
 
 <div class="book-summary">
@@ -1359,6 +1359,13 @@
 <td style="text-align:left">接口返回字段</td>
 </tr>
 <tr>
+<td style="text-align:left">group</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">TASK_ID</td>
+<td style="text-align:left">分组条件,可以按照TASK_ID,MONITOR_FUN,FLAG,USERNAME等分组</td>
+</tr>
+<tr>
 <td style="text-align:left">monitorFun</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">否</td>
@@ -1378,6 +1385,13 @@
 <td style="text-align:left">否</td>
 <td style="text-align:left">0,1</td>
 <td style="text-align:left">任务状态；0-禁用，1-启用，9-结束，默认全部</td>
+</tr>
+<tr>
+<td style="text-align:left">dType</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">json/csv</td>
+<td style="text-align:left">导出的格式,默认json</td>
 </tr>
 </tbody>
 </table>
@@ -1432,6 +1446,12 @@
 <td style="text-align:left">任务地址</td>
 </tr>
 <tr>
+<td style="text-align:left">USERNAME</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">bonreetest</td>
+<td style="text-align:left">账户名称</td>
+</tr>
+<tr>
 <td style="text-align:left">TASK_ID</td>
 <td style="text-align:left">number</td>
 <td style="text-align:left">170435</td>
@@ -1465,13 +1485,13 @@
 <td style="text-align:left">MONITOR_COUNT</td>
 <td style="text-align:left">number</td>
 <td style="text-align:left">1234</td>
-<td style="text-align:left">监测次数</td>
+<td style="text-align:left">监测次数(BMTP类型为流量MB)</td>
 </tr>
 <tr>
 <td style="text-align:left">MONITOR_NET_COUNT</td>
 <td style="text-align:left">number</td>
 <td style="text-align:left">1000</td>
-<td style="text-align:left">网络监测次数</td>
+<td style="text-align:left">网络监测次数(BMTP类型为时长h)</td>
 </tr>
 </tbody>
 </table>
@@ -1512,7 +1532,7 @@
   List&lt;NameValuePair&gt; formparams = new ArrayList&lt;NameValuePair&gt;();
   formparams.add(new BasicNameValuePair(&quot;username&quot;, &quot;bonreetest&quot;));
   formparams.add(new BasicNameValuePair(&quot;token&quot;, &quot;xxxxxxxxxx&quot;));
-  formparams.add(new BasicNameValuePair(&quot;params&quot;, &quot;{\&quot;dTime\&quot;:\&quot;20170901-20170905\&quot;,\&quot;dHeader\&quot;:\&quot;MONITOR_COUNT,MONITOR_NET_COUNT\&quot;,\&quot;granule\&quot;:\&quot;STR_DAY\&quot;}&quot;));
+  formparams.add(new BasicNameValuePair(&quot;params&quot;, &quot;{\&quot;dTime\&quot;:\&quot;20170904110000-20170908000000\&quot;,\&quot;dHeader\&quot;:\&quot;MONITOR_COUNT,MONITOR_NET_COUNT\&quot;,\&quot;granule\&quot;:\&quot;STR_DAY\&quot;}&quot;));
   UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, &quot;UTF-8&quot;);
   httppost.setEntity(uefEntity);
   // 执行
@@ -1528,7 +1548,7 @@
   httpclient.getConnectionManager().shutdown();
 
  GET:
-  http://api.bonree.com/net/task/monitorStat?token=xxxxxxxxxx&amp;username=bonreetest&amp;param={&quot;dTime&quot;:&quot;20170901-20170905&quot;,&quot;dHeader&quot;:&quot;MONITOR_COUNT,MONITOR_NET_COUNT&quot;,&quot;granule&quot;:&quot;STR_DAY&quot;}
+  http://api.bonree.com/net/task/monitorStat?token=xxxxxxxxxx&amp;username=bonreetest&amp;param={&quot;dTime&quot;:&quot;20170904110000-20170908000000&quot;,&quot;dHeader&quot;:&quot;MONITOR_COUNT,MONITOR_NET_COUNT&quot;,&quot;granule&quot;:&quot;STR_DAY&quot;}
 </code></pre><h1 id=""><strong>返回结果示例</strong></h1>
 <pre><code>{
     &quot;errorCode&quot;: 0,
