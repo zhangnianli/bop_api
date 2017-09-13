@@ -90,7 +90,7 @@ POST:
   httpclient.getConnectionManager().shutdown();
 
  GET:
-  http://api.bonree.com/net/task/monitorStat?token=xxxxxxxxxx&username=bonreetest&param={"dTime":"20170901-20170905","dHeader":"MONITOR_COUNT,MONITOR_NET_COUNT","granule":"STR_DAY"}
+  http://api.bonree.com/net/task/monitorStat?token=xxxxxxxxxx&username=bonreetest&param={"dTime":"20170904110000-20170908000000","dHeader":"MONITOR_COUNT,MONITOR_NET_COUNT","granule":"STR_DAY"}
 ```
 
 # **返回结果示例**
