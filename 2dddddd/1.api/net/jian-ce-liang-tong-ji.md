@@ -74,7 +74,7 @@ POST:
   List<NameValuePair> formparams = new ArrayList<NameValuePair>();
   formparams.add(new BasicNameValuePair("username", "bonreetest"));
   formparams.add(new BasicNameValuePair("token", "xxxxxxxxxx"));
-  formparams.add(new BasicNameValuePair("params", "{\"dTime\":\"20170901-20170905\",\"dHeader\":\"MONITOR_COUNT,MONITOR_NET_COUNT\",\"granule\":\"STR_DAY\"}"));
+  formparams.add(new BasicNameValuePair("params", "{\"dTime\":\"20170904110000-20170908000000\",\"dHeader\":\"MONITOR_COUNT,MONITOR_NET_COUNT\",\"granule\":\"STR_DAY\"}"));
   UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, "UTF-8");
   httppost.setEntity(uefEntity);
   // 执行
