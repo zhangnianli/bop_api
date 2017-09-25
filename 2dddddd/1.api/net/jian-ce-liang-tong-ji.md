@@ -30,8 +30,8 @@ POST/GET
 | flag | string | 否 | 0,1 | 任务状态；0-禁用，1-正常，2-删除，9-结束，默认全部 |
 | dType | string | 否 | json/csv | 导出的格式,默认json |
 | region | int | 否 | 0 | 0-国内，1-国外，2-中国港澳台，3-中国大陆，默认全部 |
-| monitorType | int | 否 | 0 | 0-公共监测点，1-私有监测点 |
-| roleType | int | 否 | 0 | 0-常规任务，1-即时测试任务 |
+| monitorType | int | 否 | 0 | 0-全部，1-私有监测点,默认全部 |
+| roleType | int | 否 | 0 | 0-常规任务，1-即时测试任务,默认常规任务 |
 | search | string | 否 | bj-浏览任务 | 快速检索信息,匹配任务名称 |
 
 ### 时间频度字典表
