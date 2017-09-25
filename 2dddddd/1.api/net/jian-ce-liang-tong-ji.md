@@ -25,7 +25,7 @@ POST/GET
 | dTime | string | 是 | 20170906-20170907 | 时间范围,精确到天 |
 | dHeader | string | 是 | MONITOR\_COUNT,MONITOR\_NET\_COUNT | 接口返回字段 |
 | group | string | 否 | TASK\_ID | 分组条件,可以按照TASK\_ID,MONITOR\_FUN,FLAG,USERNAME等分组 |
-| monitorFun | string | 否 | 3,4 | 任务类型\(多个","分割\)0-网络 3-浏览 4-传输 5-流媒体 6-元素组 7-协议 9-事务 10-推流  96-移动浏览 97-移动网络 98-移动协议 99-移动单元素 95-BMTP |
+| monitorFun | string | 否 | 3,4 | 任务类型\(多个","分割\)0-网络 3-浏览 4-传输 5-流媒体 6-元素组 7-协议 9-事务 10-推流  96-移动浏览 97-移动网络 98-移动协议 99-移动单元素 100-MAA95-BMTP |
 | granule | string | 否 | STR\_DAY | 查询粒度,详细请看粒度表 |
 | flag | string | 否 | 0,1 | 任务状态；0-禁用，1-正常，2-删除，9-结束，默认全部 |
 | dType | string | 否 | json/csv | 导出的格式,默认json |
