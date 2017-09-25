@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.1.1.6" data-basepath="..\..\.." data-revision="1505283255515">
+    <div class="book"  data-level="4.1.1.6" data-basepath="..\..\.." data-revision="1506328107713">
     
 
 <div class="book-summary">
@@ -1361,7 +1361,7 @@
 <tr>
 <td style="text-align:left">group</td>
 <td style="text-align:left">string</td>
-<td style="text-align:left">是</td>
+<td style="text-align:left">否</td>
 <td style="text-align:left">TASK_ID</td>
 <td style="text-align:left">分组条件,可以按照TASK_ID,MONITOR_FUN,FLAG,USERNAME等分组</td>
 </tr>
@@ -1370,7 +1370,7 @@
 <td style="text-align:left">string</td>
 <td style="text-align:left">否</td>
 <td style="text-align:left">3,4</td>
-<td style="text-align:left">任务类型(多个&quot;,&quot;分割)0-网络 3-浏览 4-传输 5-流媒体 6-元素组 7-协议 9-事务 10-推流  96-移动浏览 97-移动网络 98-移动协议 95-BMTP</td>
+<td style="text-align:left">任务类型(多个&quot;,&quot;分割)0-网络 3-浏览 4-传输 5-流媒体 6-元素组 7-协议 9-事务 10-推流  96-移动浏览 97-移动网络 98-移动协议 99-移动单元素 100-MAA95-BMTP</td>
 </tr>
 <tr>
 <td style="text-align:left">granule</td>
@@ -1384,7 +1384,7 @@
 <td style="text-align:left">string</td>
 <td style="text-align:left">否</td>
 <td style="text-align:left">0,1</td>
-<td style="text-align:left">任务状态；0-禁用，1-启用，9-结束，默认全部</td>
+<td style="text-align:left">任务状态；0-禁用，1-正常，2-删除，9-结束，默认全部</td>
 </tr>
 <tr>
 <td style="text-align:left">dType</td>
@@ -1392,6 +1392,34 @@
 <td style="text-align:left">否</td>
 <td style="text-align:left">json/csv</td>
 <td style="text-align:left">导出的格式,默认json</td>
+</tr>
+<tr>
+<td style="text-align:left">region</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0-国内，1-国外，2-中国港澳台，3-中国大陆，默认全部</td>
+</tr>
+<tr>
+<td style="text-align:left">monitorType</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0-全部，1-私有监测点,默认全部</td>
+</tr>
+<tr>
+<td style="text-align:left">roleType</td>
+<td style="text-align:left">int</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">0</td>
+<td style="text-align:left">0-常规任务，1-即时测试任务,默认常规任务</td>
+</tr>
+<tr>
+<td style="text-align:left">search</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">bj-浏览任务</td>
+<td style="text-align:left">快速检索信息,匹配任务名称,URL</td>
 </tr>
 </tbody>
 </table>
