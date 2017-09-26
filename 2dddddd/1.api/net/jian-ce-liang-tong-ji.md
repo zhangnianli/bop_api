@@ -55,8 +55,10 @@ POST/GET
 | FLAG | number | 1 | 任务状态 |
 | START\_TIME | number | 1393603200000 | 任务起始时间 |
 | END\_TIME | number | 1488211200000 | 任务结束时间 |
-| MONITOR\_COUNT | number | 1234 | 监测次数\(BMTP类型为流量MB\) |
-| MONITOR\_NET\_COUNT | number | 1000 | 网络监测次数\(BMTP类型为时长h\) |
+| MONITOR\_COUNT | number | 1234 | 监测次数 |
+| MONITOR\_NET\_COUNT | number | 1000 | 网络监测次数 |
+| MONITOR\_TRAFFIC | number | 1000 | BMTP/WAP任务流量MB |
+| MONITOR\_DURATION | number | 1000 | BMTP任务时长h |
 
 # **返回参数说明**
 
