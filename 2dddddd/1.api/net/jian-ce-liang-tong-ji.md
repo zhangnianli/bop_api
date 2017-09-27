@@ -33,6 +33,7 @@ POST/GET
 | monitorType | int | 否 | 0 | 0-全部，1-私有监测点,默认全部 |
 | roleType | int | 否 | 0 | 0-常规任务，1-即时测试任务,默认常规任务 |
 | search | string | 否 | bj-浏览任务 | 快速检索信息,匹配任务名称,URL |
+| user | string | 否 | bonreetest,bonreetest2 | 要查询的子用户名,默认全部 |
 
 ### 时间频度字典表
 
