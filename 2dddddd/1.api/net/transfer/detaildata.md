@@ -84,6 +84,7 @@ POST／GET
 | ROLE\_CITYCODE | 目标城市码 |  |
 | ROLE\_DISTRICTCODE | 目标地区码 |  |
 | ROLE\_NETSERVICE | 目标运营商码 |  |
+| ROLE\_IP | 目标IP |  |
 
 # 返回参数说明
 
