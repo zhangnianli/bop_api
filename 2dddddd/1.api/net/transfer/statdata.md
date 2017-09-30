@@ -113,6 +113,13 @@ POST／GET
 | ARRIVAL\_SCALE | 到达率 |  |
 | COVERAGE\_SCALE | 覆盖率 |  |
 | ROLE\_IP | 目标IP |  |
+| CLIENT\_CITY\_NETSERVICE\_NUM | 监测点城市运营商个数 |  |
+| CLIENT\_AREA\_NETSERVICE\_NUM | 监测点地区运营商个数 |  |
+| CLIENT\_NETSERVICE\_NUM | 监测点运营商个数 |  |
+| ROLE\_CITY\_NETSERVICE\_NUM | 目标地址城市运营商个数 |  |
+| ROLE\_AREA\_NETSERVICE\_NUM | 目标地址地区运营商个数 |  |
+| ROLE\_NETSERVICE\_NUM | 目标地址运营商个数 |  |
+| HOST\_NUM | 目标主机节点个数 |  |
 
 ### 分组字段
 
