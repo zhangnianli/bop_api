@@ -87,16 +87,16 @@ POST／GET
 | 字段英文名称 | 字段中文名称 | 备注 |
 | :--- | :--- | :--- |
 | ROLE\_ID | 任务ID |  |
-| D\_TIME | 整体性能\(s\) | $MIN最小值;$MAX最大值;$MID中位数 |
-| DOWN\_SPEED | 平均传输速度\(KB/s\) | $MIN最小值;$MAX最大值;$MID中位数 |
-| DOWN\_TIME | 传输用时\(s\) | $MIN最小值;$MAX最大值;$MID中位数 |
-| DNS\_TIME | DNS用时\(s\) | $MIN最小值;$MAX最大值;$MID中位数 |
-| TCP\_TIME | TCP用时\(s\) | $MIN最小值;$MAX最大值;$MID中位数 |
-| SEND\_TIME | 发送用时\(s\) | $MIN最小值;$MAX最大值;$MID中位数 |
-| R\_TIME | 响应用时\(s\) | $MIN最小值;$MAX最大值;$MID中位数 |
-| SSL\_TIME | SSL握手用时\(s\) | $MIN最小值;$MAX最大值;$MID中位数 |
-| ONEBYTE\_TIME | 首包用时\(s\) | $MIN最小值;$MAX最大值;$MID中位数 |
-| BYTES\_RECEIVED | 传输大小\(KB\) | $MIN最小值;$MAX最大值;$MID中位数 |
+| D\_TIME | 整体性能\(s\) | $min最小值;$max最大值;$mid中位数 |
+| DOWN\_SPEED | 平均传输速度\(KB/s\) | $min最小值;$max最大值;$mid中位数 |
+| DOWN\_TIME | 传输用时\(s\) | $min最小值;$max最大值;$mid中位数 |
+| DNS\_TIME | DNS用时\(s\) | $min最小值;$max最大值;$mid中位数 |
+| TCP\_TIME | TCP用时\(s\) | $min最小值;$max最大值;$mid中位数 |
+| SEND\_TIME | 发送用时\(s\) | $min最小值;$max最大值;$mid中位数 |
+| R\_TIME | 响应用时\(s\) | $min最小值;$max最大值;$mid中位数 |
+| SSL\_TIME | SSL握手用时\(s\) | $min最小值;$max最大值;$mid中位数 |
+| ONEBYTE\_TIME | 首包用时\(s\) | $min最小值;$max最大值;$mid中位数 |
+| BYTES\_RECEIVED | 传输大小\(KB\) | $min最小值;$max最大值;$mid中位数 |
 | USEABLE | 成功率\(%\) | 有效次数/\(有效次数+错误次数\) |
 | ERRNUM | 错误次数 |  |
 | MNUM | 有效监测次数 |  |
@@ -113,6 +113,13 @@ POST／GET
 | ARRIVAL\_SCALE | 到达率 |  |
 | COVERAGE\_SCALE | 覆盖率 |  |
 | ROLE\_IP | 目标IP |  |
+| CLIENT\_CITY\_NETSERVICE\_NUM | 监测点城市运营商个数 |  |
+| ROLE\_CITY\_NETSERVICE\_NUM | 目标点城市运营商个数 |  |
+| CLIENT\_AREA\_NETSERVICE\_NUM | 监测点地区运营商个数 |  |
+| ROLE\_AREA\_NETSERVICE\_NUM | 目标点地区运营商个数 |  |
+| CLIENT\_NETSERVICE\_NUM | 监测点运营商 |  |
+| ROLE\_NETSERVICE\_NUM | 目标点运营商 |  |
+| HOST\_NUM | 主机节点 |  |
 
 ### 分组字段
 
