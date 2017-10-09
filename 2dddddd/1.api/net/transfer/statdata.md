@@ -63,7 +63,7 @@ POST／GET
 | clickParam | string | 否 | {"onlyError":"0","granule":{"key":"STR\_HOUR","value":"201708302300"},"index":{"ROLE\_IP":"1.1.1.1","OS\_VERSION":"2"},"indexFilter":{"name":"D\_TIME","min":"0.097","max":"0.099"}} | 点击条件,onlyError:1只有错误;0都有;2只有正确;granule粒度,key表示点击时的粒度,value表示粒度的值;index指标,里面包含指标筛选条件,indexFilter性能值筛选,name指标名称,min最小值,max最大值,左闭右开 |
 | arrivalPercent | double | 否 | 10 | 过滤解析到达率,查询到达率时生效 |
 | coveragePercent | double | 否 | 10 | 过滤覆盖率,查询覆盖率时生效 |
-| accessPercent | double | 否 |  10 | 过滤访问比例,查询访问比例时生效 |
+| accessPercent | double | 否 | 10 | 过滤访问比例,查询访问比例时生效 |
 
 #### 时间频度字典表
 
@@ -109,6 +109,7 @@ POST／GET
 | HIJACKDNS | 域名劫持次数 |  |
 | CITY\_CODE | 城市码 |  |
 | DISTRICTCODE | 地区码 |  |
+| COUNTRYCODE | 国家码 |  |
 | NETSERVICE\_ID | 运营商码 |  |
 | ROLE\_CITYCODE | 目标城市码 |  |
 | ROLE\_DISTRICTCODE | 目标地区码 |  |
