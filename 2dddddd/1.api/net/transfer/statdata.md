@@ -133,6 +133,7 @@ POST／GET
 | ROLE\_ID | 任务ID |  |
 | CITY\_CODE | 城市码 |  |
 | DISTRICTCODE | 地区码 |  |
+| COUNTRYCODE | 国家码 |  |
 | NETSERVICE\_ID | 运营商码 |  |
 | ROLE\_CITYCODE | 目标城市码 |  |
 | ROLE\_DISTRICTCODE | 目标地区码 |  |
