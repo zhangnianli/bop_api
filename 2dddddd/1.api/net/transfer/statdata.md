@@ -58,7 +58,7 @@ POST／GET
 | tracertMatching | int | 否 | 0 | 是否匹配出口ip 0:否;1:是 |
 | groupFilter | int | 否 | 0 | 是否排除样本数不一致数据,0:否;1:是 |
 | errorIds | string | 否 | \["302","404"\] | 错误ID,默认包含0 |
-| performanceIndex | string | 否 | {"type":"0","name":"D\_TIME","min":"0.5","max":"1.0","mark":"0", "group":"0"} | 指标筛选,type:筛选样式,0:指定值,1:指标百分比,2:样本数; index:指标; min:最小值; max:最大值; mark:标识,0:与\(保留\),1:或\(排除\);group分组, type为1或2时生效,0表示没有分组,1表示城市运营商,2表示地区运营商 |
+| performanceIndex | string | 否 | {"type":"0","name":"D\_TIME","min":"0.5","max":"1.0","mark":"0", "group":"0"} | 指标筛选,type:筛选样式,0:指定值,1:指标百分比,2:样本数; name:指标; min:最小值; max:最大值; mark:标识,0:与\(保留\),1:或\(排除\);group分组, type为1或2时生效,0表示没有分组,1表示城市运营商,2表示地区运营商 |
 | hijack | int | 否 | 0 | 是否排除劫持数据;0:不排除;1排除 |
 | clickParam | string | 否 | {"onlyError":"0","granule":{"key":"STR\_HOUR","value":"201708302300"},"index":{"ROLE\_IP":"1.1.1.1","OS\_VERSION":"2"},"indexFilter":{"name":"D\_TIME","min":"0.097","max":"0.099"}} | 点击条件,onlyError:1只有错误;0都有;2只有正确;granule粒度,key表示点击时的粒度,value表示粒度的值;index指标,里面包含指标筛选条件,indexFilter性能值筛选,name指标名称,min最小值,max最大值,左闭右开 |
 | arrivalPercent | double | 否 | 10 | 过滤解析到达率,查询到达率时生效 |
@@ -103,6 +103,7 @@ POST／GET
 | USEABLE | 成功率\(%\) | 有效次数/\(有效次数+错误次数\) |
 | ERRNUM | 错误次数 |  |
 | MNUM | 有效监测次数 |  |
+| ALLNUM | 总次数 |  |
 | SLOW\_RATE | 慢速比\(%\) | 慢元素次数/有效次数 |
 | HIJACK | 总劫持次数 |  |
 | HIJACKPER | 劫持比例\(%\) |  |
