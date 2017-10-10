@@ -126,7 +126,7 @@ POST／GET
 | ROLE\_NETSERVICE\_NUM | 目标地址运营商个数 |  |
 | HOST\_NUM | 目标主机节点个数 |  |
 | CLIENT\_NUM | 客户端ID |  |
-| OS\_VERSION | 客户端操作系统 |  |
+| OS\_VERSION | 客户端操作系统 | 2:WIN2003; 3:WINXP; 4:WINVISTA; 5:WIN7; 6:WIN8; 9:WIN10; |
 | CYCLE\_SPEED\_CODE | 客户端平均周期速度 | 1:\[0, 512Kb\];2:\(512Kb, 2Mb\];3:\(2Mb, 4Mb\];4:\(4Mb, 10Mb\];5:\(10Mb, 20Mb\];6:\(20Mb, ∞\) |
 
 ### 分组字段
@@ -143,7 +143,7 @@ POST／GET
 | ROLE\_NETSERVICE | 目标运营商码 |  |
 | ROLE\_IP | 目标IP |  |
 | CLIENT\_NUM | 客户端ID |  |
-| OS\_VERSION | 客户端操作系统 |  |
+| OS\_VERSION | 客户端操作系统 | 2:WIN2003; 3:WINXP; 4:WINVISTA; 5:WIN7; 6:WIN8; 9:WIN10; |
 | CYCLE\_SPEED\_CODE | 客户端平均周期速度 | 1:\[0, 512Kb\];2:\(512Kb, 2Mb\];3:\(2Mb, 4Mb\];4:\(4Mb, 10Mb\];5:\(10Mb, 20Mb\];6:\(20Mb, ∞\) |
 
 # 返回参数说明
