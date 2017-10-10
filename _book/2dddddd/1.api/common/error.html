@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>network | bop_api</title>
+        <title>错误类型 | bop_api</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="..\..\../2dddddd/1.api/net/loaduser.html" />
+    <link rel="next" href="..\..\../2dddddd/1.api/common/keyele.html" />
     
     
-    <link rel="prev" href="..\..\../2dddddd/1.api/net/element.html" />
+    <link rel="prev" href="..\..\../2dddddd/1.api/common/customheader.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.1.1.3" data-basepath="..\..\.." data-revision="1507521227013">
+    <div class="book"  data-level="4.1.5.9" data-basepath="..\..\.." data-revision="1507603807815">
     
 
 <div class="book-summary">
@@ -196,7 +196,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="4.1.1.3" data-path="2dddddd/1.api/net/network.html">
+        <li class="chapter " data-level="4.1.1.3" data-path="2dddddd/1.api/net/network.html">
             
                 
                     <a href="..\..\../2dddddd/1.api/net/network.html">
@@ -944,7 +944,7 @@
         </li>
     
         
-        <li class="chapter " data-level="4.1.5.9" data-path="2dddddd/1.api/common/error.html">
+        <li class="chapter active" data-level="4.1.5.9" data-path="2dddddd/1.api/common/error.html">
             
                 
                     <a href="..\..\../2dddddd/1.api/common/error.html">
@@ -1289,27 +1289,33 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_15">
+                    <section class="normal" id="section-gitbook_26">
                     
-                        <h1 id="">业务编号</h1>
-<p>net.data.network.statdata</p>
-<h1 id="api">api请求地址</h1>
-<p><a href="https://api.bonree.com/net/network/]%28https://[api.bonree.com/net/report/taskdata]%28http://api.bonree.com/net/report/taskdata%29statdata" target="_blank">https://api.bonree.com/net/data/network/statdata</a></p>
-<h1 id="">请求方式</h1>
-<p>POST／GET</p>
-<h1 id="">请求参数</h1>
-<h1 id="">请求参数</h1>
+                        <h1 id=""><strong>业务编号</strong></h1>
+<p>base.data.loadError</p>
+<h1 id="api"><strong>api请求地址</strong></h1>
+<p><a href="http://api.bonree.com/basedata/loadOs" target="_blank">http://api.bonree.com/base/data/loadError</a></p>
+<h1 id=""><strong>请求方式</strong></h1>
+<p>POST/GET</p>
+<h1 id=""><strong>请求参数</strong></h1>
 <table>
 <thead>
 <tr>
 <th style="text-align:left">参数名称</th>
 <th style="text-align:left">参数类型</th>
-<th style="text-align:left">是否必填</th>
+<th style="text-align:left">是否必选</th>
 <th style="text-align:left">示例值</th>
 <th style="text-align:left">参数说明</th>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align:left">token</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">*****************</td>
+<td style="text-align:left">令牌</td>
+</tr>
 <tr>
 <td style="text-align:left">username</td>
 <td style="text-align:left">string</td>
@@ -1318,123 +1324,67 @@
 <td style="text-align:left">用户名</td>
 </tr>
 <tr>
-<td style="text-align:left">token</td>
-<td style="text-align:left">string(32)</td>
-<td style="text-align:left">是</td>
-<td style="text-align:left">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
-<td style="text-align:left">令牌</td>
-</tr>
-<tr>
+<td style="text-align:left"></td>
 <td style="text-align:left">params</td>
 <td style="text-align:left">string</td>
-<td style="text-align:left">是</td>
-<td style="text-align:left">{“type”:2,&quot;taskId&quot;:123456}</td>
-<td style="text-align:left">请求参数</td>
+<td style="text-align:left">{&quot;lastModif&quot;:&quot;20170201000000&quot;}</td>
+<td style="text-align:left">参数json</td>
 </tr>
 </tbody>
 </table>
-<p>params说明：</p>
+<h1 id="params"><strong>params说明</strong></h1>
 <table>
 <thead>
 <tr>
 <th style="text-align:left">参数名称</th>
 <th style="text-align:left">参数类型</th>
-<th style="text-align:left">是否必填</th>
+<th style="text-align:left">是否必选</th>
 <th style="text-align:left">示例值</th>
 <th style="text-align:left">参数说明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">type</td>
-<td style="text-align:left">string</td>
+<td style="text-align:left">dHeader</td>
+<td style="text-align:left">String</td>
 <td style="text-align:left">是</td>
-<td style="text-align:left">json/csv</td>
-<td style="text-align:left">数据类型</td>
-</tr>
-<tr>
-<td style="text-align:left">taskId</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">170435,170436</td>
-<td style="text-align:left">任务ID</td>
-</tr>
-<tr>
-<td style="text-align:left">dtime</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">是</td>
-<td style="text-align:left">20161101000000-20161102000000</td>
-<td style="text-align:left">数据时间范围，（时间最长一个月）</td>
-</tr>
-<tr>
-<td style="text-align:left">monitors</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">是</td>
-<td style="text-align:left">ALL/IDC/LM/PP/IDC\</td>
-<td style="text-align:left">PP</td>
-<td>监测点类型</td>
-</tr>
-<tr>
-<td style="text-align:left">dateFM</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">默认是yyyy-MM-dd HH:mm:ss</td>
-<td style="text-align:left">数据时间类型</td>
-</tr>
-<tr>
-<td style="text-align:left">filters</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">[{“filed”:”CPU_RATE”, “condo”:”&gt;=”,”value”:”6”}]</td>
-<td style="text-align:left">字段值筛选条件</td>
-</tr>
-<tr>
-<td style="text-align:left">group</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">city,netservice</td>
-<td style="text-align:left">分组条件，字段顺序为分组顺序</td>
-</tr>
-<tr>
-<td style="text-align:left">fields</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">是</td>
-<td style="text-align:left">city,netservice</td>
-<td style="text-align:left">指定计算哪些指标，并作为查询结果返回</td>
-</tr>
-<tr>
-<td style="text-align:left">user</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">是</td>
-<td style="text-align:left">bonreetest</td>
-<td style="text-align:left">V4用户名</td>
+<td style="text-align:left">ERROR_ID,ERROR_NAME</td>
+<td style="text-align:left">接口返回字段,配置*返回全部</td>
 </tr>
 </tbody>
 </table>
-<p>field列表：</p>
+<h1 id="dheader"><strong>dHeader说明</strong></h1>
 <table>
 <thead>
 <tr>
-<th style="text-align:left">字段英文名称</th>
-<th style="text-align:left">字段中文名称</th>
+<th style="text-align:left">名称</th>
+<th style="text-align:left">类型</th>
+<th style="text-align:left">示例值</th>
+<th style="text-align:left">描述</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">PING_SET</td>
-<td style="text-align:left">时延</td>
+<td style="text-align:left">ERROR_ID</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">619</td>
+<td style="text-align:left">错误ID</td>
 </tr>
 <tr>
-<td style="text-align:left">PING_LOST_RATE</td>
-<td style="text-align:left">丢包率</td>
+<td style="text-align:left">ERROR_NAME</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">请求超时</td>
+<td style="text-align:left">错误描述</td>
 </tr>
 <tr>
-<td style="text-align:left">TASKID</td>
-<td style="text-align:left">roleid</td>
+<td style="text-align:left">ERROR_TYPE</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">错误分类</td>
 </tr>
 </tbody>
 </table>
-<h1 id="">返回参数说明</h1>
+<h1 id=""><strong>返回参数说明</strong></h1>
 <table>
 <thead>
 <tr>
@@ -1445,67 +1395,61 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">error_code</td>
-<td style="text-align:left">int</td>
-<td style="text-align:left">错误码，0表示正常查询</td>
+<td style="text-align:left">errorCode</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">错误码</td>
 </tr>
 <tr>
 <td style="text-align:left">reason</td>
 <td style="text-align:left">string</td>
-<td style="text-align:left">返回说明</td>
+<td style="text-align:left">结果说明</td>
 </tr>
 <tr>
 <td style="text-align:left">result</td>
 <td style="text-align:left">string</td>
-<td style="text-align:left">返回结果集</td>
+<td style="text-align:left">查询结果</td>
 </tr>
 </tbody>
 </table>
-<h1 id="">请求示例</h1>
-<pre><code>        HttpClient httpclient = new DefaultHttpClient();
-        String url = &quot;https://api.bonree.com/net/data/network/statdata&quot;;
-        HttpPost httppost = new HttpPost(url);
-        System.out.println(&quot;请求: &quot; + httppost.getRequestLine());
-        // 创建参数队列
-        List&lt;NameValuePair&gt; formparams = new ArrayList&lt;NameValuePair&gt;();
-        formparams.add(new BasicNameValuePair(&quot;username&quot;, &quot;bonreetest&quot;));
-        formparams.add(new BasicNameValuePair(&quot;token&quot;, &quot;xxxxxxxxxx&quot;));
-        formparams.add(new BasicNameValuePair(&quot;params&quot;, &quot;{\&quot;token\&quot;:\&quot;*******\&quot;,\&quot;dtype\&quot;:\&quot;json\&quot;,\&quot;taskId\&quot;:\&quot;1035\&quot;,\&quot;dtime\&quot;:\&quot;20170201000000-20170301000000\&quot;}&quot;));
-        UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, &quot;UTF-8&quot;);
-        httppost.setEntity(uefEntity);
-        // 执行
-        HttpResponse response = httpclient.execute(httppost);
-        HttpEntity entity = response.getEntity();
-        System.out.println(&quot;----------------------------------------&quot;);
-        System.out.println(&quot;状态:&quot; + response.getStatusLine());
-        if (entity != null) {
-            System.out.println(&quot;Response content length: &quot; + entity.getContentLength());
-            System.out.println(&quot;Response content :&quot; + EntityUtils.toString(entity, &quot;UTF-8&quot;));
-        }
-        // 关闭连接,释放资源
-        httpclient.getConnectionManager().shutdown();
-</code></pre><h1 id="">返回结果示例</h1>
+<h1 id=""><strong>请求示例</strong></h1>
+<pre><code> POST:
+  HttpClient httpclient = new DefaultHttpClient();
+  String url = &quot;http://api.bonree.com/base/data/loadError&quot;;
+  HttpPost httppost = new HttpPost(url);
+  System.out.println(&quot;请求: &quot; + httppost.getRequestLine());
+  // 创建参数队列
+  List&lt;NameValuePair&gt; formparams = new ArrayList&lt;NameValuePair&gt;();
+  formparams.add(new BasicNameValuePair(&quot;username&quot;, &quot;bonreetest&quot;));
+  formparams.add(new BasicNameValuePair(&quot;token&quot;, &quot;xxxxxxxxxx&quot;));
+  UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, &quot;UTF-8&quot;);
+  httppost.setEntity(uefEntity);
+  // 执行
+  HttpResponse response = httpclient.execute(httppost);
+  HttpEntity entity = response.getEntity();
+  System.out.println(&quot;----------------------------------------&quot;);
+  System.out.println(&quot;状态:&quot; + response.getStatusLine());
+  if (entity != null) {
+   System.out.println(&quot;Response content length: &quot; + entity.getContentLength());
+   System.out.println(&quot;Response content :&quot; + EntityUtils.toString(entity, &quot;UTF-8&quot;));
+  }
+  // 关闭连接,释放资源
+  httpclient.getConnectionManager().shutdown();
+
+ GET:
+  http://api.bonree.com/base/data/loadError?token=asdas12312312ddwew5we5we5&amp;username=bonreetest
+</code></pre><h1 id=""><strong>返回结果示例</strong></h1>
 <pre><code>{
-    &quot;error_code&quot;: 0,
-    &quot;reason&quot;: &quot;查询成功&quot;,
-    &quot;result&quot;: [
-        [
-            &quot;role_id&quot;,
-            &quot;domain&quot;
-        ],
-        [
-            &quot;1035&quot;,
-            &quot;www.baidu.com&quot;
-        ],
-        [
-            &quot;1023&quot;,
-            &quot;www.bonree.com&quot;
-        ]
+    &quot;errorCode&quot;: 0,
+    &quot;reason&quot;:&quot;查询成功&quot;,
+    &quot;result: [
+        [&quot;ERROR_ID&quot;,&quot;ERROR_NAME&quot;,&quot;ERROR_TYPE&quot;],
+        [0,&quot;成功&quot;,1],
+        [1,&quot;Operation not permitted&quot;,1]
     ]
 }
-</code></pre><h1 id="api">api工具：</h1>
+</code></pre><h1 id="api"><strong>api工具</strong></h1>
 <p>api测试工具， api响应码查询工具，监测点查询工具，指标查询工具，监测数据错误码查询工具</p>
-<h1 id="faq">FAQ：</h1>
+<h1 id="faq"><strong>FAQ</strong></h1>
 
                     
                     </section>
@@ -1516,10 +1460,10 @@
         </div>
 
         
-        <a href="..\..\../2dddddd/1.api/net/element.html" class="navigation navigation-prev " aria-label="Previous page: element"><i class="fa fa-angle-left"></i></a>
+        <a href="..\..\../2dddddd/1.api/common/customheader.html" class="navigation navigation-prev " aria-label="Previous page: 自定义表头"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="..\..\../2dddddd/1.api/net/loaduser.html" class="navigation navigation-next " aria-label="Next page: 用户权限"><i class="fa fa-angle-right"></i></a>
+        <a href="..\..\../2dddddd/1.api/common/keyele.html" class="navigation navigation-next " aria-label="Next page: 关键元素"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>checkCustom | bop_api</title>
+        <title>主机容器健康数据统计 | bop_api</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="..\..\../2dddddd/1.api/custom/createcustom.html" />
+    <link rel="next" href="..\..\../2dddddd/1.api/serverdata/applist.html" />
     
     
-    <link rel="prev" href="..\..\../2dddddd/1.api/custom.html" />
+    <link rel="prev" href="..\..\../2dddddd/1.api/serverdata/backendcalldata.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.1.6.1" data-basepath="..\..\.." data-revision="1507521227013">
+    <div class="book"  data-level="4.1.3.3" data-basepath="..\..\.." data-revision="1507603807815">
     
 
 <div class="book-summary">
@@ -628,7 +628,7 @@
         </li>
     
         
-        <li class="chapter " data-level="4.1.3.3" data-path="2dddddd/1.api/serverdata/healthdata.html">
+        <li class="chapter active" data-level="4.1.3.3" data-path="2dddddd/1.api/serverdata/healthdata.html">
             
                 
                     <a href="..\..\../2dddddd/1.api/serverdata/healthdata.html">
@@ -998,7 +998,7 @@
                 
     
         
-        <li class="chapter active" data-level="4.1.6.1" data-path="2dddddd/1.api/custom/checkcustom.html">
+        <li class="chapter " data-level="4.1.6.1" data-path="2dddddd/1.api/custom/checkcustom.html">
             
                 
                     <a href="..\..\../2dddddd/1.api/custom/checkcustom.html">
@@ -1289,21 +1289,19 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_6">
+                    <section class="normal" id="section-gitbook_54">
                     
                         <h1 id="">业务编号</h1>
-<p>custom.check</p>
+<p>apm.data.healthdata</p>
 <h1 id="api">api请求地址</h1>
-<p><a href="http://api.bonree.com/custom/check" target="_blank">http://api.bonree.com/custom/check</a></p>
-<h1 id="">请求方式</h1>
-<p>POST/GET</p>
-<h1 id="">请求参数</h1>
+<p><a href="http://api.bonree.com/apm/ma/healthdata" target="_blank">http://api.bonree.com/apm/data/healthdata</a></p>
+<h1 id="">请求参数：</h1>
 <table>
 <thead>
 <tr>
 <th style="text-align:left">参数名称</th>
 <th style="text-align:left">参数类型</th>
-<th style="text-align:left">是否必选</th>
+<th style="text-align:left">是否必填</th>
 <th style="text-align:left">示例值</th>
 <th style="text-align:left">参数说明</th>
 </tr>
@@ -1313,19 +1311,99 @@
 <td style="text-align:left">username</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">是</td>
-<td style="text-align:left">myusername</td>
-<td style="text-align:left">令牌</td>
+<td style="text-align:left">bonreetest</td>
+<td style="text-align:left">用户名</td>
 </tr>
 <tr>
 <td style="text-align:left">token</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">是</td>
-<td style="text-align:left">systomen</td>
-<td style="text-align:left">系统校验token</td>
+<td style="text-align:left">xxxxxxxxxxxxx</td>
+<td style="text-align:left">令牌</td>
+</tr>
+<tr>
+<td style="text-align:left">params</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">{&quot;dtype&quot;:&quot;json&quot;,&quot;appId&quot;:&quot;1035&quot;,&quot;dtime&quot;:&quot;20170201000000-20170301000000&quot;}</td>
+<td style="text-align:left">参数json</td>
 </tr>
 </tbody>
 </table>
-<h1 id="">返回参数说明</h1>
+<p><strong>params说明：</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数名称</th>
+<th style="text-align:left">参数类型</th>
+<th style="text-align:left">是否必填</th>
+<th style="text-align:left">示例值</th>
+<th style="text-align:left">参数说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">dType</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">json</td>
+<td style="text-align:left">数据类型(csv、json)</td>
+</tr>
+<tr>
+<td style="text-align:left">beAppId</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">1035,1023,2023</td>
+<td style="text-align:left">后端应用ID</td>
+</tr>
+<tr>
+<td style="text-align:left">dTime</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">20170201000000-20170301000000</td>
+<td style="text-align:left">查询时间范围</td>
+</tr>
+<tr>
+<td style="text-align:left">dHeader</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">BE_APP_ID,TOTAL_MA,ERROR_MA,TOTAL_VM,ERROR_VM</td>
+<td style="text-align:left">指标数据项</td>
+</tr>
+</tbody>
+</table>
+<h1 id="dheader">dHeader字段说明：</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">BE_APP_ID</td>
+<td style="text-align:left">应用ID</td>
+</tr>
+<tr>
+<td style="text-align:left">TOTAL_MA</td>
+<td style="text-align:left">主机总数</td>
+</tr>
+<tr>
+<td style="text-align:left">ERROR_MA</td>
+<td style="text-align:left">不健康主机数</td>
+</tr>
+<tr>
+<td style="text-align:left">TOTAL_VM</td>
+<td style="text-align:left">容器总数</td>
+</tr>
+<tr>
+<td style="text-align:left">ERROR_VM</td>
+<td style="text-align:left">不健康容器数</td>
+</tr>
+</tbody>
+</table>
+<h1 id="">返回参数说明：</h1>
 <table>
 <thead>
 <tr>
@@ -1336,9 +1414,9 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">error_code</td>
+<td style="text-align:left">errorCode</td>
 <td style="text-align:left">int</td>
-<td style="text-align:left">响应码说明</td>
+<td style="text-align:left">错误码</td>
 </tr>
 <tr>
 <td style="text-align:left">reason</td>
@@ -1352,19 +1430,39 @@
 </tr>
 </tbody>
 </table>
-<h1 id="">请求实例</h1>
-<p>curl</p>
-<h1 id="">返回结果实例</h1>
-<pre><code class="lang-js">{
-    <span class="hljs-string">"error_code"</span>:<span class="hljs-number">0</span>,
-    <span class="hljs-string">"reason"</span>:<span class="hljs-string">"校验成功"</span>,
-    <span class="hljs-string">"result"</span>:{
-        <span class="hljs-string">"usertoken"</span>:<span class="hljs-string">"usertoken"</span>
+<h1 id="">请求示例</h1>
+<pre><code>    HttpClient httpclient = new DefaultHttpClient();
+    String url = &quot;http://api.bonree.com/apm/backendcall/statdata&quot;;
+    HttpPost httppost = new HttpPost(url);
+    System.out.println(&quot;请求: &quot; + httppost.getRequestLine());
+    // 创建参数队列
+    List&lt;NameValuePair&gt; formparams = new ArrayList&lt;NameValuePair&gt;();
+    formparams.add(new BasicNameValuePair(&quot;username&quot;, &quot;bonreetest&quot;));
+    formparams.add(new BasicNameValuePair(&quot;token&quot;, &quot;xxxxxxxxxx&quot;));
+    formparams.add(new BasicNameValuePair(&quot;params&quot;, &quot;{\&quot;dType\&quot;:\&quot;json\&quot;,\&quot;beAppId\&quot;:\&quot;1035,1023,2023\&quot;,\&quot;dTime\&quot;:\&quot;20170201000000-20170301000000\&quot;,\&quot;dHeader\&quot;:\&quot;BE_APP_ID,TOTAL_MA,ERROR_MA,TOTAL_VM,ERROR_VM\&quot;}&quot;));
+    UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, &quot;UTF-8&quot;);
+    httppost.setEntity(uefEntity);
+    // 执行
+    HttpResponse response = httpclient.execute(httppost);
+    HttpEntity entity = response.getEntity();
+    System.out.println(&quot;----------------------------------------&quot;);
+    System.out.println(&quot;状态:&quot; + response.getStatusLine());
+    if (entity != null) {
+        System.out.println(&quot;Response content length: &quot; + entity.getContentLength());
+        System.out.println(&quot;Response content :&quot; + EntityUtils.toString(entity, &quot;UTF-8&quot;));
     }
+    // 关闭连接,释放资源
+    httpclient.getConnectionManager().shutdown();
+</code></pre><h1 id="">返回结果示例：</h1>
+<pre><code>{
+    &quot;error_code&quot;: 0,
+    &quot;reason&quot;: &quot;查询成功&quot;,
+    &quot;result&quot;: [
+        [&quot;BE_APP_ID&quot;,&quot;TOTAL_MA&quot;,&quot;ERROR_MA&quot;,&quot;TOTAL_VM&quot;,&quot;ERROR_VM&quot;],
+        [&quot;1035&quot;, &quot;100&quot;, &quot;5&quot;, &quot;100&quot;, &quot;8&quot;]
+    }]
 }
 </code></pre>
-<h1 id="faq">FAQ</h1>
-
                     
                     </section>
                 
@@ -1374,10 +1472,10 @@
         </div>
 
         
-        <a href="..\..\../2dddddd/1.api/custom.html" class="navigation navigation-prev " aria-label="Previous page: custom"><i class="fa fa-angle-left"></i></a>
+        <a href="..\..\../2dddddd/1.api/serverdata/backendcalldata.html" class="navigation navigation-prev " aria-label="Previous page: 后端调用数据统计"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="..\..\../2dddddd/1.api/custom/createcustom.html" class="navigation navigation-next " aria-label="Next page: createCustom"><i class="fa fa-angle-right"></i></a>
+        <a href="..\..\../2dddddd/1.api/serverdata/applist.html" class="navigation navigation-next " aria-label="Next page: 后端应用信息列表"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

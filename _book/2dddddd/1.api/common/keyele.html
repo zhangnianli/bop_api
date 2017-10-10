@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>监测量统计 | bop_api</title>
+        <title>关键元素 | bop_api</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="..\..\../2dddddd/1.api/sdk.html" />
+    <link rel="next" href="..\..\../2dddddd/1.api/custom.html" />
     
     
-    <link rel="prev" href="..\..\../2dddddd/1.api/net/transfer/detaildata.html" />
+    <link rel="prev" href="..\..\../2dddddd/1.api/common/error.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.1.1.6" data-basepath="..\..\.." data-revision="1507521227013">
+    <div class="book"  data-level="4.1.5.10" data-basepath="..\..\.." data-revision="1507603807815">
     
 
 <div class="book-summary">
@@ -282,7 +282,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="4.1.1.6" data-path="2dddddd/1.api/net/jian-ce-liang-tong-ji.html">
+        <li class="chapter " data-level="4.1.1.6" data-path="2dddddd/1.api/net/jian-ce-liang-tong-ji.html">
             
                 
                     <a href="..\..\../2dddddd/1.api/net/jian-ce-liang-tong-ji.html">
@@ -960,7 +960,7 @@
         </li>
     
         
-        <li class="chapter " data-level="4.1.5.10" data-path="2dddddd/1.api/common/keyele.html">
+        <li class="chapter active" data-level="4.1.5.10" data-path="2dddddd/1.api/common/keyele.html">
             
                 
                     <a href="..\..\../2dddddd/1.api/common/keyele.html">
@@ -1289,12 +1289,12 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_11">
+                    <section class="normal" id="section-gitbook_28">
                     
                         <h1 id=""><strong>业务编号</strong></h1>
-<p>net.task.monitorStat</p>
+<p>base.data.loadKeyele</p>
 <h1 id="api"><strong>api请求地址</strong></h1>
-<p><a href="http://api.bonree.com/net/task/monitorStat" target="_blank">http://api.bonree.com/net/task/monitorStat</a></p>
+<p><a href="http://api.bonree.com/base/data/loadKeyele" target="_blank">http://api.bonree.com/base/data/loadKeyele</a></p>
 <h1 id=""><strong>请求方式</strong></h1>
 <p>POST/GET</p>
 <h1 id=""><strong>请求参数</strong></h1>
@@ -1327,12 +1327,12 @@
 <td style="text-align:left">params</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">是</td>
-<td style="text-align:left">{&quot;dTime&quot;:&quot;20170901-20170910&quot;,&quot;dHeader&quot;:&quot;MONITOR_COUNT&quot;}</td>
+<td style="text-align:left">{&quot;appId&quot;:1}</td>
 <td style="text-align:left">请求参数json</td>
 </tr>
 </tbody>
 </table>
-<h2 id="param"><strong>param参数</strong></h2>
+<h2 id="params"><strong>params参数</strong></h2>
 <table>
 <thead>
 <tr>
@@ -1345,115 +1345,18 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">dTime</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">是</td>
-<td style="text-align:left">20170906-20170907</td>
-<td style="text-align:left">时间范围,精确到天</td>
+<td style="text-align:left">appId</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">appId</td>
 </tr>
 <tr>
 <td style="text-align:left">dHeader</td>
-<td style="text-align:left">string</td>
+<td style="text-align:left">String</td>
 <td style="text-align:left">是</td>
-<td style="text-align:left">MONITOR_COUNT,MONITOR_NET_COUNT</td>
-<td style="text-align:left">接口返回字段</td>
-</tr>
-<tr>
-<td style="text-align:left">group</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">TASK_ID</td>
-<td style="text-align:left">分组条件,可以按照TASK_ID,MONITOR_FUN,FLAG,USERNAME等分组</td>
-</tr>
-<tr>
-<td style="text-align:left">monitorFun</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">3,4</td>
-<td style="text-align:left">任务类型(多个&quot;,&quot;分割)0-网络 3-浏览 4-传输 5-流媒体 6-元素组 7-协议 9-事务 10-推流  96-移动浏览 97-移动网络 98-移动协议 99-移动单元素 100-MAA95-BMTP</td>
-</tr>
-<tr>
-<td style="text-align:left">granule</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">STR_DAY</td>
-<td style="text-align:left">查询粒度,详细请看粒度表</td>
-</tr>
-<tr>
-<td style="text-align:left">flag</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">0,1</td>
-<td style="text-align:left">任务状态；0-禁用，1-正常，2-删除，9-结束，默认全部</td>
-</tr>
-<tr>
-<td style="text-align:left">dType</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">json/csv</td>
-<td style="text-align:left">导出的格式,默认json</td>
-</tr>
-<tr>
-<td style="text-align:left">region</td>
-<td style="text-align:left">int</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">0-国内，1-国外，2-中国港澳台，3-中国大陆，默认全部</td>
-</tr>
-<tr>
-<td style="text-align:left">monitorType</td>
-<td style="text-align:left">int</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">0-全部，1-私有监测点,默认全部</td>
-</tr>
-<tr>
-<td style="text-align:left">roleType</td>
-<td style="text-align:left">int</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">0</td>
-<td style="text-align:left">0-常规任务，1-即时测试任务,默认常规任务</td>
-</tr>
-<tr>
-<td style="text-align:left">search</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">bj-浏览任务</td>
-<td style="text-align:left">快速检索信息,匹配任务名称,URL</td>
-</tr>
-<tr>
-<td style="text-align:left">sonUser</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">bonreetest,bonreetest2</td>
-<td style="text-align:left">要查询的子用户名,多个逗号分隔,默认全部</td>
-</tr>
-</tbody>
-</table>
-<h3 id="">时间频度字典表</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">值</th>
-<th style="text-align:left">描述</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">STR_DAY</td>
-<td style="text-align:left">天</td>
-</tr>
-<tr>
-<td style="text-align:left">STR_WEEK</td>
-<td style="text-align:left">周</td>
-</tr>
-<tr>
-<td style="text-align:left">STR_MONTH</td>
-<td style="text-align:left">月</td>
-</tr>
-<tr>
-<td style="text-align:left">STR_YEAR</td>
-<td style="text-align:left">年</td>
+<td style="text-align:left">ERROR_ID,ERROR_NAME</td>
+<td style="text-align:left">接口返回字段,配置*返回全部</td>
 </tr>
 </tbody>
 </table>
@@ -1469,76 +1372,34 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">ROLE_NAME</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">勿删长期测试qq</td>
-<td style="text-align:left">任务名称</td>
+<td style="text-align:left">KEY_ID</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">关键元素ID</td>
+</tr>
+<tr>
+<td style="text-align:left">APPID</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">应用ID</td>
+</tr>
+<tr>
+<td style="text-align:left">KEY_FLAG</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">匹配规则1-完全匹配 2-通配符</td>
 </tr>
 <tr>
 <td style="text-align:left">URL</td>
 <td style="text-align:left">string</td>
-<td style="text-align:left"><a href="http://www.qq.com" target="_blank">http://www.qq.com</a></td>
-<td style="text-align:left">任务地址</td>
+<td style="text-align:left"><a href="http://www.baidu.com" target="_blank">http://www.baidu.com</a></td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td style="text-align:left">USERNAME</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">bonreetest</td>
-<td style="text-align:left">账户名称</td>
-</tr>
-<tr>
-<td style="text-align:left">TASK_ID</td>
-<td style="text-align:left">number</td>
-<td style="text-align:left">170435</td>
-<td style="text-align:left">任务ID</td>
-</tr>
-<tr>
-<td style="text-align:left">MONITOR_FUN</td>
-<td style="text-align:left">number</td>
-<td style="text-align:left">3</td>
-<td style="text-align:left">任务类型</td>
-</tr>
-<tr>
-<td style="text-align:left">FLAG</td>
-<td style="text-align:left">number</td>
-<td style="text-align:left">1</td>
-<td style="text-align:left">任务状态</td>
-</tr>
-<tr>
-<td style="text-align:left">START_TIME</td>
-<td style="text-align:left">number</td>
-<td style="text-align:left">1393603200000</td>
-<td style="text-align:left">任务起始时间</td>
-</tr>
-<tr>
-<td style="text-align:left">END_TIME</td>
-<td style="text-align:left">number</td>
-<td style="text-align:left">1488211200000</td>
-<td style="text-align:left">任务结束时间</td>
-</tr>
-<tr>
-<td style="text-align:left">MONITOR_COUNT</td>
-<td style="text-align:left">number</td>
-<td style="text-align:left">1234</td>
-<td style="text-align:left">监测次数</td>
-</tr>
-<tr>
-<td style="text-align:left">MONITOR_NET_COUNT</td>
-<td style="text-align:left">number</td>
-<td style="text-align:left">1000</td>
-<td style="text-align:left">网络监测次数</td>
-</tr>
-<tr>
-<td style="text-align:left">MONITOR_TRAFFIC</td>
-<td style="text-align:left">number</td>
-<td style="text-align:left">1000</td>
-<td style="text-align:left">BMTP/WAP任务流量MB</td>
-</tr>
-<tr>
-<td style="text-align:left">MONITOR_DURATION</td>
-<td style="text-align:left">number</td>
-<td style="text-align:left">1000</td>
-<td style="text-align:left">BMTP任务时长h</td>
+<td style="text-align:left">STATUS</td>
+<td style="text-align:left">Number</td>
+<td style="text-align:left">2</td>
+<td style="text-align:left">关键元素状态 1-正常 2-禁用，3-删除</td>
 </tr>
 </tbody>
 </table>
@@ -1570,16 +1431,16 @@
 </tbody>
 </table>
 <h1 id=""><strong>请求示例</strong></h1>
-<pre><code>POST:
+<pre><code> POST:
   HttpClient httpclient = new DefaultHttpClient();
-  String url = &quot;http://api.bonree.com/net/task/monitorStat&quot;;
+  String url = &quot;http://api.bonree.com/base/data/loadKeyele&quot;;
   HttpPost httppost = new HttpPost(url);
   System.out.println(&quot;请求: &quot; + httppost.getRequestLine());
   // 创建参数队列
   List&lt;NameValuePair&gt; formparams = new ArrayList&lt;NameValuePair&gt;();
   formparams.add(new BasicNameValuePair(&quot;username&quot;, &quot;bonreetest&quot;));
   formparams.add(new BasicNameValuePair(&quot;token&quot;, &quot;xxxxxxxxxx&quot;));
-  formparams.add(new BasicNameValuePair(&quot;params&quot;, &quot;{\&quot;dTime\&quot;:\&quot;20170904110000-20170908000000\&quot;,\&quot;dHeader\&quot;:\&quot;MONITOR_COUNT,MONITOR_NET_COUNT\&quot;,\&quot;granule\&quot;:\&quot;STR_DAY\&quot;}&quot;));
+  formparams.add(new BasicNameValuePair(&quot;params&quot;, &quot;{\&quot;appId\&quot;:3}&quot;));
   UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, &quot;UTF-8&quot;);
   httppost.setEntity(uefEntity);
   // 执行
@@ -1595,17 +1456,15 @@
   httpclient.getConnectionManager().shutdown();
 
  GET:
-  http://api.bonree.com/net/task/monitorStat?token=xxxxxxxxxx&amp;username=bonreetest&amp;param={&quot;dTime&quot;:&quot;20170904110000-20170908000000&quot;,&quot;dHeader&quot;:&quot;MONITOR_COUNT,MONITOR_NET_COUNT&quot;,&quot;granule&quot;:&quot;STR_DAY&quot;}
+  http://api.bonree.com/base/data/loadKeyele?token=asdas12312312ddwew5we5we5&amp;username=bonreetest&amp;param={&quot;appId&quot;:3}
 </code></pre><h1 id=""><strong>返回结果示例</strong></h1>
 <pre><code>{
     &quot;errorCode&quot;: 0,
     &quot;reason&quot;:&quot;查询成功&quot;,
     &quot;result: [
-        [&quot;STR_DAY&quot;,&quot;MONITOR_COUNT&quot;,&quot;MONITOR_NET_COUNT&quot;],
-        [&quot;20170901&quot;,&quot;1234&quot;,&quot;981&quot;],
-        [&quot;20170902&quot;,&quot;1221&quot;,&quot;972&quot;],
-        [&quot;20170903&quot;,&quot;1220&quot;,&quot;968&quot;],
-        [&quot;20170904&quot;,&quot;1243&quot;,&quot;980&quot;]
+        [&quot;KEY_ID&quot;,&quot;APPID&quot;,&quot;KEY_FLAG&quot;,&quot;URL&quot;,&quot;STATUS&quot;],
+        [1,1,1,&quot;3&quot;,3],
+        [2,1,2,&quot;3&quot;,3]
     ]
 }
 </code></pre><h1 id="api"><strong>api工具</strong></h1>
@@ -1621,10 +1480,10 @@
         </div>
 
         
-        <a href="..\..\../2dddddd/1.api/net/transfer/detaildata.html" class="navigation navigation-prev " aria-label="Previous page: detaildata"><i class="fa fa-angle-left"></i></a>
+        <a href="..\..\../2dddddd/1.api/common/error.html" class="navigation navigation-prev " aria-label="Previous page: 错误类型"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="..\..\../2dddddd/1.api/sdk.html" class="navigation navigation-next " aria-label="Next page: sdk"><i class="fa fa-angle-right"></i></a>
+        <a href="..\..\../2dddddd/1.api/custom.html" class="navigation navigation-next " aria-label="Next page: custom"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>editPwd | bop_api</title>
+        <title>元素快照统计数据 | bop_api</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="..\..\../2dddddd/sys.html" />
+    <link rel="next" href="..\..\../2dddddd/1.api/platformdata/elementdetaildata.html" />
     
     
-    <link rel="prev" href="..\..\../2dddddd/1.api/custom/createcustom.html" />
+    <link rel="prev" href="..\..\../2dddddd/1.api/platformdata.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.1.6.3" data-basepath="..\..\.." data-revision="1507521227013">
+    <div class="book"  data-level="4.1.4.1" data-basepath="..\..\.." data-revision="1507603807815">
     
 
 <div class="book-summary">
@@ -730,7 +730,7 @@
                 
     
         
-        <li class="chapter " data-level="4.1.4.1" data-path="2dddddd/1.api/platformdata/elementstatdata.html">
+        <li class="chapter active" data-level="4.1.4.1" data-path="2dddddd/1.api/platformdata/elementstatdata.html">
             
                 
                     <a href="..\..\../2dddddd/1.api/platformdata/elementstatdata.html">
@@ -1030,7 +1030,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="4.1.6.3" data-path="2dddddd/1.api/custom/editpwd.html">
+        <li class="chapter " data-level="4.1.6.3" data-path="2dddddd/1.api/custom/editpwd.html">
             
                 
                     <a href="..\..\../2dddddd/1.api/custom/editpwd.html">
@@ -1289,15 +1289,48 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_8">
+                    <section class="normal" id="section-gitbook_31">
                     
                         <h1 id="">业务编号</h1>
-<p>custom.editpwd</p>
+<p>platform.data.element.statdata</p>
 <h1 id="api">api请求地址</h1>
-<p><a href="http://api.bonree.com/custom/editpwd" target="_blank">http://api.bonree.com/custom/editpwd</a></p>
-<h1 id="">请求方式</h1>
-<p>POST/GET</p>
-<h1 id="">请求参数</h1>
+<p><a href="http://api.bonree.com/platform/element/statdata" target="_blank">http://api.bonree.com/platform/data/element/statdata</a></p>
+<h1 id="">请求参数：</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">参数名称</th>
+<th style="text-align:left">参数类型</th>
+<th style="text-align:left">是否必填</th>
+<th style="text-align:left">示例值</th>
+<th style="text-align:left">参数说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">username</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">bonreetest</td>
+<td style="text-align:left">用户名</td>
+</tr>
+<tr>
+<td style="text-align:left">token</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">xxxxxxxxxxxxx</td>
+<td style="text-align:left">令牌</td>
+</tr>
+<tr>
+<td style="text-align:left">params</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">{&quot;dtype&quot;:&quot;json&quot;,&quot;appId&quot;:&quot;1035&quot;,&quot;dtime&quot;:&quot;20170201000000-20170301000000&quot;}</td>
+<td style="text-align:left">参数json</td>
+</tr>
+</tbody>
+</table>
+<p><strong>params说明：</strong></p>
 <table>
 <thead>
 <tr>
@@ -1310,36 +1343,233 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">username</td>
+<td style="text-align:left">dType</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">是</td>
-<td style="text-align:left">myusername</td>
-<td style="text-align:left">令牌</td>
+<td style="text-align:left">json</td>
+<td style="text-align:left">数据类型(csv、json)</td>
 </tr>
 <tr>
-<td style="text-align:left">token</td>
+<td style="text-align:left">appId</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">是</td>
-<td style="text-align:left">systomen</td>
-<td style="text-align:left">系统校验token</td>
+<td style="text-align:left">1035</td>
+<td style="text-align:left">应用ID</td>
 </tr>
 <tr>
-<td style="text-align:left">oldpwd</td>
+<td style="text-align:left">partUrlCode</td>
 <td style="text-align:left">string</td>
-<td style="text-align:left">是</td>
-<td style="text-align:left">abcdabcdabcdabcdabcdabcdabcdabcd</td>
-<td style="text-align:left">旧密码md5</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">32020152,6541200</td>
+<td style="text-align:left">截取后的URL CODE</td>
 </tr>
 <tr>
-<td style="text-align:left">newpwd</td>
+<td style="text-align:left">dTime</td>
 <td style="text-align:left">string</td>
 <td style="text-align:left">是</td>
-<td style="text-align:left">abcdabcdabcdabcdabcdabcdabcdabcd</td>
-<td style="text-align:left">新密码md5</td>
+<td style="text-align:left">20170201000000-20170301000000</td>
+<td style="text-align:left">查询时间范围</td>
+</tr>
+<tr>
+<td style="text-align:left">pageNum</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">1</td>
+<td style="text-align:left">页码</td>
+</tr>
+<tr>
+<td style="text-align:left">pageRecorders</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">50</td>
+<td style="text-align:left">每页行数</td>
+</tr>
+<tr>
+<td style="text-align:left">order</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">DTIME$AVG DESC</td>
+<td style="text-align:left">排序字段</td>
+</tr>
+<tr>
+<td style="text-align:left">group</td>
+<td style="text-align:left">strng</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">PARTURLCODE</td>
+<td style="text-align:left">分组字段（APPID,TASKID,TASKTYPE,CITYCODE,NETSERVICEID,ACCESSMODE,OSID,OSVERID,BROWSERID,BROWSERVERID,ERRORID,PARTURLCODE）</td>
+</tr>
+<tr>
+<td style="text-align:left">filters</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">否</td>
+<td style="text-align:left">{&quot;netserviceAndNetStandard&quot;:[{&quot;netserviseId&quot;:&quot;1&quot;,&quot;netStandard&quot;:&quot;1&quot;},{&quot;netserviseId&quot;:&quot;1&quot;,&quot;netStandard&quot;:&quot;2&quot;}],&quot;cityCode&quot;:[1100000,1200000],&quot;browsr&quot;:[0,1,2,3,4],&quot;onlyError&quot;:&quot;1&quot;,&quot;errorId&quot;:[404,500]}</td>
+<td style="text-align:left">过滤条件：netserviceAndNetStandard:运营商&amp;网络接入方式；cityCode:地域；browsr:浏览器；errorId:错误码筛选;onlyError:0-查询正常数据；1-查询错误数据；2-查询慢数据；20-查询慢+正常数据</td>
+</tr>
+<tr>
+<td style="text-align:left">dHeader</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">是</td>
+<td style="text-align:left">APPID,PARTURLCODE,DTIME$MAX,DTIME$MIN,DTIME$AVG,DTIME$SUM,DNSTIME$AVG,TCPTIME$AVG</td>
+<td style="text-align:left">*指标数据项</td>
 </tr>
 </tbody>
 </table>
-<h1 id="">返回参数说明</h1>
+<h1 id="dheader">dHeader字段说明：</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">字段</th>
+<th style="text-align:left">名称</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">MONITORTIME</td>
+<td style="text-align:left">监测时间</td>
+</tr>
+<tr>
+<td style="text-align:left">APPID</td>
+<td style="text-align:left">应用ID</td>
+</tr>
+<tr>
+<td style="text-align:left">TASKID</td>
+<td style="text-align:left">任务ID</td>
+</tr>
+<tr>
+<td style="text-align:left">TASKTYPE</td>
+<td style="text-align:left">任务类型</td>
+</tr>
+<tr>
+<td style="text-align:left">CITYCODE</td>
+<td style="text-align:left">城市ID</td>
+</tr>
+<tr>
+<td style="text-align:left">NETSERVICEID</td>
+<td style="text-align:left">运营商ID</td>
+</tr>
+<tr>
+<td style="text-align:left">ACCESSMODE</td>
+<td style="text-align:left">接入方式</td>
+</tr>
+<tr>
+<td style="text-align:left">OSID</td>
+<td style="text-align:left">系统类型</td>
+</tr>
+<tr>
+<td style="text-align:left">OSVERID</td>
+<td style="text-align:left">系统版本</td>
+</tr>
+<tr>
+<td style="text-align:left">BROWSERID</td>
+<td style="text-align:left">浏览器类型</td>
+</tr>
+<tr>
+<td style="text-align:left">BROWSERVERID</td>
+<td style="text-align:left">浏览器版本</td>
+</tr>
+<tr>
+<td style="text-align:left">TERMINAL_TYPE</td>
+<td style="text-align:left">客户端类型(1:pc browser; 2:mobile brower;3:mobile app)</td>
+</tr>
+<tr>
+<td style="text-align:left">ERRORID</td>
+<td style="text-align:left">错误码</td>
+</tr>
+<tr>
+<td style="text-align:left">PARTURLCODE</td>
+<td style="text-align:left">截取后的URL CODE</td>
+</tr>
+<tr>
+<td style="text-align:left">DTIME$MAX</td>
+<td style="text-align:left">最大响应时间</td>
+</tr>
+<tr>
+<td style="text-align:left">DTIME$MIN</td>
+<td style="text-align:left">最小响应时间</td>
+</tr>
+<tr>
+<td style="text-align:left">DTIME$AVG</td>
+<td style="text-align:left">平均响应时间</td>
+</tr>
+<tr>
+<td style="text-align:left">DTIME$SUM</td>
+<td style="text-align:left">总响应时间</td>
+</tr>
+<tr>
+<td style="text-align:left">DNSTIME$AVG</td>
+<td style="text-align:left">平均DNS时间</td>
+</tr>
+<tr>
+<td style="text-align:left">TCPTIME$AVG</td>
+<td style="text-align:left">平均TCP时间</td>
+</tr>
+<tr>
+<td style="text-align:left">SSLTIME$AVG</td>
+<td style="text-align:left">平均SSL时间</td>
+</tr>
+<tr>
+<td style="text-align:left">SERVERRESPONSETIME$AVG</td>
+<td style="text-align:left">平均服务器响应时间</td>
+</tr>
+<tr>
+<td style="text-align:left">SERVERDEALTIME$AVG</td>
+<td style="text-align:left">平均服务器处理时间</td>
+</tr>
+<tr>
+<td style="text-align:left">DOWNSIZE$AVG</td>
+<td style="text-align:left">平均下载大小</td>
+</tr>
+<tr>
+<td style="text-align:left">DOWNTIME$AVG</td>
+<td style="text-align:left">平均下载时间</td>
+</tr>
+<tr>
+<td style="text-align:left">DOWNSPEED$AVG</td>
+<td style="text-align:left">平均下载速度</td>
+</tr>
+<tr>
+<td style="text-align:left">REQUESTNUM$SUM</td>
+<td style="text-align:left">总请求次数</td>
+</tr>
+<tr>
+<td style="text-align:left">SLOWREQUESTNUM$SUM</td>
+<td style="text-align:left">总慢请求次数</td>
+</tr>
+<tr>
+<td style="text-align:left">ERRORREQUESTNUM$SUM</td>
+<td style="text-align:left">总错误请求数</td>
+</tr>
+<tr>
+<td style="text-align:left">SLOWRATE</td>
+<td style="text-align:left">慢速比</td>
+</tr>
+<tr>
+<td style="text-align:left">ERRORRATE</td>
+<td style="text-align:left">请求错误率</td>
+</tr>
+<tr>
+<td style="text-align:left">MONITORTIME$MIN</td>
+<td style="text-align:left">首次发生时间</td>
+</tr>
+<tr>
+<td style="text-align:left">MONITORTIME$MAX</td>
+<td style="text-align:left">末次发生时间</td>
+</tr>
+<tr>
+<td style="text-align:left"><del>VISITNUM$SUM</del></td>
+<td style="text-align:left"><del>受影响访问次数</del></td>
+</tr>
+<tr>
+<td style="text-align:left"><del>KEYVISITNUM$SUM</del></td>
+<td style="text-align:left"><del>受影响访问次数（按关键元素统计）</del></td>
+</tr>
+<tr>
+<td style="text-align:left">ERROR_RATIO</td>
+<td style="text-align:left">错误次数/总错误次数</td>
+</tr>
+</tbody>
+</table>
+<h1 id="">返回参数说明：</h1>
 <table>
 <thead>
 <tr>
@@ -1350,9 +1580,9 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">error_code</td>
+<td style="text-align:left">errorCode</td>
 <td style="text-align:left">int</td>
-<td style="text-align:left">响应码说明</td>
+<td style="text-align:left">错误码</td>
 </tr>
 <tr>
 <td style="text-align:left">reason</td>
@@ -1366,19 +1596,40 @@
 </tr>
 </tbody>
 </table>
-<h1 id="">请求实例</h1>
-<p>curl</p>
-<h1 id="">返回结果实例</h1>
-<pre><code class="lang-js">{
-    <span class="hljs-string">"error_code"</span>:<span class="hljs-number">0</span>,
-    <span class="hljs-string">"reason"</span>:<span class="hljs-string">"修改成功"</span>,
-    <span class="hljs-string">"result"</span>:{
-        <span class="hljs-string">"usertoken"</span>:<span class="hljs-string">"usertoken"</span>
+<h1 id="">请求示例</h1>
+<pre><code>    HttpClient httpclient = new DefaultHttpClient();
+    String url = &quot;http://api.bonree.com/apm/backendcall/statdata&quot;;
+    HttpPost httppost = new HttpPost(url);
+    System.out.println(&quot;请求: &quot; + httppost.getRequestLine());
+    // 创建参数队列
+    List&lt;NameValuePair&gt; formparams = new ArrayList&lt;NameValuePair&gt;();
+    formparams.add(new BasicNameValuePair(&quot;username&quot;, &quot;bonreetest&quot;));
+    formparams.add(new BasicNameValuePair(&quot;token&quot;, &quot;xxxxxxxxxx&quot;));
+    formparams.add(new BasicNameValuePair(&quot;params&quot;, &quot;{\&quot;dType\&quot;:\&quot;json\&quot;,\&quot;appId\&quot;:\&quot;1035\&quot;,\&quot;dTime\&quot;:\&quot;20170201000000-20170301000000\&quot;,\&quot;pageNum\&quot;:\&quot;1\&quot;,\&quot;pageRecorders\&quot;:\&quot;50\&quot;,\&quot;order\&quot;:\&quot;DTIME$AVG DESC\&quot;,\&quot;dHeader\&quot;:\&quot;appId,domain,eleDnsAvg,eleDnsMax,eleDnsMin\&quot;}&quot;));
+    UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, &quot;UTF-8&quot;);
+    httppost.setEntity(uefEntity);
+    // 执行
+    HttpResponse response = httpclient.execute(httppost);
+    HttpEntity entity = response.getEntity();
+    System.out.println(&quot;----------------------------------------&quot;);
+    System.out.println(&quot;状态:&quot; + response.getStatusLine());
+    if (entity != null) {
+        System.out.println(&quot;Response content length: &quot; + entity.getContentLength());
+        System.out.println(&quot;Response content :&quot; + EntityUtils.toString(entity, &quot;UTF-8&quot;));
     }
+    // 关闭连接,释放资源
+    httpclient.getConnectionManager().shutdown();
+</code></pre><h1 id="">返回结果示例：</h1>
+<pre><code>{
+    &quot;errorCode&quot;: 0,
+    &quot;reason&quot;: &quot;查询成功&quot;,
+    &quot;result&quot;: [
+        [&quot;appId&quot;,&quot;domain&quot;,&quot;eleDnsAvg&quot;,&quot;eleDnsMax&quot;,&quot;eleDnsMin&quot;],
+        [&quot;1035&quot;, &quot;www.baidu.com&quot;, &quot;1021&quot;, &quot;10&quot;,&quot;929&quot;,&quot;7&quot;],
+        [&quot;1035&quot;, &quot;www.bonree.com&quot;, &quot;2021&quot;, &quot;20&quot;,&quot;930&quot;,&quot;7&quot;]
+    ]
 }
 </code></pre>
-<h1 id="faq">FAQ</h1>
-
                     
                     </section>
                 
@@ -1388,10 +1639,10 @@
         </div>
 
         
-        <a href="..\..\../2dddddd/1.api/custom/createcustom.html" class="navigation navigation-prev " aria-label="Previous page: createCustom"><i class="fa fa-angle-left"></i></a>
+        <a href="..\..\../2dddddd/1.api/platformdata.html" class="navigation navigation-prev " aria-label="Previous page: platform"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="..\..\../2dddddd/sys.html" class="navigation navigation-next " aria-label="Next page: sys"><i class="fa fa-angle-right"></i></a>
+        <a href="..\..\../2dddddd/1.api/platformdata/elementdetaildata.html" class="navigation navigation-next " aria-label="Next page: 元素快照详细数据"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

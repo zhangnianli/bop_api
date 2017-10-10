@@ -4,7 +4,7 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>任务信息 | bop_api</title>
+        <title>接入方式 | bop_api</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.0.3">
@@ -18,10 +18,10 @@
     
     
     
-    <link rel="next" href="..\..\../2dddddd/1.api/net/element.html" />
+    <link rel="next" href="..\..\../2dddddd/1.api/common/app.html" />
     
     
-    <link rel="prev" href="..\..\../2dddddd/1.api/net.html" />
+    <link rel="prev" href="..\..\../2dddddd/1.api/common/os.html" />
     
 
         
@@ -33,7 +33,7 @@
 
 
         
-    <div class="book"  data-level="4.1.1.1" data-basepath="..\..\.." data-revision="1507521227013">
+    <div class="book"  data-level="4.1.5.4" data-basepath="..\..\.." data-revision="1507603807815">
     
 
 <div class="book-summary">
@@ -164,7 +164,7 @@
                 
     
         
-        <li class="chapter active" data-level="4.1.1.1" data-path="2dddddd/1.api/net/loadtask.html">
+        <li class="chapter " data-level="4.1.1.1" data-path="2dddddd/1.api/net/loadtask.html">
             
                 
                     <a href="..\..\../2dddddd/1.api/net/loadtask.html">
@@ -864,7 +864,7 @@
         </li>
     
         
-        <li class="chapter " data-level="4.1.5.4" data-path="2dddddd/1.api/common/accessmodel.html">
+        <li class="chapter active" data-level="4.1.5.4" data-path="2dddddd/1.api/common/accessmodel.html">
             
                 
                     <a href="..\..\../2dddddd/1.api/common/accessmodel.html">
@@ -1289,12 +1289,12 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_12">
+                    <section class="normal" id="section-gitbook_19">
                     
                         <h1 id=""><strong>业务编号</strong></h1>
-<p>net.task.loadTask</p>
+<p>base.data.loadAccess</p>
 <h1 id="api"><strong>api请求地址</strong></h1>
-<p><a href="http://api.bonree.com/net/task/loadTask" target="_blank">http://api.bonree.com/net/task/loadTask</a></p>
+<p><a href="http://api.bonree.com/basedata/loadOs" target="_blank">http://api.bonree.com/base/data/loadAccess</a></p>
 <h1 id=""><strong>请求方式</strong></h1>
 <p>POST/GET</p>
 <h1 id=""><strong>请求参数</strong></h1>
@@ -1324,52 +1324,10 @@
 <td style="text-align:left">用户名</td>
 </tr>
 <tr>
-<td style="text-align:left">params</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">是</td>
-<td style="text-align:left">{&quot;monitor_fun&quot;:3}</td>
-<td style="text-align:left">请求参数json</td>
-</tr>
-</tbody>
-</table>
-<h2 id="param"><strong>param参数</strong></h2>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">参数名称</th>
-<th style="text-align:left">参数类型</th>
-<th style="text-align:left">是否必选</th>
-<th style="text-align:left">示例值</th>
-<th style="text-align:left">参数说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">monitorFun</td>
-<td style="text-align:left">Number</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">3</td>
-<td style="text-align:left">任务类型(多个&quot;,&quot;分割)0-网络 3-浏览 4-传输 5-流媒体 6-元素组 7-协议 9-事务 96-移动浏览 97-移动网络 98-移动协议 95-BMTP</td>
-</tr>
-<tr>
-<td style="text-align:left">taskId</td>
-<td style="text-align:left">Number</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">170435</td>
-<td style="text-align:left">任务ID(多个&quot;,&quot;分割)</td>
-</tr>
-<tr>
-<td style="text-align:left">flag</td>
-<td style="text-align:left">Number</td>
-<td style="text-align:left">否</td>
-<td style="text-align:left">1</td>
-<td style="text-align:left">任务状态；0-禁用，1-启用，9-结束</td>
-</tr>
-<tr>
 <td style="text-align:left">dHeader</td>
 <td style="text-align:left">String</td>
 <td style="text-align:left">是</td>
-<td style="text-align:left">ROLE_NAME,MONITOR_FUN,TASK_ID</td>
+<td style="text-align:left">ACCESS_MODEL_ID,ACCESS_MODEL_NAME</td>
 <td style="text-align:left">接口返回字段,配置*返回全部</td>
 </tr>
 </tbody>
@@ -1386,64 +1344,16 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">ROLE_NAME</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left">勿删长期测试qq</td>
-<td style="text-align:left">任务名称</td>
-</tr>
-<tr>
-<td style="text-align:left">URL</td>
-<td style="text-align:left">string</td>
-<td style="text-align:left"><a href="http://www.qq.com" target="_blank">http://www.qq.com</a></td>
-<td style="text-align:left">任务地址</td>
-</tr>
-<tr>
-<td style="text-align:left">TASK_ID</td>
-<td style="text-align:left">Number</td>
-<td style="text-align:left">170435</td>
-<td style="text-align:left">任务ID</td>
-</tr>
-<tr>
-<td style="text-align:left">MONITOR_FUN</td>
-<td style="text-align:left">Number</td>
-<td style="text-align:left">3</td>
-<td style="text-align:left">任务类型</td>
-</tr>
-<tr>
-<td style="text-align:left">FLAG</td>
+<td style="text-align:left">ACCESS_MODEL_ID</td>
 <td style="text-align:left">Number</td>
 <td style="text-align:left">1</td>
-<td style="text-align:left">任务状态</td>
+<td style="text-align:left">接入方式ID</td>
 </tr>
 <tr>
-<td style="text-align:left">START_TIME</td>
-<td style="text-align:left">Number</td>
-<td style="text-align:left">1393603200000</td>
-<td style="text-align:left">任务起始时间</td>
-</tr>
-<tr>
-<td style="text-align:left">END_TIME</td>
-<td style="text-align:left">Number</td>
-<td style="text-align:left">1488211200000</td>
-<td style="text-align:left">任务结束时间</td>
-</tr>
-<tr>
-<td style="text-align:left">PARENT_ID</td>
-<td style="text-align:left">Number</td>
-<td style="text-align:left">340832</td>
-<td style="text-align:left">父任务ID</td>
-</tr>
-<tr>
-<td style="text-align:left">ROLE_TYPE</td>
-<td style="text-align:left">Number</td>
-<td style="text-align:left">9</td>
-<td style="text-align:left">0任务组，1,事务，3元素组，5事务或元素组子任务，9单一任务</td>
-</tr>
-<tr>
-<td style="text-align:left">NETENV_MON</td>
+<td style="text-align:left">ACCESS_MODEL_NAME</td>
 <td style="text-align:left">string</td>
-<td style="text-align:left">111</td>
-<td style="text-align:left">网络环境监测（111全部监测，（第1位表示DNS，第2位表示ICMP，第3位表示Tracert，1表示测试，0表示不测试））</td>
+<td style="text-align:left">2G</td>
+<td style="text-align:left">接入方式名称</td>
 </tr>
 </tbody>
 </table>
@@ -1475,16 +1385,15 @@
 </tbody>
 </table>
 <h1 id=""><strong>请求示例</strong></h1>
-<pre><code>POST:
+<pre><code> POST:
   HttpClient httpclient = new DefaultHttpClient();
-  String url = &quot;http://api.bonree.com/net/task/loadTask&quot;;
+  String url = &quot;http://api.bonree.com/base/data/loadAccess&quot;;
   HttpPost httppost = new HttpPost(url);
   System.out.println(&quot;请求: &quot; + httppost.getRequestLine());
   // 创建参数队列
   List&lt;NameValuePair&gt; formparams = new ArrayList&lt;NameValuePair&gt;();
   formparams.add(new BasicNameValuePair(&quot;username&quot;, &quot;bonreetest&quot;));
   formparams.add(new BasicNameValuePair(&quot;token&quot;, &quot;xxxxxxxxxx&quot;));
-  formparams.add(new BasicNameValuePair(&quot;params&quot;, &quot;{\&quot;monitor_fun\&quot;:3}&quot;));
   UrlEncodedFormEntity uefEntity = new UrlEncodedFormEntity(formparams, &quot;UTF-8&quot;);
   httppost.setEntity(uefEntity);
   // 执行
@@ -1500,15 +1409,15 @@
   httpclient.getConnectionManager().shutdown();
 
  GET:
-  http://api.bonree.com/net/task/loadTask?token=asdas12312312ddwew5we5we5&amp;username=bonreetest&amp;param={&quot;monitor_fun&quot;:3}
+  http://api.bonree.com/base/data/loadAccess?token=asdas12312312ddwew5we5we5&amp;username=bonreetest
 </code></pre><h1 id=""><strong>返回结果示例</strong></h1>
 <pre><code>{
     &quot;errorCode&quot;: 0,
     &quot;reason&quot;:&quot;查询成功&quot;,
     &quot;result: [
-        [&quot;ROLE_NAME&quot;,&quot;URL&quot;,&quot;TASK_ID&quot;,&quot;MONITOR_FUN&quot;,&quot;FLAG&quot;,&quot;START_TIME&quot;,&quot;END_TIME&quot;,&quot;PARENT_ID&quot;,&quot;ROLE_TYPE&quot;,&quot;NETENV_MON&quot;],
-        [&quot;勿删长期测试qq&quot;,&quot;http://www.qq.com&quot;,170435,3,1,1393603200000,1488211200000,340832,9,&quot;111&quot;],
-        [&quot;QQ任务组&quot;,&quot;http://&quot;,340832,3,0,1446307200000,1446307200000,0,0,&quot;000&quot;]
+       [&quot;ACCESS_MODEL_ID&quot;,&quot;ACCESS_MODEL_NAME&quot;],
+       [1,&quot;2G&quot;],
+       [2,&quot;2.5G&quot;]
     ]
 }
 </code></pre><h1 id="api"><strong>api工具</strong></h1>
@@ -1524,10 +1433,10 @@
         </div>
 
         
-        <a href="..\..\../2dddddd/1.api/net.html" class="navigation navigation-prev " aria-label="Previous page: net"><i class="fa fa-angle-left"></i></a>
+        <a href="..\..\../2dddddd/1.api/common/os.html" class="navigation navigation-prev " aria-label="Previous page: 操作系统版本"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="..\..\../2dddddd/1.api/net/element.html" class="navigation navigation-next " aria-label="Next page: element"><i class="fa fa-angle-right"></i></a>
+        <a href="..\..\../2dddddd/1.api/common/app.html" class="navigation navigation-next " aria-label="Next page: App"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
