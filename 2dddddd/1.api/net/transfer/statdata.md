@@ -142,6 +142,7 @@ POST／GET
 | NETSERVICE\_ID | 运营商码 |  |
 | ROLE\_CITYCODE | 目标城市码 |  |
 | ROLE\_DISTRICTCODE | 目标地区码 |  |
+| ROLE\_COUNTRCODE | 目标国家码 |  |
 | ROLE\_NETSERVICE | 目标运营商码 |  |
 | ROLE\_IP | 目标IP |  |
 | CLIENT\_NUM | 客户端ID |  |
