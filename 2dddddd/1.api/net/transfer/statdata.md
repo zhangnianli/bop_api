@@ -36,6 +36,7 @@ POST／GET
 | granule | string | 否 | STR\_HOUR | 查询数据的时间频度，单位为分钟，当传时间频度的时候，group参数必填 |
 | order | string | 否 | ROLE\_ID ASC,CITY\_CODE DESC | 排序条件 |
 | dmgParam | string | 否 | {"group":{"123":\["1100101\_1\_1"\],"124":\["1100101\_2\_1"\]}, "groupDmg":"true"} | 分组统计条件,groupDmg:是否分组;group为具体的分组条件,key为groupId,value为监测点组,监测点形式为CITYCODE\_NETSERVICEID\_CLIENTTYPE;返回的数据中每行都包含DMG\_ID用于标识属于哪个监测组 |
+| invertType | number | 否 | 1 | 是否反显1:是;0否 ,默认否 |
 
 ### filters字段
 
