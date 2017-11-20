@@ -26,7 +26,7 @@ platform.data.element.statdata
 | pageRecorders | string | 否 | 50 | 每页行数 |
 | order | string | 否 | DTIME$AVG DESC | 排序字段 |
 | group | strng | 是 | PARTURLCODE | 分组字段（APPID,TASKID,TASKTYPE,CITYCODE,NETSERVICEID,ACCESSMODE,OSID,OSVERID,BROWSERID,BROWSERVERID,ERRORID,PARTURLCODE） |
-| filters | string | 否 | {"netserviceAndNetStandard":\[{"netserviseId":"1","netStandard":"1"},{"netserviseId":"1","netStandard":"2"}\],"cityCode":\[1100000,1200000\],"browsr":\[0,1,2,3,4\],"onlyError":"1","errorId":\[404,500\]} | 过滤条件：netserviceAndNetStandard:运营商&网络接入方式；cityCode:地域；browsr:浏览器；errorId:错误码筛选;onlyError:0-查询正常数据；1-查询错误数据；2-查询慢数据；20-查询慢+正常数据 |
+| filters | string | 否 | {"netserviceAndNetStandard":\[{"netserviseId":"1","netStandard":"1"},{"netserviseId":"1","netStandard":"2"}\],"cityCode":\[1100000,1200000\],"browsr":\[0,1,2,3,4\],"onlyError":"1","errorId":\[404,500\]} | 过滤条件：netserviceAndNetStandard:运营商&网络接入方式；cityCode:地域；browsr:浏览器；onlyError:0-只查正确数据,1-只查错误数据,2-只查慢元素；errorId:错误码筛选; |
 | dHeader | string | 是 | APPID,PARTURLCODE,DTIME$MAX,DTIME$MIN,DTIME$AVG,DTIME$SUM,DNSTIME$AVG,TCPTIME$AVG | \*指标数据项 |
 
 # dHeader字段说明：
@@ -66,9 +66,8 @@ platform.data.element.statdata
 | ERRORRATE | 请求错误率 |
 | MONITORTIME$MIN | 首次发生时间 |
 | MONITORTIME$MAX | 末次发生时间 |
-| ~~VISITNUM$SUM~~ | ~~受影响访问次数~~ |
-| ~~KEYVISITNUM$SUM~~ | ~~受影响访问次数（按关键元素统计）~~ |
-| ERROR\_RATIO | 错误次数/总错误次数 |
+| VISITNUM$SUM | 受影响访问次数 |
+| KEYVISITNUM$SUM | 受影响访问次数（按关键元素统计） |
 
 # 返回参数说明：
 
