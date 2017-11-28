@@ -30,10 +30,6 @@ POST／GET
 | dHeader | string | 是 | "dHeader":"TASK\_ID" | 指标数据项 |
 | group | string | 否 | "group":"TASK\_ID" | 数据组合条件 |
 
-### filters参数
-
-| 参数名称 | 参数类型 | 示例值 | 参数说明 |
-| :--- | :--- | :--- | :--- |
 
 
 ### dHeader参数
