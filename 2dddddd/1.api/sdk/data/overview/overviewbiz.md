@@ -61,8 +61,8 @@ POST／GET
 
 ```java
 HttpClient httpclient = new DefaultHttpClient();
-String url = "http://api.bonree.com/sdk/report/data/webview/count";
-String params = "{\"dType\":\"json\",\"appId\":\"1111,2222\",\"dTime\":\"20160101000000-20160102000000\"}";
+String url = "http://api.bonree.com/sdk/data/overview";
+String params = "{\"dType\":\"json\",\"taskId\":\"1111,2222\",\"dTime\":\"20160101000000-20160102000000\"}";
 
 HttpPost httppost = new HttpPost(url);
 System.out.println("请求: " + httppost.getRequestLine());
