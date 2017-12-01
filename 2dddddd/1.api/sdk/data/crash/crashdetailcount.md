@@ -31,7 +31,7 @@ POST／GET
 | pageRecorders | int | 是 | "pageRecorders":50 | 每页条数 |
 | filters | string | 否 | "filters":{"TASK\_ID":\["10241"\]} | 数据筛选条件 |
 | dHeader | string | 是 | "dHeader":"TASK\_ID" | 指标数据项 |
-| order | string | 否 | "order":"TASKID DESC,OSVERSION DESC" | 排序依据 |
+| order | string | 否 | "order":"TASKID DESC" | 排序依据 |
 | group | string | 是 | "group":"TASK\_ID" | 数据组合条件 |
 
 ### filters参数
@@ -43,6 +43,21 @@ POST／GET
 | CRASH\_TYPE | string | "CRASH\_TYPE":\["NullPointerException"\] | 崩溃类型 |
 
 ### dHeader参数
+
+| 参数名称 | 参数类型 | 是否必选 | 参数说明 |
+| :--- | :--- | :--- | :--- |
+| TASK\_ID | string | 否 | sdk应用id |
+| MIN\_MONITORTIME | string | 否 | 首次发生时间 |
+| MAX\_MONITORTIME | string | 否 | 末次发生时间 |
+| CRASH\_COUNT | string | 否 | 崩溃次数 |
+| CRASH\_RATE | string | 否 | 崩溃率 |
+| START\_COUNT | string | 否 | sdk应用启动次数 |
+| USER\_COUNT | string | 否 | 崩溃影响用户数 |
+| CRASH\_TYPE | string | 否 | 崩溃类型 |
+| KEY\_FUNCTION | string | 否 | 关键方法 |
+| CAUSE\_BY | string | 否 | causeby |
+
+### order参数
 
 | 参数名称 | 参数类型 | 是否必选 | 参数说明 |
 | :--- | :--- | :--- | :--- |
