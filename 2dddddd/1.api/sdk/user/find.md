@@ -38,6 +38,7 @@ POST／GET
 | REMAIN\_DEVICE\_COUNT | string | 否 | 剩余活跃设备数 |
 | ACTIVE\_DEVICE\_COUNT | string | 否 | 活跃设备数 |
 | USER\_STATUE | string | 否 | 用户状态信息 |
+| TASK\_PACKAGE\_COUNT | string | 否 | 用户套餐设备数 |
 
 # 返回参数说明
 
