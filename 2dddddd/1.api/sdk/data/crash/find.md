@@ -25,7 +25,7 @@ POST／GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | taskId | string | 是 | "taskId":"10241,10240" | 应用id |
-| dType | string  | 是 | json/csv | 返回数据类型 |
+| dType | string | 是 | json/csv | 返回数据类型 |
 | filters | string | 否 | "filters":{"CRASH\_TYPE:\["Exception"\],"TASK\_ID":\["10241"\]} | 数据筛选条件 |
 | dTime | string | 是 | "dTime":"20160101000000-20160102000000" | 数据时间范围 |
 | dHeader | string | 是 | "dHeader":"TASK\_ID,OS\_VERSION" | 指标数据项 |
@@ -35,7 +35,6 @@ POST／GET
 | 参数名称 | 参数类型 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- |
 | CRASH\_TYPE | string | "CRASH\_TYPE":\["Exception","NullPointerException"\] | 崩溃类型 |
-| TASK\_ID | string | "TASK\_ID":\["10241","10240"\] | sdk应用ID |
 
 ### dHeader参数
 
