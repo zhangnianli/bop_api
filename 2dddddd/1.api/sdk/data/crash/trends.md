@@ -27,7 +27,7 @@ POST／GET
 | taskId | string | 是 | “taskId”：“1024110240” | 应用id |
 | dType | string | 是 | json/csv | 返回数据类型 |
 | dTime | string | 是 | "dTime":"20160101000000-20160102000000" | 数据时间范围 |
-| filters | string | 否 | "filters":{"CRASH\_TYPE:\["Exception"\],"} | 数据筛选条件 |
+| filters | string | 否 | "filters":{"CRASH\_TYPE:\["Exception"\]"} | 数据筛选条件 |
 | dHeader | string | 是 | "dHeader":"TASK\_ID,MONITORTIME" | 指标数据项 |
 
 ### filters参数
@@ -91,14 +91,14 @@ httpclient.getConnectionManager().shutdown();
 
 # 返回示例
 
-{"error\_code": 0,
-    "reason":"查询成功",
-    "result":\[
-        \["appid","granuleId","monitorTime","crashRate","startCount"\],
-        \["1111","1","20161101000000","0.01","1"\],
-        \["1111","2","20161101000100","0.01","1"\]
-    \]
-}
+{"error\_code": 0,  
+    "reason":"查询成功",  
+    "result":\[  
+        \["appid","granuleId","monitorTime","crashRate","startCount"\],  
+        \["1111","1","20161101000000","0.01","1"\],  
+        \["1111","2","20161101000100","0.01","1"\]  
+    \]  
+}  
 \`\`\`
 
 # api工具：
