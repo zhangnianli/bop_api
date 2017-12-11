@@ -30,7 +30,7 @@ POST／GET
 | filters | string | 否 | "filters":{"CRASH\_TYPE":\["NullPointerException"\]} | 数据筛选条件 |
 | dHeader | string | 是 | "dHeader":"TASK\_ID,CRASH\_TYPE" | 指标数据项 |
 | group | string | 是 | "group":"TASK\_ID,CRASH\_TYPE" | 分组条件 |
-| order | string | 是 | "order":"TASK\_ID DESC,CRASH\_TYPE ASC" | 排序条件 |
+| order | string | 是 | "order":"CRASH\_COUNT ASC" | 排序条件 |
 | top | int | 是 | "top":10 | 指标数量筛选 |
 
 ### filters参数
