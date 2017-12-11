@@ -30,16 +30,14 @@ POST／GET
 | dHeader | string | 是 | "dHeader":"TASK\_ID" | 指标数据项 |
 | group | string | 否 | "group":"TASK\_ID" | 数据组合条件 |
 
-
-
 ### dHeader参数
 
 | 参数名称 | 参数类型 | 是否必选 | 参数说明 |
 | :--- | :--- | :--- | :--- |
 | TASK\_ID | string | 否 | sdk应用id |
-| WEBVIEW\_ERROR\_RATE | string | 否 | 错误率 |
-| WEBVIEW\_ERROR\_COUNT | string | 否 | 发生错误的访问数 |
-| WEBVIEW\_COUNT | string | 否 | 访问数 |
+| WEBVIEW\_ERROR\_RATE | string | 否 | js错误率 |
+| WEBVIEW\_ERROR\_COUNT | string | 否 | 发生js错误的访问数 |
+| WEBVIEW\_COUNT | string | 否 | 总访问数 |
 
 ### group参数
 
