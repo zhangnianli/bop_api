@@ -40,7 +40,20 @@ POST／GET
 | BRAND\_NAME | string | "BRAND\_NAME":\["MI 2S","iphone"\] | 设备型号id |
 | CRASH\_TYPE | string | "CRASH\_TYPE":\["NullPointerException","Exception"\] | 崩溃类型 |
 
-### dHeaderℴ参数
+### dHeader参数
+
+| 参数名称 | 参数类型 | 是否必选 | 参数说明 |
+| :--- | :--- | :--- | :--- |
+| TASK\_ID | string | 否 | sdk应用id |
+| MIN\_MONITORTIME | string | 否 | 首次发生时间 |
+| MAX\_MONITORTIME | string | 否 | 末次发生时间 |
+| CRASH\_COUNT | string | 否 | 崩溃次数 |
+| CRASH\_RATE | string | 否 | 崩溃率 |
+| START\_COUNT | string | 否 | sdk应用启动次数 |
+| USER\_COUNT | string | 否 | 崩溃影响用户数 |
+| CRASH\_TYPE | string | 否 | 崩溃类型 |
+
+### order参数
 
 | 参数名称 | 参数类型 | 是否必选 | 参数说明 |
 | :--- | :--- | :--- | :--- |
