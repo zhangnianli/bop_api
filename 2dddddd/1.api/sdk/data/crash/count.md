@@ -30,7 +30,7 @@ POST／GET
 | filters | string | 否 | "filters":{"OS\_VERSION":\["android"\]} | 数据筛选条件 |
 | dHeader | string | 是 | "dHeader":"TASK\_ID,CRASH\_RATE" | 指标数据项 |
 | order | string | 否 | "order":"TASK\_ID DESC, CRASH\_TYPE ASC" | 排序依据 |
-| group | string | 是 | "group":"TASK\_ID,CRASH\_TYPE" | 数据组合条件 |
+| group | string | 否 | "group":"TASK\_ID,CRASH\_TYPE" | 数据组合条件 |
 
 ### filters参数
 
