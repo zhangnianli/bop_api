@@ -22,7 +22,7 @@
         * [webview](2dddddd/1.api/sdk/data/webview.md)
           * [webview统计](2dddddd/1.api/sdk/data/webview/count.md)
         * [首屏](2dddddd/1.api/sdk/data/overview.md)
-          * [overviewbiz](2dddddd/1.api/sdk/data/overview/overviewbiz.md)
+          * [overview](2dddddd/1.api/sdk/data/overview/overview.md)
       * [sdk应用信息查询](2dddddd/1.api/sdk/task.md)
         * [应用信息查询](2dddddd/1.api/sdk/task/find.md)
         * [应用版本信息](2dddddd/1.api/sdk/task/versioninfo.md)
