@@ -25,6 +25,7 @@ POST／GET
 | 参数名称 | 参数类型 | 是否必选 | 示例值 | 参数说明 |
 | :--- | :--- | :--- | :--- | :--- |
 | dType | string | 是 | json | 数据类型 |
+| userName | string | 否 | "userName":"test" | 用户 |
 | dHeader | string | 是 | "dHeader":"USERNAME" | 指标数据项 |
 
 ### dHeader参数
